@@ -1,0 +1,41 @@
+{
+  "name": "app-tarot",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "verify": "npm test && npm run i18n:check && npm run db:validate && npm run db:validate:web && npm run db:validate:parity && npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "preview": "vite preview",
+    "db:build": "python ../database/scripts/build_database.py",
+    "i18n:check": "python ../database/scripts/build_translations.py --check",
+    "db:validate": "python ../database/scripts/validate_database.py",
+    "db:validate:web": "node ../database/scripts/validate_web_database.mjs",
+    "db:validate:parity": "python ../database/scripts/validate_major_parity.py"
+  },
+  "dependencies": {
+    "@capacitor-community/sqlite": "^8.1.1",
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
+    "@capacitor/core": "^8.5.0",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/noto-serif": "^5.3.0",
+    "jeep-sqlite": "^2.8.0",
+    "sql.js": "1.11.0",
+    "vue": "^3.5.40",
+    "vue-i18n": "^11.4.10",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0",
+    "vitest": "^4.1.11",
+    "vue-tsc": "^3.3.8"
+  }
+}

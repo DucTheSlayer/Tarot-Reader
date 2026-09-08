@@ -1,0 +1,30 @@
+/* Khung màn hình dùng chung cho các flow rút bài */
+
+.screen {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  padding: var(--space-4);
+  padding-bottom: calc(var(--space-4) + env(safe-area-inset-bottom));
+  gap: var(--space-4);
+  overflow: hidden;
+  width: 100%;
+  isolation: isolate;
+}
+
+.screen__idle {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.screen__intro {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  text-align: center;
+}

@@ -1,0 +1,78 @@
+/* Shared entrance animations — dùng chung cho các flow rút bài */
+
+.reveal-item {
+  animation: reveal-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.reveal-item--1 {
+  animation-delay: 0.05s;
+}
+
+.reveal-item--2 {
+  animation-delay: 0.15s;
+}
+
+.reveal-item--3 {
+  animation-delay: 0.25s;
+}
+
+.reveal-item--4 {
+  animation-delay: 0.35s;
+}
+
+.reveal-item--5 {
+  animation-delay: 0.45s;
+}
+
+.reveal-item--6 {
+  animation-delay: 0.55s;
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.idle-enter-active,
+.idle-leave-active {
+  transition: opacity 250ms ease, transform 250ms ease;
+}
+
+.idle-enter-from,
+.idle-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-item {
+    animation-name: reveal-fade;
+    animation-duration: 120ms;
+    animation-delay: 0ms;
+  }
+
+  .idle-enter-active,
+  .idle-leave-active {
+    transition: opacity 120ms ease;
+  }
+
+  .idle-enter-from,
+  .idle-leave-to {
+    transform: none;
+  }
+}

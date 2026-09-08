@@ -1,0 +1,125 @@
+-- Twelve zodiac profiles and 36 static horoscope readings (12 signs x 3 periods).
+BEGIN;
+
+INSERT INTO zodiac_signs (
+  id, display_order, name, symbol, date_range, element, ruling_planet, modality,
+  summary, origin_story, traits_text, strengths_text, challenges_text,
+  compatible_signs_text, reflection_prompt
+) VALUES
+  ('aries', 1, 'Aries', '♈', 'Mar 21 – Apr 19', 'fire', 'Mars', 'cardinal',
+   'Bold beginnings and direct action define the Ram, whose spark turns intention into momentum.',
+   'Aries is linked to the golden ram that rescued Phrixus in Greek myth. Its fleece later became the prize of Jason and the Argonauts, preserving the sign as a symbol of courage, rescue, and the first brave step.',
+   'Courageous|Energetic|Independent|Direct', 'Initiative|Confidence|Resilience',
+   'Impatience|Impulsiveness|Starting faster than you can sustain', 'Leo|Sagittarius|Gemini',
+   'Choose one brave beginning and give it enough patience to grow.'),
+  ('taurus', 2, 'Taurus', '♉', 'Apr 20 – May 20', 'earth', 'Venus', 'fixed',
+   'Steady, sensual, and grounded, the Bull builds lasting value through patience and care.',
+   'Taurus recalls Zeus taking the form of a magnificent white bull to carry Europa across the sea. The image became associated with beauty, fertility, earthly abundance, and power expressed through calm persistence.',
+   'Grounded|Loyal|Patient|Sensual', 'Reliability|Practical wisdom|Devotion',
+   'Stubbornness|Resistance to change|Holding on too long', 'Virgo|Capricorn|Cancer',
+   'Protect what matters without mistaking comfort for permanence.'),
+  ('gemini', 3, 'Gemini', '♊', 'May 21 – Jun 20', 'air', 'Mercury', 'mutable',
+   'Curiosity and connection guide the Twins, who gather ideas and reveal more than one side of a story.',
+   'Gemini represents Castor and Pollux, inseparable twins who shared immortality rather than remain apart. Their constellation carries themes of companionship, dual perspective, communication, and movement between worlds.',
+   'Curious|Adaptable|Expressive|Quick-witted', 'Communication|Versatility|Learning quickly',
+   'Restlessness|Scattered focus|Overthinking', 'Libra|Aquarius|Aries',
+   'Let curiosity open the door, then stay long enough to understand what you find.'),
+  ('cancer', 4, 'Cancer', '♋', 'Jun 21 – Jul 22', 'water', 'Moon', 'cardinal',
+   'Protective and intuitive, the Crab creates belonging by honoring memory, feeling, and home.',
+   'Cancer is associated with the crab Karkinos, placed among the stars after showing loyalty during Heracles'' battle with the Hydra. Its shell and lunar rulership reflect protection, emotional tides, and devotion to one''s inner circle.',
+   'Intuitive|Caring|Protective|Imaginative', 'Empathy|Loyalty|Emotional insight',
+   'Moodiness|Retreating behind defenses|Taking things personally', 'Scorpio|Pisces|Taurus',
+   'Care for your inner world while leaving a door open to honest connection.'),
+  ('leo', 5, 'Leo', '♌', 'Jul 23 – Aug 22', 'fire', 'Sun', 'fixed',
+   'Warmth, creativity, and generous self-expression make the Lion a natural source of light.',
+   'Leo is tied to the Nemean Lion, the nearly invulnerable creature defeated in Heracles'' first labor. Raised to the heavens, it became an emblem of courage, sovereign presence, and the creative force of the Sun.',
+   'Warm|Creative|Generous|Confident', 'Leadership|Loyalty|Heartfelt expression',
+   'Pride|Needing recognition|Dramatizing setbacks', 'Aries|Sagittarius|Libra',
+   'Share your light generously and let others shine beside you.'),
+  ('virgo', 6, 'Virgo', '♍', 'Aug 23 – Sep 22', 'earth', 'Mercury', 'mutable',
+   'Discernment and service guide the Maiden, turning careful observation into practical improvement.',
+   'Virgo is often connected with Astraea, the maiden of justice who remained with humanity after other gods withdrew. The wheat she carries links the sign with harvest, skill, purity of intention, and tending what sustains life.',
+   'Observant|Practical|Thoughtful|Precise', 'Analysis|Craftsmanship|Helpful service',
+   'Perfectionism|Self-criticism|Worrying over details', 'Taurus|Capricorn|Cancer',
+   'Improve what you can, and allow good work to be complete before it is perfect.'),
+  ('libra', 7, 'Libra', '♎', 'Sep 23 – Oct 22', 'air', 'Venus', 'cardinal',
+   'Balance, beauty, and reciprocity guide the Scales toward choices that honor every voice.',
+   'Libra''s scales are carried by Astraea, goddess of justice, and form the zodiac''s only inanimate symbol. They represent measured judgment, social harmony, and the continuing work of restoring balance rather than assuming it already exists.',
+   'Diplomatic|Fair-minded|Charming|Collaborative', 'Mediation|Perspective|Creating harmony',
+   'Indecision|People-pleasing|Avoiding necessary conflict', 'Gemini|Aquarius|Leo',
+   'Seek fairness without abandoning the truth of your own needs.'),
+  ('scorpio', 8, 'Scorpio', '♏', 'Oct 23 – Nov 21', 'water', 'Pluto', 'fixed',
+   'Depth and transformation define the Scorpion, whose insight finds truth beneath the surface.',
+   'Scorpio remembers the scorpion sent to confront the hunter Orion after his pride disturbed the natural order. Their opposing places in the sky evoke boundaries, consequence, mystery, and the regenerative power found after an ending.',
+   'Intense|Perceptive|Loyal|Resourceful', 'Emotional courage|Focus|Transformation',
+   'Secrecy|Suspicion|Holding grudges', 'Cancer|Pisces|Virgo',
+   'Use your depth to transform the truth, not to hide it.'),
+  ('sagittarius', 9, 'Sagittarius', '♐', 'Nov 22 – Dec 21', 'fire', 'Jupiter', 'mutable',
+   'The Archer seeks wider horizons through truth, travel, learning, and purposeful optimism.',
+   'Sagittarius is commonly linked to Chiron, the wise centaur and teacher whose arrow points beyond the familiar. The constellation symbolizes the union of instinct and higher understanding, always aiming toward a more meaningful horizon.',
+   'Adventurous|Optimistic|Honest|Philosophical', 'Vision|Enthusiasm|Open-mindedness',
+   'Bluntness|Overpromising|Escaping routine', 'Aries|Leo|Aquarius',
+   'Aim far, but choose a direction your daily actions can support.'),
+  ('capricorn', 10, 'Capricorn', '♑', 'Dec 22 – Jan 19', 'earth', 'Saturn', 'cardinal',
+   'Discipline and long-range vision help the Sea-Goat climb while remaining wise about the depths below.',
+   'Capricorn''s sea-goat is associated with Pan, who transformed partly into a fish while escaping Typhon. Its mountain and ocean nature joins ambition with emotional survival, honoring mastery earned through time and responsibility.',
+   'Ambitious|Disciplined|Patient|Responsible', 'Endurance|Strategy|Dependability',
+   'Rigidity|Pessimism|Measuring worth through achievement', 'Taurus|Virgo|Scorpio',
+   'Build for the long term while remembering that rest is part of the structure.'),
+  ('aquarius', 11, 'Aquarius', '♒', 'Jan 20 – Feb 18', 'air', 'Uranus', 'fixed',
+   'Independent thought and collective vision guide the Water-Bearer to pour new ideas into the world.',
+   'Aquarius is linked to Ganymede, the cup-bearer whose vessel brought water to the gods and, symbolically, knowledge to humanity. Though its image carries water, the sign belongs to air: ideas, systems, and renewal shared for the common good.',
+   'Original|Independent|Humanitarian|Inventive', 'Innovation|Objectivity|Community vision',
+   'Detachment|Contrarian habits|Fixed opinions', 'Gemini|Libra|Sagittarius',
+   'Let your difference serve connection rather than distance.'),
+  ('pisces', 12, 'Pisces', '♓', 'Feb 19 – Mar 20', 'water', 'Neptune', 'mutable',
+   'Compassion and imagination guide the Fishes between intuition, dreams, and shared feeling.',
+   'Pisces recalls Aphrodite and Eros becoming fish and tying themselves together to escape Typhon. The bond between the two fishes represents devotion, fluid identity, spiritual sensitivity, and finding unity while moving through changing currents.',
+   'Compassionate|Imaginative|Intuitive|Gentle', 'Empathy|Creativity|Spiritual insight',
+   'Escapism|Blurred boundaries|Absorbing others'' emotions', 'Cancer|Scorpio|Capricorn',
+   'Honor your sensitivity with boundaries strong enough to protect it.');
+
+WITH period_copy (
+  period, overview_prefix, love_prefix, career_prefix,
+  finance_prefix, wellbeing_prefix, guidance_prefix
+) AS (
+  VALUES
+    ('day',
+     'Today favors one clear, intentional step.',
+     'In love today, choose presence over assumption.',
+     'At work, complete the most meaningful task before chasing new momentum.',
+     'Keep today''s money choices simple and grounded.',
+     'A small pause can reset your energy.',
+     'Before the day ends, remember:'),
+    ('week',
+     'This week develops through steady choices rather than one dramatic moment.',
+     'Relationships benefit from a conversation that makes room for both honesty and warmth.',
+     'Your best professional progress comes from choosing a priority and protecting time for it.',
+     'Review the pattern behind your spending before making a larger commitment.',
+     'Balance movement with genuine recovery throughout the week.',
+     'Let this question guide the week:'),
+    ('year',
+     'This year invites patient growth around identity, purpose, and the way you use your energy.',
+     'Love deepens when you practice consistency and allow connection to evolve at a human pace.',
+     'Long-term work becomes stronger when ambition is paired with a structure you can sustain.',
+     'Build financial confidence through repeatable habits instead of perfect predictions.',
+     'Treat wellbeing as a foundation for the life you are building, not a reward after finishing it.',
+     'Return to this compass throughout the year:')
+)
+INSERT INTO horoscope_readings (
+  sign_id, period, overview, love, career, finance, wellbeing, guidance
+)
+SELECT
+  sign.id,
+  copy.period,
+  copy.overview_prefix || ' ' || sign.name || ' moves through ' || sign.element || ' energy. ' || sign.summary,
+  copy.love_prefix || ' Your gifts of ' || replace(lower(sign.strengths_text), '|', ', ') || ' can help you connect without performing.',
+  copy.career_prefix || ' Use ' || replace(lower(sign.traits_text), '|', ', ') || ' as tools, not expectations you must satisfy all at once.',
+  copy.finance_prefix || ' Notice when ' || replace(lower(sign.challenges_text), '|', ', ') || ' begins to influence a practical decision.',
+  copy.wellbeing_prefix || ' ' || sign.reflection_prompt,
+  copy.guidance_prefix || ' ' || sign.reflection_prompt
+FROM zodiac_signs AS sign
+CROSS JOIN period_copy AS copy
+WHERE sign.is_active = 1;
+
+COMMIT;

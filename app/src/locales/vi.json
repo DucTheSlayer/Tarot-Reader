@@ -1,0 +1,43 @@
+{
+  "onboarding": {
+    "title": "Một khoảng lặng dành cho bạn",
+    "guideTitle": "Hướng dẫn sử dụng",
+    "intro": "Khám phá bản thân qua Tarot và Hoàng đạo. Không cần tài khoản, bạn có thể bắt đầu ngay cả khi ngoại tuyến.",
+    "stepsTitle": "Bắt đầu với ba bước đơn giản",
+    "chooseTitle": "Chọn điều bạn muốn khám phá",
+    "chooseBody": "Chọn một kiểu trải bài Tarot, hoặc ghé Hoàng đạo để tìm hiểu cung của bạn.",
+    "drawTitle": "Rút và lật bài",
+    "drawBody": "Dành một chút thời gian nghĩ về điều bạn quan tâm rồi rút bài. Với Trải bài 3 lá, chạm từng lá để lật hoặc chọn Lật tất cả.",
+    "readTitle": "Đọc và chiêm nghiệm",
+    "readBody": "Chạm vào lá đã mở để xem ý nghĩa. Ở Tarot năm, vuốt ngang để khám phá đủ 5 khía cạnh.",
+    "tip": "Chưa biết chọn gì? Hãy thử Lá bài hôm nay — một lá cố định để đồng hành cùng bạn trong ngày.",
+    "note": "Nội dung dành cho chiêm nghiệm và tham khảo.",
+    "start": "Bắt đầu khám phá"
+  },
+  "nav": { "label": "Điều hướng chính", "tarot": "Tarot", "zodiac": "Hoàng đạo", "settings": "Cài đặt" },
+  "common": { "back": "Trở về", "explore": "Khám phá", "drawAgain": "Rút lại", "changeQuestion": "Đổi câu hỏi" },
+  "tarotHome": {
+    "library": "Khám phá thư viện 78 lá bài",
+    "daily": "Lá bài hôm nay", "yesNo": "Có hay không", "love": "Tarot tình yêu",
+    "money": "Tarot tài chính", "yearly": "Tarot năm", "spread": "Trải bài 3 lá"
+  },
+  "zodiacHome": {
+    "eyebrow": "Thông điệp từ các vì sao", "subtitle": "Khám phá hành trình của bạn",
+    "origin": "Nguồn gốc cung", "originDescription": "Tìm hiểu câu chuyện của 12 cung hoàng đạo",
+    "originKicker": "Mười hai cung hoàng đạo", "horoscope": "Vận trình",
+    "horoscopeDescription": "Khám phá vận trình theo ngày, tuần và năm", "horoscopeKicker": "Ngày · Tuần · Năm"
+  },
+  "period": { "label": "Khoảng thời gian vận trình", "day": "Ngày", "week": "Tuần", "year": "Năm" },
+  "settings": {
+    "subtitle": "Không gian dành riêng cho bạn",
+    "language": "Ngôn ngữ", "languageDescription": "Chọn ngôn ngữ giao diện. Thay đổi được áp dụng ngay và lưu trên thiết bị này.",
+    "selected": "Đang chọn", "saved": "Đã đổi ngôn ngữ",
+    "translationTitle": "Hai ngôn ngữ, cả phần xem bài",
+    "translationDescription": "Menu, 78 lá Tarot, 12 cung và bài đọc Ngày / Tuần / Năm hỗ trợ Anh–Việt. Chữ nằm trong hình minh họa vẫn là tiếng Anh. Nội dung mang tính chiêm nghiệm và giải trí.",
+    "offline": "Lựa chọn ngôn ngữ hoạt động ngoại tuyến, không cần tài khoản."
+  },
+  "database": {
+    "errorTitle": "Không thể mở thư viện", "retry": "Thử lại",
+    "loadingTitle": "Đang mở thư viện", "loadingDescription": "Đang chuẩn bị 78 lá Tarot và 12 cung hoàng đạo…"
+  }
+}

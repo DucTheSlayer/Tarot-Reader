@@ -1,0 +1,58 @@
+
+:root {
+  /* Typography */
+  --font-sans: 'Inter Variable', system-ui, -apple-system, Roboto, sans-serif;
+  --font-display: 'Noto Serif Variable', Georgia, 'Times New Roman', serif;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
+
+  /* Tarot theme — dark mystic (default) */
+  --color-bg:
+    radial-gradient(ellipse 140% 60% at 50% -10%, rgba(155, 77, 224, 0.35), transparent 60%),
+    radial-gradient(ellipse 100% 50% at 20% 100%, rgba(90, 50, 150, 0.25), transparent 60%),
+    linear-gradient(180deg, #150c2b 0%, #241340 100%);
+  --color-surface: #1a1530;
+  --color-surface-raised: #241d3f;
+  --color-border: #2e2549;
+  --color-text: #ece8fa;
+  --color-text-muted: #9c94c2;
+  --color-primary: #8b5cf6;
+  --color-primary-soft: rgba(139, 92, 246, 0.16);
+  --color-gold: #e6c76b;
+  --color-gold-soft: rgba(230, 199, 107, 0.16);
+  --color-success: #4ade80;
+  --color-danger: #f87171;
+}
+
+/* Zodiac theme — softer palette */
+.theme-zodiac {
+  --color-bg: #0d1324;
+  --color-surface: #151d33;
+  --color-surface-raised: #1e2945;
+  --color-border: #273354;
+  --color-text: #e8f0ff;
+  --color-text-muted: #8fa1c8;
+  --color-primary: #5ea7ff;
+  --color-primary-soft: rgba(94, 167, 255, 0.16);
+  --color-gold: #f3c878;
+  --color-gold-soft: rgba(243, 200, 120, 0.16);
+}
