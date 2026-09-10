@@ -28,3 +28,81 @@
   color: var(--color-text-muted);
   text-align: center;
 }
+
+/* Result backgrounds share one transition rhythm while each spread keeps its
+   own palette. The overlay sits inside `.screen`'s isolated stacking context. */
+.themed-result-screen {
+  position: relative;
+}
+
+.themed-result-screen::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 620ms ease;
+}
+
+.themed-result-screen--active::before {
+  opacity: 1;
+}
+
+.themed-result-screen--money::before {
+  background:
+    radial-gradient(circle at 72% 28%, rgba(210, 166, 94, 0.2), transparent 24%),
+    radial-gradient(circle at 28% 62%, rgba(44, 154, 119, 0.2), transparent 34%),
+    linear-gradient(145deg, #091d26, #12372f 54%, #17223b);
+}
+
+.themed-result-screen--yesno::before {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(195, 182, 229, 0.22), transparent 30%),
+    linear-gradient(155deg, #13132d, #25204b 54%, #18112f);
+}
+
+.themed-result-screen--yesno.themed-result-screen--yes::before {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(45, 212, 191, 0.3), transparent 31%),
+    linear-gradient(155deg, #082128, #123a3c 54%, #17243d);
+}
+
+.themed-result-screen--yesno.themed-result-screen--no::before {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(251, 113, 133, 0.26), transparent 31%),
+    linear-gradient(155deg, #291323, #4b2134 54%, #21152f);
+}
+
+.themed-result-screen--yesno.themed-result-screen--maybe::before {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(230, 199, 107, 0.28), transparent 31%),
+    linear-gradient(155deg, #272014, #493c22 50%, #261935);
+}
+
+.themed-result-screen--yesno.themed-result-screen--uncertain::before {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(185, 174, 240, 0.26), transparent 31%),
+    linear-gradient(155deg, #17162f, #342d59 54%, #211632);
+}
+
+.themed-result-screen--open::before {
+  background:
+    radial-gradient(circle at 18% 30%, rgba(122, 169, 218, 0.17), transparent 28%),
+    radial-gradient(circle at 82% 34%, rgba(191, 205, 226, 0.14), transparent 28%),
+    radial-gradient(circle at 50% 65%, rgba(83, 124, 177, 0.2), transparent 34%),
+    linear-gradient(155deg, #09152d, #172b4c 56%, #171a39);
+}
+
+.themed-result-screen--yearly::before {
+  background:
+    radial-gradient(circle at 50% 25%, rgba(232, 200, 116, 0.22), transparent 24%),
+    radial-gradient(circle at 50% 55%, rgba(107, 82, 183, 0.26), transparent 38%),
+    linear-gradient(155deg, #080f28, #241c51 52%, #361d57);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .themed-result-screen::before {
+    transition-duration: 120ms;
+  }
+}

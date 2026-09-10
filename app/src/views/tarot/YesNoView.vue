@@ -42,7 +42,13 @@ function clearQuestion() {
 </script>
 
 <template>
-  <main class="screen">
+  <main
+    class="screen themed-result-screen themed-result-screen--yesno"
+    :class="[
+      guidance ? `themed-result-screen--${guidance.verdict.variant}` : '',
+      { 'themed-result-screen--active': phase === 'result' }
+    ]"
+  >
     <ScreenHeader :title='ui("Yes or No")' back-to="/tarot" />
     <ScreenContent :spread="phase === 'initial'">
       <CardDrawAnimation :card="card" :active="phase === 'drawing'" variant="yes-no" @revealed="onRevealed">

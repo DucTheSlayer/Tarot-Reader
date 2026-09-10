@@ -16,6 +16,8 @@ const props = withDefaults(
     holdDuration?: number
     flipDuration?: number
     captions?: { label: string; name: string }[]
+    previewCaptions?: string[]
+    previewContext?: 'single' | 'exploring' | 'relationship' | ''
     layout?: 'row' | 'triangle'
     variant?: 'default' | 'daily' | 'yes-no' | 'love' | 'money' | 'open-question' | 'yearly'
   }>(),
@@ -264,7 +266,10 @@ async function start() {
     }
     // open-question: lá hạ cánh vẫn úp, user tự lật bằng tap
     if (props.variant !== 'open-question') {
-      timers.push(setTimeout(() => (flyCards.value[i].flipped = true), delay + step))
+      timers.push(setTimeout(() => {
+        flyCards.value[i].flipped = true
+        emit('cardRevealed', i)
+      }, delay + step))
     }
   })
 
@@ -273,7 +278,11 @@ async function start() {
   timers.push(
     setTimeout(() => {
       stage.value = 'revealed'
-      emit('revealed')
+      if (props.variant === 'yearly') {
+        timers.push(setTimeout(() => emit('revealed'), 850))
+      } else {
+        emit('revealed')
+      }
     }, (list.length - 1) * step + step + extra)
   )
 }
@@ -291,7 +300,25 @@ const cardCenters = computed(() =>
   }))
 )
 
+const flippedCount = computed(() => flyCards.value.filter((card) => card.flipped).length)
+const currentProgressIndex = computed(() =>
+  Math.min(flippedCount.value, Math.max(deck.value.length - 1, 0))
+)
+
 const moneyPath = computed(() => cardCenters.value.map(({ x, y }) => `${x},${y}`).join(' '))
+
+const yearlyOrbit = computed(() => {
+  if (cardCenters.value.length !== 5) return null
+  const points = cardCenters.value.slice(1)
+  const xs = points.map((point) => point.x)
+  const ys = points.map((point) => point.y)
+  return {
+    cx: (Math.min(...xs) + Math.max(...xs)) / 2,
+    cy: (Math.min(...ys) + Math.max(...ys)) / 2,
+    rx: (Math.max(...xs) - Math.min(...xs)) / 2,
+    ry: (Math.max(...ys) - Math.min(...ys)) / 2
+  }
+})
 
 function onFlyTap(index: number) {
   if (stage.value !== 'revealed') return
@@ -346,20 +373,71 @@ onUnmounted(clearTimers)
 
 <template>
   <div
-    class="fan"
-    :class="[`fan--${variant}`, { 'fan--animating': stage !== 'idle' }]"
+    class="draw-source"
+    :class="[
+      `draw-source--${variant}`,
+      previewContext ? `draw-source--${previewContext}` : '',
+      { 'draw-source--animating': active || stage !== 'idle' }
+    ]"
     aria-hidden="true"
   >
-    <div class="fan__glow"></div>
-    <img
-      v-for="(angle, i) in fanAngles"
-      :key="i"
-      src="/cards/back.svg"
-      alt=""
-      class="fan__card"
-      :ref="i === centerIndex ? setSourceCard : undefined"
-      :style="{ transform: `rotate(${angle}deg)` }"
-    />
+    <div class="draw-source__glow"></div>
+
+    <template v-if="variant === 'yes-no'">
+      <div class="oracle-ring oracle-ring--outer"></div>
+      <div class="oracle-ring oracle-ring--inner"></div>
+      <span v-for="i in 8" :key="i" class="oracle-mark" :style="{ transform: `rotate(${(i - 1) * 45}deg)` }">✦</span>
+      <img src="/cards/back.svg" alt="" class="source-card source-card--oracle" :ref="setSourceCard" />
+    </template>
+
+    <template v-else-if="variant === 'love'">
+      <svg class="source-path source-path--love" viewBox="0 0 320 180">
+        <path d="M62 68 Q160 155 258 68" />
+      </svg>
+      <div v-for="i in 3" :key="i" class="source-slot source-slot--love" :class="`source-slot--${i - 1}`">
+        <img src="/cards/back.svg" alt="" class="source-card" :ref="i === 2 ? setSourceCard : undefined" />
+        <span v-if="previewCaptions?.[i - 1]" class="source-caption">{{ ui(previewCaptions[i - 1]) }}</span>
+      </div>
+    </template>
+
+    <template v-else-if="variant === 'money'">
+      <svg class="source-path source-path--money" viewBox="0 0 320 180">
+        <path d="M43 122 C105 80 195 136 277 68" />
+      </svg>
+      <div v-for="i in 3" :key="i" class="source-slot source-slot--money" :class="`source-slot--${i - 1}`">
+        <span class="source-node"></span>
+        <img src="/cards/back.svg" alt="" class="source-card" :ref="i === 2 ? setSourceCard : undefined" />
+        <span v-if="previewCaptions?.[i - 1]" class="source-caption">{{ ui(previewCaptions[i - 1]) }}</span>
+      </div>
+    </template>
+
+    <template v-else-if="variant === 'open-question'">
+      <div v-for="i in 3" :key="i" class="source-slot source-slot--window" :class="`source-slot--${i - 1}`">
+        <span class="source-halo"></span>
+        <img src="/cards/back.svg" alt="" class="source-card" :ref="i === 2 ? setSourceCard : undefined" />
+      </div>
+    </template>
+
+    <template v-else-if="variant === 'yearly'">
+      <div class="year-wheel">
+        <span v-for="i in 12" :key="i" class="year-wheel__tick" :style="{ transform: `rotate(${(i - 1) * 30}deg)` }"></span>
+      </div>
+      <div v-for="i in 5" :key="i" class="source-slot source-slot--yearly" :class="`source-slot--${i - 1}`">
+        <img src="/cards/back.svg" alt="" class="source-card" :ref="i === 1 ? setSourceCard : undefined" />
+      </div>
+    </template>
+
+    <template v-else>
+      <img
+        v-for="(angle, i) in fanAngles"
+        :key="i"
+        src="/cards/back.svg"
+        alt=""
+        class="source-card source-card--fan"
+        :ref="i === centerIndex ? setSourceCard : undefined"
+        :style="{ transform: `rotate(${angle}deg)` }"
+      />
+    </template>
   </div>
 
   <svg
@@ -394,6 +472,30 @@ onUnmounted(clearTimers)
   >
     <polyline :points="moneyPath" />
   </svg>
+
+  <svg
+    v-if="stage === 'revealed' && variant === 'yearly' && yearlyOrbit"
+    class="spread-decoration spread-decoration--yearly"
+    aria-hidden="true"
+  >
+    <ellipse :cx="yearlyOrbit.cx" :cy="yearlyOrbit.cy" :rx="yearlyOrbit.rx" :ry="yearlyOrbit.ry" />
+    <line
+      v-for="(_, i) in cardCenters.slice(1)"
+      :key="i"
+      :x1="cardCenters[0].x"
+      :y1="cardCenters[0].y"
+      :x2="cardCenters[i + 1].x"
+      :y2="cardCenters[i + 1].y"
+    />
+  </svg>
+
+  <p v-if="stage === 'fly' && variant === 'love' && captions?.length" class="draw-progress">
+    {{ ui('Card {current} of {total} · {label}', {
+      current: Math.min(flippedCount + 1, deck.length),
+      total: deck.length,
+      label: ui(captions[currentProgressIndex].label)
+    }) }}
+  </p>
 
   <div
     v-for="(fc, i) in flyCards"
@@ -430,21 +532,20 @@ onUnmounted(clearTimers)
 </template>
 
 <style scoped>
-.fan {
+.draw-source {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  width: min(100%, 360px);
   height: 190px;
   animation: fan-float 4s ease-in-out infinite;
   will-change: transform;
+  margin-inline: auto;
 }
 
-.fan--animating {
+.draw-source--animating {
   animation: none;
 }
 
-.fan__glow {
+.draw-source__glow {
   position: absolute;
   left: 50%;
   bottom: 4px;
@@ -465,27 +566,144 @@ onUnmounted(clearTimers)
   z-index: 0;
 }
 
-.fan--animating .fan__glow {
+.draw-source--animating .draw-source__glow {
   animation: none;
   opacity: 0.3;
 }
 
-.fan__card {
-  position: relative;
+.draw-source--love .draw-source__glow {
+  background: radial-gradient(closest-side, rgba(172, 76, 126, 0.38), rgba(226, 164, 194, 0.18) 56%, transparent 80%);
+}
+
+.draw-source--money .draw-source__glow {
+  background: radial-gradient(closest-side, rgba(33, 126, 99, 0.34), rgba(210, 166, 94, 0.14) 56%, transparent 80%);
+}
+
+.draw-source--yes-no .draw-source__glow {
+  background: radial-gradient(closest-side, rgba(156, 139, 202, 0.3), rgba(224, 215, 236, 0.12) 56%, transparent 80%);
+}
+
+.draw-source--open-question .draw-source__glow {
+  background: radial-gradient(closest-side, rgba(68, 116, 170, 0.32), rgba(177, 199, 224, 0.12) 56%, transparent 80%);
+}
+
+.draw-source--yearly .draw-source__glow {
+  background: radial-gradient(closest-side, rgba(108, 83, 180, 0.34), rgba(232, 200, 116, 0.19) 56%, transparent 80%);
+}
+
+.source-card {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+}
+
+.source-card--fan {
+  position: absolute;
+  left: calc(50% - 56px);
+  bottom: 0;
   z-index: 1;
   width: 112px;
   max-width: 28vw;
-  margin: 0 -26px;
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-lg);
   transform-origin: bottom center;
   opacity: 1;
   transition: opacity 400ms ease;
 }
 
-.fan--animating .fan__card {
+.draw-source--animating .source-card,
+.draw-source--animating .source-slot,
+.draw-source--animating .source-path,
+.draw-source--animating .source-node,
+.draw-source--animating .source-halo,
+.draw-source--animating .oracle-ring,
+.draw-source--animating .oracle-mark,
+.draw-source--animating .year-wheel {
   opacity: 0;
 }
+
+/* The preview must disappear in the same render that starts a draw. Keeping
+   its layout box lets us measure the launch point without flashing old slots. */
+.draw-source--animating .source-slot,
+.draw-source--animating .source-path,
+.draw-source--animating .source-card--oracle {
+  visibility: hidden;
+  transition: none;
+}
+
+.source-slot {
+  position: absolute;
+  z-index: 2;
+  width: 74px;
+  opacity: 1;
+  transition: opacity 220ms ease, transform 360ms ease;
+}
+
+.source-caption {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  width: 106px;
+  transform: translateX(-50%);
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: 9px;
+  line-height: 1.25;
+  letter-spacing: 0.35px;
+  text-align: center;
+}
+
+.source-path {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transition: opacity 360ms ease;
+}
+
+.source-path path {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.source-slot--love.source-slot--0 { left: 27px; top: 20px; transform: rotate(-7deg); }
+.source-slot--love.source-slot--1 { left: calc(50% - 37px); top: 58px; }
+.source-slot--love.source-slot--2 { right: 27px; top: 20px; transform: rotate(7deg); }
+.source-path--love path { stroke: rgba(226, 164, 194, 0.58); stroke-width: 1.4; filter: drop-shadow(0 0 7px rgba(226, 164, 194, 0.7)); }
+.draw-source--single .source-slot--love.source-slot--0 { left: calc(50% - 37px); top: 14px; transform: none; }
+.draw-source--single .source-slot--love.source-slot--1 { left: 38px; top: 65px; transform: rotate(-8deg); }
+.draw-source--single .source-slot--love.source-slot--2 { right: 38px; top: 65px; transform: rotate(8deg); }
+.draw-source--exploring .source-slot--love.source-slot--1 { top: 68px; }
+
+.source-slot--money.source-slot--0 { left: 25px; top: 71px; }
+.source-slot--money.source-slot--1 { left: calc(50% - 37px); top: 47px; }
+.source-slot--money.source-slot--2 { right: 25px; top: 18px; }
+.source-slot--money .source-caption { top: calc(100% + 19px); }
+.source-path--money path { stroke: rgba(92, 205, 165, 0.56); stroke-width: 2; stroke-dasharray: 5 7; }
+.source-node { position: absolute; left: 50%; bottom: -10px; width: 8px; height: 8px; border: 1px solid #d2a65e; border-radius: 50%; transform: translateX(-50%); background: #17372f; box-shadow: 0 0 10px rgba(92, 205, 165, 0.7); transition: opacity 360ms ease; }
+
+.source-slot--window { top: 40px; }
+.source-slot--window.source-slot--0 { left: 26px; }
+.source-slot--window.source-slot--1 { left: calc(50% - 37px); top: 24px; }
+.source-slot--window.source-slot--2 { right: 26px; }
+.source-halo { position: absolute; inset: -16px; z-index: -1; border: 1px solid rgba(164, 196, 235, 0.26); border-radius: 50%; background: radial-gradient(circle, rgba(103, 153, 211, 0.2), transparent 66%); transition: opacity 360ms ease; }
+
+.source-card--oracle { position: absolute; left: calc(50% - 45px); top: 17px; z-index: 3; width: 90px; }
+.oracle-ring { position: absolute; left: 50%; top: 50%; border: 1px solid rgba(216, 198, 241, 0.34); border-radius: 50%; transform: translate(-50%, -50%); transition: opacity 360ms ease; }
+.oracle-ring--outer { width: 184px; height: 184px; animation: oracle-turn 16s linear infinite; }
+.oracle-ring--inner { width: 146px; height: 146px; border-style: dashed; animation: oracle-turn 12s linear infinite reverse; }
+.oracle-mark { position: absolute; left: calc(50% - 5px); top: 1px; width: 10px; height: 188px; color: rgba(230, 199, 107, 0.54); font-size: 9px; text-align: center; transform-origin: 5px 94px; transition: opacity 360ms ease; }
+
+.year-wheel { position: absolute; left: calc(50% - 91px); top: 4px; width: 182px; height: 182px; border: 1px solid rgba(232, 200, 116, 0.3); border-radius: 50%; animation: year-wheel-turn 24s linear infinite; transition: opacity 360ms ease; }
+.year-wheel__tick { position: absolute; left: calc(50% - 1px); top: -4px; width: 2px; height: 190px; transform-origin: 1px 95px; }
+.year-wheel__tick::before { content: ''; display: block; width: 2px; height: 8px; border-radius: 2px; background: rgba(232, 200, 116, 0.62); }
+.source-slot--yearly { width: 42px; }
+.source-slot--yearly.source-slot--0 { left: calc(50% - 30px); top: 53px; z-index: 4; width: 60px; }
+.source-slot--yearly.source-slot--1 { left: calc(50% - 21px); top: 0; }
+.source-slot--yearly.source-slot--2 { right: 55px; top: 66px; }
+.source-slot--yearly.source-slot--3 { left: calc(50% - 21px); bottom: 0; }
+.source-slot--yearly.source-slot--4 { left: 55px; top: 66px; }
 
 .fly {
   position: fixed;
@@ -507,6 +725,25 @@ onUnmounted(clearTimers)
   pointer-events: none;
 }
 
+.draw-progress {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--space-5) + env(safe-area-inset-bottom));
+  z-index: 55;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+  padding: 7px 14px;
+  border: 1px solid rgba(226, 164, 194, 0.3);
+  border-radius: var(--radius-full);
+  transform: translateX(-50%);
+  background: rgba(35, 15, 53, 0.84);
+  color: #efd6df;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
 .spread-decoration--love line {
   stroke: var(--color-gold);
   stroke-opacity: 0.42;
@@ -525,6 +762,17 @@ onUnmounted(clearTimers)
   stroke-dashoffset: 520;
   filter: drop-shadow(0 0 7px rgba(227, 197, 111, 0.55));
   animation: trace-progress 680ms ease-out forwards;
+}
+
+.spread-decoration--yearly ellipse,
+.spread-decoration--yearly line {
+  fill: none;
+  stroke: rgba(232, 200, 116, 0.4);
+  stroke-width: 1.2;
+  stroke-dasharray: 540;
+  stroke-dashoffset: 540;
+  filter: drop-shadow(0 0 7px rgba(232, 200, 116, 0.5));
+  animation: trace-progress 850ms ease-out forwards;
 }
 
 .fly--tappable {
@@ -649,6 +897,14 @@ onUnmounted(clearTimers)
   }
 }
 
+@keyframes oracle-turn {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes year-wheel-turn {
+  to { transform: rotate(360deg); }
+}
+
 @keyframes trace-connection {
   to {
     stroke-dashoffset: 0;
@@ -692,8 +948,10 @@ onUnmounted(clearTimers)
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .fan,
-  .fan__glow,
+  .draw-source,
+  .draw-source__glow,
+  .oracle-ring,
+  .year-wheel,
   .spread-decoration line,
   .spread-decoration polyline,
   .fly__face--front {

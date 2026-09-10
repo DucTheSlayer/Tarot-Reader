@@ -21,11 +21,20 @@ import PrimaryButton from '../../components/common/PrimaryButton.vue'
 
 type Phase = 'initial' | 'drawing' | 'result'
 
+const LOVE_CONTEXT_SLOTS: Record<LoveContext, readonly [string, string, string]> = {
+  single: ['You right now', 'What to open to', 'A new direction'],
+  exploring: ['Your feelings', 'Their signals', 'Potential between you'],
+  relationship: ['You', 'Your partner', 'Energy between you']
+}
+
 const { draw } = useDrawCards()
 const phase = ref<Phase>('initial')
 const cards = ref<TarotCard[]>([])
 const context = ref<LoveContext | ''>('')
 const detailIndex = ref<number | null>(null)
+const currentSlots = computed(() =>
+  context.value ? LOVE_CONTEXT_SLOTS[context.value] : LOVE_SLOTS
+)
 
 const detailReading = computed(() => {
   if (detailIndex.value === null || !context.value) return null
@@ -34,7 +43,7 @@ const detailReading = computed(() => {
 
   return {
     card,
-    label: LOVE_SLOTS[detailIndex.value],
+    label: currentSlots.value[detailIndex.value],
     ...getLoveCardReading(card, detailIndex.value, context.value)
   }
 })
@@ -63,13 +72,21 @@ function drawAgain() {
 </script>
 
 <template>
-  <main class="screen">
+  <main
+    class="screen love-screen"
+    :class="[
+      `love-screen--${context || 'unselected'}`,
+      { 'love-screen--result': phase === 'result' }
+    ]"
+  >
     <ScreenHeader :title='ui("Love Tarot")' back-to="/tarot" />
     <ScreenContent :spread="phase === 'initial'">
       <CardDrawAnimation
         :cards="cards"
         :active="phase === 'drawing'"
-        :captions="cards.map((card, index) => ({ label: LOVE_SLOTS[index], name: card.name }))"
+        :captions="cards.map((card, index) => ({ label: currentSlots[index], name: card.name }))"
+        :preview-captions="[...currentSlots]"
+        :preview-context="context"
         layout="triangle"
         variant="love"
         :fly-duration="360"
@@ -105,7 +122,8 @@ function drawAgain() {
             :options="LOVE_CONTEXT_OPTIONS"
             @update:model-value="selectContext"
           />
-          <PrimaryButton :disabled="!context" @click="startDraw">{{ ui("Draw Cards") }}</PrimaryButton>
+          <p v-if="context" class="love__three-card-note">{{ ui("This spread uses 3 cards") }}</p>
+          <PrimaryButton :disabled="!context" @click="startDraw">{{ ui("Draw 3 Cards") }}</PrimaryButton>
         </div>
       </Transition>
     </ScreenContent>
@@ -135,8 +153,47 @@ function drawAgain() {
 </template>
 
 <style scoped>
+.love-screen {
+  position: relative;
+}
+
+.love-screen::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 620ms ease;
+}
+
+.love-screen--result::before { opacity: 1; }
+.love-screen--single::before {
+  background: radial-gradient(circle at 50% 32%, rgba(227, 191, 137, 0.25), transparent 28%), linear-gradient(145deg, #24102d, #563043 58%, #2a173a);
+}
+.love-screen--exploring::before {
+  background: radial-gradient(circle at 50% 34%, rgba(202, 166, 231, 0.2), transparent 32%), linear-gradient(145deg, #111a42, #3d2266 55%, #653b68);
+}
+.love-screen--relationship::before {
+  background: radial-gradient(circle at 50% 38%, rgba(227, 191, 137, 0.2), transparent 26%), linear-gradient(100deg, #4a172b, #371c4f 49%, #111c3e);
+}
+
 .love__idle {
   padding-bottom: var(--space-2);
+}
+
+.love__idle.idle-leave-active {
+  pointer-events: none;
+  transition-duration: 100ms;
+}
+
+.love__three-card-note {
+  margin-top: calc(var(--space-2) * -1);
+  color: #d8b4c4;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.55px;
+  text-align: center;
 }
 
 .love__intro {
@@ -224,6 +281,9 @@ function drawAgain() {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .love-screen::before {
+    transition-duration: 120ms;
+  }
   .sheet-enter-active,
   .sheet-leave-active,
   .sheet-enter-active .love-sheet__panel,

@@ -72,7 +72,7 @@ function changeQuestion() {
 </script>
 
 <template>
-  <main class="screen">
+  <main class="screen themed-result-screen themed-result-screen--open" :class="{ 'themed-result-screen--active': phase === 'result' }">
     <ScreenHeader :title='ui("3 Card Spread")' back-to="/tarot" />
     <ScreenContent :spread="phase === 'initial'">
       <CardDrawAnimation

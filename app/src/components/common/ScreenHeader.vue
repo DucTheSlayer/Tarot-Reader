@@ -9,7 +9,21 @@ defineProps<{
 
 <template>
   <header class="screen-header">
-    <router-link :to="backTo" class="screen-header__back">← {{ t('common.back') }}</router-link>
+    <router-link
+      :to="backTo"
+      class="screen-header__back"
+      :aria-label="t('common.back')"
+      :title="t('common.back')"
+    >
+      <svg
+        class="screen-header__back-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path d="M19 12H5M12 19l-7-7 7-7" />
+      </svg>
+    </router-link>
     <h1 class="screen-header__title">{{ title }}</h1>
   </header>
 </template>
@@ -20,7 +34,7 @@ defineProps<{
   z-index: 55;
   flex-shrink: 0;
   display: grid;
-  grid-template-columns: 72px minmax(0, 1fr) 72px;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
   column-gap: var(--space-1);
   align-items: center;
   min-height: 48px;
@@ -33,17 +47,35 @@ defineProps<{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
-  padding-inline: var(--space-2);
-  border-radius: var(--radius-md);
-  font-size: 15px;
-  white-space: nowrap;
-  color: var(--color-text);
+  justify-self: start;
+  width: 48px;
+  height: 48px;
+  border: 1px solid color-mix(in srgb, var(--color-gold) 42%, transparent);
+  border-radius: 50%;
+  color: var(--color-gold);
+  background: color-mix(in srgb, var(--color-surface-raised) 78%, transparent);
+  box-shadow: 0 6px 18px rgba(8, 3, 18, 0.2);
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 120ms ease;
   -webkit-tap-highlight-color: transparent;
+}
+
+.screen-header__back-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2.15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .screen-header__back:active {
   background: var(--color-primary-soft);
+  transform: scale(0.96);
 }
 
 .screen-header__back:focus-visible {
@@ -62,15 +94,14 @@ defineProps<{
   overflow-wrap: anywhere;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .screen-header__back:hover {
+    border-color: var(--color-gold);
+    background: var(--color-primary-soft);
+  }
+}
+
 @media (min-width: 700px) {
-  .screen-header {
-    grid-template-columns: 88px minmax(0, 1fr) 88px;
-  }
-
-  .screen-header__back {
-    font-size: 17px;
-  }
-
   .screen-header__title {
     font-size: 28px;
     letter-spacing: 0.04em;

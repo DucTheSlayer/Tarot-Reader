@@ -91,7 +91,7 @@ function drawAgain() {
 </script>
 
 <template>
-  <main class="screen">
+  <main class="screen themed-result-screen themed-result-screen--money" :class="{ 'themed-result-screen--active': phase === 'result' }">
     <ScreenHeader :title='ui("Money Tarot")' back-to="/tarot" />
     <ScreenContent :spread="phase === 'initial'">
       <CardDrawAnimation
@@ -99,6 +99,7 @@ function drawAgain() {
         :cards="cards"
         :active="phase === 'drawing'"
         :captions="cards.map((card, index) => ({ label: MONEY_SLOTS[index], name: card.name }))"
+        :preview-captions="[...MONEY_SLOTS]"
         layout="row"
         variant="money"
         :fly-duration="360"
