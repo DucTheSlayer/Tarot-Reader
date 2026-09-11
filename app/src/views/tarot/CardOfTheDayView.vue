@@ -3,14 +3,19 @@ import { ui } from '../../i18n/reading'
 import { ref } from 'vue'
 import { getCardOfTheDay, toDateKey } from '../../data/cardOfTheDay'
 import { getCardsSnapshot } from '../../stores/cardStore'
+import { drawCardsFromDeck } from '../../composables/useDrawCards'
+import { showRewardedAd, type RewardedQaResult } from '../../services/advertising'
+import type { TarotCard } from '../../types/tarotCard'
 import ScreenHeader from '../../components/common/ScreenHeader.vue'
 import ScreenContent from '../../components/common/ScreenContent.vue'
 import PrimaryButton from '../../components/common/PrimaryButton.vue'
 
 const today = new Date()
 const dateKey = toDateKey(today)
-const card = getCardOfTheDay(getCardsSnapshot(), today)
+const deck = getCardsSnapshot()
+const card = getCardOfTheDay(deck, today)
 const revealedStorageKey = 'tarot:daily-revealed-date'
+const clarificationStorageKey = `tarot:daily-clarification:${dateKey}`
 
 function hasRevealedToday(): boolean {
   if (typeof window === 'undefined') return false
@@ -24,6 +29,51 @@ function hasRevealedToday(): boolean {
 
 const restoredReveal = hasRevealedToday()
 const revealed = ref(restoredReveal)
+const clarificationCard = ref<TarotCard | null>(restoreClarificationCard())
+const rewardState = ref<'idle' | 'loading' | 'skipped' | 'unavailable'>('idle')
+
+function restoreClarificationCard(): TarotCard | null {
+  if (typeof window === 'undefined') return null
+  try {
+    const storedId = window.localStorage.getItem(clarificationStorageKey)
+    return deck.find((item) => item.id === storedId) ?? null
+  } catch {
+    return null
+  }
+}
+
+function grantClarificationCard(): void {
+  const candidates = deck.filter((item) => item.id !== card.id)
+  const [drawnCard] = drawCardsFromDeck(candidates, 1)
+  if (!drawnCard) return
+
+  clarificationCard.value = drawnCard
+  try {
+    window.localStorage.setItem(clarificationStorageKey, drawnCard.id)
+  } catch {
+    // Keep the earned card available for the current session.
+  }
+}
+
+async function unlockClarificationCard(): Promise<void> {
+  if (rewardState.value === 'loading' || clarificationCard.value) return
+  rewardState.value = 'loading'
+
+  try {
+    const started = await showRewardedAd((result: RewardedQaResult) => {
+      if (result === 'rewarded') {
+        grantClarificationCard()
+        rewardState.value = 'idle'
+      } else {
+        rewardState.value = 'skipped'
+      }
+    })
+    if (!started) rewardState.value = 'unavailable'
+  } catch (error) {
+    console.warn('Rewarded clarification ad failed.', error)
+    rewardState.value = 'unavailable'
+  }
+}
 
 function revealCard() {
   if (revealed.value) return
@@ -83,6 +133,35 @@ function revealCard() {
             <section class="daily__section daily__section--advice">
               <h3>{{ ui("Advice") }}</h3>
               <p>{{ card.advice }}</p>
+            </section>
+
+            <section class="daily__reward">
+              <template v-if="clarificationCard">
+                <p class="daily__reward-kicker">{{ ui("Your clarification card") }}</p>
+                <div class="daily__clarification">
+                  <img :src="clarificationCard.image" :alt="clarificationCard.name" />
+                  <div>
+                    <h3>{{ clarificationCard.name }}</h3>
+                    <p>{{ clarificationCard.meaning }}</p>
+                  </div>
+                </div>
+              </template>
+              <template v-else>
+                <h3>{{ ui("Draw a bonus clarification card") }}</h3>
+                <p>{{ ui("Watch a short ad to reveal one extra card for today.") }}</p>
+                <PrimaryButton
+                  :disabled="rewardState === 'loading'"
+                  @click="unlockClarificationCard"
+                >
+                  {{ rewardState === 'loading' ? ui("Preparing ad...") : ui("Watch ad and draw") }}
+                </PrimaryButton>
+                <p v-if="rewardState === 'skipped'" class="daily__reward-status">
+                  {{ ui("The video was closed before the reward was earned.") }}
+                </p>
+                <p v-else-if="rewardState === 'unavailable'" class="daily__reward-status">
+                  {{ ui("No ad is available right now. Please try again.") }}
+                </p>
+              </template>
             </section>
 
             <p class="daily__note">{{ ui("Your card changes tomorrow.") }}</p>
@@ -217,6 +296,50 @@ function revealCard() {
 .daily__note {
   color: var(--color-text-muted);
   font-size: 12px;
+}
+
+.daily__reward {
+  width: 100%;
+  padding: var(--space-4);
+  border: 1px solid rgba(230, 199, 107, 0.32);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--color-primary-soft) 70%, var(--color-surface-raised));
+  text-align: left;
+}
+
+.daily__reward > h3,
+.daily__reward-kicker,
+.daily__clarification h3 {
+  color: var(--color-gold);
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
+.daily__reward > p:not(.daily__reward-kicker),
+.daily__clarification p {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.daily__clarification {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.daily__clarification img {
+  width: 72px;
+  aspect-ratio: 300 / 420;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.daily__reward-status {
+  color: var(--color-danger) !important;
 }
 
 .daily-content-enter-active,

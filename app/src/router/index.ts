@@ -1,6 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import { hasCompletedOnboarding } from '../data/onboarding'
+import { config } from '../../config'
+
+const developmentRoutes: RouteRecordRaw[] = config.settings?.dev
+  ? [
+      {
+        path: '/settings/ad-test',
+        name: 'settings-ad-test',
+        component: () => import('../views/settings/AdTestView.vue')
+      }
+    ]
+  : []
 
 // Routes theo `design-note/screen.md`
 const routes: RouteRecordRaw[] = [
@@ -99,6 +110,7 @@ const routes: RouteRecordRaw[] = [
     name: 'settings-home',
     component: () => import('../views/settings/SettingsHomeView.vue')
   },
+  ...developmentRoutes,
 
   // Fallback
   { path: '/:pathMatch(.*)*', redirect: '/' }

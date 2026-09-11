@@ -5,6 +5,7 @@ android {
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "com.apptarot.app"
+        manifestPlaceholders = [admobAppId: "ca-app-pub-8467610367562059~6827880762"]
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -17,6 +18,10 @@ android {
         }
     }
     buildTypes {
+        debug {
+            // Google's sample App ID keeps local QA traffic isolated from production.
+            manifestPlaceholders.admobAppId = "ca-app-pub-3940256099942544~3347511713"
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

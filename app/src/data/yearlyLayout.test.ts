@@ -23,14 +23,11 @@ describe('Yearly animation layout', () => {
     }
   )
 
-  it('places overview in the centre with four aspects around it', () => {
+  it('centers three cards above two cards on phones', () => {
     const cards = getYearlyLayout(393, 873)
-    const center = cards[0]
-    expect(cards[1].y).toBeLessThan(center.y)
-    expect(cards[2].x).toBeGreaterThan(center.x)
-    expect(cards[3].y).toBeGreaterThan(center.y)
-    expect(cards[4].x).toBeLessThan(center.x)
-    expect(cards[1].x).toBeCloseTo(center.x)
-    expect(cards[2].y).toBeCloseTo(center.y)
+    expect(cards[0].y).toBe(cards[2].y)
+    expect(cards[3].y).toBe(cards[4].y)
+    expect(cards[3].y).toBeGreaterThan(cards[0].y + cards[0].h)
+    expect(cards[3].x).toBeCloseTo(393 - cards[4].x - cards[4].w)
   })
 })

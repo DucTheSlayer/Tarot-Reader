@@ -37,6 +37,7 @@ const emit = defineEmits<{ revealed: []; cardTap: [index: number]; cardRevealed:
 
 type Stage = 'idle' | 'fly' | 'flip' | 'revealed'
 const stage = ref<Stage>('idle')
+const resultScrollOffset = ref(0)
 
 interface FlyingCard {
   card: TarotCard
@@ -87,6 +88,7 @@ function reset() {
   clearTimers()
   flipping.clear()
   stage.value = 'idle'
+  resultScrollOffset.value = 0
   flyCards.value = []
 }
 
@@ -278,11 +280,7 @@ async function start() {
   timers.push(
     setTimeout(() => {
       stage.value = 'revealed'
-      if (props.variant === 'yearly') {
-        timers.push(setTimeout(() => emit('revealed'), 850))
-      } else {
-        emit('revealed')
-      }
+      emit('revealed')
     }, (list.length - 1) * step + step + extra)
   )
 }
@@ -307,25 +305,35 @@ const currentProgressIndex = computed(() =>
 
 const moneyPath = computed(() => cardCenters.value.map(({ x, y }) => `${x},${y}`).join(' '))
 
-const yearlyOrbit = computed(() => {
-  if (cardCenters.value.length !== 5) return null
-  const points = cardCenters.value.slice(1)
-  const xs = points.map((point) => point.x)
-  const ys = points.map((point) => point.y)
-  return {
-    cx: (Math.min(...xs) + Math.max(...xs)) / 2,
-    cy: (Math.min(...ys) + Math.max(...ys)) / 2,
-    rx: (Math.max(...xs) - Math.min(...xs)) / 2,
-    ry: (Math.max(...ys) - Math.min(...ys)) / 2
-  }
-})
+const resultCardOpacity = computed(() =>
+  Math.max(0, Math.min(1, 1 - resultScrollOffset.value / 140))
+)
+
+const revealedCardsTappable = computed(() =>
+  stage.value === 'revealed' &&
+  resultScrollOffset.value < 88 &&
+  (!!props.captions || props.variant === 'open-question')
+)
+
+const resultOverlayStyle = computed(() => ({
+  transform: `translateY(-${resultScrollOffset.value}px)`,
+  opacity: resultCardOpacity.value
+}))
+
+function onRevealScroll(event: Event) {
+  resultScrollOffset.value = (event.currentTarget as HTMLElement).scrollTop
+}
 
 function onFlyTap(index: number) {
-  if (stage.value !== 'revealed') return
+  if (!revealedCardsTappable.value) return
 
   if (props.variant === 'open-question') {
     const fc = flyCards.value[index]
-    if (!fc || fc.flipped || flipping.has(index)) return
+    if (!fc || flipping.has(index)) return
+    if (fc.flipped) {
+      emit('cardTap', index)
+      return
+    }
     flipping.add(index)
     fc.flipped = true
     emit('cardRevealed', index)
@@ -418,15 +426,6 @@ onUnmounted(clearTimers)
       </div>
     </template>
 
-    <template v-else-if="variant === 'yearly'">
-      <div class="year-wheel">
-        <span v-for="i in 12" :key="i" class="year-wheel__tick" :style="{ transform: `rotate(${(i - 1) * 30}deg)` }"></span>
-      </div>
-      <div v-for="i in 5" :key="i" class="source-slot source-slot--yearly" :class="`source-slot--${i - 1}`">
-        <img src="/cards/back.svg" alt="" class="source-card" :ref="i === 1 ? setSourceCard : undefined" />
-      </div>
-    </template>
-
     <template v-else>
       <img
         v-for="(angle, i) in fanAngles"
@@ -443,6 +442,7 @@ onUnmounted(clearTimers)
   <svg
     v-if="stage === 'revealed' && variant === 'love' && cardCenters.length === 3"
     class="spread-decoration spread-decoration--love"
+    :style="resultOverlayStyle"
     aria-hidden="true"
   >
     <line
@@ -468,25 +468,10 @@ onUnmounted(clearTimers)
   <svg
     v-if="stage === 'revealed' && variant === 'money' && cardCenters.length === 3"
     class="spread-decoration spread-decoration--money"
+    :style="resultOverlayStyle"
     aria-hidden="true"
   >
     <polyline :points="moneyPath" />
-  </svg>
-
-  <svg
-    v-if="stage === 'revealed' && variant === 'yearly' && yearlyOrbit"
-    class="spread-decoration spread-decoration--yearly"
-    aria-hidden="true"
-  >
-    <ellipse :cx="yearlyOrbit.cx" :cy="yearlyOrbit.cy" :rx="yearlyOrbit.rx" :ry="yearlyOrbit.ry" />
-    <line
-      v-for="(_, i) in cardCenters.slice(1)"
-      :key="i"
-      :x1="cardCenters[0].x"
-      :y1="cardCenters[0].y"
-      :x2="cardCenters[i + 1].x"
-      :y2="cardCenters[i + 1].y"
-    />
   </svg>
 
   <p v-if="stage === 'fly' && variant === 'love' && captions?.length" class="draw-progress">
@@ -504,14 +489,22 @@ onUnmounted(clearTimers)
     :class="[
       `fly--${variant}`,
       {
-        'fly--tappable': (captions || variant === 'open-question') && stage === 'revealed',
+        'fly--tappable': revealedCardsTappable,
         'fly--flipped': fc.flipped
       }
     ]"
-    :style="fc.style"
-    :aria-hidden="(captions || variant === 'open-question') && stage === 'revealed' ? undefined : 'true'"
-    :role="(captions || variant === 'open-question') && stage === 'revealed' ? 'button' : undefined"
+    :style="[
+      fc.style,
+      stage === 'revealed'
+        ? { translate: `0 -${resultScrollOffset}px`, opacity: resultCardOpacity }
+        : undefined
+    ]"
+    :aria-hidden="revealedCardsTappable ? undefined : 'true'"
+    :role="revealedCardsTappable ? 'button' : undefined"
+    :tabindex="revealedCardsTappable ? 0 : undefined"
     @click="onFlyTap(i)"
+    @keydown.enter.prevent="onFlyTap(i)"
+    @keydown.space.prevent="onFlyTap(i)"
   >
     <div class="fly__card" :class="{ 'fly__card--flipped': fc.flipped }">
       <div class="fly__face fly__face--back">
@@ -526,7 +519,12 @@ onUnmounted(clearTimers)
     </div>
   </div>
 
-  <div v-if="stage === 'revealed'" class="reveal" :style="{ top: `${revealTop}px` }">
+  <div
+    v-if="stage === 'revealed'"
+    class="reveal"
+    :style="{ '--reveal-top': `${revealTop}px` }"
+    @scroll.passive="onRevealScroll"
+  >
     <slot></slot>
   </div>
 </template>
@@ -616,8 +614,7 @@ onUnmounted(clearTimers)
 .draw-source--animating .source-node,
 .draw-source--animating .source-halo,
 .draw-source--animating .oracle-ring,
-.draw-source--animating .oracle-mark,
-.draw-source--animating .year-wheel {
+.draw-source--animating .oracle-mark {
   opacity: 0;
 }
 
@@ -689,21 +686,12 @@ onUnmounted(clearTimers)
 .source-slot--window.source-slot--2 { right: 26px; }
 .source-halo { position: absolute; inset: -16px; z-index: -1; border: 1px solid rgba(164, 196, 235, 0.26); border-radius: 50%; background: radial-gradient(circle, rgba(103, 153, 211, 0.2), transparent 66%); transition: opacity 360ms ease; }
 
-.source-card--oracle { position: absolute; left: calc(50% - 45px); top: 17px; z-index: 3; width: 90px; }
+.draw-source--yes-no { height: 216px; }
+.source-card--oracle { position: absolute; left: calc(50% - 52px); top: 22px; z-index: 3; width: 104px; }
 .oracle-ring { position: absolute; left: 50%; top: 50%; border: 1px solid rgba(216, 198, 241, 0.34); border-radius: 50%; transform: translate(-50%, -50%); transition: opacity 360ms ease; }
-.oracle-ring--outer { width: 184px; height: 184px; animation: oracle-turn 16s linear infinite; }
-.oracle-ring--inner { width: 146px; height: 146px; border-style: dashed; animation: oracle-turn 12s linear infinite reverse; }
-.oracle-mark { position: absolute; left: calc(50% - 5px); top: 1px; width: 10px; height: 188px; color: rgba(230, 199, 107, 0.54); font-size: 9px; text-align: center; transform-origin: 5px 94px; transition: opacity 360ms ease; }
-
-.year-wheel { position: absolute; left: calc(50% - 91px); top: 4px; width: 182px; height: 182px; border: 1px solid rgba(232, 200, 116, 0.3); border-radius: 50%; animation: year-wheel-turn 24s linear infinite; transition: opacity 360ms ease; }
-.year-wheel__tick { position: absolute; left: calc(50% - 1px); top: -4px; width: 2px; height: 190px; transform-origin: 1px 95px; }
-.year-wheel__tick::before { content: ''; display: block; width: 2px; height: 8px; border-radius: 2px; background: rgba(232, 200, 116, 0.62); }
-.source-slot--yearly { width: 42px; }
-.source-slot--yearly.source-slot--0 { left: calc(50% - 30px); top: 53px; z-index: 4; width: 60px; }
-.source-slot--yearly.source-slot--1 { left: calc(50% - 21px); top: 0; }
-.source-slot--yearly.source-slot--2 { right: 55px; top: 66px; }
-.source-slot--yearly.source-slot--3 { left: calc(50% - 21px); bottom: 0; }
-.source-slot--yearly.source-slot--4 { left: 55px; top: 66px; }
+.oracle-ring--outer { width: 210px; height: 210px; animation: oracle-turn 16s linear infinite; }
+.oracle-ring--inner { width: 166px; height: 166px; border-style: dashed; animation: oracle-turn 12s linear infinite reverse; }
+.oracle-mark { position: absolute; left: calc(50% - 5px); top: 1px; width: 10px; height: 214px; color: rgba(230, 199, 107, 0.54); font-size: 10px; text-align: center; transform-origin: 5px 107px; transition: opacity 360ms ease; }
 
 .fly {
   position: fixed;
@@ -762,17 +750,6 @@ onUnmounted(clearTimers)
   stroke-dashoffset: 520;
   filter: drop-shadow(0 0 7px rgba(227, 197, 111, 0.55));
   animation: trace-progress 680ms ease-out forwards;
-}
-
-.spread-decoration--yearly ellipse,
-.spread-decoration--yearly line {
-  fill: none;
-  stroke: rgba(232, 200, 116, 0.4);
-  stroke-width: 1.2;
-  stroke-dasharray: 540;
-  stroke-dashoffset: 540;
-  filter: drop-shadow(0 0 7px rgba(232, 200, 116, 0.5));
-  animation: trace-progress 850ms ease-out forwards;
 }
 
 .fly--tappable {
@@ -863,6 +840,7 @@ onUnmounted(clearTimers)
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   bottom: 0;
   z-index: 40;
   overflow-y: auto;
@@ -872,7 +850,10 @@ onUnmounted(clearTimers)
   flex-direction: column;
   align-items: center;
   gap: var(--space-3);
-  padding: 0 var(--space-4) calc(var(--space-4) + env(safe-area-inset-bottom));
+  padding:
+    var(--reveal-top, 0px)
+    var(--space-4)
+    calc(72px + env(safe-area-inset-bottom));
 }
 
 @keyframes fan-float {
@@ -899,10 +880,6 @@ onUnmounted(clearTimers)
 
 @keyframes oracle-turn {
   to { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-@keyframes year-wheel-turn {
-  to { transform: rotate(360deg); }
 }
 
 @keyframes trace-connection {
@@ -951,7 +928,6 @@ onUnmounted(clearTimers)
   .draw-source,
   .draw-source__glow,
   .oracle-ring,
-  .year-wheel,
   .spread-decoration line,
   .spread-decoration polyline,
   .fly__face--front {

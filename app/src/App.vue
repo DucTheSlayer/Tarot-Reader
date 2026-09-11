@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 import { useCardStore } from './stores/cardStore'
 import { useZodiacStore } from './stores/zodiacStore'
+import AdBannerHost from './components/ads/AdBannerHost.vue'
 
 const cardStore = useCardStore()
 const zodiacStore = useZodiacStore()
@@ -26,7 +27,12 @@ function retryDatabase() {
 </script>
 
 <template>
-  <RouterView v-if="isReady" />
+  <div v-if="isReady" class="app-shell">
+    <div class="app-shell__content">
+      <RouterView />
+    </div>
+    <AdBannerHost />
+  </div>
 
   <main v-else class="database-state">
     <div class="database-state__panel" role="status" aria-live="polite">
@@ -45,6 +51,22 @@ function retryDatabase() {
 </template>
 
 <style scoped>
+.app-shell {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-shell__content {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
 .database-state {
   display: grid;
   min-height: 100dvh;

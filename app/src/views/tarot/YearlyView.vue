@@ -24,11 +24,11 @@ const reduceMotion =
 
 // Vị trí tương đối của 5 mốc constellation, khớp thứ tự YEARLY_SLOTS.
 const CONSTELLATION_POINTS = [
-  { x: 50, y: 50 },
-  { x: 50, y: 10 },
-  { x: 90, y: 50 },
-  { x: 50, y: 90 },
-  { x: 10, y: 50 }
+  { x: 50, y: 14 },
+  { x: 14, y: 50 },
+  { x: 86, y: 50 },
+  { x: 32, y: 88 },
+  { x: 68, y: 88 }
 ] as const
 
 const { draw } = useDrawCards()
@@ -165,7 +165,6 @@ function resetResult() {
         :cards="cards"
         :active="true"
         variant="yearly"
-        :captions="cards.map((card, index) => ({ label: YEARLY_SLOTS[index], name: card.name }))"
         :fly-duration="320"
         :hold-duration="120"
         :flip-duration="520"
@@ -275,26 +274,22 @@ function resetResult() {
             <p class="yearly__eyebrow">{{ ui("A map of the year ahead") }}</p>
             <p class="screen__intro">{{ ui("Five cards for the next 12 months — your overview, love, career, finance and health. Swipe through each aspect at your own pace.") }}</p>
           </div>
-          <div class="yearly__preview" role="img" :aria-label='ui("Five-card spread preview")'>
-            <div class="yearly__preview-orbit">
-              <span
-                v-for="i in 12"
-                :key="i"
-                class="yearly__preview-tick"
-                :style="{ transform: `rotate(${(i - 1) * 30}deg)` }"
-              />
-            </div>
-            <div
-              v-for="(point, i) in CONSTELLATION_POINTS"
+          <svg
+            class="yearly__preview"
+            viewBox="0 0 100 100"
+            role="img"
+            :aria-label='ui("Five-card spread preview")'
+          >
+            <polyline points="50,14 14,50 86,50 32,88 68,88 50,14" class="yearly__preview-path" />
+            <circle
+              v-for="(p, i) in CONSTELLATION_POINTS"
               :key="i"
-              class="yearly__preview-card"
-              :class="{ 'yearly__preview-card--overview': i === 0 }"
-              :style="{ left: `${point.x}%`, top: `${point.y}%` }"
-            >
-              <img src="/cards/back.svg" alt="" />
-              <span>{{ ui(YEARLY_SLOTS[i]) }}</span>
-            </div>
-          </div>
+              :cx="p.x"
+              :cy="p.y"
+              r="2.4"
+              class="yearly__preview-star"
+            />
+          </svg>
           <PrimaryButton @click="startDraw">{{ ui("Draw My Year") }}</PrimaryButton>
         </div>
       </Transition>
@@ -356,74 +351,34 @@ function resetResult() {
 }
 
 .yearly__preview {
-  position: relative;
-  width: min(82vw, 310px);
-  height: 260px;
+  width: min(58vw, 220px);
+  height: min(58vw, 220px);
+  overflow: visible;
   flex-shrink: 0;
 }
 
-.yearly__preview-orbit {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 210px;
-  height: 210px;
-  border: 1px solid rgba(232, 200, 116, 0.34);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: inset 0 0 35px rgba(86, 62, 151, 0.16), 0 0 28px rgba(232, 200, 116, 0.08);
+.yearly__preview-path {
+  fill: none;
+  stroke: rgba(232, 200, 116, 0.5);
+  stroke-width: 1.2;
+  stroke-dasharray: 10 8;
+  animation: preview-draw 3.4s linear infinite;
 }
 
-.yearly__preview-tick {
-  position: absolute;
-  left: calc(50% - 1px);
-  top: -5px;
-  width: 2px;
-  height: 220px;
-  transform-origin: 1px 110px;
+.yearly__preview-star {
+  fill: var(--color-gold);
+  opacity: 0.85;
+  animation: star-twinkle 2.4s ease-in-out infinite;
 }
 
-.yearly__preview-tick::before {
-  display: block;
-  width: 2px;
-  height: 9px;
-  border-radius: 2px;
-  background: rgba(232, 200, 116, 0.64);
-  content: '';
-}
-
-.yearly__preview-card {
-  position: absolute;
-  z-index: 2;
-  display: grid;
-  width: 44px;
-  gap: 3px;
-  transform: translate(-50%, -50%);
-  color: var(--color-text-muted);
-  font-family: var(--font-display);
-  font-size: 8px;
-  letter-spacing: 0.35px;
-  text-align: center;
-  animation: star-twinkle 3s ease-in-out infinite;
-}
-
-.yearly__preview-card img {
-  display: block;
-  width: 100%;
-  border: 1px solid rgba(232, 200, 116, 0.26);
-  border-radius: 5px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.38);
-}
-
-.yearly__preview-card--overview {
-  z-index: 3;
-  width: 62px;
-  color: var(--color-gold);
+@keyframes preview-draw {
+  from { stroke-dashoffset: 140; }
+  to { stroke-dashoffset: 0; }
 }
 
 @keyframes star-twinkle {
-  0%, 100% { filter: brightness(0.84); }
-  50% { filter: brightness(1.16); }
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 1; }
 }
 
 .yearly {
@@ -800,7 +755,8 @@ function resetResult() {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .yearly__preview-card {
+  .yearly__preview-path,
+  .yearly__preview-star {
     animation: none;
   }
 

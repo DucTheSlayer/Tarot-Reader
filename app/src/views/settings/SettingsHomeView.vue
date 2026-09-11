@@ -2,7 +2,9 @@
 import { useI18n } from 'vue-i18n'
 import HomeModeTabs from '../../components/common/HomeModeTabs.vue'
 import MysticalBackground from '../../components/common/MysticalBackground.vue'
+import { config } from '../../../config'
 const { t, locale } = useI18n()
+const showAdQa = config.settings?.dev === true
 </script>
 
 <template>
@@ -19,6 +21,15 @@ const { t, locale } = useI18n()
       <RouterLink to="/settings/guide" class="settings-row">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1v15M5 8h4M5 12h4M15 8h4M15 12h4" /></svg>
         <span class="settings-row__label">{{ t('onboarding.guideTitle') }}</span>
+        <span class="settings-row__arrow" aria-hidden="true">›</span>
+      </RouterLink>
+      <RouterLink v-if="showAdQa" to="/settings/ad-test" class="settings-row">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="3" />
+          <path d="M7 15V9h2.5a2 2 0 0 1 0 4H7M15 9h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2V9Z" />
+        </svg>
+        <span class="settings-row__label">{{ t('adsQa.settingsLabel') }}</span>
+        <span class="settings-row__value">DEV</span>
         <span class="settings-row__arrow" aria-hidden="true">›</span>
       </RouterLink>
     </nav>

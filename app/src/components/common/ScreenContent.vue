@@ -39,6 +39,7 @@ withDefaults(defineProps<{ spread?: boolean }>(), { spread: false })
   margin-top: 0;
   margin-bottom: 0;
   flex: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: clamp(28px, 5vh, 52px);
 }
 </style>

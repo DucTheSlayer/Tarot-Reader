@@ -1,27 +1,67 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
+import { showInterstitialAtNaturalBreak } from '../../services/advertising'
+
 const { t } = useI18n()
-withDefaults(defineProps<{ backTo: string; changeQuestion?: boolean }>(), {
+const router = useRouter()
+const props = withDefaults(defineProps<{ backTo: string; changeQuestion?: boolean }>(), {
   changeQuestion: false
 })
 
 const emit = defineEmits<{ 'draw-again': []; 'change-question': [] }>()
+const isNavigating = ref(false)
+
+async function runAfterNaturalBreak(action: () => void | Promise<void>): Promise<void> {
+  if (isNavigating.value) return
+  isNavigating.value = true
+  try {
+    await showInterstitialAtNaturalBreak()
+    await action()
+  } finally {
+    isNavigating.value = false
+  }
+}
+
+function drawAgain(): void {
+  void runAfterNaturalBreak(() => emit('draw-again'))
+}
+
+function goBack(): void {
+  void runAfterNaturalBreak(async () => {
+    await router.push(props.backTo)
+  })
+}
 </script>
 
 <template>
   <div class="bar">
-    <button type="button" class="bar__btn bar__btn--primary" @click="emit('draw-again')">
+    <button
+      type="button"
+      class="bar__btn bar__btn--primary"
+      :disabled="isNavigating"
+      @click="drawAgain"
+    >
       {{ t('common.drawAgain') }}
     </button>
     <button
       v-if="changeQuestion"
       type="button"
       class="bar__btn bar__btn--ghost"
+      :disabled="isNavigating"
       @click="emit('change-question')"
     >
       {{ t('common.changeQuestion') }}
     </button>
-    <router-link :to="backTo" class="bar__btn bar__btn--ghost">{{ t('common.back') }}</router-link>
+    <button
+      type="button"
+      class="bar__btn bar__btn--ghost"
+      :disabled="isNavigating"
+      @click="goBack"
+    >
+      {{ t('common.back') }}
+    </button>
   </div>
 </template>
 
@@ -60,5 +100,10 @@ const emit = defineEmits<{ 'draw-again': []; 'change-question': [] }>()
   background: transparent;
   border: 1px solid var(--color-border);
   color: var(--color-text-muted);
+}
+
+.bar__btn:disabled {
+  cursor: wait;
+  opacity: 0.62;
 }
 </style>
