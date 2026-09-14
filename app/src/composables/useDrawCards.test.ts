@@ -17,6 +17,15 @@ describe('drawCardsFromDeck', () => {
     expect(drawCardsFromDeck(createDeck(3), 5, () => 0.5)).toHaveLength(3)
   })
 
+  it('defensively removes duplicate card IDs before drawing', () => {
+    const deck = createDeck(4)
+    const sourceWithDuplicates = [deck[0], deck[1], deck[0], deck[2], deck[1], deck[3]]
+    const result = drawCardsFromDeck(sourceWithDuplicates, 6, () => 0.25)
+
+    expect(result).toHaveLength(4)
+    expect(new Set(result.map((card) => card.id))).toHaveLength(4)
+  })
+
   it('rejects invalid card counts', () => {
     expect(() => drawCardsFromDeck(createDeck(3), -1)).toThrow(
       'Card count must be a non-negative integer'

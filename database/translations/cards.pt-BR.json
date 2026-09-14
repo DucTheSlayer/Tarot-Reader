@@ -1,0 +1,470 @@
+{
+  "fool": {
+    "name": "O Louco",
+    "meaning": "Uma página em branco e um salto de fé — uma nova jornada começa com o coração aberto.",
+    "advice": "Confie no caminho à sua frente e dê o primeiro passo, mesmo sem todas as respostas.",
+    "yesNoMeaning": "Um novo começo raramente traz uma resposta fixa — o resultado depende do passo que você dá."
+  },
+  "magician": {
+    "name": "O Mágico",
+    "meaning": "Você possui todas as ferramentas de que precisa. Foque sua vontade e transforme intenção em ação.",
+    "advice": "Use suas habilidades e recursos deliberadamente — agora é o momento de fazer acontecer.",
+    "yesNoMeaning": "Você já possui tudo o que é necessário — a energia apoia avançar com foco."
+  },
+  "high-priestess": {
+    "name": "A Sacerdotisa",
+    "meaning": "Sabedoria silenciosa se esconde abaixo da superfície. Ouça sua intuição e voz interior.",
+    "advice": "Faça uma pausa, volte-se para dentro e deixe seus instintos guiarem você antes de agir.",
+    "yesNoMeaning": "A resposta está escondida abaixo da superfície por enquanto — confie na sua intuição em vez de forçar um sim ou não claro."
+  },
+  "empress": {
+    "name": "A Imperatriz",
+    "meaning": "Crescimento, abundância e energia de cuidado estão ao seu redor. Deixe a beleza e a atenção florescerem.",
+    "advice": "Seja paciente e generoso — crie com amor e deixe as coisas amadurecerem naturalmente.",
+    "yesNoMeaning": "Crescimento, abundância e energia de cuidado apoiam seu desejo — a resposta é um sim silencioso."
+  },
+  "emperor": {
+    "name": "O Imperador",
+    "meaning": "Estrutura, autoridade e liderança constante. Construa sobre terreno sólido com disciplina.",
+    "advice": "Assuma o controle com um plano claro; limites firmes trazem estabilidade duradoura.",
+    "yesNoMeaning": "Estrutura, autoridade e disciplina constante estão por trás de um sim confiante."
+  },
+  "hierophant": {
+    "name": "O Hierofante",
+    "meaning": "Tradição e orientação confiável oferecem um caminho seguro. Aprenda com o que veio antes.",
+    "advice": "Siga a sabedoria estabelecida e busque conselho daqueles em quem você confia.",
+    "yesNoMeaning": "Tradição e orientação confiável apontam para um sim confiável — apoie-se no que já se provou."
+  },
+  "lovers": {
+    "name": "Os Amantes",
+    "meaning": "Um vínculo significativo ou uma escolha importante. Siga o que seu coração realmente valoriza.",
+    "advice": "Escolha com honestidade e alinhamento — a conexão se aprofunda quando você é sincero.",
+    "yesNoMeaning": "Seu coração e valores estão alinhados aqui — a resposta é sim, especialmente quando você escolhe com honestidade."
+  },
+  "chariot": {
+    "name": "O Carro",
+    "meaning": "Força de vontade e impulso te carregam adiante. Mantenha o foco e você prevalecerá.",
+    "advice": "Mantenha seus olhos no objetivo e conduza com confiança através de cada obstáculo.",
+    "yesNoMeaning": "Força de vontade e impulso estão ao seu lado — um sim focado, desde que você permaneça comprometido."
+  },
+  "strength": {
+    "name": "Força",
+    "meaning": "O verdadeiro poder é gentil — paciência, coragem e compaixão dominam qualquer desafio.",
+    "advice": "Lidere com força tranquila; uma mão suave é frequentemente a mais forte.",
+    "yesNoMeaning": "Coragem gentil e resolução paciente fazem deste um sim — conduza com calma, não com força."
+  },
+  "hermit": {
+    "name": "O Eremita",
+    "meaning": "Hora de dar um passo atrás e buscar clareza interior. A solidão agora traz respostas mais profundas.",
+    "advice": "Volte-se para dentro, reflita e deixe o silêncio revelar o que você realmente precisa.",
+    "yesNoMeaning": "Ainda não — a carta pede que você dê um passo atrás e encontre clareza interior antes de agir."
+  },
+  "wheel-of-fortune": {
+    "name": "Roda da Fortuna",
+    "meaning": "A sorte muda e os ciclos se alteram. O que muda agora faz parte de um ritmo maior.",
+    "advice": "Siga a maré com flexibilidade — abrace a mudança, seja ela boa ou não.",
+    "yesNoMeaning": "A sorte está mudando — o resultado depende de como você lida com a mudança, em vez de um sim ou não fixo."
+  },
+  "justice": {
+    "name": "Justiça",
+    "meaning": "Verdade e justiça prevalecem. Causa e efeito agora entram em equilíbrio.",
+    "advice": "Aja com honestidade e pese ambos os lados; a balança se equilibrará de forma justa.",
+    "yesNoMeaning": "As balanças ainda estão pesando — a resposta justa depende dos fatos e da sua honestidade."
+  },
+  "hanged-man": {
+    "name": "O Enforcado",
+    "meaning": "Uma pausa necessária. Liberte o controle e veja a situação de um novo ângulo.",
+    "advice": "Pare de insistir — entregue-se ao momento e deixe uma nova perspectiva chegar.",
+    "yesNoMeaning": "Pausa é necessária primeiro — forçar isso agora só atrasaria uma resposta mais clara."
+  },
+  "death": {
+    "name": "Morte",
+    "meaning": "Um fim abre caminho para a renovação. Liberte o que já cumpriu seu tempo.",
+    "advice": "Deixe ir sem arrependimentos; uma transformação profunda está abrindo uma nova porta.",
+    "yesNoMeaning": "Um fim está abrindo caminho — o caminho atual está se fechando para que um novo possa começar."
+  },
+  "temperance": {
+    "name": "Temperança",
+    "meaning": "Equilíbrio e paciência trazem harmonia. Misture opostos com graça.",
+    "advice": "Mova-se com moderação e mantenha a calma — passos firmes alcançam o destino.",
+    "yesNoMeaning": "Equilíbrio e paciência trazem harmonia — um sim ponderado, dado um passo firme de cada vez."
+  },
+  "devil": {
+    "name": "O Diabo",
+    "meaning": "Cuidado com apego, tentação ou um padrão restritivo. Reconheça as correntes.",
+    "advice": "Nomeie o que te mantém preso e recupere sua liberdade — a corrente só prende se você permitir.",
+    "yesNoMeaning": "O apego ou um padrão vinculativo impede — ainda não, até que a corrente seja nomeada e quebrada."
+  },
+  "tower": {
+    "name": "A Torre",
+    "meaning": "A mudança súbita destrói o falso e revela a verdade. O que cai nunca foi feito para permanecer.",
+    "advice": "Aceite a turbulência; dos escombros pode-se construir uma base mais clara.",
+    "yesNoMeaning": "A mudança súbita está destruindo o antigo — o terreno deve se acomodar antes que um sim firme seja possível."
+  },
+  "star": {
+    "name": "A Estrela",
+    "meaning": "Esperança, cura e inspiração tranquila renovam seu espírito após a tempestade.",
+    "advice": "Confie na luz à frente e continue acreditando — seus desejos estão ao alcance.",
+    "yesNoMeaning": "Esperança e renovação tranquila apontam para o sim — confie na luz à frente e mantenha seu desejo vivo."
+  },
+  "moon": {
+    "name": "A Lua",
+    "meaning": "Ilusão e incerteza confundem o caminho. Confie na sua intuição, não nas aparências.",
+    "advice": "Desacelere e olhe mais fundo; a clareza virá quando a névoa se dissipar.",
+    "yesNoMeaning": "Ilusão e incerteza confundem o caminho — a resposta não é clara até você olhar além das aparências."
+  },
+  "sun": {
+    "name": "O Sol",
+    "meaning": "Alegria, sucesso e clareza radiante. Tudo está brilhante e cheio de vida.",
+    "advice": "Celebre e brilhe — a energia positiva atrai os resultados que você deseja.",
+    "yesNoMeaning": "Alegria e clareza radiante confirmam um sim brilhante — tudo está funcionando a seu favor."
+  },
+  "judgement": {
+    "name": "Julgamento",
+    "meaning": "Um chamado para se erguer, se renovar e ser honesto consigo mesmo. Um veredito de despertar.",
+    "advice": "Responda ao chamado com coragem; perdoe o passado e entre no seu próximo capítulo.",
+    "yesNoMeaning": "Um chamado para se erguer e se renovar — sim, especialmente quando você perdoa o passado e responde honestamente."
+  },
+  "world": {
+    "name": "O Mundo",
+    "meaning": "Conclusão e realização — um ciclo se fecha em total plenitude.",
+    "advice": "Celebre o que você conquistou; a porta está aberta para um mundo mais amplo.",
+    "yesNoMeaning": "Conclusão e plenitude marcam este como um sim realizado — o ciclo se fecha a seu favor."
+  },
+  "ace-of-wands": {
+    "name": "Ás de Paus",
+    "meaning": "Uma faísca de inspiração abre um caminho criativo ousado.",
+    "advice": "Comece enquanto a energia está fresca e dê à ideia um verdadeiro primeiro passo.",
+    "yesNoMeaning": "O Ás de Paus aponta sim: comece enquanto a energia está fresca e dê à ideia um primeiro passo real."
+  },
+  "two-of-wands": {
+    "name": "Dois de Paus",
+    "meaning": "Um futuro está se formando através do planejamento e da escolha de um direcionamento.",
+    "advice": "Olhe além do que é familiar, então comprometa-se com o caminho com espaço para crescer.",
+    "yesNoMeaning": "O Dois de Paus permanece condicional: olhe além do que é familiar, então comprometa-se com o caminho deixando espaço para crescer."
+  },
+  "three-of-wands": {
+    "name": "Três de Paus",
+    "meaning": "O esforço inicial se expande à medida que oportunidades e horizontes mais amplos surgem.",
+    "advice": "Continue construindo e esteja pronto para receber a resposta que seu trabalho atrai.",
+    "yesNoMeaning": "O Três de Paus inclina-se para o sim: continue construindo e esteja pronto para receber a resposta que seu trabalho atrai."
+  },
+  "four-of-wands": {
+    "name": "Quatro de Paus",
+    "meaning": "Estabilidade, boas-vindas e celebração compartilhada criam uma base sólida.",
+    "advice": "Marque o marco e permita que pessoas de apoio compartilhem deste momento.",
+    "yesNoMeaning": "O Quatro de Paus inclina-se para sim: marque o marco e deixe que pessoas apoiadoras compartilhem disso."
+  },
+  "five-of-wands": {
+    "name": "Cinco de Paus",
+    "meaning": "Objetivos concorrentes criam atrito, ruído ou um teste de confiança.",
+    "advice": "Transforme a rivalidade em prática útil e recuse conflitos que não têm propósito.",
+    "yesNoMeaning": "O Cinco de Paus permanece condicional: transforme a rivalidade em prática útil e recuse conflitos que não têm propósito."
+  },
+  "six-of-wands": {
+    "name": "Seis de Varinhas",
+    "meaning": "O reconhecimento segue o esforço determinado e o progresso visível.",
+    "advice": "Aceite o incentivo, mas mantenha sua confiança vinculada ao trabalho honesto.",
+    "yesNoMeaning": "O Seis de Paus tende para sim: aceite o incentivo, mas mantenha sua confiança vinculada ao trabalho honesto."
+  },
+  "seven-of-wands": {
+    "name": "Sete de Paus",
+    "meaning": "Você mantém um terreno valioso enquanto a pressão testa sua determinação.",
+    "advice": "Defenda o que importa com limites claros em vez de lutar contra todos os desafios.",
+    "yesNoMeaning": "O Sete de Paus tende para sim: defenda o que importa com limites claros em vez de lutar contra todos os desafios."
+  },
+  "eight-of-wands": {
+    "name": "Oito de Paus",
+    "meaning": "Os eventos se aceleram, mensagens chegam e o impulso elimina o atraso.",
+    "advice": "Aja prontamente e mantenha a comunicação direta enquanto o caminho estiver aberto.",
+    "yesNoMeaning": "O Oito de Paus aponta sim: aja prontamente e mantenha a comunicação direta enquanto o caminho estiver aberto."
+  },
+  "nine-of-wands": {
+    "name": "Nove de Paus",
+    "meaning": "A resiliência é forte, embora tensões passadas façam você ficar atento.",
+    "advice": "Proteja sua energia e dê o próximo passo sem esperar que toda ferida se repita.",
+    "yesNoMeaning": "O Nove de Paus permanece condicional: proteja sua energia e dê o próximo passo sem esperar que cada ferida se repita."
+  },
+  "ten-of-wands": {
+    "name": "Dez de Paus",
+    "meaning": "A responsabilidade se tornou pesada e o sucesso agora carrega um fardo.",
+    "advice": "Delegue, simplifique e deixe de lado trabalhos que não são mais realmente seus.",
+    "yesNoMeaning": "O Dez de Paus tende para não: delegue, simplifique e largue o trabalho que não é mais verdadeiramente seu."
+  },
+  "page-of-wands": {
+    "name": "Pajem de Paus",
+    "meaning": "A curiosidade traz uma mensagem animada, experimento ou novo interesse criativo.",
+    "advice": "Explore com coragem e deixe que a energia de iniciante o ensine por meio da ação.",
+    "yesNoMeaning": "O Pajem de Paus tende ao sim: explore com coragem e deixe que a energia de iniciante ensine você por meio da ação."
+  },
+  "knight-of-wands": {
+    "name": "Cavaleiro de Paus",
+    "meaning": "A paixão avança rapidamente, trazendo aventura e possível impaciência.",
+    "advice": "Use o momentum, mas escolha uma direção antes que a velocidade disperse seu esforço.",
+    "yesNoMeaning": "O Cavaleiro de Paus permanece condicional: use o impulso, mas escolha uma direção antes que a velocidade disperse seu esforço."
+  },
+  "queen-of-wands": {
+    "name": "Rainha de Paus",
+    "meaning": "Confiança calorosa e independência criativa atraem os outros para a sua visão.",
+    "advice": "Confie em sua presença, incentive os outros e não diminua sua ambição.",
+    "yesNoMeaning": "A Rainha de Paus tende para sim: confie na sua presença, encoraje os outros e não diminua sua ambição."
+  },
+  "king-of-wands": {
+    "name": "Rei de Paus",
+    "meaning": "Visão madura transforma inspiração em liderança decisiva e ética.",
+    "advice": "Lidere a partir de um propósito maior e dê aos outros espaço para contribuir.",
+    "yesNoMeaning": "O Rei de Paus inclina-se para sim: lidere a partir de um propósito maior e dê aos outros espaço para contribuir."
+  },
+  "ace-of-cups": {
+    "name": "Ás de Copas",
+    "meaning": "O coração se abre para novo afeto, compaixão e renovação emocional.",
+    "advice": "Receba o sentimento honestamente e deixe o cuidado fluir sem forçar um resultado.",
+    "yesNoMeaning": "O Ás de Copas indica sim: receba o sentimento honestamente e deixe o cuidado fluir sem forçar um resultado."
+  },
+  "two-of-cups": {
+    "name": "Dois de Copas",
+    "meaning": "O reconhecimento mútuo cria parceria, atração ou acordo sincero.",
+    "advice": "Encontre a outra pessoa como igual e fale com o coração.",
+    "yesNoMeaning": "O Dois de Copas inclina-se sim: encontre a outra pessoa como igual e fale do coração."
+  },
+  "three-of-cups": {
+    "name": "Três de Copas",
+    "meaning": "Amizade, comunidade e alegria compartilhada trazem apoio emocional.",
+    "advice": "Celebre junto e lembre-se de quem realmente aparece para você.",
+    "yesNoMeaning": "O Três de Copas tende para sim: celebre junto e lembre-se de quem realmente está presente para você."
+  },
+  "four-of-cups": {
+    "name": "Quatro de Copas",
+    "meaning": "Retirada emocional torna difícil perceber um presente disponível.",
+    "advice": "Pause a comparação e olhe novamente para o que está sendo oferecido silenciosamente.",
+    "yesNoMeaning": "O Quatro de Copas inclina-se para não: pause a comparação e olhe novamente para o que está sendo oferecido silenciosamente."
+  },
+  "five-of-cups": {
+    "name": "Cinco de Copas",
+    "meaning": "A perda chama atenção para o que derramou enquanto algo significativo permanece.",
+    "advice": "Honre a decepção, depois volte-se para o apoio que ainda está presente.",
+    "yesNoMeaning": "O Cinco de Copas inclina-se para não: honre a decepção, depois volte-se para o apoio que ainda está presente."
+  },
+  "six-of-cups": {
+    "name": "Seis de Copas",
+    "meaning": "Memória, inocência ou um vínculo familiar retorna com um calor suave.",
+    "advice": "Receba a bondade do passado sem fingir que você deve viver lá novamente.",
+    "yesNoMeaning": "O Seis de Copas tende para sim: receba a bondade do passado sem fingir que precisa viver lá de novo."
+  },
+  "seven-of-cups": {
+    "name": "Sete de Copas",
+    "meaning": "Muitas possibilidades atraentes confundem a diferença entre visão e ilusão.",
+    "advice": "Reduza as escolhas e teste um sonho contra a realidade antes de se comprometer.",
+    "yesNoMeaning": "O Sete de Copas ainda não está claro: restrinja as escolhas e teste um sonho contra a realidade antes de se comprometer."
+  },
+  "eight-of-cups": {
+    "name": "Oito de Copas",
+    "meaning": "Uma situação outrora significativa não nutre mais o coração.",
+    "advice": "Saia com honestidade e siga em direção à realização mais profunda que você agora precisa.",
+    "yesNoMeaning": "O Oito de Copas aponta não: saia com honestidade e mova-se em direção à realização mais profunda que você agora precisa."
+  },
+  "nine-of-cups": {
+    "name": "Nove de Copas",
+    "meaning": "Satisfação e gratidão fazem um desejo sincero parecer próximo.",
+    "advice": "Aproveite o que está aqui e pergunte se o desejo também serve aos seus valores mais profundos.",
+    "yesNoMeaning": "O Nove de Copas inclina-se para sim: aproveite o que está aqui e pergunte se o desejo também serve aos seus valores mais profundos."
+  },
+  "ten-of-cups": {
+    "name": "Dez de Copas",
+    "meaning": "Harmonia emocional, pertencimento e conexão duradoura cercam o lar.",
+    "advice": "Nutra os laços que tornam a alegria sustentável e compartilhada.",
+    "yesNoMeaning": "O Dez de Copas tende para sim: nutra os laços que tornam a alegria sustentável e compartilhada."
+  },
+  "page-of-cups": {
+    "name": "Pajem de Copas",
+    "meaning": "Uma mensagem carinhosa ou descoberta intuitiva convida à abertura emocional.",
+    "advice": "Fique curioso sobre o sentimento e responda com sinceridade, em vez de suposições.",
+    "yesNoMeaning": "O Pajem de Copas permanece condicional: mantenha-se curioso sobre o sentimento e responda com sinceridade em vez de presunção."
+  },
+  "knight-of-cups": {
+    "name": "Cavaleiro de Copas",
+    "meaning": "O romance, a imaginação ou um ideal movimenta o coração para frente.",
+    "advice": "Siga o convite, mas mantenha um pé no chão enquanto as promessas se desenrolam.",
+    "yesNoMeaning": "O Cavaleiro de Copas inclina-se para sim: siga o convite, mas mantenha um pé no chão enquanto as promessas se desenrolam."
+  },
+  "queen-of-cups": {
+    "name": "Rainha de Copas",
+    "meaning": "Empatia profunda e intuição criam um espaço calmo para a verdade.",
+    "advice": "Ouça com compaixão enquanto mantém os limites que mantêm o cuidado saudável.",
+    "yesNoMeaning": "A Rainha de Copas tende ao sim: escute com compaixão enquanto preserva os limites que mantêm o cuidado saudável."
+  },
+  "king-of-cups": {
+    "name": "Rei de Copas",
+    "meaning": "Maturidade emocional estabiliza fortes sentimentos sem suprimi-los.",
+    "advice": "Responda com compaixão e autocontrole, especialmente quando os outros estiverem reativos.",
+    "yesNoMeaning": "O Rei de Copas inclina-se para sim: responda com compaixão e autocontrole, especialmente quando os outros estão reativos."
+  },
+  "ace-of-swords": {
+    "name": "Ás de Espadas",
+    "meaning": "Uma percepção clara atravessa a confusão e revela uma nova verdade.",
+    "advice": "Nomeie o problema claramente e use a clareza a serviço de uma decisão justa.",
+    "yesNoMeaning": "O Ás de Espadas aponta sim: nomeie a questão claramente e use a clareza a serviço de uma decisão justa."
+  },
+  "two-of-swords": {
+    "name": "Dois de Espadas",
+    "meaning": "Um impasse cauteloso atrasa uma escolha que não pode permanecer suspensa para sempre.",
+    "advice": "Remova a venda suavemente, reúna o fato faltante e decida a partir do equilíbrio.",
+    "yesNoMeaning": "O Dois de Espadas ainda não está claro: remova a venda suavemente, reúna o fato que falta e decida a partir do equilíbrio."
+  },
+  "three-of-swords": {
+    "name": "Três de Espadas",
+    "meaning": "Uma verdade dolorosa, separação ou decepção pede para ser reconhecida.",
+    "advice": "Deixe o sentimento percorrer você e evite transformar a dor em uma história permanente.",
+    "yesNoMeaning": "O Três de Espadas inclina-se para não: deixe o sentimento passar por você e evite transformar a dor em uma história permanente."
+  },
+  "four-of-swords": {
+    "name": "Quatro de Espadas",
+    "meaning": "Descanso e tranquilidade mental são necessários após pressão ou conflito.",
+    "advice": "Pausa antes de responder; a recuperação é produtiva quando restaura o pensamento claro.",
+    "yesNoMeaning": "O Quatro de Espadas inclina-se para não: pause antes de responder; a recuperação é produtiva quando restaura o pensamento claro."
+  },
+  "five-of-swords": {
+    "name": "Cinco de Espadas",
+    "meaning": "Conflito pode produzir uma vitória vazia ou deixar a confiança abalada.",
+    "advice": "Escolha a dignidade em vez de vencer e afaste-se de táticas que custam muito.",
+    "yesNoMeaning": "O Cinco de Espadas inclina-se para não: escolha dignidade em vez de vencer e afaste-se de táticas que custam demais."
+  },
+  "six-of-swords": {
+    "name": "Seis de Espadas",
+    "meaning": "Uma passagem difícil avança gradualmente em direção a condições mais calmas.",
+    "advice": "Pegue o que você aprendeu, aceite apoio e continue se afastando da turbulência.",
+    "yesNoMeaning": "O Seis de Espadas tende para sim: leve o que você aprendeu, aceite apoio e continue se afastando da turbulência."
+  },
+  "seven-of-swords": {
+    "name": "Sete de Espadas",
+    "meaning": "Estratégia, segredo ou evasão complicam o caminho.",
+    "advice": "Aja com inteligência, mas de forma transparente; atalhos que traem a confiança voltarão como problemas.",
+    "yesNoMeaning": "O Sete de Espadas tende para não: aja de forma inteligente, mas transparente; atalhos que traem a confiança voltarão como problemas."
+  },
+  "eight-of-swords": {
+    "name": "Oito de Espadas",
+    "meaning": "O medo e crenças restritivas tornam difícil ver as opções disponíveis.",
+    "advice": "Questione o pensamento que diz que você está preso e tome uma pequena ação libertadora.",
+    "yesNoMeaning": "O Oito de Espadas aponta não: questione o pensamento que diz que você está preso e tome uma pequena ação libertadora."
+  },
+  "nine-of-swords": {
+    "name": "Nove de Espadas",
+    "meaning": "A ansiedade amplia o perigo no escuro e exaure a mente.",
+    "advice": "Traga o medo para a luz do dia, busque apoio e separe fatos de resultados imaginados.",
+    "yesNoMeaning": "O Nove de Espadas inclina-se para não: traga o medo à luz do dia, busque apoio e separe os fatos dos resultados imaginados."
+  },
+  "ten-of-swords": {
+    "name": "Dez de Espadas",
+    "meaning": "Um ciclo doloroso chega ao seu limite final e não pode continuar sem mudanças.",
+    "advice": "Aceite o fim, proteja sua recuperação e permita que um novo começo surja.",
+    "yesNoMeaning": "O Dez de Espadas tende para não: aceite o fim, proteja sua recuperação e permita que um novo começo surja."
+  },
+  "page-of-swords": {
+    "name": "Pajem de Espadas",
+    "meaning": "Alerta a curiosidade busca fatos, faz perguntas e observa mudanças.",
+    "advice": "Pesquise cuidadosamente e fale com precisão em vez de reagir a cada sinal.",
+    "yesNoMeaning": "O Pajem de Espadas permanece condicional: pesquise cuidadosamente e fale com precisão, em vez de reagir a todo sinal."
+  },
+  "knight-of-swords": {
+    "name": "Cavaleiro de Espadas",
+    "meaning": "O intelecto focado se move rapidamente e enfrenta obstáculos diretamente.",
+    "advice": "Avance com coragem, mas devagar o suficiente para ouvir o que sua certeza pode estar perdendo.",
+    "yesNoMeaning": "O Cavaleiro de Espadas permanece condicional: avance com coragem, mas devagar o suficiente para ouvir o que sua certeza pode estar perdendo."
+  },
+  "queen-of-swords": {
+    "name": "Rainha de Espadas",
+    "meaning": "Percepção clara e limites honestos cortam a confusão.",
+    "advice": "Diga o que é verdade com compaixão e deixe que a experiência te refine, não te endureça.",
+    "yesNoMeaning": "A Rainha de Espadas tende ao sim: diga o que é verdadeiro com compaixão e deixe que a experiência te refine, não endureça."
+  },
+  "king-of-swords": {
+    "name": "Rei de Espadas",
+    "meaning": "Razão, justiça e julgamento disciplinado guiam uma decisão consequencial.",
+    "advice": "Use evidências, defina o padrão e mantenha o viés pessoal fora do veredicto.",
+    "yesNoMeaning": "O Rei de Espadas inclina-se para sim: use evidências, defina o padrão e mantenha o viés pessoal fora do veredicto."
+  },
+  "ace-of-pentacles": {
+    "name": "Ás de Ouros",
+    "meaning": "Uma oportunidade tangível oferece a semente da prosperidade, trabalho ou bem-estar.",
+    "advice": "Baseie a oportunidade em um plano prático e cuide dela de forma consistente.",
+    "yesNoMeaning": "O Ás de Ouros indica sim: concretize a oportunidade em um plano prático e cuide dela de forma consistente."
+  },
+  "two-of-pentacles": {
+    "name": "Dois de Ouros",
+    "meaning": "Várias prioridades se movem ao mesmo tempo e exigem equilíbrio flexível.",
+    "advice": "Ajuste o ritmo, proteja o essencial e evite prometer mais do que você pode carregar.",
+    "yesNoMeaning": "O Dois de Ouros permanece condicional: ajuste o ritmo, proteja o essencial e evite prometer mais do que pode carregar."
+  },
+  "three-of-pentacles": {
+    "name": "Três de Ouros",
+    "meaning": "A habilidade cresce por meio da colaboração, feedback e um trabalho artesanal cuidadoso.",
+    "advice": "Contribua com sua força, respeite a expertise e construa um padrão compartilhado.",
+    "yesNoMeaning": "O Três de Ouros inclina-se para sim: contribua com sua força, respeite a experiência e construa de acordo com um padrão compartilhado."
+  },
+  "four-of-pentacles": {
+    "name": "Quatro de Ouros",
+    "meaning": "Apegar-se fortemente à segurança pode preservar recursos, mas restringe o fluxo saudável.",
+    "advice": "Proteja o que importa sem deixar que o medo tome todas as suas decisões.",
+    "yesNoMeaning": "O Quatro de Ouros permanece condicional: proteja o que importa sem deixar que o medo tome todas as suas decisões."
+  },
+  "five-of-pentacles": {
+    "name": "Cinco de Ouros",
+    "meaning": "Tensão ou exclusão material cria preocupação e sensação de escassez.",
+    "advice": "Peça ajuda prática e perceba a porta que a dificuldade tornou fácil de ser ignorada.",
+    "yesNoMeaning": "O Cinco de Ouros inclina-se para não: peça ajuda prática e perceba a porta que a dificuldade tornou fácil de ignorar."
+  },
+  "six-of-pentacles": {
+    "name": "Seis de Pentáculos",
+    "meaning": "Recursos são trocados, levantando questões de generosidade, poder e justiça.",
+    "advice": "Dar ou receber com termos claros para que o apoio preserve a dignidade de ambos os lados.",
+    "yesNoMeaning": "O Seis de Ouros tende para sim: dê ou receba com termos claros para que o apoio preserve a dignidade de ambos os lados."
+  },
+  "seven-of-pentacles": {
+    "name": "Sete de Ouros",
+    "meaning": "Investimento paciente chega a um ponto de avaliação antes do próximo esforço.",
+    "advice": "Revise o que está crescendo, melhore o método e dê tempo para resultados valiosos.",
+    "yesNoMeaning": "O Sete de Ouros permanece condicional: reveja o que está crescendo, melhore o método e dê tempo para resultados que valham a pena."
+  },
+  "eight-of-pentacles": {
+    "name": "Oito de Ouros",
+    "meaning": "A repetição focada desenvolve domínio e resultados confiáveis.",
+    "advice": "Pratique a habilidade essencial, aceite correções e deixe a qualidade se acumular.",
+    "yesNoMeaning": "O Oito de Ouros aponta sim: pratique a habilidade essencial, aceite correções e deixe a qualidade se acumular."
+  },
+  "nine-of-pentacles": {
+    "name": "Nove de Ouros",
+    "meaning": "Autossuficiência e conforto cultivado refletem progresso disciplinado.",
+    "advice": "Aproveite o que você construiu e mantenha a independência conectada à gratidão.",
+    "yesNoMeaning": "O Nove de Ouros inclina-se para sim: aproveite o que você construiu e mantenha a independência conectada à gratidão."
+  },
+  "ten-of-pentacles": {
+    "name": "Dez de Ouros",
+    "meaning": "A segurança a longo prazo cresce através de legados, família e fundamentos compartilhados.",
+    "advice": "Planeje além da vitória imediata e proteja o que pode apoiar os outros ao longo do tempo.",
+    "yesNoMeaning": "O Dez de Ouros tende para sim: planeje além da vitória imediata e proteja o que pode apoiar outros ao longo do tempo."
+  },
+  "page-of-pentacles": {
+    "name": "Pajem de Ouros",
+    "meaning": "Uma mensagem prática convida ao estudo, planejamento ou a um novo empreendimento fundamentado.",
+    "advice": "Aprenda o básico, defina a próxima tarefa e prove a ideia através de trabalho constante.",
+    "yesNoMeaning": "O Pajem de Ouros tende ao sim: aprenda o básico, defina a próxima tarefa e comprove a ideia por meio de trabalho constante."
+  },
+  "knight-of-pentacles": {
+    "name": "Cavaleiro de Ouros",
+    "meaning": "O esforço confiável avança lentamente, mas raramente abandona a tarefa.",
+    "advice": "Mantenha a rotina honesta e consistente; progresso importa mais do que entusiasmo.",
+    "yesNoMeaning": "O Cavaleiro de Ouros inclina-se para sim: mantenha a rotina honesta e consistente; o progresso importa mais do que a empolgação."
+  },
+  "queen-of-pentacles": {
+    "name": "Rainha de Ouros",
+    "meaning": "O cuidado engenhoso cria conforto, saúde e abundância prática.",
+    "advice": "Nutra pessoas e planos de maneiras que permaneçam sustentáveis para você.",
+    "yesNoMeaning": "A Rainha de Ouros tende ao sim: cuide de pessoas e planos de maneiras que permaneçam sustentáveis para você."
+  },
+  "king-of-pentacles": {
+    "name": "Rei de Ouros",
+    "meaning": "A liderança material transforma a experiência em uma administração estável e generosa.",
+    "advice": "Faça a escolha de longo prazo e use o sucesso de forma responsável.",
+    "yesNoMeaning": "O Rei de Ouros inclina-se para sim: faça a escolha sólida de longo prazo e use o sucesso de forma responsável."
+  }
+}

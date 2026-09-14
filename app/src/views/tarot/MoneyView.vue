@@ -10,6 +10,7 @@ import {
 } from '../../data/spreadReadings'
 import { useDrawCards } from '../../composables/useDrawCards'
 import ScreenHeader from '../../components/common/ScreenHeader.vue'
+import ChevronIcon from '../../components/common/ChevronIcon.vue'
 import ScreenContent from '../../components/common/ScreenContent.vue'
 import CardDrawAnimation from '../../components/common/CardDrawAnimation.vue'
 import CardResultItem from '../../components/common/CardResultItem.vue'
@@ -169,7 +170,7 @@ function drawAgain() {
               :aria-label='ui("Previous step")'
               @click="goTo(activeIndex - 1)"
             >
-              ←
+              <ChevronIcon />
             </button>
             <span>{{ ui('{current} of {total}', { current: activeIndex + 1, total: cards.length }) }}</span>
             <button
@@ -178,7 +179,7 @@ function drawAgain() {
               :aria-label='ui("Next step")'
               @click="goTo(activeIndex + 1)"
             >
-              →
+              <ChevronIcon direction="right" />
             </button>
           </div>
 
@@ -446,7 +447,7 @@ function drawAgain() {
   background: var(--color-surface);
   color: var(--color-gold);
   cursor: pointer;
-  font-size: 17px;
+  font-size: 22px;
 }
 
 .money-result__nav button:disabled {

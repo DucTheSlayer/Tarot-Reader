@@ -1,6 +1,6 @@
-# App Tarot client
+# Serein Tarot client
 
-Thư mục này chứa Vue/TypeScript SPA, SQLite web runtime và Android Capacitor host của App Tarot.
+Thư mục này chứa Vue/TypeScript SPA, SQLite web runtime và Android Capacitor host của Serein Tarot.
 
 ```powershell
 npm install

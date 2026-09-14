@@ -19,7 +19,14 @@ export function drawCardsFromDeck(
     throw new Error('Card count must be a non-negative integer')
   }
 
-  return shuffle(cards, random).slice(0, count)
+  const seenIds = new Set<string>()
+  const uniqueCards = cards.filter((card) => {
+    if (seenIds.has(card.id)) return false
+    seenIds.add(card.id)
+    return true
+  })
+
+  return shuffle(uniqueCards, random).slice(0, count)
 }
 
 export function useDrawCards() {

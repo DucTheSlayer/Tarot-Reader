@@ -48,7 +48,7 @@ if (!zodiacResult || zodiacResult.values.length !== 1) {
 }
 
 const [signs, readings, version] = zodiacResult.values[0].map(Number)
-if (signs !== 12 || readings !== 36 || version !== 3) {
+if (signs !== 12 || readings !== 36 || version !== 6) {
   throw new Error(
     `Unexpected web zodiac counts/version: signs=${signs}, readings=${readings}, version=${version}`
   )

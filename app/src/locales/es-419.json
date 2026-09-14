@@ -1,0 +1,109 @@
+{
+  "onboarding": {
+    "title": "Un momento de tranquilidad para ti",
+    "guideTitle": "Cómo usar la aplicación",
+    "intro": "Explorate a ti mismo a través del Tarot y el Zodíaco. No se necesita una cuenta: puede comenzar incluso cuando no esté conectado.",
+    "stepsTitle": "Comience en tres sencillos pasos",
+    "chooseTitle": "Elige qué explorar",
+    "chooseBody": "Elija una tirada de Tarot o visite Zodiac para conocer su signo.",
+    "drawTitle": "Dibujar y revelar",
+    "drawBody": "Tómate un momento para reflexionar sobre lo que tienes en mente, luego dibuja. En la tirada de 3 cartas, toca cada carta para revelarla o elige Revelar Todo.",
+    "readTitle": "Leer y reflexionar",
+    "readBody": "Toca una carta revelada para explorar su significado. En el Tarot Anual, desliza de lado para descubrir los 5 aspectos.",
+    "tip": "¿No estás seguro de por dónde empezar? Pruebe la Tarjeta del día: una tarjeta que le acompañará durante todo el día.",
+    "note": "Estas lecturas son para reflexión y referencia.",
+    "start": "Comienza a explorar"
+  },
+  "nav": {
+    "label": "Navegación principal",
+    "tarot": "Tarot",
+    "zodiac": "Signo zodiacal",
+    "settings": "Configuraciones"
+  },
+  "common": {
+    "back": "Atrás",
+    "explore": "Explorar",
+    "drawAgain": "Dibujar de nuevo",
+    "changeQuestion": "Cambiar pregunta"
+  },
+  "tarotHome": {
+    "library": "Explora la biblioteca de 78 tarjetas",
+    "daily": "Tarjeta del día",
+    "yesNo": "Sí o No",
+    "love": "tarot del amor",
+    "money": "tarot del dinero",
+    "yearly": "Tarot anual",
+    "spread": "3 cartas extendidas"
+  },
+  "zodiacHome": {
+    "eyebrow": "Guía celestial",
+    "subtitle": "Elige tu camino cósmico",
+    "origin": "Origen del zodiaco",
+    "originDescription": "Descubre las historias detrás de los 12 signos",
+    "originKicker": "Los doce signos",
+    "horoscope": "Horóscopo",
+    "horoscopeDescription": "Pronóstico de tu día / semana / año",
+    "horoscopeKicker": "Día · Semana · Año"
+  },
+  "period": {
+    "label": "Período del horóscopo",
+    "day": "Día",
+    "week": "Semana",
+    "year": "Año"
+  },
+  "settings": {
+    "subtitle": "Haz tuyo este espacio",
+    "language": "Idioma",
+    "languageDescription": "Elija el idioma de su interfaz. Los cambios se aplican inmediatamente y se guardan en este dispositivo.",
+    "selected": "Seleccionado",
+    "saved": "Idioma actualizado",
+    "translationTitle": "Idiomas, incluidas las lecturas.",
+    "translationDescription": "Los menús, 78 cartas del Tarot, 12 perfiles del zodíaco y lecturas de Día/Semana/Año están traducidos para todos los idiomas que se muestran en esta lista. El texto incrustado en la obra de arte permanece en inglés. Estas lecturas son para la reflexión y el entretenimiento.",
+    "offline": "Tu preferencia de idioma funciona sin conexión. No se requiere cuenta."
+  },
+  "adsQa": {
+    "title": "Control de calidad de la publicidad",
+    "settingsLabel": "Publicidad de prueba",
+    "description": "Cargue cada formato de anuncio de forma independiente antes de probar su ubicación en la aplicación.",
+    "platform": "Plataforma",
+    "ready": "Listo",
+    "unavailable": "No disponible",
+    "devOnly": "Esta pantalla está disponible solo cuando el modo de desarrollo está activado.",
+    "androidNote": "El navegador solo muestra vistas previas del diseño. Instala el APK de depuración para cargar anuncios de prueba nativos.",
+    "testNotice": "Las unidades de anuncios de demostración seguras de Google están activas. Solo interactúa con anuncios marcados como Anuncio de Prueba.",
+    "controls": "Controles de pruebas de publicidad",
+    "banner": "Bandera",
+    "bannerDescription": "Prueba el banner inferior persistente y el espacio de diseño reservado.",
+    "interstitial": "intersticial",
+    "interstitialDescription": "Carga y abre un anuncio de prueba en pantalla completa sin navegación.",
+    "rewarded": "Recompensado",
+    "rewardedDescription": "Prueba las devoluciones de llamada recompensadas y omitidas usando un video de demostración.",
+    "appOpen": "Aplicación abierta",
+    "appOpenDescription": "Prueba el anuncio de pantalla completa utilizado después de un inicio en frío de un usuario que regresa.",
+    "native": "tarjeta nativa",
+    "nativeDescription": "Carga recursos de prueba nativos en una tarjeta dentro de la aplicación.",
+    "show": "Mostrar",
+    "hide": "Esconder",
+    "load": "Tarjeta de prueba de carga",
+    "loadAndShow": "Cargar y mostrar",
+    "open": "Abierto",
+    "adLabel": "Prueba Ad",
+    "webBanner": "Vista previa del diseño del banner",
+    "status": {
+      "idle": "No probado",
+      "loading": "Cargando…",
+      "shown": "Mostrado",
+      "hidden": "Oculto",
+      "failed": "No disponible",
+      "rewarded": "Recompensa otorgada",
+      "skipped": "Saltado",
+      "preview": "Vista previa web"
+    }
+  },
+  "database": {
+    "errorTitle": "Incapaz de abrir la biblioteca mística",
+    "retry": "Inténtalo de nuevo",
+    "loadingTitle": "Abriendo la biblioteca mística",
+    "loadingDescription": "Preparando 78 cartas del Tarot y 12 signos del zodíaco…"
+  }
+}

@@ -1,4 +1,4 @@
-package com.getcapacitor.myapp;
+package com.zl.eye.reading;
 
 import static org.junit.Assert.*;
 

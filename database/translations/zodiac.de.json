@@ -1,0 +1,350 @@
+{
+  "aries": {
+    "name": "Widder",
+    "dateRange": "21. März – 19. April",
+    "rulingPlanet": "Mars",
+    "summary": "Kühne Anfänge und direkte Handlung charakterisieren den Widder, dessen Funke Absicht in Schwung verwandelt.",
+    "originStory": "Widder ist mit dem goldenen Widder verbunden, der Phrixus in der griechischen Mythologie rettete. Sein Fell wurde später der Preis von Jason und den Argonauten und bewahrte das Zeichen als Symbol für Mut, Rettung und den ersten mutigen Schritt.",
+    "traits": [
+      "Mutig",
+      "Energiegeladen",
+      "Unabhängig",
+      "Direkt"
+    ],
+    "strengths": [
+      "Initiative",
+      "Selbstvertrauen",
+      "Resilienz"
+    ],
+    "challenges": [
+      "Ungeduld",
+      "Impulsivität",
+      "Schneller starten, als man durchhalten kann"
+    ],
+    "compatibleSigns": [
+      "Löwe",
+      "Schütze",
+      "Zwillinge"
+    ],
+    "reflectionPrompt": "Wähle einen mutigen Anfang und gib ihm genug Geduld, um zu wachsen."
+  },
+  "taurus": {
+    "name": "Stier",
+    "dateRange": "20. Apr – 20. Mai",
+    "rulingPlanet": "Venus",
+    "summary": "Stetig, sinnlich und geerdet, baut der Stier durch Geduld und Fürsorge bleibenden Wert auf.",
+    "originStory": "Stier erinnert daran, dass Zeus die Gestalt eines prächtigen weißen Stiers annahm, um Europa über das Meer zu tragen. Das Bild wurde mit Schönheit, Fruchtbarkeit, irdischer Fülle und Macht in Verbindung gebracht, die durch ruhige Beharrlichkeit ausgedrückt wird.",
+    "traits": [
+      "Geerdet",
+      "Loyal",
+      "Geduldig",
+      "Sinnlich"
+    ],
+    "strengths": [
+      "Zuverlässigkeit",
+      "Praktische Weisheit",
+      "Hingabe"
+    ],
+    "challenges": [
+      "Sturheit",
+      "Widerstand gegen Veränderungen",
+      "Zu lange festhalten"
+    ],
+    "compatibleSigns": [
+      "Jungfrau",
+      "Steinbock",
+      "Krebs"
+    ],
+    "reflectionPrompt": "Schütze, was wichtig ist, ohne Komfort mit Beständigkeit zu verwechseln."
+  },
+  "gemini": {
+    "name": "Zwillinge",
+    "dateRange": "21. Mai – 20. Juni",
+    "rulingPlanet": "Merkur",
+    "summary": "Neugier und Verbindung leiten die Zwillinge, die Ideen sammeln und mehr als eine Seite einer Geschichte enthüllen.",
+    "originStory": "Die Zwillinge stehen für Kastor und Pollux, unzertrennliche Zwillinge, die Unsterblichkeit teilten, statt getrennt zu bleiben. Ihr Sternbild trägt Themen wie Kameradschaft, doppelte Perspektive, Kommunikation und Bewegung zwischen den Welten.",
+    "traits": [
+      "Neugierig",
+      "Anpassungsfähig",
+      "Ausdrucksstark",
+      "Schnell denkend"
+    ],
+    "strengths": [
+      "Kommunikation",
+      "Vielseitigkeit",
+      "Schnelles Lernen"
+    ],
+    "challenges": [
+      "Unruhe",
+      "Zerstreute Konzentration",
+      "Zu viel nachdenken"
+    ],
+    "compatibleSigns": [
+      "Waage",
+      "Wassermann",
+      "Widder"
+    ],
+    "reflectionPrompt": "Lass die Neugier die Tür öffnen, bleibe dann lange genug, um zu verstehen, was du findest."
+  },
+  "cancer": {
+    "name": "Krebs",
+    "dateRange": "21. Juni – 22. Juli",
+    "rulingPlanet": "Mond",
+    "summary": "Beschützend und intuitiv schafft der Krebs Zugehörigkeit, indem er Erinnerung, Gefühl und Zuhause ehrt.",
+    "originStory": "Krebs ist mit dem Krebs Karkinos verbunden, der unter die Sterne gesetzt wurde, nachdem er während des Kampfes von Herakles mit der Hydra Loyalität gezeigt hatte. Sein Panzer und seine lunare Herrschaft spiegeln Schutz, emotionale Gezeiten und Hingabe an den eigenen inneren Kreis wider.",
+    "traits": [
+      "Intuitiv",
+      "Fürsorglich",
+      "Beschützend",
+      "Phantasievoll"
+    ],
+    "strengths": [
+      "Empathie",
+      "Loyalität",
+      "Emotionale Einsicht"
+    ],
+    "challenges": [
+      "Launenhaftigkeit",
+      "Hinter Verteidigungen zurückziehen",
+      "Alles persönlich nehmen"
+    ],
+    "compatibleSigns": [
+      "Skorpion",
+      "Fische",
+      "Stier"
+    ],
+    "reflectionPrompt": "Kümmere dich um deine innere Welt, während du eine Tür für ehrliche Verbindung offen lässt."
+  },
+  "leo": {
+    "name": "Löwe",
+    "dateRange": "23. Juli – 22. August",
+    "rulingPlanet": "Sonne",
+    "summary": "Wärme, Kreativität und großzügiger Selbstausdruck machen den Löwen zu einer natürlichen Lichtquelle.",
+    "originStory": "Leo ist an den Nemeischen Löwen gebunden, die fast unverwundbare Kreatur, die in Herakles' erstem Arbeitsauftrag besiegt wurde. In den Himmel erhoben, wurde er zu einem Symbol für Mut, souveräne Präsenz und die schöpferische Kraft der Sonne.",
+    "traits": [
+      "Warm",
+      "Kreativ",
+      "Großzügig",
+      "Zuversichtlich"
+    ],
+    "strengths": [
+      "Führung",
+      "Loyalität",
+      "Herzlicher Ausdruck"
+    ],
+    "challenges": [
+      "Stolz",
+      "Braucht Anerkennung",
+      "Dramatisierung von Rückschlägen"
+    ],
+    "compatibleSigns": [
+      "Widder",
+      "Schütze",
+      "Waage"
+    ],
+    "reflectionPrompt": "Teile dein Licht großzügig und lass andere neben dir strahlen."
+  },
+  "virgo": {
+    "name": "Jungfrau",
+    "dateRange": "23. Aug. – 22. Sep.",
+    "rulingPlanet": "Merkur",
+    "summary": "Urteilsvermögen und Dienst leiten die Jungfrau, indem sorgfältige Beobachtung in praktische Verbesserung umgesetzt wird.",
+    "originStory": "Jungfrau wird oft mit Astraea verbunden, der Jungfrau der Gerechtigkeit, die bei den Menschen blieb, nachdem andere Götter sich zurückgezogen hatten. Der Weizen, den sie trägt, verbindet das Zeichen mit Ernte, Geschick, Reinheit der Absichten und der Pflege dessen, was das Leben erhält.",
+    "traits": [
+      "Beobachtend",
+      "Praktisch",
+      "Nachdenklich",
+      "Präzise"
+    ],
+    "strengths": [
+      "Analyse",
+      "Handwerkskunst",
+      "Hilfreicher Service"
+    ],
+    "challenges": [
+      "Perfektionismus",
+      "Selbstkritik",
+      "Sich über Details Sorgen machen"
+    ],
+    "compatibleSigns": [
+      "Stier",
+      "Steinbock",
+      "Krebs"
+    ],
+    "reflectionPrompt": "Verbessere, was du kannst, und erlaube guter Arbeit, abgeschlossen zu sein, bevor sie perfekt ist."
+  },
+  "libra": {
+    "name": "Waage",
+    "dateRange": "23. Sep – 22. Okt",
+    "rulingPlanet": "Venus",
+    "summary": "Gleichgewicht, Schönheit und Gegenseitigkeit leiten die Waage zu Entscheidungen, die jede Stimme ehren.",
+    "originStory": "Die Waagschalen der Waage werden von Astraea, der Göttin der Gerechtigkeit, getragen und bilden das einzige unbelebte Symbol des Tierkreises. Sie stehen für abgewogene Urteile, soziale Harmonie und die fortwährende Arbeit, das Gleichgewicht wiederherzustellen, anstatt anzunehmen, dass es bereits existiert.",
+    "traits": [
+      "Diplomatisch",
+      "Fair-minded (gerecht denkend)",
+      "Charmant",
+      "Kooperativ"
+    ],
+    "strengths": [
+      "Mediation",
+      "Perspektive",
+      "Harmonie schaffen"
+    ],
+    "challenges": [
+      "Unentschlossenheit",
+      "Menschen gefallen",
+      "Notwendigen Konflikten ausweichen"
+    ],
+    "compatibleSigns": [
+      "Zwillinge",
+      "Wassermann",
+      "Löwe"
+    ],
+    "reflectionPrompt": "Strebe nach Gerechtigkeit, ohne die Wahrheit deiner eigenen Bedürfnisse aufzugeben."
+  },
+  "scorpio": {
+    "name": "Skorpion",
+    "dateRange": "23. Okt – 21. Nov",
+    "rulingPlanet": "Pluto",
+    "summary": "Tiefe und Transformation definieren den Skorpion, dessen Einsicht die Wahrheit unter der Oberfläche findet.",
+    "originStory": "Skorpion erinnert an den Skorpion, der geschickt wurde, um den Jäger Orion zu konfrontieren, nachdem sein Stolz die natürliche Ordnung gestört hatte. Ihre gegenüberliegenden Positionen am Himmel rufen Grenzen, Konsequenzen, Geheimnisse und die regenerative Kraft hervor, die nach einem Ende gefunden wird.",
+    "traits": [
+      "Intensiv",
+      "Wahrnehmungsfähig",
+      "Loyal",
+      "Einfallsreich"
+    ],
+    "strengths": [
+      "Emotionaler Mut",
+      "Fokus",
+      "Transformation"
+    ],
+    "challenges": [
+      "Geheimhaltung",
+      "Verdacht",
+      "Groll hegen"
+    ],
+    "compatibleSigns": [
+      "Krebs",
+      "Fische",
+      "Jungfrau"
+    ],
+    "reflectionPrompt": "Nutze deine Tiefe, um die Wahrheit zu transformieren, nicht um sie zu verbergen."
+  },
+  "sagittarius": {
+    "name": "Schütze",
+    "dateRange": "22. Nov – 21. Dez",
+    "rulingPlanet": "Jupiter",
+    "summary": "Der Bogenschütze sucht weitere Horizonte durch Wahrheit, Reisen, Lernen und zielgerichteten Optimismus.",
+    "originStory": "Schütze wird häufig mit Chiron in Verbindung gebracht, dem weisen Zentauren und Lehrer, dessen Pfeil über das Bekannte hinausweist. Das Sternbild symbolisiert die Vereinigung von Instinkt und höherem Verständnis und strebt stets nach einem bedeutungsvolleren Horizont.",
+    "traits": [
+      "Abenteuerlustig",
+      "Optimistisch",
+      "Ehrlich",
+      "Philosophisch"
+    ],
+    "strengths": [
+      "Vision",
+      "Enthusiasmus",
+      "Aufgeschlossenheit"
+    ],
+    "challenges": [
+      "Direktheit",
+      "Zu viel versprechen",
+      "Die Routine entkommen"
+    ],
+    "compatibleSigns": [
+      "Widder",
+      "Löwe",
+      "Wassermann"
+    ],
+    "reflectionPrompt": "Ziele hoch, aber wähle eine Richtung, die deine täglichen Handlungen unterstützen können."
+  },
+  "capricorn": {
+    "name": "Steinbock",
+    "dateRange": "22. Dez – 19. Jan",
+    "rulingPlanet": "Saturn",
+    "summary": "Disziplin und Weitblick helfen dem Steinbock beim Aufstieg, während er sich der Tiefen darunter bewusst bleibt.",
+    "originStory": "Der Meeresziegenbock des Steinbocks wird mit Pan in Verbindung gebracht, der sich teilweise in einen Fisch verwandelte, um Typhon zu entkommen. Seine Berg- und Ozeannatur verbindet Ehrgeiz mit emotionalem Überleben und ehrt die durch Zeit und Verantwortung erlangte Meisterschaft.",
+    "traits": [
+      "Ambitioniert",
+      "Diszipliniert",
+      "Geduldig",
+      "Verantwortlich"
+    ],
+    "strengths": [
+      "Ausdauer",
+      "Strategie",
+      "Zuverlässigkeit"
+    ],
+    "challenges": [
+      "Starre",
+      "Pessimismus",
+      "Den Wert durch Leistung messen"
+    ],
+    "compatibleSigns": [
+      "Stier",
+      "Jungfrau",
+      "Skorpion"
+    ],
+    "reflectionPrompt": "Bauen Sie für die langfristige Perspektive auf, während Sie sich daran erinnern, dass Ruhe Teil der Struktur ist."
+  },
+  "aquarius": {
+    "name": "Wassermann",
+    "dateRange": "20. Jan – 18. Feb",
+    "rulingPlanet": "Uranus",
+    "summary": "Unabhängiges Denken und kollektive Vision leiten den Wassermann dazu, neue Ideen in die Welt zu bringen.",
+    "originStory": "Wassermann ist mit Ganymed verbunden, dem Kelterträger, dessen Gefäß Wasser zu den Göttern brachte und symbolisch Wissen zur Menschheit. Obwohl sein Bild Wasser trägt, gehört das Zeichen zur Luft: Ideen, Systeme und Erneuerung, die zum Gemeinwohl geteilt werden.",
+    "traits": [
+      "Original",
+      "Unabhängig",
+      "Humanitär",
+      "Erfinderisch"
+    ],
+    "strengths": [
+      "Innovation",
+      "Objektivität",
+      "Gemeinschaftsvision"
+    ],
+    "challenges": [
+      "Losgelöstheit",
+      "Widerspenstige Gewohnheiten",
+      "Feste Meinungen"
+    ],
+    "compatibleSigns": [
+      "Zwillinge",
+      "Waage",
+      "Schütze"
+    ],
+    "reflectionPrompt": "Lass deinen Unterschied der Verbindung dienen, statt der Distanz."
+  },
+  "pisces": {
+    "name": "Fische",
+    "dateRange": "19. Feb – 20. Mär",
+    "rulingPlanet": "Neptun",
+    "summary": "Mitgefühl und Vorstellungskraft leiten die Fische zwischen Intuition, Träumen und gemeinsamem Empfinden.",
+    "originStory": "Fische erinnern an Aphrodite und Eros, die zu Fischen wurden und sich zusammenbanden, um Typhon zu entkommen. Die Bindung zwischen den beiden Fischen steht für Hingabe, flexible Identität, spirituelle Sensibilität und die Einheit in bewegten Strömungen zu finden.",
+    "traits": [
+      "Mitfühlend",
+      "Phantasievoll",
+      "Intuitiv",
+      "Sanft"
+    ],
+    "strengths": [
+      "Empathie",
+      "Kreativität",
+      "Spirituelle Einsicht"
+    ],
+    "challenges": [
+      "Flucht aus der Realität",
+      "Verschwommene Grenzen",
+      "Die Emotionen anderer aufnehmen"
+    ],
+    "compatibleSigns": [
+      "Krebs",
+      "Skorpion",
+      "Steinbock"
+    ],
+    "reflectionPrompt": "Ehre deine Sensibilität mit Grenzen, die stark genug sind, um sie zu schützen."
+  }
+}

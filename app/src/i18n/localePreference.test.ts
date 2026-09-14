@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import en from '../locales/en.json'
 import vi from '../locales/vi.json'
 import { LOCALE_STORAGE_KEY, readLocale, resolveLocale, saveLocale } from './localePreference'
+import { normalizeSupportedLocale } from './locales'
 
 describe('language preference', () => {
   it('uses the saved choice before device language', () => {
@@ -11,7 +12,12 @@ describe('language preference', () => {
   it('detects Vietnamese and falls back to English', () => {
     expect(resolveLocale(null, ['vi-VN'])).toBe('vi')
     expect(resolveLocale('invalid', ['VI_vn'])).toBe('vi')
-    expect(resolveLocale(null, ['fr-FR'])).toBe('en')
+    expect(normalizeSupportedLocale('fr-FR')).toBe('fr')
+    expect(normalizeSupportedLocale('es-MX')).toBe('es-419')
+    expect(normalizeSupportedLocale('pt-PT')).toBe('pt-BR')
+    expect(normalizeSupportedLocale('zh-Hant-TW')).toBe('zh-TW')
+    expect(resolveLocale(null, ['fr-FR'])).toBe('fr')
+    expect(resolveLocale(null, ['ru-RU'])).toBe('en')
     expect(resolveLocale(null, [])).toBe('en')
   })
   it('persists and restores the selected language', () => {

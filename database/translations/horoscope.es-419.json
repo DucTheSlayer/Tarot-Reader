@@ -1,0 +1,314 @@
+{
+  "aquarius": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Acuario se mueve a través de la energía del aire. El pensamiento independiente y la visión colectiva guían al Portador de Agua para verter nuevas ideas en el mundo.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Sus dones de innovación, objetividad y visión comunitaria pueden ayudarlo a conectarse sin actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice herramientas originales, independientes, humanitarias e inventivas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuándo el desapego, los hábitos contrarios y las opiniones fijas comienzan a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Deje que su diferencia sirva de conexión en lugar de distancia.",
+      "guidance": "Antes de que termine el día, recuerda: deja que tu diferencia sirva de conexión en lugar de distancia."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de elecciones constantes más que en un momento dramático. Acuario se mueve a través de la energía del aire. El pensamiento independiente y la visión colectiva guían al Portador de Agua para derramar nuevas ideas en el mundo.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Sus dones de innovación, objetividad y visión comunitaria pueden ayudarlo a conectarse sin actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa original, independiente, humanitario, inventivo como herramientas, no como expectativas que debas cumplir todas a la vez.",
+      "finance": "Revise el patrón detrás de sus gastos antes de hacer un compromiso mayor. Observe cuándo el desapego, los hábitos contrarios y las opiniones fijas comienzan a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Deje que su diferencia sirva de conexión en lugar de distancia.",
+      "guidance": "Deje que esta pregunta guíe la semana: deje que su diferencia sirva para la conexión en lugar de la distancia."
+    },
+    "year": {
+      "overview": "Este año invita a un crecimiento paciente en torno a la identidad, el propósito y la manera en que usas tu energía. Acuario se mueve a través de la energía del aire. El pensamiento independiente y la visión colectiva guían al Portador de Agua para derramar nuevas ideas en el mundo.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Sus dones de innovación, objetividad y visión comunitaria pueden ayudarlo a conectarse sin actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice herramientas originales, independientes, humanitarias e inventivas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuándo el desapego, los hábitos contrarios y las opiniones fijas comienzan a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa después de terminarla. Deja que tu diferencia sirva para la conexión en lugar de la distancia.",
+      "guidance": "Vuelve a esta brújula durante todo el año: deja que tu diferencia sirva de conexión más que de distancia."
+    }
+  },
+  "aries": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Aries se mueve a través de la energía del fuego. Comienzos audaces y acción directa definen al Carnero, cuya chispa convierte la intención en impulso.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Tus dones de iniciativa, confianza y resiliencia pueden ayudarte a conectarte sin actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice como herramientas personas valientes, enérgicas, independientes y directas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuando la impaciencia, la impulsividad, comenzar más rápido de lo que puede sostener comienza a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Elige un comienzo valiente y dale suficiente paciencia para crecer.",
+      "guidance": "Antes de que termine el día, recuerda: elige un comienzo valiente y dale suficiente paciencia para crecer."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de elecciones constantes en lugar de un momento dramático. Aries se mueve a través de la energía del fuego. Comienzos audaces y acción directa definen al Carnero, cuya chispa convierte la intención en impulso.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Tus dones de iniciativa, confianza y resiliencia pueden ayudarte a conectarte sin actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa valiente, enérgico, independiente, directo como herramientas, no como expectativas que debes cumplir todas a la vez.",
+      "finance": "Revise el patrón detrás de sus gastos antes de hacer un compromiso mayor. Observe cuando la impaciencia, la impulsividad, comenzar más rápido de lo que puede sostener comienza a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Elige un comienzo valiente y dale suficiente paciencia para crecer.",
+      "guidance": "Deja que esta pregunta guíe la semana: elige un comienzo valiente y dale suficiente paciencia para crecer."
+    },
+    "year": {
+      "overview": "Este año invita a un crecimiento paciente en torno a la identidad, el propósito y la manera en que usas tu energía. Aries se mueve a través de la energía del fuego. Comienzos audaces y acción directa definen al Carnero, cuya chispa convierte la intención en impulso.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Tus dones de iniciativa, confianza y resiliencia pueden ayudarte a conectarte sin actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice como herramientas personas valientes, enérgicas, independientes y directas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuando la impaciencia, la impulsividad, comenzar más rápido de lo que puede sostener comienza a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa después de terminarla. Elige un comienzo valiente y dale suficiente paciencia para crecer.",
+      "guidance": "Vuelve a esta brújula durante todo el año: elige un comienzo valiente y dale la paciencia suficiente para que crezca."
+    }
+  },
+  "cancer": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Cáncer se mueve a través de la energía del agua. Protector e intuitivo, el Cangrejo crea pertenencia honrando la memoria, el sentimiento y el hogar.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Tus dones de empatía, lealtad y percepción emocional pueden ayudarte a conectarte sin actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice herramientas intuitivas, afectuosas, protectoras e imaginativas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuándo el mal humor, el retirarse detrás de las defensas y tomarse las cosas personalmente comienza a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Cuide su mundo interior mientras deja una puerta abierta a una conexión honesta.",
+      "guidance": "Antes de que termine el día, recuerde: cuide su mundo interior mientras deja una puerta abierta a una conexión honesta."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de elecciones constantes en lugar de un momento dramático. Cáncer se mueve a través de la energía del agua. Protector e intuitivo, el Cangrejo crea un sentido de pertenencia al honrar la memoria, el sentimiento y el hogar.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Tus dones de empatía, lealtad y percepción emocional pueden ayudarte a conectarte sin actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa intuitivo, afectuoso, protector, imaginativo como herramientas, no como expectativas que debas cumplir todas a la vez.",
+      "finance": "Revise el patrón detrás de sus gastos antes de hacer un compromiso mayor. Observe cuándo el mal humor, el retirarse detrás de las defensas y tomarse las cosas personalmente comienza a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Cuide su mundo interior mientras deja una puerta abierta a una conexión honesta.",
+      "guidance": "Deje que esta pregunta guíe la semana: cuide su mundo interior mientras deja una puerta abierta a una conexión honesta."
+    },
+    "year": {
+      "overview": "Este año invita a un crecimiento paciente en torno a la identidad, el propósito y la manera en que usas tu energía. Cáncer se mueve a través de la energía del agua. Protector e intuitivo, el Cangrejo crea pertenencia al honrar la memoria, el sentimiento y el hogar.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Tus dones de empatía, lealtad y percepción emocional pueden ayudarte a conectarte sin actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice herramientas intuitivas, afectuosas, protectoras e imaginativas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuándo el mal humor, el retirarse detrás de las defensas y tomarse las cosas personalmente comienza a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa después de terminarla. Cuida tu mundo interior mientras dejas una puerta abierta a la conexión honesta.",
+      "guidance": "Regrese a esta brújula durante todo el año: cuide su mundo interior mientras deja una puerta abierta a una conexión honesta."
+    }
+  },
+  "capricorn": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Capricornio se mueve a través de la energía de la tierra. La disciplina y la visión a largo plazo ayudan a la Cabra de Mar a ascender mientras se mantiene sabia sobre las profundidades debajo.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Tus dotes de resistencia, estrategia y confiabilidad pueden ayudarte a conectarte sin tener que actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice como herramientas ambiciosas, disciplinadas, pacientes y responsables, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuándo la rigidez, el pesimismo y la medición del valor a través de los logros comienzan a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Construya a largo plazo recordando que el descanso es parte de la estructura.",
+      "guidance": "Antes de que termine el día, recuerda: construye a largo plazo recordando que el descanso es parte de la estructura."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de elecciones constantes en lugar de un momento dramático. Capricornio se mueve a través de la energía de la tierra. La disciplina y la visión a largo plazo ayudan a la Cabra de Mar a escalar mientras se mantiene sabia acerca de las profundidades de abajo.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Tus dotes de resistencia, estrategia y confiabilidad pueden ayudarte a conectarte sin tener que actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa ambicioso, disciplinado, paciente, responsable como herramientas, no como expectativas que debes cumplir todas a la vez.",
+      "finance": "Revisa el patrón detrás de tu gasto antes de hacer un compromiso mayor. Observa cuándo la rigidez, el pesimismo, medir el valor a través de los logros comienza a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Construya a largo plazo recordando que el descanso es parte de la estructura.",
+      "guidance": "Deje que esta pregunta guíe la semana: construya a largo plazo y recuerde que el descanso es parte de la estructura."
+    },
+    "year": {
+      "overview": "Este año invita al crecimiento paciente en torno a la identidad, el propósito y la manera en que utilizas tu energía. Capricornio se mueve a través de la energía de la tierra. La disciplina y la visión a largo plazo ayudan a la Cabra de Mar a escalar mientras se mantiene sabia sobre las profundidades debajo.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Tus dotes de resistencia, estrategia y confiabilidad pueden ayudarte a conectarte sin tener que actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice como herramientas ambiciosas, disciplinadas, pacientes y responsables, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuándo la rigidez, el pesimismo y la medición del valor a través de los logros comienzan a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa después de terminarla. Construye a largo plazo mientras recuerdas que el descanso es parte de la estructura.",
+      "guidance": "Vuelve a esta brújula durante todo el año: construye para el largo plazo recordando que el descanso es parte de la estructura."
+    }
+  },
+  "gemini": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Géminis se mueve a través de la energía del aire. La curiosidad y la conexión guían a los Gemelos, quienes recolectan ideas y revelan más de un lado de la historia.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Tus dones de comunicación, versatilidad y aprendizaje rápido pueden ayudarte a conectarte sin tener que actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice herramientas curiosas, adaptables, expresivas e ingeniosas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuándo la inquietud, la concentración dispersa y el pensamiento excesivo comienzan a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Deje que la curiosidad abra la puerta y luego quédese el tiempo suficiente para comprender lo que encuentre.",
+      "guidance": "Antes de que termine el día, recuerda: deja que la curiosidad abra la puerta y luego quédate el tiempo suficiente para comprender lo que encuentres."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de elecciones constantes en lugar de un momento dramático. Géminis se mueve a través de la energía del aire. La curiosidad y la conexión guían a los Gemelos, que reúnen ideas y revelan más de un lado de una historia.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Tus dones de comunicación, versatilidad y aprendizaje rápido pueden ayudarte a conectarte sin tener que actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa curioso, adaptable, expresivo, ingenioso como herramientas, no como expectativas que debes cumplir todas a la vez.",
+      "finance": "Revise el patrón detrás de sus gastos antes de hacer un compromiso mayor. Observe cuándo la inquietud, la concentración dispersa y el pensamiento excesivo comienzan a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Deje que la curiosidad abra la puerta y luego quédese el tiempo suficiente para comprender lo que encuentre.",
+      "guidance": "Deje que esta pregunta guíe la semana: deje que la curiosidad abra la puerta y luego quédese el tiempo suficiente para comprender lo que encuentre."
+    },
+    "year": {
+      "overview": "Este año invita al crecimiento paciente en torno a la identidad, el propósito y la manera en que utilizas tu energía. Géminis se mueve a través de la energía del aire. La curiosidad y la conexión guían a los Gemelos, que recopilan ideas y revelan más de un lado de una historia.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Tus dones de comunicación, versatilidad y aprendizaje rápido pueden ayudarte a conectarte sin tener que actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice herramientas curiosas, adaptables, expresivas e ingeniosas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuándo la inquietud, la concentración dispersa y el pensamiento excesivo comienzan a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa después de terminarla. Deja que la curiosidad abra la puerta, y luego permanece el tiempo suficiente para entender lo que encuentres.",
+      "guidance": "Vuelve a esta brújula durante todo el año: deja que la curiosidad abra la puerta, luego quédate el tiempo suficiente para entender lo que encuentres."
+    }
+  },
+  "leo": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Leo se mueve a través de la energía del fuego. La calidez, la creatividad y la expresión generosa de sí mismo hacen del León una fuente natural de luz.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Tus dones de liderazgo, lealtad y expresión sincera pueden ayudarte a conectarte sin actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice herramientas cálidas, creativas, generosas y seguras, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuando el orgullo, la necesidad de reconocimiento y la dramatización de los reveses comienzan a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Comparte tu luz generosamente y deja que otros brillen a tu lado.",
+      "guidance": "Antes de que termine el día, recuerda: comparte tu luz generosamente y deja que otros brillen a tu lado."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de elecciones constantes más que de un momento dramático. Leo se mueve a través de la energía del fuego. La calidez, la creatividad y la autoexpresión generosa hacen del León una fuente natural de luz.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Tus dones de liderazgo, lealtad y expresión sincera pueden ayudarte a conectarte sin actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa cálido, creativo, generoso, confiado como herramientas, no como expectativas que debas cumplir todas a la vez.",
+      "finance": "Revise el patrón detrás de sus gastos antes de hacer un compromiso mayor. Observe cuando el orgullo, la necesidad de reconocimiento y la dramatización de los reveses comienzan a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Comparte tu luz generosamente y deja que otros brillen a tu lado.",
+      "guidance": "Deja que esta pregunta guíe la semana: comparte tu luz generosamente y deja que otros brillen a tu lado."
+    },
+    "year": {
+      "overview": "Este año invita al crecimiento paciente en torno a la identidad, el propósito y la manera en que utilizas tu energía. Leo se mueve a través de la energía del fuego. La calidez, la creatividad y la expresión generosa de uno mismo hacen del León una fuente natural de luz.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Tus dones de liderazgo, lealtad y expresión sincera pueden ayudarte a conectarte sin actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice herramientas cálidas, creativas, generosas y seguras, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuando el orgullo, la necesidad de reconocimiento y la dramatización de los reveses comienzan a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa después de terminarla. Comparte tu luz generosamente y deja que otros brillen a tu lado.",
+      "guidance": "Regresa a esta brújula durante todo el año: comparte tu luz generosamente y deja que otros brillen a tu lado."
+    }
+  },
+  "libra": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Libra se mueve a través de la energía del aire. El equilibrio, la belleza y la reciprocidad guían a la Balanza hacia elecciones que honran cada voz.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Tus dones de mediación, perspectiva y creación de armonía pueden ayudarte a conectarte sin actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice herramientas diplomáticas, imparciales, encantadoras y colaborativas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuándo la indecisión, el agradar a la gente y el evitar el conflicto necesario comienzan a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Busque la justicia sin abandonar la verdad de sus propias necesidades.",
+      "guidance": "Antes de que termine el día, recuerda: busca la justicia sin abandonar la verdad de tus propias necesidades."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de elecciones constantes más que de un momento dramático. Libra se mueve a través de la energía del aire. El equilibrio, la belleza y la reciprocidad guían a las Balanzas hacia decisiones que honran cada voz.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Tus dones de mediación, perspectiva y creación de armonía pueden ayudarte a conectarte sin actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa diplomático, justo, encantador, colaborador como herramientas, no como expectativas que debes cumplir todas a la vez.",
+      "finance": "Revise el patrón detrás de sus gastos antes de hacer un compromiso mayor. Observe cuándo la indecisión, el agradar a la gente y el evitar el conflicto necesario comienzan a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Busque la justicia sin abandonar la verdad de sus propias necesidades.",
+      "guidance": "Deje que esta pregunta guíe la semana: busque la justicia sin abandonar la verdad de sus propias necesidades."
+    },
+    "year": {
+      "overview": "Este año invita al crecimiento paciente en torno a la identidad, el propósito y la manera en que usas tu energía. Libra se mueve a través de la energía del aire. El equilibrio, la belleza y la reciprocidad guían a la Balanza hacia decisiones que honran cada voz.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Tus dones de mediación, perspectiva y creación de armonía pueden ayudarte a conectarte sin actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice herramientas diplomáticas, imparciales, encantadoras y colaborativas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuándo la indecisión, el agradar a la gente y el evitar el conflicto necesario comienzan a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa tras terminarla. Busca la justicia sin abandonar la verdad de tus propias necesidades.",
+      "guidance": "Vuelve a esta brújula durante todo el año: busca la justicia sin abandonar la verdad de tus propias necesidades."
+    }
+  },
+  "pisces": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Piscis se mueve a través de la energía del agua. La compasión y la imaginación guían a los Peces entre la intuición, los sueños y el sentimiento compartido.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Tus dones de empatía, creatividad y perspicacia espiritual pueden ayudarte a conectarte sin actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice herramientas compasivas, imaginativas, intuitivas y amables, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuándo el escapismo, los límites borrosos y la absorción de las emociones de los demás comienzan a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Honra tu sensibilidad con límites lo suficientemente fuertes como para protegerla.",
+      "guidance": "Antes de que termine el día, recuerda: honra tu sensibilidad con límites lo suficientemente fuertes como para protegerla."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de decisiones constantes en lugar de un momento dramático. Piscis se mueve a través de la energía del agua. La compasión y la imaginación guían a los Peces entre la intuición, los sueños y los sentimientos compartidos.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Tus dones de empatía, creatividad y perspicacia espiritual pueden ayudarte a conectarte sin actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa compasivo, imaginativo, intuitivo, gentil como herramientas, no como expectativas que debes cumplir todas a la vez.",
+      "finance": "Revise el patrón detrás de sus gastos antes de hacer un compromiso mayor. Observe cuándo el escapismo, los límites borrosos y la absorción de las emociones de los demás comienzan a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Honra tu sensibilidad con límites lo suficientemente fuertes como para protegerla.",
+      "guidance": "Deje que esta pregunta guíe la semana: Honre su sensibilidad con límites lo suficientemente fuertes como para protegerla."
+    },
+    "year": {
+      "overview": "Este año invita a un crecimiento paciente en torno a la identidad, el propósito y la manera en que usas tu energía. Piscis se mueve a través de la energía del agua. La compasión y la imaginación guían a los Peces entre la intuición, los sueños y el sentimiento compartido.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Tus dones de empatía, creatividad y perspicacia espiritual pueden ayudarte a conectarte sin actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice herramientas compasivas, imaginativas, intuitivas y amables, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuándo el escapismo, los límites borrosos y la absorción de las emociones de los demás comienzan a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa después de terminarla. Honra tu sensibilidad con límites lo suficientemente fuertes como para protegerla.",
+      "guidance": "Vuelve a esta brújula durante todo el año: Honra tu sensibilidad con límites lo suficientemente fuertes como para protegerla."
+    }
+  },
+  "sagittarius": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Sagitario se mueve a través de la energía del fuego. El Arquero busca horizontes más amplios a través de la verdad, los viajes, el aprendizaje y el optimismo con propósito.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Tus dotes de visión, entusiasmo y apertura de mente pueden ayudarte a conectarte sin actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice herramientas aventureras, optimistas, honestas y filosóficas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuándo la franqueza, las promesas excesivas y el escapar de la rutina comienzan a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Apunta lejos, pero elige una dirección que tus acciones diarias puedan respaldar.",
+      "guidance": "Antes de que termine el día, recuerde: apunte lejos, pero elija una dirección que sus acciones diarias puedan respaldar."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de decisiones constantes en lugar de un momento dramático. Sagitario se mueve a través de la energía del fuego. El Arquero busca horizontes más amplios mediante la verdad, los viajes, el aprendizaje y el optimismo con propósito.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Tus dotes de visión, entusiasmo y apertura de mente pueden ayudarte a conectarte sin actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa aventurero, optimista, honesto, filosófico como herramientas, no como expectativas que debes cumplir todas a la vez.",
+      "finance": "Revise el patrón detrás de sus gastos antes de hacer un compromiso mayor. Observe cuándo la franqueza, las promesas excesivas y el escapar de la rutina comienzan a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Apunta lejos, pero elige una dirección que tus acciones diarias puedan respaldar.",
+      "guidance": "Deje que esta pregunta guíe la semana: apunte lejos, pero elija una dirección que sus acciones diarias puedan respaldar."
+    },
+    "year": {
+      "overview": "Este año invita a un crecimiento paciente en torno a la identidad, el propósito y la manera en que usas tu energía. Sagitario se mueve a través de la energía del fuego. El Arquero busca horizontes más amplios a través de la verdad, los viajes, el aprendizaje y el optimismo con propósito.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Tus dotes de visión, entusiasmo y apertura de mente pueden ayudarte a conectarte sin actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice herramientas aventureras, optimistas, honestas y filosóficas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuándo la franqueza, las promesas excesivas y el escapar de la rutina comienzan a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa al terminarla. Apunta lejos, pero elige una dirección que tus acciones diarias puedan respaldar.",
+      "guidance": "Vuelve a esta brújula durante todo el año: apunta lejos, pero elige una dirección que tus acciones diarias puedan apoyar."
+    }
+  },
+  "scorpio": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Escorpio se mueve a través de la energía del agua. La profundidad y la transformación definen al Escorpión, cuya intuición encuentra la verdad debajo de la superficie.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Tus dones de coraje emocional, concentración y transformación pueden ayudarte a conectarte sin actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice herramientas intensas, perspicaces, leales e ingeniosas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuándo el secretismo, la sospecha y el rencor comienzan a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Usa tu profundidad para transformar la verdad, no para ocultarla.",
+      "guidance": "Antes de que termine el día, recuerda: usa tu profundidad para transformar la verdad, no para ocultarla."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de elecciones constantes en lugar de un momento dramático. Escorpio se mueve a través de la energía del agua. La profundidad y la transformación definen al Escorpión, cuyo discernimiento encuentra la verdad bajo la superficie.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Tus dones de coraje emocional, concentración y transformación pueden ayudarte a conectarte sin actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa intenso, perceptivo, leal, ingenioso como herramientas, no como expectativas que debas cumplir todas a la vez.",
+      "finance": "Revisa el patrón detrás de tu gasto antes de hacer un compromiso mayor. Observa cuándo el secreto, la desconfianza, guardar rencor comienza a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Usa tu profundidad para transformar la verdad, no para ocultarla.",
+      "guidance": "Deja que esta pregunta guíe la semana: usa tu profundidad para transformar la verdad, no para ocultarla."
+    },
+    "year": {
+      "overview": "Este año invita al crecimiento paciente en torno a la identidad, el propósito y la manera en que usas tu energía. Escorpio se mueve a través de la energía del agua. La profundidad y la transformación definen al Escorpión, cuyo conocimiento encuentra la verdad debajo de la superficie.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Tus dones de coraje emocional, concentración y transformación pueden ayudarte a conectarte sin actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice herramientas intensas, perspicaces, leales e ingeniosas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuándo el secretismo, la sospecha y el rencor comienzan a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa después de terminarla. Usa tu profundidad para transformar la verdad, no para ocultarla.",
+      "guidance": "Regresa a esta brújula durante todo el año: usa tu profundidad para transformar la verdad, no para ocultarla."
+    }
+  },
+  "taurus": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Tauro se mueve a través de la energía de la tierra. Firme, sensual y con los pies en la tierra, el Toro construye valor duradero a través de la paciencia y el cuidado.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Tus dones de confiabilidad, sabiduría práctica y devoción pueden ayudarte a conectarte sin actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice herramientas sólidas, leales, pacientes y sensuales, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuándo la terquedad, la resistencia al cambio y el aferrarse demasiado comienzan a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Protege lo que importa sin confundir comodidad con permanencia.",
+      "guidance": "Antes de que termine el día, recuerda: Protege lo que importa sin confundir comodidad con permanencia."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de elecciones constantes en lugar de un momento dramático. Tauro se mueve a través de la energía de la tierra. Estable, sensual y con los pies en la tierra, el Toro construye un valor duradero mediante la paciencia y el cuidado.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Tus dones de confiabilidad, sabiduría práctica y devoción pueden ayudarte a conectarte sin actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa lo fundamentado, leal, paciente, sensual como herramientas, no como expectativas que debes satisfacer todas a la vez.",
+      "finance": "Revisa el patrón detrás de tu gasto antes de hacer un compromiso mayor. Observa cuándo la terquedad, la resistencia al cambio, aferrarse demasiado tiempo comienza a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Protege lo que importa sin confundir comodidad con permanencia.",
+      "guidance": "Deje que esta pregunta guíe la semana: proteja lo que importa sin confundir la comodidad con la permanencia."
+    },
+    "year": {
+      "overview": "Este año invita al crecimiento paciente en torno a la identidad, el propósito y la manera en que usas tu energía. Tauro se mueve a través de la energía de la tierra. Constante, sensual y con los pies en la tierra, el Toro construye valor duradero a través de la paciencia y el cuidado.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Tus dones de confiabilidad, sabiduría práctica y devoción pueden ayudarte a conectarte sin actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice herramientas sólidas, leales, pacientes y sensuales, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuándo la terquedad, la resistencia al cambio y el aferrarse demasiado comienzan a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa después de terminarla. Protege lo que importa sin confundir la comodidad con la permanencia.",
+      "guidance": "Vuelve a esta brújula durante todo el año: Protege lo que importa sin confundir comodidad con permanencia."
+    }
+  },
+  "virgo": {
+    "day": {
+      "overview": "Hoy favorece un paso claro e intencional. Virgo se mueve a través de la energía de la tierra. El discernimiento y el servicio guían a la Doncella, convirtiendo la observación cuidadosa en mejora práctica.",
+      "love": "En el amor hoy, elige la presencia sobre la suposición. Sus dotes de análisis, destreza y servicio útil pueden ayudarlo a conectarse sin tener que actuar.",
+      "career": "En el trabajo, complete la tarea más significativa antes de buscar un nuevo impulso. Utilice herramientas observadoras, prácticas, reflexivas y precisas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Mantenga las decisiones monetarias de hoy simples y fundamentadas. Observe cuándo el perfeccionismo, la autocrítica y la preocupación por los detalles comienzan a influir en una decisión práctica.",
+      "wellbeing": "Una pequeña pausa puede restablecer tu energía. Mejore lo que pueda y permita que el buen trabajo esté completo antes de que sea perfecto.",
+      "guidance": "Antes de que termine el día, recuerde: mejore lo que pueda y permita que el buen trabajo esté completo antes de que sea perfecto."
+    },
+    "week": {
+      "overview": "Esta semana se desarrolla a través de elecciones constantes en lugar de un momento dramático. Virgo se mueve a través de la energía de la tierra. El discernimiento y el servicio guían a la Virgen, convirtiendo la observación cuidadosa en una mejora práctica.",
+      "love": "Las relaciones se benefician de una conversación que deja espacio tanto para la honestidad como para la calidez. Sus dotes de análisis, destreza y servicio útil pueden ayudarlo a conectarse sin tener que actuar.",
+      "career": "Tu mejor progreso profesional proviene de elegir una prioridad y proteger tiempo para ella. Usa observador, práctico, reflexivo, preciso como herramientas, no como expectativas que debas cumplir todas a la vez.",
+      "finance": "Revise el patrón detrás de sus gastos antes de hacer un compromiso mayor. Observe cuándo el perfeccionismo, la autocrítica y la preocupación por los detalles comienzan a influir en una decisión práctica.",
+      "wellbeing": "Equilibre el movimiento con una recuperación genuina durante toda la semana. Mejore lo que pueda y permita que el buen trabajo esté completo antes de que sea perfecto.",
+      "guidance": "Deje que esta pregunta guíe la semana: mejore lo que pueda y permita que el buen trabajo esté completo antes de que sea perfecto."
+    },
+    "year": {
+      "overview": "Este año invita al crecimiento paciente en torno a la identidad, el propósito y la manera en que usas tu energía. Virgo se mueve a través de la energía de la tierra. El discernimiento y el servicio guían a la Virgen, convirtiendo la observación cuidadosa en mejora práctica.",
+      "love": "El amor se profundiza cuando practicas la coherencia y permites que la conexión evolucione a un ritmo humano. Sus dotes de análisis, destreza y servicio útil pueden ayudarlo a conectarse sin tener que actuar.",
+      "career": "El trabajo a largo plazo se fortalece cuando la ambición se combina con una estructura que se puede sostener. Utilice herramientas observadoras, prácticas, reflexivas y precisas, no expectativas que deba satisfacer todas a la vez.",
+      "finance": "Genere confianza financiera a través de hábitos repetibles en lugar de predicciones perfectas. Observe cuándo el perfeccionismo, la autocrítica y la preocupación por los detalles comienzan a influir en una decisión práctica.",
+      "wellbeing": "Trata el bienestar como una base para la vida que estás construyendo, no como una recompensa después de terminarla. Mejora lo que puedas y permite que el buen trabajo esté completo antes de que sea perfecto.",
+      "guidance": "Vuelve a esta brújula durante todo el año: mejora lo que puedas y permite que el buen trabajo esté completo antes de que sea perfecto."
+    }
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "aries": {
+    "name": "Aries",
+    "dateRange": "21 Mar – 19 Apr",
+    "rulingPlanet": "Mars",
+    "summary": "Awal yang berani dan tindakan langsung mendefinisikan Aries, yang percikannya mengubah niat menjadi momentum.",
+    "originStory": "Aries dikaitkan dengan domba emas yang menyelamatkan Phrixus dalam mitologi Yunani. Bulu domba itu kemudian menjadi hadiah bagi Jason dan Argonaut, mempertahankan tanda ini sebagai simbol keberanian, penyelamatan, dan langkah berani pertama.",
+    "traits": [
+      "Berani",
+      "Berenergi",
+      "Mandiri",
+      "Langsung"
+    ],
+    "strengths": [
+      "Inisiatif",
+      "Percaya diri",
+      "Ketahanan"
+    ],
+    "challenges": [
+      "Ketidaksabaran",
+      "Impulsivitas",
+      "Memulai lebih cepat daripada yang bisa dipertahankan"
+    ],
+    "compatibleSigns": [
+      "Leo",
+      "Sagitarius",
+      "Gemini"
+    ],
+    "reflectionPrompt": "Pilih satu awal yang berani dan beri cukup kesabaran untuk tumbuh."
+  },
+  "taurus": {
+    "name": "Taurus",
+    "dateRange": "20 Apr – 20 Mei",
+    "rulingPlanet": "Venus",
+    "summary": "Teguh, sensual, dan membumi, Banteng membangun nilai yang bertahan lama melalui kesabaran dan perhatian.",
+    "originStory": "Taurus mengingat Zeus yang mengambil bentuk seekor banteng putih yang luar biasa untuk membawa Europa menyeberangi laut. Gambaran ini menjadi terkait dengan kecantikan, kesuburan, kelimpahan duniawi, dan kekuatan yang diekspresikan melalui ketekunan yang tenang.",
+    "traits": [
+      "Berdasarkan kenyataan",
+      "Setia",
+      "Sabar",
+      "Sensual"
+    ],
+    "strengths": [
+      "Keandalan",
+      "Kebijaksanaan praktis",
+      "Pengabdian"
+    ],
+    "challenges": [
+      "Kekerasan kepala",
+      "Ketahanan terhadap perubahan",
+      "Terlalu lama bertahan"
+    ],
+    "compatibleSigns": [
+      "Virgo",
+      "Capricorn",
+      "Kanker"
+    ],
+    "reflectionPrompt": "Lindungi apa yang penting tanpa salah mengartikan kenyamanan sebagai sesuatu yang permanen."
+  },
+  "gemini": {
+    "name": "Gemini",
+    "dateRange": "21 Mei – 20 Jun",
+    "rulingPlanet": "Merkurius",
+    "summary": "Rasa ingin tahu dan koneksi membimbing Kembar, yang mengumpulkan ide dan mengungkap lebih dari satu sisi cerita.",
+    "originStory": "Gemini melambangkan Castor dan Pollux, kembar yang tak terpisahkan yang berbagi keabadian daripada tetap terpisah. Rasi bintang mereka membawa tema kebersamaan, perspektif ganda, komunikasi, dan pergerakan antar dunia.",
+    "traits": [
+      "Ingin tahu",
+      "Dapat menyesuaikan",
+      "Ekspresif",
+      "Cerdas"
+    ],
+    "strengths": [
+      "Komunikasi",
+      "Fleksibilitas",
+      "Belajar dengan cepat"
+    ],
+    "challenges": [
+      "Gelisah",
+      "Fokus yang tersebar",
+      "Berpikir berlebihan"
+    ],
+    "compatibleSigns": [
+      "Libra",
+      "Aquarius",
+      "Aries"
+    ],
+    "reflectionPrompt": "Biarkan rasa ingin tahu membuka pintu, lalu tinggal cukup lama untuk memahami apa yang kamu temukan."
+  },
+  "cancer": {
+    "name": "Kanker",
+    "dateRange": "21 Jun – 22 Jul",
+    "rulingPlanet": "Bulan",
+    "summary": "Protektif dan intuitif, Kepiting menciptakan rasa memiliki dengan menghormati memori, perasaan, dan rumah.",
+    "originStory": "Kanker dikaitkan dengan kepiting Karkinos, yang ditempatkan di antara bintang-bintang setelah menunjukkan kesetiaan selama pertarungan Herakles dengan Hydra. Cangkangnya dan penguasaannya atas bulan mencerminkan perlindungan, pasang surut emosional, dan kesetiaan kepada lingkaran batin seseorang.",
+    "traits": [
+      "Intuitif",
+      "Peduli",
+      "Protektif",
+      "Imaginatif"
+    ],
+    "strengths": [
+      "Empati",
+      "Kesetiaan",
+      "Wawasan emosional"
+    ],
+    "challenges": [
+      "Sifat murung",
+      "Menarik diri di balik pertahanan",
+      "Mengambil sesuatu secara pribadi"
+    ],
+    "compatibleSigns": [
+      "Scorpio",
+      "Pisces",
+      "Taurus"
+    ],
+    "reflectionPrompt": "Rawat dunia batinmu sambil tetap membuka pintu untuk koneksi yang jujur."
+  },
+  "leo": {
+    "name": "Leo",
+    "dateRange": "23 Jul – 22 Agu",
+    "rulingPlanet": "Matahari",
+    "summary": "Keakraban, kreativitas, dan ekspresi diri yang murah hati membuat Singa menjadi sumber cahaya alami.",
+    "originStory": "Leo terikat pada Singa Nemean, makhluk yang hampir kebal yang dikalahkan dalam tugas pertama Heracles. Diangkat ke langit, ia menjadi lambang keberanian, kehadiran berdaulat, dan kekuatan kreatif Matahari.",
+    "traits": [
+      "Hangat",
+      "Kreatif",
+      "Dermawan",
+      "Percaya diri"
+    ],
+    "strengths": [
+      "Kepemimpinan",
+      "Kesetiaan",
+      "Ungkapan yang tulus"
+    ],
+    "challenges": [
+      "Kebanggaan",
+      "Memerlukan pengakuan",
+      "Mendramatisasi kemunduran"
+    ],
+    "compatibleSigns": [
+      "Aries",
+      "Sagitarius",
+      "Libra"
+    ],
+    "reflectionPrompt": "Bagikan cahaya Anda dengan murah hati dan biarkan orang lain bersinar di samping Anda."
+  },
+  "virgo": {
+    "name": "Virgo",
+    "dateRange": "23 Agu – 22 Sep",
+    "rulingPlanet": "Merkurius",
+    "summary": "Kebijaksanaan dan pelayanan membimbing Virgo, mengubah pengamatan yang cermat menjadi perbaikan praktis.",
+    "originStory": "Virgo sering dikaitkan dengan Astraea, gadis keadilan yang tetap bersama umat manusia setelah dewa-dewa lain menarik diri. Gandum yang dibawanya menghubungkan tanda ini dengan panen, keterampilan, kemurnian niat, dan merawat apa yang menopang hidup.",
+    "traits": [
+      "Pengamat",
+      "Praktis",
+      "Penuh pertimbangan",
+      "Tepat"
+    ],
+    "strengths": [
+      "Analisis",
+      "Keahlian kerajinan",
+      "Layanan yang membantu"
+    ],
+    "challenges": [
+      "Perfeksionisme",
+      "Kritik diri",
+      "Khawatir tentang hal-hal kecil"
+    ],
+    "compatibleSigns": [
+      "Taurus",
+      "Capricorn",
+      "Kanker"
+    ],
+    "reflectionPrompt": "Tingkatkan apa yang bisa Anda tingkatkan, dan biarkan pekerjaan yang baik selesai sebelum menjadi sempurna."
+  },
+  "libra": {
+    "name": "Libra",
+    "dateRange": "23 Sep – 22 Okt",
+    "rulingPlanet": "Venus",
+    "summary": "Keseimbangan, keindahan, dan timbal balik membimbing Timbangan menuju pilihan yang menghormati setiap suara.",
+    "originStory": "Timbangan Libra dibawa oleh Astraea, dewi keadilan, dan membentuk satu-satunya simbol tak hidup dalam zodiak. Mereka mewakili penilaian yang terukur, harmoni sosial, dan pekerjaan berkelanjutan untuk memulihkan keseimbangan daripada menganggapnya sudah ada.",
+    "traits": [
+      "Diplomatis",
+      "Adil",
+      "Menawan",
+      "Kolaboratif"
+    ],
+    "strengths": [
+      "Mediasi",
+      "Perspektif",
+      "Menciptakan harmoni"
+    ],
+    "challenges": [
+      "Keragu-raguan",
+      "Menyenangkan orang",
+      "Menghindari konflik yang diperlukan"
+    ],
+    "compatibleSigns": [
+      "Gemini",
+      "Aquarius",
+      "Leo"
+    ],
+    "reflectionPrompt": "Carilah keadilan tanpa mengabaikan kebenaran dari kebutuhanmu sendiri."
+  },
+  "scorpio": {
+    "name": "Scorpio",
+    "dateRange": "23 Okt – 21 Nov",
+    "rulingPlanet": "Pluto",
+    "summary": "Kedalaman dan transformasi mendefinisikan Scorpio, yang wawasan-nya menemukan kebenaran di balik permukaan.",
+    "originStory": "Scorpio mengingat kalajengking yang dikirim untuk menghadapi pemburu Orion setelah kesombongannya mengganggu tatanan alam. Posisi mereka yang berlawanan di langit membangkitkan batasan, konsekuensi, misteri, dan kekuatan regeneratif yang ditemukan setelah sebuah akhir.",
+    "traits": [
+      "Intens",
+      "Perseptif",
+      "Setia",
+      "Cekatan"
+    ],
+    "strengths": [
+      "Keberanian emosional",
+      "Fokus",
+      "Transformasi"
+    ],
+    "challenges": [
+      "Kerahasiaan",
+      "Kecurigaan",
+      "Menyimpan dendam"
+    ],
+    "compatibleSigns": [
+      "Kanker",
+      "Pisces",
+      "Virgo"
+    ],
+    "reflectionPrompt": "Gunakan kedalaman Anda untuk mengubah kebenaran, bukan untuk menyembunyikannya."
+  },
+  "sagittarius": {
+    "name": "Sagitarius",
+    "dateRange": "22 Nov – 21 Des",
+    "rulingPlanet": "Yupiter",
+    "summary": "The Archer mencari cakrawala yang lebih luas melalui kebenaran, perjalanan, belajar, dan optimisme yang bertujuan.",
+    "originStory": "Sagitarius umumnya dikaitkan dengan Chiron, centaur bijak dan guru yang panahnya mengarah melampaui yang biasa. Rasi bintang ini melambangkan persatuan antara naluri dan pemahaman yang lebih tinggi, selalu mengarah ke cakrawala yang lebih bermakna.",
+    "traits": [
+      "Petualang",
+      "Optimis",
+      "Jujur",
+      "Filosofis"
+    ],
+    "strengths": [
+      "Visi",
+      "Antusiasme",
+      "Keterbukaan pikiran"
+    ],
+    "challenges": [
+      "Keterusterangan",
+      "Janji berlebihan",
+      "Melarikan diri dari rutinitas"
+    ],
+    "compatibleSigns": [
+      "Aries",
+      "Leo",
+      "Aquarius"
+    ],
+    "reflectionPrompt": "Bidik jauh, tetapi pilih arah yang dapat didukung oleh tindakan sehari-hari Anda."
+  },
+  "capricorn": {
+    "name": "Capricorn",
+    "dateRange": "22 Des – 19 Jan",
+    "rulingPlanet": "Saturnus",
+    "summary": "Disiplin dan visi jangka panjang membantu Capricorn mendaki sambil tetap bijak tentang kedalaman di bawahnya.",
+    "originStory": "Kambing laut Capricorn dikaitkan dengan Pan, yang sebagian berubah menjadi ikan saat melarikan diri dari Typhon. Sifatnya yang di pegunungan dan lautan menggabungkan ambisi dengan kelangsungan emosional, menghormati penguasaan yang diperoleh melalui waktu dan tanggung jawab.",
+    "traits": [
+      "Ambisius",
+      "Disiplin",
+      "Sabar",
+      "Bertanggung jawab"
+    ],
+    "strengths": [
+      "Ketahanan",
+      "Strategi",
+      "Ketergantungan"
+    ],
+    "challenges": [
+      "Kekakuan",
+      "Pesimisme",
+      "Mengukur harga diri melalui pencapaian"
+    ],
+    "compatibleSigns": [
+      "Taurus",
+      "Virgo",
+      "Scorpio"
+    ],
+    "reflectionPrompt": "Bangun untuk jangka panjang sambil mengingat bahwa istirahat adalah bagian dari struktur."
+  },
+  "aquarius": {
+    "name": "Aquarius",
+    "dateRange": "20 Jan – 18 Feb",
+    "rulingPlanet": "Uranus",
+    "summary": "Pemikiran independen dan visi kolektif membimbing Pembawa Air untuk menuangkan ide-ide baru ke dunia.",
+    "originStory": "Aquarius terkait dengan Ganymede, pembawa cawan yang wadahnya membawa air kepada para dewa dan, secara simbolis, pengetahuan bagi umat manusia. Meskipun gambarnya membawa air, tanda ini termasuk elemen udara: gagasan, sistem, dan pembaruan yang dibagikan untuk kebaikan bersama.",
+    "traits": [
+      "Asli",
+      "Mandiri",
+      "Kemanusiaan",
+      "Inventif"
+    ],
+    "strengths": [
+      "Inovasi",
+      "Objektivitas",
+      "Visi komunitas"
+    ],
+    "challenges": [
+      "Keterlepasan",
+      "Kebiasaan berlawanan",
+      "Pendapat tetap"
+    ],
+    "compatibleSigns": [
+      "Gemini",
+      "Libra",
+      "Sagitarius"
+    ],
+    "reflectionPrompt": "Biarkan perbedaanmu melayani koneksi daripada jarak."
+  },
+  "pisces": {
+    "name": "Pisces",
+    "dateRange": "19 Feb – 20 Mar",
+    "rulingPlanet": "Neptunus",
+    "summary": "Belas kasih dan imajinasi membimbing Ikan di antara intuisi, mimpi, dan perasaan bersama.",
+    "originStory": "Pisces mengingat kembali Aphrodite dan Eros yang menjadi ikan dan saling mengikat untuk melarikan diri dari Typhon. Ikatan antara kedua ikan tersebut melambangkan pengabdian, identitas yang luwes, sensitivitas spiritual, dan menemukan kesatuan saat bergerak melalui aliran yang berubah.",
+    "traits": [
+      "Penuh belas kasih",
+      "Imaginatif",
+      "Intuitif",
+      "Lembut"
+    ],
+    "strengths": [
+      "Empati",
+      "Kreativitas",
+      "Wawasan spiritual"
+    ],
+    "challenges": [
+      "Pelarian",
+      "Batas yang kabur",
+      "Menyerap emosi orang lain"
+    ],
+    "compatibleSigns": [
+      "Kanker",
+      "Scorpio",
+      "Capricorn"
+    ],
+    "reflectionPrompt": "Hormati kepekaan Anda dengan batasan yang cukup kuat untuk melindunginya."
+  }
+}

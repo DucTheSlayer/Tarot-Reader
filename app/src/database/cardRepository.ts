@@ -17,9 +17,29 @@ const CARD_COLUMNS = `
   meaning,
   advice,
   yes_no,
-  yes_no_meaning,
-  (SELECT payload FROM card_translations WHERE card_id = tarot_cards.id AND locale = 'vi') AS translation
+  yes_no_meaning
 `
+
+async function loadTranslations(
+  database: SQLiteDBConnection,
+  cardIds: string[]
+): Promise<Map<string, Record<string, string>>> {
+  const translations = new Map<string, Record<string, string>>()
+  if (!cardIds.length) return translations
+  const placeholders = cardIds.map(() => '?').join(', ')
+  const result = await database.query(
+    `SELECT card_id, locale, payload FROM card_translations WHERE card_id IN (${placeholders});`,
+    cardIds
+  )
+  for (const row of result.values ?? []) {
+    const cardId = String(row.card_id)
+    translations.set(cardId, {
+      ...translations.get(cardId),
+      [String(row.locale)]: String(row.payload)
+    })
+  }
+  return translations
+}
 
 async function queryCards(
   database: SQLiteDBConnection,
@@ -27,9 +47,11 @@ async function queryCards(
   values: unknown[] = []
 ): Promise<TarotCard[]> {
   const result = await database.query(statement, values)
-  return (result.values ?? []).map((row) => localizedEntity(
-    mapTarotCardRow(row), row.translation,
-    ['name', 'meaning', 'advice', 'yesNoMeaning'], () => i18n.global.locale.value
+  const originals = (result.values ?? []).map(mapTarotCardRow)
+  const translations = await loadTranslations(database, originals.map((card) => card.id))
+  return originals.map((card) => localizedEntity(
+    card, translations.get(card.id), ['name', 'meaning', 'advice', 'yesNoMeaning'],
+    () => i18n.global.locale.value
   ))
 }
 

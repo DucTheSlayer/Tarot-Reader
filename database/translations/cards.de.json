@@ -1,0 +1,470 @@
+{
+  "fool": {
+    "name": "Der Narr",
+    "meaning": "Eine leere Seite und ein Sprung ins Unbekannte – eine neue Reise beginnt mit offenem Herzen.",
+    "advice": "Vertraue dem Weg vor dir und mache den ersten Schritt, auch ohne alle Antworten zu haben.",
+    "yesNoMeaning": "Ein neuer Anfang trägt selten eine feste Antwort — das Ergebnis hängt von dem Schritt ab, den du machst."
+  },
+  "magician": {
+    "name": "Der Magier",
+    "meaning": "Du hältst alle Werkzeuge, die du brauchst. Fokussiere deinen Willen und verwandle Absicht in Handlung.",
+    "advice": "Setze deine Fähigkeiten und Ressourcen gezielt ein — jetzt ist die Zeit, es zu verwirklichen.",
+    "yesNoMeaning": "Du besitzt bereits alles, was nötig ist — die Energie unterstützt es, mit Fokus voranzuschreiten."
+  },
+  "high-priestess": {
+    "name": "Die Hohepriesterin",
+    "meaning": "Leise Weisheit verbirgt sich unter der Oberfläche. Höre auf deine Intuition und innere Stimme.",
+    "advice": "Halten Sie inne, gehen Sie nach innen und lassen Sie sich von Ihren Instinkten leiten, bevor Sie handeln.",
+    "yesNoMeaning": "Die Antwort ist vorerst unter der Oberfläche verborgen — vertraue deiner Intuition, statt ein klares Ja oder Nein zu erzwingen."
+  },
+  "empress": {
+    "name": "Die Kaiserin",
+    "meaning": "Wachstum, Fülle und nährende Energie umgeben dich. Lass Schönheit und Fürsorge gedeihen.",
+    "advice": "Sei geduldig und großzügig — kreiere mit Liebe und lass die Dinge natürlich reifen.",
+    "yesNoMeaning": "Wachstum, Fülle und nährende Energie unterstützen deinen Wunsch — die Antwort ist ein stilles Ja."
+  },
+  "emperor": {
+    "name": "Der Kaiser",
+    "meaning": "Struktur, Autorität und beständiges Führungsverhalten. Baue auf festem Grund mit Disziplin.",
+    "advice": "Übernimm die Führung mit einem klaren Plan; feste Grenzen bringen dauerhafte Stabilität.",
+    "yesNoMeaning": "Struktur, Autorität und stetige Disziplin stehen hinter einem selbstbewussten Ja."
+  },
+  "hierophant": {
+    "name": "Der Hierophant",
+    "meaning": "Tradition und vertrauenswürdige Führung bieten einen zuverlässigen Weg. Lerne von dem, was zuvor gekommen ist.",
+    "advice": "Folge bewährter Weisheit und suche Rat bei denen, denen du vertraust.",
+    "yesNoMeaning": "Tradition und vertrauenswürdige Orientierung weisen auf ein verlässliches Ja hin — stütze dich auf das, was sich bereits bewährt hat."
+  },
+  "lovers": {
+    "name": "Die Liebenden",
+    "meaning": "Eine bedeutungsvolle Bindung oder eine wichtige Entscheidung. Folge dem, was dein Herz wirklich schätzt.",
+    "advice": "Wähle mit Ehrlichkeit und Übereinstimmung — Verbindung vertieft sich, wenn du aufrichtig bist.",
+    "yesNoMeaning": "Ihr Herz und Ihre Werte sind hier ausgerichtet — die Antwort ist ja, besonders wenn Sie mit Ehrlichkeit wählen."
+  },
+  "chariot": {
+    "name": "Der Wagen",
+    "meaning": "Willenskraft und Schwung tragen dich voran. Bleibe fokussiert und du wirst siegen.",
+    "advice": "Behalte das Ziel im Auge und steuere mit Zuversicht durch jedes Hindernis.",
+    "yesNoMeaning": "Willenskraft und Schwung sind auf deiner Seite — ein fokussiertes Ja, vorausgesetzt, du bleibst engagiert."
+  },
+  "strength": {
+    "name": "Stärke",
+    "meaning": "Wahre Macht ist sanft — Geduld, Mut und Mitgefühl zähmen jede Herausforderung.",
+    "advice": "Führe mit ruhiger Stärke; eine sanfte Hand ist oft die stärkste.",
+    "yesNoMeaning": "Sanfter Mut und geduldige Entschlossenheit machen dies zu einem Ja — führe mit Ruhe, nicht mit Gewalt."
+  },
+  "hermit": {
+    "name": "Der Eremit",
+    "meaning": "Zeit, einen Schritt zurückzutreten und innere Klarheit zu suchen. Einsamkeit bringt jetzt tiefere Antworten.",
+    "advice": "Kehre nach innen, reflektiere und lasse die Stille offenbaren, was du wirklich brauchst.",
+    "yesNoMeaning": "Noch nicht — die Karte fordert Sie auf, einen Schritt zurückzutreten und innere Klarheit zu finden, bevor Sie handeln."
+  },
+  "wheel-of-fortune": {
+    "name": "Glücksrad",
+    "meaning": "Das Glück wendet sich und Zyklen verändern sich. Was sich jetzt ändert, ist Teil eines größeren Rhythmus.",
+    "advice": "Reite die Welle mit Flexibilität – nimm die Wendung an, ob gut oder schlecht.",
+    "yesNoMeaning": "Das Glück wendet sich — das Ergebnis hängt davon ab, wie du den Wandel bewältigst, nicht von einem festen Ja oder Nein."
+  },
+  "justice": {
+    "name": "Gerechtigkeit",
+    "meaning": "Wahrheit und Gerechtigkeit setzen sich durch. Ursache und Wirkung kommen nun ins Gleichgewicht.",
+    "advice": "Handeln Sie ehrlich und wägen Sie beide Seiten ab; die Waage wird sich fair einstellen.",
+    "yesNoMeaning": "Die Waage ist noch im Gleichgewicht — die faire Antwort hängt von den Fakten und deiner Ehrlichkeit ab."
+  },
+  "hanged-man": {
+    "name": "Der Gehängte",
+    "meaning": "Eine notwendige Pause. Lass die Kontrolle los und betrachte die Situation aus einem neuen Blickwinkel.",
+    "advice": "Hör auf zu drängen — übergebe dich dem Moment und lass eine neue Perspektive eintreffen.",
+    "yesNoMeaning": "Zuerst ist eine Pause nötig — ein erzwungenes Handeln würde nur eine klarere Antwort zurückhalten."
+  },
+  "death": {
+    "name": "Tod",
+    "meaning": "Ein Ende schafft Raum für Erneuerung. Lasse los, was seine Zeit gedient hat.",
+    "advice": "Lass los ohne Bedauern; eine tiefgreifende Transformation öffnet eine neue Tür.",
+    "yesNoMeaning": "Ein Ende schafft Klarheit — der aktuelle Weg schließt sich, damit ein neuer beginnen kann."
+  },
+  "temperance": {
+    "name": "Mäßigung",
+    "meaning": "Balance und Geduld bringen Harmonie. Vereine Gegensätze mit Anmut.",
+    "advice": "Bewegen Sie sich mit Maß und bewahren Sie Ruhe – beständige Schritte erreichen das Ziel.",
+    "yesNoMeaning": "Balance und Geduld bringen Harmonie — ein überlegtes Ja, Schritt für Schritt."
+  },
+  "devil": {
+    "name": "Der Teufel",
+    "meaning": "Sei vorsichtig mit Bindung, Versuchung oder einem fesselnden Muster. Erkenne die Ketten.",
+    "advice": "Nenne, was dich hält, und erlange deine Freiheit zurück — die Kette bindet nur, wenn du es zulässt.",
+    "yesNoMeaning": "Anhaftung oder ein bindendes Muster steht im Weg — noch nicht, bis die Kette benannt und durchbrochen ist."
+  },
+  "tower": {
+    "name": "Der Turm",
+    "meaning": "Plötzliche Veränderungen erschüttern das Falsche und offenbaren die Wahrheit. Was fällt, war niemals zum Stehen gedacht.",
+    "advice": "Begrüße das Durcheinander; aus den Trümmern kann ein klareres Fundament gebaut werden.",
+    "yesNoMeaning": "Plötzliche Veränderungen erschüttern das Alte – der Boden muss sich setzen, bevor ein stabiles Ja möglich ist."
+  },
+  "star": {
+    "name": "Der Stern",
+    "meaning": "Hoffnung, Heilung und stille Inspiration erneuern deinen Geist nach dem Sturm.",
+    "advice": "Vertraue dem Licht vor dir und glaube weiter — deine Wünsche sind greifbar.",
+    "yesNoMeaning": "Hoffnung und stille Erneuerung weisen auf Ja hin – vertraue dem Licht voraus und halte deinen Wunsch lebendig."
+  },
+  "moon": {
+    "name": "Der Mond",
+    "meaning": "Illusion und Unsicherheit verschwimmen den Weg. Vertraue deiner Intuition, nicht den Erscheinungen.",
+    "advice": "Langsam machen und genauer hinschauen; Klarheit wird kommen, wenn der Nebel sich lichtet.",
+    "yesNoMeaning": "Illusion und Unsicherheit verschwimmen den Weg – die Antwort ist unklar, bis du unter die Oberfläche blickst."
+  },
+  "sun": {
+    "name": "Die Sonne",
+    "meaning": "Freude, Erfolg und strahlende Klarheit. Alles ist hell und voller Leben.",
+    "advice": "Feiere und strahle — positive Energie zieht die Ergebnisse an, die du dir wünschst.",
+    "yesNoMeaning": "Freude und strahlende Klarheit bestätigen ein helles Ja — alles arbeitet zu deinen Gunsten."
+  },
+  "judgement": {
+    "name": "Urteil",
+    "meaning": "Ein Aufruf, aufzustehen, sich zu erneuern und ehrlich zu sich selbst zu sein. Ein Urteil des Erwachens.",
+    "advice": "Beantworte den Ruf mit Mut; vergib der Vergangenheit und tritt in dein nächstes Kapitel ein.",
+    "yesNoMeaning": "Ein Aufruf, sich zu erheben und zu erneuern – ja, besonders wenn du der Vergangenheit vergibst und ehrlich antwortest."
+  },
+  "world": {
+    "name": "Die Welt",
+    "meaning": "Abschluss und Erfüllung — ein Zyklus schließt sich in vollkommener Ganzheit.",
+    "advice": "Feiere, was du erreicht hast; die Tür ist zu einer größeren Welt geöffnet.",
+    "yesNoMeaning": "Abschluss und Ganzheit kennzeichnen dies als ein erfülltes Ja — der Zyklus schließt sich zu deinen Gunsten."
+  },
+  "ace-of-wands": {
+    "name": "Ass der Stäbe",
+    "meaning": "Ein Funke der Inspiration öffnet einen mutigen kreativen Weg.",
+    "advice": "Beginne, während die Energie frisch ist, und gib der Idee einen echten ersten Schritt.",
+    "yesNoMeaning": "Das Stab-Ass tendiert zu Ja: Beginne, solange die Energie frisch ist, und gib der Idee einen echten ersten Schritt."
+  },
+  "two-of-wands": {
+    "name": "Zwei der Stäbe",
+    "meaning": "Eine Zukunft nimmt durch Planung und die Wahl einer Richtung Gestalt an.",
+    "advice": "Sieh über das Vertraute hinaus und dann verpflichte dich dem Weg mit Raum zum Wachsen.",
+    "yesNoMeaning": "Die Zwei der Stäbe bleibt bedingt: Schau über das Vertraute hinaus und entscheide dich dann für den Weg mit Raum zum Wachsen."
+  },
+  "three-of-wands": {
+    "name": "Drei der Stäbe",
+    "meaning": "Erste Anstrengung erweitert sich, während Chancen und weitere Horizonte sichtbar werden.",
+    "advice": "Baue weiter und sei bereit, die Reaktion zu empfangen, die deine Arbeit hervorruft.",
+    "yesNoMeaning": "Die Drei der Stäbe tendiert zu ja: Baue weiter auf und sei bereit, auf die Resonanz deiner Arbeit zu reagieren."
+  },
+  "four-of-wands": {
+    "name": "Vier der Stäbe",
+    "meaning": "Stabilität, Willkommen und gemeinsame Feier schaffen eine starke Grundlage.",
+    "advice": "Markiere den Meilenstein und lass unterstützende Menschen daran teilhaben.",
+    "yesNoMeaning": "Die Vier der Stäbe neigt zu Ja: Markiere den Meilenstein und lasse unterstützende Menschen daran teilhaben."
+  },
+  "five-of-wands": {
+    "name": "Fünf der Stäbe",
+    "meaning": "Wettbewerbende Ziele erzeugen Reibung, Lärm oder eine Prüfung des Vertrauens.",
+    "advice": "Verwandle Rivalität in nützliche Praxis und lehne Konflikte ab, die keinen Zweck haben.",
+    "yesNoMeaning": "Die Fünf der Stäbe bleibt bedingt: Verwandle Rivalität in nützliche Übung und verweigere Konflikte, die keinen Zweck haben."
+  },
+  "six-of-wands": {
+    "name": "Sechs der Stäbe",
+    "meaning": "Anerkennung folgt auf entschlossenen Einsatz und sichtbare Fortschritte.",
+    "advice": "Nimm die Ermutigung an, aber halte dein Vertrauen an ehrlicher Arbeit fest.",
+    "yesNoMeaning": "Die Sechs der Stäbe neigt zu Ja: Nimm die Ermutigung an, halte aber dein Selbstvertrauen an ehrlicher Arbeit gebunden."
+  },
+  "seven-of-wands": {
+    "name": "Sieben der Stäbe",
+    "meaning": "Du hältst wertvollen Boden, während der Druck deine Entschlossenheit prüft.",
+    "advice": "Verteidige, was zählt, mit klaren Grenzen, anstatt jede Herausforderung zu bekämpfen.",
+    "yesNoMeaning": "Die Sieben der Stäbe tendiert zu Ja: Verteidige, was wichtig ist, mit klaren Grenzen, anstatt jede Herausforderung zu bekämpfen."
+  },
+  "eight-of-wands": {
+    "name": "Acht der Stäbe",
+    "meaning": "Ereignisse beschleunigen sich, Nachrichten kommen an, und der Schwung beseitigt Verzögerungen.",
+    "advice": "Handeln Sie zügig und halten Sie die Kommunikation direkt, solange der Weg offen ist.",
+    "yesNoMeaning": "Die Acht der Stäbe tendiert zu Ja: Handle prompt und halte die Kommunikation direkt, solange der Weg offen ist."
+  },
+  "nine-of-wands": {
+    "name": "Neun der Stäbe",
+    "meaning": "Resilienz ist stark, obwohl frühere Belastung dich wachsam macht.",
+    "advice": "Schütze deine Energie und gehe den nächsten Schritt, ohne zu erwarten, dass jede Wunde sich wiederholt.",
+    "yesNoMeaning": "Die Neun der Stäbe bleibt bedingt: Schütze deine Energie und mache den nächsten Schritt, ohne zu erwarten, dass jede Wunde sich wiederholt."
+  },
+  "ten-of-wands": {
+    "name": "Zehn der Stäbe",
+    "meaning": "Verantwortung ist schwer geworden und Erfolg trägt jetzt eine Last.",
+    "advice": "Delegiere, vereinfache und lege Arbeit nieder, die nicht mehr wirklich deine ist.",
+    "yesNoMeaning": "Die Zehn der Stäbe tendiert zu nein: delegiere, vereinfache und lege Arbeit ab, die nicht mehr wirklich dir gehört."
+  },
+  "page-of-wands": {
+    "name": "Bube der Stäbe",
+    "meaning": "Neugier bringt eine lebhafte Nachricht, ein Experiment oder ein neues kreatives Interesse.",
+    "advice": "Erkunde mit Mut und lass die Energie des Anfängers dich durch Handeln lehren.",
+    "yesNoMeaning": "Der Bube der Stäbe tendiert zu ja: Erkunden Sie mit Mut und lassen Sie die Anfängerkraft Sie durch Handeln lehren."
+  },
+  "knight-of-wands": {
+    "name": "Ritter der Stäbe",
+    "meaning": "Leidenschaft stürmt schnell voran, bringt Abenteuer und mögliche Ungeduld.",
+    "advice": "Nutze die Dynamik, aber wähle eine Richtung, bevor die Geschwindigkeit deine Bemühungen zerstreut.",
+    "yesNoMeaning": "Der Ritter der Stäbe bleibt bedingt: Nutze das Momentum, aber wähle eine Richtung, bevor die Geschwindigkeit deine Anstrengung zerstreut."
+  },
+  "queen-of-wands": {
+    "name": "Königin der Stäbe",
+    "meaning": "Warme Zuversicht und kreative Unabhängigkeit ziehen andere zu deiner Vision hin.",
+    "advice": "Vertraue deiner Präsenz, ermutige andere und mindere nicht deinen Ehrgeiz.",
+    "yesNoMeaning": "Die Königin der Stäbe neigt sich ja: Vertraue auf deine Präsenz, ermutige andere und schränke deinen Ehrgeiz nicht ein."
+  },
+  "king-of-wands": {
+    "name": "König der Stäbe",
+    "meaning": "Reife Vision verwandelt Inspiration in entschlossene und ethische Führung.",
+    "advice": "Führe aus einem größeren Zweck heraus und gib anderen Raum zur Mitwirkung.",
+    "yesNoMeaning": "Der König der Stäbe neigt zu Ja: Führe vom größeren Zweck aus und gib anderen Raum, beizutragen."
+  },
+  "ace-of-cups": {
+    "name": "Ass der Kelche",
+    "meaning": "Das Herz öffnet sich für neue Zuneigung, Mitgefühl und emotionale Erneuerung.",
+    "advice": "Nimm das Gefühl ehrlich wahr und lasse Fürsorge fließen, ohne ein Ergebnis erzwingen zu müssen.",
+    "yesNoMeaning": "Das Ass der Kelche tendiert zu Ja: Nimm das Gefühl ehrlich an und lasse Fürsorge fließen, ohne ein Ergebnis erzwingen zu wollen."
+  },
+  "two-of-cups": {
+    "name": "Zwei der Kelche",
+    "meaning": "Gegenseitige Anerkennung schafft Partnerschaft, Anziehung oder aufrichtige Übereinstimmung.",
+    "advice": "Treffen Sie die andere Person auf Augenhöhe und sprechen Sie von Herzen.",
+    "yesNoMeaning": "Die Zwei der Kelche tendiert zu ja: Begegne der anderen Person als Gleichwertige/r und sprich von Herzen."
+  },
+  "three-of-cups": {
+    "name": "Drei der Kelche",
+    "meaning": "Freundschaft, Gemeinschaft und geteilte Freude bringen emotionale Unterstützung.",
+    "advice": "Feiere gemeinsam und erinnere dich daran, wer wirklich für dich da ist.",
+    "yesNoMeaning": "Die Drei der Kelche tendiert zu ja: feiere gemeinsam und erinnere dich daran, wer wirklich für dich da ist."
+  },
+  "four-of-cups": {
+    "name": "Vier der Kelche",
+    "meaning": "Emotionaler Rückzug macht ein verfügbares Geschenk schwer wahrnehmbar.",
+    "advice": "Unterbrechen Sie den Vergleich und schauen Sie erneut, was still angeboten wird.",
+    "yesNoMeaning": "Die Vier der Kelche lehnt ab: halte den Vergleich inne und schaue erneut, was still angeboten wird."
+  },
+  "five-of-cups": {
+    "name": "Fünf der Kelche",
+    "meaning": "Verlust lenkt die Aufmerksamkeit auf das, was verschüttet wurde, während etwas Bedeutungsvolles bleibt.",
+    "advice": "Ehre die Enttäuschung, wende dich dann der Unterstützung zu, die noch da ist.",
+    "yesNoMeaning": "Die Fünf der Kelche neigt sich zu nein: Ehre die Enttäuschung und wende dich dann der Unterstützung zu, die noch vorhanden ist."
+  },
+  "six-of-cups": {
+    "name": "Sechs der Kelche",
+    "meaning": "Erinnerung, Unschuld oder eine vertraute Bindung kehrt mit sanfter Wärme zurück.",
+    "advice": "Begrüße die Freundlichkeit der Vergangenheit, ohne so zu tun, als müsstest du dort wieder leben.",
+    "yesNoMeaning": "Die Sechs der Kelche tendiert zu Ja: Begrüße die Freundlichkeit der Vergangenheit, ohne so zu tun, als müsstest du dort wieder leben."
+  },
+  "seven-of-cups": {
+    "name": "Sieben der Kelche",
+    "meaning": "Viele verlockende Möglichkeiten verwischen den Unterschied zwischen Vision und Illusion.",
+    "advice": "Eingrenzen Sie die Auswahlmöglichkeiten und prüfen Sie einen Traum an der Realität, bevor Sie sich festlegen.",
+    "yesNoMeaning": "Die Sieben der Kelche ist noch nicht klar: Engen Sie die Optionen ein und prüfen Sie einen Traum gegen die Realität, bevor Sie sich festlegen."
+  },
+  "eight-of-cups": {
+    "name": "Acht der Kelche",
+    "meaning": "Eine einst bedeutungsvolle Situation nährt das Herz nicht mehr.",
+    "advice": "Gehe mit Ehrlichkeit und bewege dich auf die tiefere Erfüllung zu, die du jetzt brauchst.",
+    "yesNoMeaning": "Die Acht der Kelche tendiert zu Nein: Gehe ehrlich weg und bewege dich auf die tiefere Erfüllung zu, die du jetzt brauchst."
+  },
+  "nine-of-cups": {
+    "name": "Neun der Kelche",
+    "meaning": "Zufriedenheit und Dankbarkeit lassen einen Herzenswunsch nah erscheinen.",
+    "advice": "Genießen Sie, was hier ist, und fragen Sie, ob der Wunsch auch Ihren tieferen Werten dient.",
+    "yesNoMeaning": "Die Neun der Kelche tendiert zu Ja: Genieße, was da ist, und frage, ob der Wunsch auch deinen tieferen Werten dient."
+  },
+  "ten-of-cups": {
+    "name": "Zehn der Kelche",
+    "meaning": "Emotionale Harmonie, Zugehörigkeit und dauerhafte Verbindung umgeben das Zuhause.",
+    "advice": "Pflege die Bindungen, die Freude nachhaltig und geteilt machen.",
+    "yesNoMeaning": "Die Zehn der Kelche tendiert zu ja: pflege die Bindungen, die Freude nachhaltig und geteilt machen."
+  },
+  "page-of-cups": {
+    "name": "Bube der Kelche",
+    "meaning": "Eine zarte Botschaft oder intuitive Entdeckung lädt zu emotionaler Offenheit ein.",
+    "advice": "Bleibe neugierig über das Gefühl und reagiere mit Aufrichtigkeit statt mit Annahmen.",
+    "yesNoMeaning": "Der Bube der Kelche bleibt bedingt: Bleiben Sie neugierig auf das Gefühl und reagieren Sie mit Aufrichtigkeit statt mit Annahmen."
+  },
+  "knight-of-cups": {
+    "name": "Ritter der Kelche",
+    "meaning": "Romantik, Fantasie oder ein Ideal zieht das Herz vorwärts.",
+    "advice": "Folge der Einladung, aber halte einen Fuß auf dem Boden, während sich die Versprechen entfalten.",
+    "yesNoMeaning": "Der Ritter der Kelche neigt zu Ja: Folge der Einladung, behalte aber einen Fuß auf dem Boden, während sich Versprechen entfalten."
+  },
+  "queen-of-cups": {
+    "name": "Königin der Kelche",
+    "meaning": "Tiefe Empathie und Intuition schaffen einen ruhigen Raum für Wahrheit.",
+    "advice": "Höre mit Mitgefühl zu, während du die Grenzen bewahrst, die Fürsorge gesund halten.",
+    "yesNoMeaning": "Die Königin der Kelche tendiert zu ja: Hören Sie mit Mitgefühl zu, während Sie die Grenzen wahren, die Fürsorge gesund halten."
+  },
+  "king-of-cups": {
+    "name": "König der Kelche",
+    "meaning": "Emotionale Reife stabilisiert starke Gefühle, ohne sie zu unterdrücken.",
+    "advice": "Reagiere mit Mitgefühl und Selbstbeherrschung, besonders wenn andere reaktiv sind.",
+    "yesNoMeaning": "Der König der Kelche neigt zu Ja: Reagiere mit Mitgefühl und Selbstbeherrschung, besonders wenn andere reaktiv sind."
+  },
+  "ace-of-swords": {
+    "name": "Ass der Schwerter",
+    "meaning": "Eine klare Einsicht durchdringt die Verwirrung und offenbart eine neue Wahrheit.",
+    "advice": "Nennen Sie das Problem klar und verwenden Sie Klarheit im Dienst einer fairen Entscheidung.",
+    "yesNoMeaning": "Das Schwert-Ass tendiert zu Ja: Nenne das Thema klar und nutze Klarheit zum Dienst einer fairen Entscheidung."
+  },
+  "two-of-swords": {
+    "name": "Zwei der Schwerter",
+    "meaning": "Ein vorsichtiges Patt verzögert eine Entscheidung, die nicht ewig aufgeschoben bleiben kann.",
+    "advice": "Entferne die Augenbinde sanft, sammle die fehlenden Fakten und entscheide aus dem Gleichgewicht.",
+    "yesNoMeaning": "Die Zwei der Schwerter ist noch unklar: Entferne die Augenbinde behutsam, sammle die fehlenden Fakten und entscheide aus der Balance heraus."
+  },
+  "three-of-swords": {
+    "name": "Drei der Schwerter",
+    "meaning": "Eine schmerzhafte Wahrheit, Trennung oder Enttäuschung verlangt danach, anerkannt zu werden.",
+    "advice": "Lass das Gefühl durch dich hindurchfließen und vermeide es, Schmerz in eine dauerhafte Geschichte zu verwandeln.",
+    "yesNoMeaning": "Die Drei der Schwerter tendiert zu nein: Lass das Gefühl durch dich hindurchgehen und vermeide, Schmerz in eine permanente Geschichte zu verwandeln."
+  },
+  "four-of-swords": {
+    "name": "Vier der Schwerter",
+    "meaning": "Nach Druck oder Konflikt sind Ruhe und geistige Stille notwendig.",
+    "advice": "Pause vor dem Antworten; Erholung ist produktiv, wenn sie klares Denken wiederherstellt.",
+    "yesNoMeaning": "Die Vier der Schwerter lehnt sich zurück: Pausiere, bevor du antwortest; Erholung ist produktiv, wenn sie klares Denken wiederherstellt."
+  },
+  "five-of-swords": {
+    "name": "Fünf der Schwerter",
+    "meaning": "Konflikt kann einen hohlen Sieg erzeugen oder das Vertrauen beschädigen.",
+    "advice": "Wähle Würde über Sieg und entferne dich von Taktiken, die zu viel kosten.",
+    "yesNoMeaning": "Die Fünf der Schwerter neigt sich zu nein: Wähle Würde über Sieg und tritt von Taktiken zurück, die zu viel kosten."
+  },
+  "six-of-swords": {
+    "name": "Sechs der Schwerter",
+    "meaning": "Ein schwieriger Abschnitt bewegt sich allmählich in ruhigere Bedingungen.",
+    "advice": "Nimm, was du gelernt hast, akzeptiere Unterstützung und bewege dich weiterhin weg vom Aufruhr.",
+    "yesNoMeaning": "Die Sechs der Schwerter neigt sich ja: Nimm, was du gelernt hast, akzeptiere Unterstützung und bewege dich weiter weg vom Aufruhr."
+  },
+  "seven-of-swords": {
+    "name": "Sieben der Schwerter",
+    "meaning": "Strategie, Geheimhaltung oder Vermeidung verkomplizieren den Weg.",
+    "advice": "Handle clever, aber transparent; Abkürzungen, die Vertrauen verraten, werden als Probleme zurückkehren.",
+    "yesNoMeaning": "Die Sieben der Schwerter tendiert zu Nein: Handle klug, aber transparent; Abkürzungen, die Vertrauen verraten, werden als Probleme zurückkehren."
+  },
+  "eight-of-swords": {
+    "name": "Acht der Schwerter",
+    "meaning": "Angst und einschränkende Überzeugungen machen die verfügbaren Optionen schwer erkennbar.",
+    "advice": "Hinterfrage den Gedanken, der sagt, du seist gefangen, und unternimm eine kleine befreiende Handlung.",
+    "yesNoMeaning": "Die Acht der Schwerter tendiert zu Nein: Hinterfrage den Gedanken, der sagt, dass du gefangen bist, und mache eine kleine befreiende Handlung."
+  },
+  "nine-of-swords": {
+    "name": "Neun der Schwerter",
+    "meaning": "Angst vergrößert die Gefahr in der Dunkelheit und erschöpft den Geist.",
+    "advice": "Bringe die Angst ans Licht, suche Unterstützung und trenne Fakten von eingebildeten Ergebnissen.",
+    "yesNoMeaning": "Die Neun der Schwerter tendiert zu Nein: Bring die Angst ans Tageslicht, suche Unterstützung und trenne Fakten von eingebildeten Ergebnissen."
+  },
+  "ten-of-swords": {
+    "name": "Zehn der Schwerter",
+    "meaning": "Ein schmerzhafter Zyklus erreicht seine endgültige Grenze und kann nicht unverändert fortgesetzt werden.",
+    "advice": "Akzeptiere das Ende, schütze deine Genesung und erlaube einen anderen Anfang zu entstehen.",
+    "yesNoMeaning": "Die Zehn der Schwerter tendiert zu nein: akzeptiere das Ende, schütze deine Erholung und erlaube, dass ein anderer Anfang entsteht."
+  },
+  "page-of-swords": {
+    "name": "Bube der Schwerter",
+    "meaning": "Alarmierende Neugier sucht nach Fakten, stellt Fragen und achtet auf Veränderungen.",
+    "advice": "Forsche sorgfältig und spreche präzise, anstatt auf jedes Signal zu reagieren.",
+    "yesNoMeaning": "Der Bube der Schwerter bleibt bedingt: Forschen Sie sorgfältig und sprechen Sie präzise, statt auf jedes Signal zu reagieren."
+  },
+  "knight-of-swords": {
+    "name": "Ritter der Schwerter",
+    "meaning": "Konzentrierter Intellekt bewegt sich schnell und stellt sich Hindernissen direkt.",
+    "advice": "Gehen Sie mutig voran, aber langsam genug, um zu hören, was Ihre Sicherheit möglicherweise verpasst.",
+    "yesNoMeaning": "Der Ritter der Schwerter bleibt bedingt: Gehe mutig voran, aber langsam genug, um zu hören, was deine Gewissheit möglicherweise übersieht."
+  },
+  "queen-of-swords": {
+    "name": "Königin der Schwerter",
+    "meaning": "Klare Wahrnehmung und ehrliche Grenzen beseitigen Verwirrung.",
+    "advice": "Sprich, was wahr ist, mit Mitgefühl und lass die Erfahrung dich schärfen, nicht verhärten.",
+    "yesNoMeaning": "Die Königin der Schwerter tendiert zu ja: Sagen Sie, was wahr ist, mit Mitgefühl und lassen Sie Erfahrung Sie schärfen, nicht verhärten."
+  },
+  "king-of-swords": {
+    "name": "König der Schwerter",
+    "meaning": "Vernunft, Fairness und diszipliniertes Urteilsvermögen leiten eine folgenschwere Entscheidung.",
+    "advice": "Verwende Beweise, definiere den Standard und halte persönliche Vorurteile aus dem Urteil fern.",
+    "yesNoMeaning": "Der König der Schwerter neigt zu Ja: Nutze Beweise, definiere den Standard und halte persönliche Voreingenommenheit aus dem Urteil fern."
+  },
+  "ace-of-pentacles": {
+    "name": "Ass der Münzen",
+    "meaning": "Eine greifbare Gelegenheit bietet den Samen für Wohlstand, Arbeit oder Wohlbefinden.",
+    "advice": "Verankere die Gelegenheit in einem praktischen Plan und pflege sie kontinuierlich.",
+    "yesNoMeaning": "Das Ass der Münzen tendiert zu Ja: Verankere die Gelegenheit in einem praktischen Plan und pflege sie konsequent."
+  },
+  "two-of-pentacles": {
+    "name": "Zwei der Münzen",
+    "meaning": "Mehrere Prioritäten bewegen sich gleichzeitig und erfordern ein flexibles Gleichgewicht.",
+    "advice": "Passen Sie den Rhythmus an, schützen Sie das Wesentliche und vermeiden Sie es, mehr zu versprechen, als Sie tragen können.",
+    "yesNoMeaning": "Die Zwei der Münzen bleibt bedingt: Passe den Rhythmus an, schütze das Wesentliche und vermeide es, mehr zu versprechen, als du tragen kannst."
+  },
+  "three-of-pentacles": {
+    "name": "Drei der Münzen",
+    "meaning": "Fähigkeit wächst durch Zusammenarbeit, Feedback und sorgfältige Handwerkskunst.",
+    "advice": "Trage deine Stärke bei, respektiere Fachwissen und baue auf einen gemeinsamen Standard.",
+    "yesNoMeaning": "Die Drei der Münzen tendiert zu ja: Trage deine Stärke bei, respektiere Fachwissen und baue nach einem gemeinsamen Standard."
+  },
+  "four-of-pentacles": {
+    "name": "Vier der Münzen",
+    "meaning": "Ein festes Festhalten an Sicherheit kann Ressourcen bewahren, aber den gesunden Fluss einschränken.",
+    "advice": "Schütze, was wichtig ist, ohne Angst jede Entscheidung für dich treffen zu lassen.",
+    "yesNoMeaning": "Die Vier der Münzen bleibt bedingt: Schütze, was wichtig ist, ohne dass Angst jede Entscheidung für dich trifft."
+  },
+  "five-of-pentacles": {
+    "name": "Fünf der Münzen",
+    "meaning": "Materielle Belastung oder Ausschluss erzeugt Sorge und ein Gefühl der Knappheit.",
+    "advice": "Bitte um praktische Hilfe und achte auf die Tür, die durch Schwierigkeiten leicht übersehen werden kann.",
+    "yesNoMeaning": "Die Fünf der Münzen neigt sich zu nein: Bitte um praktische Hilfe und achte auf die Tür, die Härte leicht übersehen lässt."
+  },
+  "six-of-pentacles": {
+    "name": "Sechs der Münzen",
+    "meaning": "Ressourcen werden ausgetauscht, was Fragen zu Großzügigkeit, Macht und Fairness aufwirft.",
+    "advice": "Gib oder empfange mit klaren Bedingungen, damit die Unterstützung die Würde beider Seiten bewahrt.",
+    "yesNoMeaning": "Die Sechs der Münzen tendiert zu Ja: Gib oder empfange mit klaren Bedingungen, damit Unterstützung die Würde auf beiden Seiten bewahrt."
+  },
+  "seven-of-pentacles": {
+    "name": "Sieben der Münzen",
+    "meaning": "Geduldige Investition erreicht einen Punkt der Bewertung vor dem nächsten Einsatz.",
+    "advice": "Überprüfen Sie, was wächst, verbessern Sie die Methode und geben Sie lohnenswerten Ergebnissen Zeit.",
+    "yesNoMeaning": "Die Sieben der Münzen bleibt bedingt: Überprüfe, was wächst, verbessere die Methode und gib lohnenswerten Ergebnissen Zeit."
+  },
+  "eight-of-pentacles": {
+    "name": "Acht der Münzen",
+    "meaning": "Fokussierte Wiederholung entwickelt Meisterschaft und verlässliche Ergebnisse.",
+    "advice": "Üben Sie die wesentliche Fähigkeit, nehmen Sie Korrektur an und lassen Sie Qualität sich ansammeln.",
+    "yesNoMeaning": "Die Acht der Münzen tendiert zu Ja: Übe die wesentliche Fähigkeit, begrüße Korrektur und lasse Qualität entstehen."
+  },
+  "nine-of-pentacles": {
+    "name": "Neun der Münzen",
+    "meaning": "Selbstvertrauen und kultivierter Komfort spiegeln disziplinierten Fortschritt wider.",
+    "advice": "Genieße, was du aufgebaut hast, und halte Unabhängigkeit mit Dankbarkeit verbunden.",
+    "yesNoMeaning": "Die Neun der Münzen tendiert zu Ja: Genieße, was du aufgebaut hast, und halte die Unabhängigkeit im Einklang mit Dankbarkeit."
+  },
+  "ten-of-pentacles": {
+    "name": "Zehn der Münzen",
+    "meaning": "Langfristige Sicherheit wächst durch Erbe, Familie und gemeinsame Grundlagen.",
+    "advice": "Planen Sie über den unmittelbaren Gewinn hinaus und schützen Sie, was anderen langfristig unterstützen kann.",
+    "yesNoMeaning": "Die Zehn der Münzen tendiert zu ja: plane über den unmittelbaren Gewinn hinaus und schütze, was anderen langfristig Unterstützung bieten kann."
+  },
+  "page-of-pentacles": {
+    "name": "Bube der Münzen",
+    "meaning": "Eine praktische Botschaft lädt zu Studium, Planung oder einem fundierten neuen Unternehmen ein.",
+    "advice": "Lerne die Grundlagen, definiere die nächste Aufgabe und beweise die Idee durch stetige Arbeit.",
+    "yesNoMeaning": "Der Bube der Münzen tendiert zu ja: Lernen Sie die Grundlagen, definieren Sie die nächste Aufgabe und beweisen Sie die Idee durch stetige Arbeit."
+  },
+  "knight-of-pentacles": {
+    "name": "Ritter der Münzen",
+    "meaning": "Zuverlässige Arbeit schreitet langsam voran, gibt die Aufgabe aber selten auf.",
+    "advice": "Halten Sie die Routine ehrlich und konsequent; Fortschritt ist wichtiger als Aufregung.",
+    "yesNoMeaning": "Der Ritter der Münzen neigt zu Ja: Halte die Routine ehrlich und konsistent; Fortschritt ist wichtiger als Aufregung."
+  },
+  "queen-of-pentacles": {
+    "name": "Königin der Münzen",
+    "meaning": "Einfallsreiche Fürsorge schafft Komfort, Gesundheit und praktischen Überfluss.",
+    "advice": "Pflege Menschen und Pläne auf eine Weise, die für dich nachhaltig bleibt.",
+    "yesNoMeaning": "Die Königin der Münzen tendiert zu ja: Pflegen Sie Menschen und Pläne auf eine Weise, die für Sie nachhaltig bleibt."
+  },
+  "king-of-pentacles": {
+    "name": "König der Münzen",
+    "meaning": "Materielle Führung verwandelt Erfahrung in stabile und großzügige Verwaltung.",
+    "advice": "Treffe die langfristige Wahl und nutze den Erfolg verantwortungsvoll.",
+    "yesNoMeaning": "Der König der Münzen neigt zu Ja: Triff die vernünftige langfristige Wahl und nutze Erfolg verantwortungsvoll."
+  }
+}

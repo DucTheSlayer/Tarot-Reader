@@ -21,13 +21,14 @@ defineEmits<{
 
 <template>
   <div class="sign-picker" :aria-label='ui("Choose a zodiac sign")'>
-    <template v-for="sign in signs" :key="sign.id">
+    <template v-for="(sign, index) in signs" :key="sign.id">
       <router-link
         v-if="mode === 'links'"
         :to="`/zodiac/origin/${sign.id}`"
         class="sign-picker__item"
         :class="`sign-picker__item--${sign.element}`"
         :aria-label="`${sign.name}, ${sign.dateRange}`"
+        :style="{ '--sign-index': index }"
       >
         <span class="sign-picker__symbol" aria-hidden="true">{{ sign.symbol }}</span>
         <strong>{{ sign.name }}</strong>
@@ -43,6 +44,7 @@ defineEmits<{
           { 'sign-picker__item--selected': selectedId === sign.id }
         ]"
         :aria-pressed="selectedId === sign.id"
+        :style="{ '--sign-index': index }"
         @click="$emit('select', sign)"
       >
         <span class="sign-picker__symbol" aria-hidden="true">{{ sign.symbol }}</span>
@@ -81,6 +83,8 @@ defineEmits<{
   font: inherit;
   text-align: center;
   cursor: pointer;
+  animation: constellation-rise 480ms
+    calc(var(--sign-index, 0) * 42ms) cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
 
 .sign-picker__item--fire { --sign-accent: #f6a85f; }
@@ -99,6 +103,8 @@ defineEmits<{
   font-size: 30px;
   line-height: 1;
   text-shadow: 0 0 12px color-mix(in srgb, var(--sign-accent) 50%, transparent);
+  animation: zodiac-glyph-arrive 620ms
+    calc(110ms + var(--sign-index, 0) * 42ms) cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
 
 .sign-picker strong {
@@ -166,6 +172,20 @@ defineEmits<{
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sign-picker__item { transition: none; }
+  .sign-picker__item,
+  .sign-picker__symbol {
+    animation: none;
+    transition: none;
+  }
+}
+
+@keyframes constellation-rise {
+  from { opacity: 0; transform: translateY(12px) scale(0.94); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes zodiac-glyph-arrive {
+  from { opacity: 0; transform: rotate(-18deg) scale(0.55); }
+  to { opacity: 1; transform: rotate(0) scale(1); }
 }
 </style>

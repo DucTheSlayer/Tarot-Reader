@@ -50,8 +50,13 @@ const zodiacStore = useZodiacStore()
   border: 1px solid rgba(230, 199, 107, 0.26);
   border-radius: var(--radius-md);
   background: rgba(20, 10, 40, 0.72);
+  animation: origin-intro-arrive 520ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
-.origin-list__intro span { color: var(--color-gold); font-size: 20px; }
+.origin-list__intro span {
+  color: var(--color-gold);
+  font-size: 20px;
+  animation: origin-compass 5s linear infinite;
+}
 .origin-list__intro p,
 .origin-list__note { color: var(--color-text-muted); font-size: 12px; line-height: 1.65; }
 .origin-list__note { padding: 0 var(--space-2); text-align: center; }
@@ -86,5 +91,19 @@ const zodiacStore = useZodiacStore()
   .origin-list__note {
     font-size: clamp(12px, 1.25vw, 14px);
   }
+}
+
+@keyframes origin-intro-arrive {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes origin-compass {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .origin-list__intro,
+  .origin-list__intro span { animation: none; }
 }
 </style>

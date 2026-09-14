@@ -7,11 +7,14 @@ The app ships an offline SQLite database containing 78 Tarot cards, 12 zodiac pr
 - `migrations/001_initial.sql`: schema version 1.
 - `migrations/002_zodiac.sql`: schema version 2 with zodiac tables.
 - `migrations/003_translations.sql`: schema version 3, Vietnamese translation tables with foreign keys.
+- `migrations/004_expand_locales.sql`: schema version 4, removes the Vietnamese-only locale constraint while preserving existing translations.
+- `migrations/005_refresh_translations.sql`: schema version 5, refreshes app-owned translation rows so existing installs receive newly published locales.
+- `migrations/006_refresh_translations.sql`: schema version 6, refreshes translation rows for the expanded 10-language database catalogue.
 - `seeds/001_major_arcana.sql`: 22 Major Arcana cards.
 - `seeds/002_minor_arcana.sql`: 56 Minor Arcana cards.
 - `seeds/003_zodiac.sql`: 12 profiles and 36 Day/Week/Year readings.
 - `translations/*.vi.json`: editable Vietnamese card, zodiac and period copy.
-- `seeds/004_translations.sql`: generated translation seed, shared by fresh installs and v3 upgrades.
+- `seeds/004_translations.sql`: generated translation seed, shared by fresh installs and upgrades.
 - `source/tarot_cardsSQLite.db`: source database for DB Browser.
 - `../app/public/assets/databases/tarot_cardsSQLite.db`: deployable copy used by Capacitor/jeep-sqlite.
 
@@ -49,10 +52,10 @@ DB Browser is an authoring and inspection tool, not a server. Installed apps use
 - Every card has non-empty meaning/advice/Yes-No content and an existing local image path.
 - Zodiac has exactly 12 active signs ordered from 1 through 12.
 - Horoscope has exactly 36 rows: 12 each for Day, Week, and Year.
-- V3 has 78 card, 12 zodiac and 36 horoscope translations for `vi`, with complete nonempty fields.
+- V6 has 78 card, 12 zodiac and 36 horoscope translations per published non-English locale, with complete nonempty fields.
 - English rows and IDs are never rewritten by the translation migration.
-- Run `npm test` in `app` to exercise the actual Capacitor upgrade statements with sql.js, including v1 → v2 → v3 and preservation of all original fields.
+- Run `npm test` in `app` to exercise the actual Capacitor upgrade statements with sql.js, including v1 through v6 and preservation of all original fields.
 
 Edit Vietnamese JSON, regenerate the seed, then rebuild both database assets. The card tuples contain name, meaning, advice, and an optional Major Arcana yes/no explanation. Minor Arcana verdict explanations and horoscope copy are generated with the same structure as the English seeds.
 
-Once v3 is shipped, subsequent copy edits require a new versioned migration, not merely a regenerated bundled database. Existing installations keep their database and only run newer upgrade statements.
+Once a database version is shipped, subsequent copy edits require a new versioned migration, not merely a regenerated bundled database. Existing installations keep their database and only run newer upgrade statements.

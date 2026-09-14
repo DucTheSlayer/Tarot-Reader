@@ -1,0 +1,350 @@
+{
+  "aries": {
+    "name": "Bélier",
+    "dateRange": "21 mars – 19 avril",
+    "rulingPlanet": "Mars",
+    "summary": "Les débuts audacieux et l'action directe définissent le Bélier, dont l'étincelle transforme l'intention en élan.",
+    "originStory": "Le Bélier est lié au bélier d'or qui a sauvé Phrixos dans la mythologie grecque. Sa toison est ensuite devenue le prix de Jason et des Argonautes, conservant le signe comme symbole de courage, de sauvetage et du premier pas courageux.",
+    "traits": [
+      "Courageux",
+      "Énergique",
+      "Indépendant",
+      "Direct"
+    ],
+    "strengths": [
+      "Initiative",
+      "Confiance",
+      "Résilience"
+    ],
+    "challenges": [
+      "Impatience",
+      "Impulsivité",
+      "Commencer plus vite que ce que vous pouvez soutenir"
+    ],
+    "compatibleSigns": [
+      "Lion",
+      "Sagittaire",
+      "Gémeaux"
+    ],
+    "reflectionPrompt": "Choisissez un début courageux et donnez-lui suffisamment de patience pour grandir."
+  },
+  "taurus": {
+    "name": "Taureau",
+    "dateRange": "20 avril – 20 mai",
+    "rulingPlanet": "Vénus",
+    "summary": "Stable, sensuel et enraciné, le Taureau construit une valeur durable par la patience et le soin.",
+    "originStory": "Le Taureau rappelle Zeus prenant la forme d'un magnifique taureau blanc pour transporter Europe à travers la mer. L'image est devenue associée à la beauté, la fertilité, l'abondance terrestre et le pouvoir exprimé à travers une persistance calme.",
+    "traits": [
+      "Ancré",
+      "Loyal",
+      "Patient",
+      "Sensuel"
+    ],
+    "strengths": [
+      "Fiabilité",
+      "Sagesse pratique",
+      "Dévotion"
+    ],
+    "challenges": [
+      "Entêtement",
+      "Résistance au changement",
+      "S'accrocher trop longtemps"
+    ],
+    "compatibleSigns": [
+      "Vierge",
+      "Capricorne",
+      "Cancer"
+    ],
+    "reflectionPrompt": "Protégez ce qui compte sans confondre le confort avec la permanence."
+  },
+  "gemini": {
+    "name": "Gémeaux",
+    "dateRange": "21 mai – 20 juin",
+    "rulingPlanet": "Mercure",
+    "summary": "La curiosité et la connexion guident les Gémeaux, qui rassemblent des idées et révèlent plus d'un côté d'une histoire.",
+    "originStory": "Les Gémeaux représentent Castor et Pollux, des jumeaux inséparables qui ont partagé l'immortalité plutôt que de rester séparés. Leur constellation porte des thèmes de compagnie, de double perspective, de communication et de passage entre les mondes.",
+    "traits": [
+      "Curieux",
+      "Adaptable",
+      "Expressif",
+      "À l'esprit vif"
+    ],
+    "strengths": [
+      "Communication",
+      "Polyvalence",
+      "Apprentissage rapide"
+    ],
+    "challenges": [
+      "Agitation",
+      "Concentration dispersée",
+      "Trop réfléchir"
+    ],
+    "compatibleSigns": [
+      "Balance",
+      "Verseau",
+      "Bélier"
+    ],
+    "reflectionPrompt": "Laissez la curiosité ouvrir la porte, puis restez assez longtemps pour comprendre ce que vous trouvez."
+  },
+  "cancer": {
+    "name": "Cancer",
+    "dateRange": "21 juin – 22 juil.",
+    "rulingPlanet": "Lune",
+    "summary": "Protectrice et intuitive, le Cancer crée un sentiment d'appartenance en honorant la mémoire, les sentiments et le foyer.",
+    "originStory": "Le Cancer est associé au crabe Karkinos, placé parmi les étoiles après avoir montré sa loyauté pendant le combat d'Héraclès contre l'Hydre. Sa carapace et sa domination lunaire reflètent la protection, les marées émotionnelles et la dévotion envers son cercle intime.",
+    "traits": [
+      "Intuitif",
+      "Attentionné",
+      "Protecteur",
+      "Imaginatif"
+    ],
+    "strengths": [
+      "Empathie",
+      "Loyauté",
+      "Perspicacité émotionnelle"
+    ],
+    "challenges": [
+      "Mauvais humeur",
+      "Se replier derrière des défenses",
+      "Prendre les choses personnellement"
+    ],
+    "compatibleSigns": [
+      "Scorpion",
+      "Poissons",
+      "Taureau"
+    ],
+    "reflectionPrompt": "Prenez soin de votre monde intérieur tout en laissant une porte ouverte à une connexion honnête."
+  },
+  "leo": {
+    "name": "Lion",
+    "dateRange": "23 juil. – 22 août",
+    "rulingPlanet": "Soleil",
+    "summary": "La chaleur, la créativité et l'expression de soi généreuse font du Lion une source naturelle de lumière.",
+    "originStory": "Léo est lié au Lion de Némée, la créature presque invulnérable vaincue lors du premier travail d'Héraclès. Élevé aux cieux, il est devenu un emblème de courage, de présence souveraine et de la force créatrice du Soleil.",
+    "traits": [
+      "Chaud",
+      "Créatif",
+      "Généreux",
+      "Confiant"
+    ],
+    "strengths": [
+      "Leadership",
+      "Loyauté",
+      "Expression sincère"
+    ],
+    "challenges": [
+      "Fierté",
+      "Besoin de reconnaissance",
+      "Dramatiser les revers"
+    ],
+    "compatibleSigns": [
+      "Bélier",
+      "Sagittaire",
+      "Balance"
+    ],
+    "reflectionPrompt": "Partagez généreusement votre lumière et laissez les autres briller à vos côtés."
+  },
+  "virgo": {
+    "name": "Vierge",
+    "dateRange": "23 août – 22 sept",
+    "rulingPlanet": "Mercure",
+    "summary": "Le discernement et le service guident la Vierge, transformant l'observation attentive en amélioration pratique.",
+    "originStory": "La Vierge est souvent associée à Astraea, la jeune fille de la justice qui est restée avec l'humanité après le retrait des autres dieux. Le blé qu'elle porte relie le signe à la récolte, à l'habileté, à la pureté des intentions et au soin de ce qui soutient la vie.",
+    "traits": [
+      "Observateur",
+      "Pratique",
+      "Pensif",
+      "Précis"
+    ],
+    "strengths": [
+      "Analyse",
+      "Savoir-faire",
+      "Service utile"
+    ],
+    "challenges": [
+      "Perfectionnisme",
+      "Autocritique",
+      "S'inquiéter des détails"
+    ],
+    "compatibleSigns": [
+      "Taureau",
+      "Capricorne",
+      "Cancer"
+    ],
+    "reflectionPrompt": "Améliorez ce que vous pouvez, et permettez au bon travail d'être complet avant qu'il soit parfait."
+  },
+  "libra": {
+    "name": "Balance",
+    "dateRange": "23 sept. – 22 oct.",
+    "rulingPlanet": "Vénus",
+    "summary": "L'équilibre, la beauté et la réciprocité guident la Balance vers des choix qui honorent chaque voix.",
+    "originStory": "Les balances de la Balance sont portées par Astraea, déesse de la justice, et constituent le seul symbole inanimé du zodiaque. Elles représentent le jugement mesuré, l'harmonie sociale et le travail continu de restauration de l'équilibre plutôt que de supposer qu'il existe déjà.",
+    "traits": [
+      "Diplomatique",
+      "Juste",
+      "Charmant",
+      "Collaboratif"
+    ],
+    "strengths": [
+      "Médiation",
+      "Perspective",
+      "Créer l'harmonie"
+    ],
+    "challenges": [
+      "Indécision",
+      "Satisfaction des autres",
+      "Éviter les conflits nécessaires"
+    ],
+    "compatibleSigns": [
+      "Gémeaux",
+      "Verseau",
+      "Lion"
+    ],
+    "reflectionPrompt": "Cherchez l'équité sans abandonner la vérité de vos propres besoins."
+  },
+  "scorpio": {
+    "name": "Scorpion",
+    "dateRange": "23 oct. – 21 nov.",
+    "rulingPlanet": "Pluton",
+    "summary": "La profondeur et la transformation définissent le Scorpion, dont la perspicacité découvre la vérité sous la surface.",
+    "originStory": "Le Scorpion se souvient du scorpion envoyé pour affronter le chasseur Orion après que son orgueil ait perturbé l'ordre naturel. Leurs positions opposées dans le ciel évoquent les limites, les conséquences, le mystère et le pouvoir régénérateur que l'on trouve après une fin.",
+    "traits": [
+      "Intense",
+      "Perspicace",
+      "Loyal",
+      "Ingénieux"
+    ],
+    "strengths": [
+      "Courage émotionnel",
+      "Concentration",
+      "Transformation"
+    ],
+    "challenges": [
+      "Secret",
+      "Suspicion",
+      "Rancunes"
+    ],
+    "compatibleSigns": [
+      "Cancer",
+      "Poissons",
+      "Vierge"
+    ],
+    "reflectionPrompt": "Utilisez votre profondeur pour transformer la vérité, pas pour la cacher."
+  },
+  "sagittarius": {
+    "name": "Sagittaire",
+    "dateRange": "22 nov. – 21 déc.",
+    "rulingPlanet": "Jupiter",
+    "summary": "Le Tireur cherche des horizons plus larges à travers la vérité, le voyage, l'apprentissage et l'optimisme intentionnel.",
+    "originStory": "Le Sagittaire est couramment associé à Chiron, le sage centaure et maître dont la flèche pointe au-delà du familier. La constellation symbolise l'union de l'instinct et de la compréhension supérieure, visant toujours un horizon plus significatif.",
+    "traits": [
+      "Aventurier",
+      "Optimiste",
+      "Honnête",
+      "Philosophique"
+    ],
+    "strengths": [
+      "Vision",
+      "Enthousiasme",
+      "Ouverture d’esprit"
+    ],
+    "challenges": [
+      "Franc-parler",
+      "Promettre trop",
+      "Échapper à la routine"
+    ],
+    "compatibleSigns": [
+      "Bélier",
+      "Lion",
+      "Verseau"
+    ],
+    "reflectionPrompt": "Visez loin, mais choisissez une direction que vos actions quotidiennes peuvent soutenir."
+  },
+  "capricorn": {
+    "name": "Capricorne",
+    "dateRange": "22 déc. – 19 janv.",
+    "rulingPlanet": "Saturne",
+    "summary": "La discipline et la vision à long terme aident le Capricorne à gravir les sommets tout en restant sage quant aux profondeurs en dessous.",
+    "originStory": "La chèvre de mer du Capricorne est associée à Pan, qui s'est partiellement transformé en poisson en fuyant Typhon. Sa nature montagneuse et océanique allie ambition à survie émotionnelle, honorant la maîtrise acquise avec le temps et la responsabilité.",
+    "traits": [
+      "Ambitieux",
+      "Discipliné",
+      "Patient",
+      "Responsable"
+    ],
+    "strengths": [
+      "Endurance",
+      "Stratégie",
+      "Fiabilité"
+    ],
+    "challenges": [
+      "Rigidité",
+      "Pessimisme",
+      "Mesurer la valeur à travers la réussite"
+    ],
+    "compatibleSigns": [
+      "Taureau",
+      "Vierge",
+      "Scorpion"
+    ],
+    "reflectionPrompt": "Construisez pour le long terme tout en gardant à l'esprit que le repos fait partie de la structure."
+  },
+  "aquarius": {
+    "name": "Verseau",
+    "dateRange": "20 janv. – 18 fév.",
+    "rulingPlanet": "Uranus",
+    "summary": "La pensée indépendante et la vision collective guident le Verseau pour verser de nouvelles idées dans le monde.",
+    "originStory": "Le Verseau est lié à Ganymède, le porteur de coupe dont le récipient apportait de l'eau aux dieux et, symboliquement, la connaissance à l'humanité. Bien que son image transporte de l'eau, le signe appartient à l'air : les idées, les systèmes et le renouveau partagés pour le bien commun.",
+    "traits": [
+      "Original",
+      "Indépendant",
+      "Humanitaire",
+      "Inventif"
+    ],
+    "strengths": [
+      "Innovation",
+      "Objectivité",
+      "Vision communautaire"
+    ],
+    "challenges": [
+      "Détachement",
+      "Habitudes contraires",
+      "Opinions fixes"
+    ],
+    "compatibleSigns": [
+      "Gémeaux",
+      "Balance",
+      "Sagittaire"
+    ],
+    "reflectionPrompt": "Laisse ta différence servir la connexion plutôt que la distance."
+  },
+  "pisces": {
+    "name": "Poissons",
+    "dateRange": "19 fév. – 20 mars",
+    "rulingPlanet": "Neptune",
+    "summary": "La compassion et l'imagination guident les Poissons entre intuition, rêves et sentiments partagés.",
+    "originStory": "Les Poissons rappellent Aphrodite et Éros devenant des poissons et se liant l'un à l'autre pour échapper à Typhon. Le lien entre les deux poissons représente la dévotion, une identité fluide, la sensibilité spirituelle et la recherche de l'unité tout en se mouvant à travers des courants changeants.",
+    "traits": [
+      "Compatissant",
+      "Imaginatif",
+      "Intuitif",
+      "Douce"
+    ],
+    "strengths": [
+      "Empathie",
+      "Créativité",
+      "Intuition spirituelle"
+    ],
+    "challenges": [
+      "Évasion",
+      "Frontières floues",
+      "Absorber les émotions des autres"
+    ],
+    "compatibleSigns": [
+      "Cancer",
+      "Scorpion",
+      "Capricorne"
+    ],
+    "reflectionPrompt": "Honorez votre sensibilité avec des limites suffisamment fortes pour la protéger."
+  }
+}

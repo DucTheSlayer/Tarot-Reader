@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
+    "build:qa": "vue-tsc -b && vite build --mode qa",
     "verify": "npm test && npm run i18n:check && npm run db:validate && npm run db:validate:web && npm run db:validate:parity && npm run build",
     "test": "vitest run",
     "test:watch": "vitest",

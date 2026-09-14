@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">App Tarot</string>
-    <string name="title_activity_main">App Tarot</string>
-    <string name="package_name">com.apptarot.app</string>
-    <string name="custom_url_scheme">com.apptarot.app</string>
+    <string name="app_name">Serein Tarot</string>
+    <string name="title_activity_main">Serein Tarot</string>
+    <string name="package_name">com.zl.eye.reading</string>
+    <string name="custom_url_scheme">com.zl.eye.reading</string>
 </resources>

@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace = "com.apptarot.app"
+    namespace = "com.zl.eye.reading"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.apptarot.app"
+        applicationId "com.zl.eye.reading"
         manifestPlaceholders = [admobAppId: "ca-app-pub-8467610367562059~6827880762"]
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
@@ -18,10 +18,7 @@ android {
         }
     }
     buildTypes {
-        debug {
-            // Google's sample App ID keeps local QA traffic isolated from production.
-            manifestPlaceholders.admobAppId = "ca-app-pub-3940256099942544~3347511713"
-        }
+        debug {}
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

@@ -15,26 +15,37 @@ class ValidationSummary(TypedDict):
 
 
 def validate_database(connection: sqlite3.Connection, root: Path) -> ValidationSummary:
-    if connection.execute("PRAGMA user_version").fetchone()[0] != 3:
-        raise RuntimeError("Expected database version 3")
+    if connection.execute("PRAGMA user_version").fetchone()[0] != 6:
+        raise RuntimeError("Expected database version 6")
     translation_fields = {
         "card_translations": (78, ["name", "meaning", "advice", "yesNoMeaning"]),
         "zodiac_translations": (12, ["name", "dateRange", "rulingPlanet", "summary", "originStory", "traits", "strengths", "challenges", "compatibleSigns", "reflectionPrompt"]),
         "horoscope_translations": (36, ["overview", "love", "career", "finance", "wellbeing", "guidance"]),
     }
-    for table, (expected, fields) in translation_fields.items():
-        rows = connection.execute(f"SELECT payload FROM {table} WHERE locale = 'vi'").fetchall()
-        if len(rows) != expected:
-            raise RuntimeError(f"Expected {expected} Vietnamese rows in {table}, found {len(rows)}")
-        for (raw,) in rows:
-            content = json.loads(raw)
-            if set(content) != set(fields):
-                raise RuntimeError(f"Unexpected translation fields in {table}")
-            for field in fields:
-                value = content[field]
-                values = value if isinstance(value, list) else [value]
-                if not values or not all(isinstance(item, str) and item.strip() for item in values):
-                    raise RuntimeError(f"Empty translation in {table}.{field}")
+    locale_sets = {
+        table: {row[0] for row in connection.execute(f"SELECT DISTINCT locale FROM {table}")}
+        for table in translation_fields
+    }
+    if any(locales != locale_sets["card_translations"] for locales in locale_sets.values()):
+        raise RuntimeError(f"Translation tables have different locale coverage: {locale_sets}")
+    if "vi" not in locale_sets["card_translations"]:
+        raise RuntimeError("Vietnamese database translations are required")
+    for locale in sorted(locale_sets["card_translations"]):
+        for table, (expected, fields) in translation_fields.items():
+            rows = connection.execute(
+                f"SELECT payload FROM {table} WHERE locale = ?", (locale,)
+            ).fetchall()
+            if len(rows) != expected:
+                raise RuntimeError(f"Expected {expected} {locale} rows in {table}, found {len(rows)}")
+            for (raw,) in rows:
+                content = json.loads(raw)
+                if set(content) != set(fields):
+                    raise RuntimeError(f"Unexpected translation fields in {table} for {locale}")
+                for field in fields:
+                    value = content[field]
+                    values = value if isinstance(value, list) else [value]
+                    if not values or not all(isinstance(item, str) and item.strip() for item in values):
+                        raise RuntimeError(f"Empty translation in {table}.{field} for {locale}")
     integrity = connection.execute("PRAGMA integrity_check").fetchone()[0]
     if integrity != "ok":
         raise RuntimeError(f"SQLite integrity_check failed: {integrity}")

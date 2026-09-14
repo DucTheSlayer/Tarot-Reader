@@ -41,6 +41,26 @@ describe('reactive translated content', () => {
     expect(sign.element).toBe('fire')
   })
 
+  it('switches among multiple locale payloads and falls back field by field', () => {
+    const locale = ref('es-419')
+    const card = localizedEntity(
+      { name: 'The Sun', meaning: 'Joy' },
+      {
+        'es-419': JSON.stringify({ name: 'El Sol', meaning: 'Alegría' }),
+        fr: JSON.stringify({ name: 'Le Soleil' })
+      },
+      ['name', 'meaning'],
+      () => locale.value
+    )
+    expect(card.name).toBe('El Sol')
+    expect(card.meaning).toBe('Alegría')
+    locale.value = 'fr'
+    expect(card.name).toBe('Le Soleil')
+    expect(card.meaning).toBe('Joy')
+    locale.value = 'de'
+    expect(card.name).toBe('The Sun')
+  })
+
   it('keeps all interpolation placeholders and translations nonempty', () => {
     const placeholders = (value: string) => [...value.matchAll(/\{(\w+)\}/g)].map(match => match[1]).sort()
     for (const [source, target] of Object.entries(catalogue)) {

@@ -1,0 +1,109 @@
+{
+  "onboarding": {
+    "title": "Um momento tranquilo para você",
+    "guideTitle": "Como usar o aplicativo",
+    "intro": "Explore a si mesmo através do Tarot e do Zodíaco. Não é necessária conta — você pode começar mesmo estando offline.",
+    "stepsTitle": "Comece em três passos simples",
+    "chooseTitle": "Escolha o que explorar",
+    "chooseBody": "Escolha uma tiragem de Tarot ou visite o Zodíaco para aprender sobre seu signo.",
+    "drawTitle": "Compre e revele",
+    "drawBody": "Reserve um momento para refletir sobre o que está em sua mente e, em seguida, faça a tiragem. No Spread de 3 Cartas, toque em cada carta para revelá-la ou escolha Revelar Tudo.",
+    "readTitle": "Leia e reflita",
+    "readBody": "Toque em uma carta revelada para explorar seu significado. No Tarot Anual, deslize para os lados para descobrir todos os 5 aspectos.",
+    "tip": "Não sabe por onde começar? Experimente a Carta do Dia — uma carta para acompanhar você ao longo do dia.",
+    "note": "Estas leituras são para reflexão e referência.",
+    "start": "Comece a explorar"
+  },
+  "nav": {
+    "label": "Navegação principal",
+    "tarot": "Tarô",
+    "zodiac": "Signo",
+    "settings": "Configurações"
+  },
+  "common": {
+    "back": "Voltar",
+    "explore": "Explorar",
+    "drawAgain": "Compre novamente",
+    "changeQuestion": "Mudar pergunta"
+  },
+  "tarotHome": {
+    "library": "Explore a biblioteca de 78 cartas",
+    "daily": "Cartão do Dia",
+    "yesNo": "Sim ou Não",
+    "love": "Tarô do Amor",
+    "money": "Tarô do Dinheiro",
+    "yearly": "Tarot Anual",
+    "spread": "3 Cartas Sorteadas"
+  },
+  "zodiacHome": {
+    "eyebrow": "Orientação celestial",
+    "subtitle": "Escolha seu caminho cósmico",
+    "origin": "Origem do signo",
+    "originDescription": "Descubra as histórias por trás dos 12 signos",
+    "originKicker": "Os doze signos",
+    "horoscope": "Horóscopo",
+    "horoscopeDescription": "Previsão do seu Dia / Semana / Ano",
+    "horoscopeKicker": "Dia · Semana · Ano"
+  },
+  "period": {
+    "label": "Período do horóscopo",
+    "day": "Dia",
+    "week": "Semana",
+    "year": "Ano"
+  },
+  "settings": {
+    "subtitle": "Faça deste espaço seu próprio",
+    "language": "Idioma",
+    "languageDescription": "Escolha o idioma da sua interface. As alterações são aplicadas imediatamente e salvas neste dispositivo.",
+    "selected": "Selecionado",
+    "saved": "Idioma atualizado",
+    "translationTitle": "Idiomas, incluindo leituras",
+    "translationDescription": "Menus, 78 cartas de Tarô, 12 perfis do zodíaco e leituras Dia / Semana / Ano são traduzidos para cada idioma mostrado nesta lista. Texto incorporado em obras de arte permanece em inglês. Essas leituras são para reflexão e entretenimento.",
+    "offline": "Sua preferência de idioma funciona offline. Nenhuma conta necessária."
+  },
+  "adsQa": {
+    "title": "Controle de Qualidade em Publicidade",
+    "settingsLabel": "Publicidade de teste",
+    "description": "Carregue cada formato de anúncio independentemente antes de testar sua colocação no aplicativo.",
+    "platform": "Plataforma",
+    "ready": "Pronto",
+    "unavailable": "Indisponível",
+    "devOnly": "Esta tela está disponível apenas quando o modo de desenvolvimento está ativado.",
+    "androidNote": "O navegador mostra apenas pré-visualizações do layout. Instale o APK de depuração para carregar anúncios de teste nativos.",
+    "testNotice": "As unidades de anúncio de demonstração seguras do Google estão ativas. Interaja apenas com anúncios marcados como Anúncio de Teste.",
+    "controls": "Controles de teste de publicidade",
+    "banner": "Banner",
+    "bannerDescription": "Testa o banner inferior persistente e o espaço reservado no layout.",
+    "interstitial": "Intersticial",
+    "interstitialDescription": "Carrega e abre um anúncio de teste em tela cheia sem navegação.",
+    "rewarded": "Recompensado",
+    "rewardedDescription": "Testa callbacks de recompensado e pulado usando um vídeo de demonstração.",
+    "appOpen": "Abrir App",
+    "appOpenDescription": "Testa o anúncio em tela cheia usado após o início a frio de um usuário que retorna.",
+    "native": "Carta nativa",
+    "nativeDescription": "Carrega ativos de teste nativos em um cartão dentro do aplicativo.",
+    "show": "Mostrar",
+    "hide": "Esconder",
+    "load": "Carregar cartão de teste",
+    "loadAndShow": "Carregar e mostrar",
+    "open": "Aberto",
+    "adLabel": "Anúncio de Teste",
+    "webBanner": "Pré-visualização do layout do banner",
+    "status": {
+      "idle": "Não testado",
+      "loading": "Carregando…",
+      "shown": "Mostrado",
+      "hidden": "Oculto",
+      "failed": "Não disponível",
+      "rewarded": "Recompensa concedida",
+      "skipped": "Pulado",
+      "preview": "Pré-visualização da web"
+    }
+  },
+  "database": {
+    "errorTitle": "Incapaz de abrir a biblioteca mística",
+    "retry": "Tente novamente",
+    "loadingTitle": "Abrindo a biblioteca mística",
+    "loadingDescription": "Preparando 78 cartas de Tarô e 12 signos do zodíaco…"
+  }
+}

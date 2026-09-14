@@ -10,18 +10,14 @@ import router from './router'
 import { i18n } from './i18n'
 import { loadCardStore } from './stores/cardStore'
 import { loadZodiacStore } from './stores/zodiacStore'
-import { hasCompletedOnboarding } from './data/onboarding'
 import {
   initializeAdvertising,
-  preloadAppOpenAd,
-  showAppOpenAdAtStartup,
   warmInterstitialAd
 } from './services/advertising'
 
 async function bootstrap() {
   const advertisingReady = initializeAdvertising()
   void advertisingReady.then(() => {
-    void preloadAppOpenAd()
     warmInterstitialAd()
   })
 
@@ -33,10 +29,6 @@ async function bootstrap() {
 
   createApp(App).use(i18n).use(router).mount('#app')
   await router.isReady()
-
-  if (hasCompletedOnboarding()) {
-    void showAppOpenAdAtStartup()
-  }
 }
 
 void bootstrap()

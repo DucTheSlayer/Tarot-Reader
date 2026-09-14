@@ -28,7 +28,12 @@ function moveFocus(from: HoroscopePeriod, direction: -1 | 1) {
 </script>
 
 <template>
-  <div class="period-tabs" role="tablist" :aria-label="t('period.label')">
+  <div
+    class="period-tabs"
+    :class="`period-tabs--${props.modelValue}`"
+    role="tablist"
+    :aria-label="t('period.label')"
+  >
     <button
       v-for="period in periods"
       :key="period.value"
@@ -50,6 +55,7 @@ function moveFocus(from: HoroscopePeriod, direction: -1 | 1) {
 
 <style scoped>
 .period-tabs {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-1);
@@ -60,7 +66,26 @@ function moveFocus(from: HoroscopePeriod, direction: -1 | 1) {
   background: rgba(20, 10, 40, 0.72);
 }
 
+.period-tabs::after {
+  content: '';
+  position: absolute;
+  left: 16.6667%;
+  bottom: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  box-shadow: 0 0 9px rgba(230, 199, 107, 0.9);
+  transform: translateX(-50%);
+  transition: left 360ms cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+.period-tabs--week::after { left: 50%; transform: translateX(-50%); }
+.period-tabs--year::after { left: calc(83.333% - 1px); transform: translateX(-50%); }
+
 .period-tabs__tab {
+  position: relative;
   min-height: 38px;
   border: 1px solid transparent;
   border-radius: var(--radius-full);
@@ -92,5 +117,9 @@ function moveFocus(from: HoroscopePeriod, direction: -1 | 1) {
     min-height: 48px;
     font-size: 15px;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .period-tabs::after { transition: none; }
 }
 </style>

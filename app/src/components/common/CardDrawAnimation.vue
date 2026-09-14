@@ -180,6 +180,31 @@ function flyCardIn(
     return
   }
 
+  if (props.variant === 'open-question') {
+    const startX =
+      index === 0 ? -target.w - 20 : index === 2 ? window.innerWidth + 20 : target.x
+    const startY = index === 1 ? window.innerHeight + target.h * 0.15 : target.y + 34
+
+    item.style = {
+      left: '0px',
+      top: '0px',
+      width: `${target.w}px`,
+      transform: `translate(${startX}px, ${startY}px) scale(0.9)`,
+      opacity: '0'
+    }
+    requestAnimationFrame(() => {
+      item.style = {
+        left: '0px',
+        top: '0px',
+        width: `${target.w}px`,
+        transform: `translate(${target.x}px, ${target.y}px) scale(1)`,
+        opacity: '1',
+        transition: `transform ${props.flyDuration}ms cubic-bezier(0.22, 1, 0.36, 1), opacity 180ms ease-out`
+      }
+    })
+    return
+  }
+
   const source = sourceCardEl.value
   if (source) {
     const rect = source.getBoundingClientRect()
@@ -488,6 +513,7 @@ onUnmounted(clearTimers)
     class="fly"
     :class="[
       `fly--${variant}`,
+      `fly--slot-${i}`,
       {
         'fly--tappable': revealedCardsTappable,
         'fly--flipped': fc.flipped
@@ -667,7 +693,16 @@ onUnmounted(clearTimers)
 .source-slot--love.source-slot--0 { left: 27px; top: 20px; transform: rotate(-7deg); }
 .source-slot--love.source-slot--1 { left: calc(50% - 37px); top: 58px; }
 .source-slot--love.source-slot--2 { right: 27px; top: 20px; transform: rotate(7deg); }
-.source-path--love path { stroke: rgba(226, 164, 194, 0.58); stroke-width: 1.4; filter: drop-shadow(0 0 7px rgba(226, 164, 194, 0.7)); }
+.source-path--love path {
+  stroke: rgba(226, 164, 194, 0.58);
+  stroke-width: 1.4;
+  stroke-dasharray: 7 7;
+  filter: drop-shadow(0 0 7px rgba(226, 164, 194, 0.7));
+  animation: love-thread-flow 2.4s linear infinite;
+}
+.source-slot--love { animation: love-slot-pulse 3.2s ease-in-out infinite; }
+.source-slot--love.source-slot--1 { animation-delay: -1.05s; }
+.source-slot--love.source-slot--2 { animation-delay: -2.1s; }
 .draw-source--single .source-slot--love.source-slot--0 { left: calc(50% - 37px); top: 14px; transform: none; }
 .draw-source--single .source-slot--love.source-slot--1 { left: 38px; top: 65px; transform: rotate(-8deg); }
 .draw-source--single .source-slot--love.source-slot--2 { right: 38px; top: 65px; transform: rotate(8deg); }
@@ -677,14 +712,23 @@ onUnmounted(clearTimers)
 .source-slot--money.source-slot--1 { left: calc(50% - 37px); top: 47px; }
 .source-slot--money.source-slot--2 { right: 25px; top: 18px; }
 .source-slot--money .source-caption { top: calc(100% + 19px); }
-.source-path--money path { stroke: rgba(92, 205, 165, 0.56); stroke-width: 2; stroke-dasharray: 5 7; }
-.source-node { position: absolute; left: 50%; bottom: -10px; width: 8px; height: 8px; border: 1px solid #d2a65e; border-radius: 50%; transform: translateX(-50%); background: #17372f; box-shadow: 0 0 10px rgba(92, 205, 165, 0.7); transition: opacity 360ms ease; }
+.source-path--money path {
+  stroke: rgba(92, 205, 165, 0.56);
+  stroke-width: 2;
+  stroke-dasharray: 5 7;
+  animation: money-path-flow 1.5s linear infinite;
+}
+.source-node { position: absolute; left: 50%; bottom: -10px; width: 8px; height: 8px; border: 1px solid #d2a65e; border-radius: 50%; transform: translateX(-50%); background: #17372f; box-shadow: 0 0 10px rgba(92, 205, 165, 0.7); transition: opacity 360ms ease; animation: money-node-pulse 1.8s ease-in-out infinite; }
+.source-slot--money.source-slot--1 .source-node { animation-delay: -0.6s; }
+.source-slot--money.source-slot--2 .source-node { animation-delay: -1.2s; }
 
 .source-slot--window { top: 40px; }
 .source-slot--window.source-slot--0 { left: 26px; }
 .source-slot--window.source-slot--1 { left: calc(50% - 37px); top: 24px; }
 .source-slot--window.source-slot--2 { right: 26px; }
-.source-halo { position: absolute; inset: -16px; z-index: -1; border: 1px solid rgba(164, 196, 235, 0.26); border-radius: 50%; background: radial-gradient(circle, rgba(103, 153, 211, 0.2), transparent 66%); transition: opacity 360ms ease; }
+.source-halo { position: absolute; inset: -16px; z-index: -1; border: 1px solid rgba(164, 196, 235, 0.26); border-radius: 50%; background: radial-gradient(circle, rgba(103, 153, 211, 0.2), transparent 66%); transition: opacity 360ms ease; animation: window-halo 2.6s ease-in-out infinite; }
+.source-slot--window.source-slot--1 .source-halo { animation-delay: -0.85s; }
+.source-slot--window.source-slot--2 .source-halo { animation-delay: -1.7s; }
 
 .draw-source--yes-no { height: 216px; }
 .source-card--oracle { position: absolute; left: calc(50% - 52px); top: 22px; z-index: 3; width: 104px; }
@@ -824,6 +868,18 @@ onUnmounted(clearTimers)
   animation: yearly-card-glow 620ms ease-out;
 }
 
+.fly--open-question.fly--slot-0.fly--flipped .fly__face--front {
+  animation: past-card-reveal 620ms ease-out;
+}
+
+.fly--open-question.fly--slot-1.fly--flipped .fly__face--front {
+  animation: present-card-reveal 620ms ease-out;
+}
+
+.fly--open-question.fly--slot-2.fly--flipped .fly__face--front {
+  animation: future-card-reveal 620ms ease-out;
+}
+
 .fly--love .fly__caption-label {
   color: var(--color-gold);
 }
@@ -924,13 +980,55 @@ onUnmounted(clearTimers)
   }
 }
 
+@keyframes love-thread-flow {
+  to { stroke-dashoffset: -28; }
+}
+
+@keyframes love-slot-pulse {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(226, 164, 194, 0)); }
+  50% { filter: drop-shadow(0 0 9px rgba(226, 164, 194, 0.35)); }
+}
+
+@keyframes money-path-flow {
+  to { stroke-dashoffset: -24; }
+}
+
+@keyframes money-node-pulse {
+  0%, 100% { transform: translateX(-50%) scale(0.82); opacity: 0.55; }
+  50% { transform: translateX(-50%) scale(1.25); opacity: 1; }
+}
+
+@keyframes window-halo {
+  0%, 100% { opacity: 0.35; transform: scale(0.9); }
+  50% { opacity: 0.95; transform: scale(1.08); }
+}
+
+@keyframes past-card-reveal {
+  0%, 100% { box-shadow: var(--shadow-lg); }
+  45% { box-shadow: -10px 0 28px rgba(116, 158, 210, 0.62); }
+}
+
+@keyframes present-card-reveal {
+  0%, 100% { box-shadow: var(--shadow-lg); }
+  45% { box-shadow: 0 0 30px rgba(242, 215, 142, 0.7); }
+}
+
+@keyframes future-card-reveal {
+  0%, 100% { box-shadow: var(--shadow-lg); }
+  45% { box-shadow: 10px 0 28px rgba(161, 126, 222, 0.68); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .draw-source,
   .draw-source__glow,
   .oracle-ring,
   .spread-decoration line,
   .spread-decoration polyline,
-  .fly__face--front {
+  .fly__face--front,
+  .source-path path,
+  .source-slot,
+  .source-node,
+  .source-halo {
     animation: none;
   }
 

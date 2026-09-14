@@ -18,6 +18,8 @@ const reading = computed(() => {
   return zodiacStore.getReading(selectedSign.value.id, period.value)
 })
 
+const periodSymbol = computed(() => ({ day: '☀', week: '☾', year: '✦' })[period.value])
+
 const sections = computed(() => {
   if (!reading.value) return []
   return [
@@ -69,30 +71,42 @@ async function chooseSign(sign: ZodiacSign) {
 
         <PeriodTabs v-model="period" />
 
-        <section id="horoscope-panel" class="horoscope__overview" role="tabpanel">
-          <span class="horoscope__eyebrow">{{ ui('{period} overview', { period: ui(period) }) }}</span>
-          <p>{{ reading.overview }}</p>
-        </section>
+        <Transition name="horoscope-reading" mode="out-in">
+          <div
+            :key="period"
+            class="horoscope__period-content"
+            :class="`horoscope__period-content--${period}`"
+            aria-live="polite"
+          >
+            <section id="horoscope-panel" class="horoscope__overview" role="tabpanel">
+              <div class="horoscope__period-heading">
+                <span class="horoscope__period-symbol" aria-hidden="true">{{ periodSymbol }}</span>
+                <span class="horoscope__eyebrow">{{ ui('{period} overview', { period: ui(period) }) }}</span>
+              </div>
+              <p>{{ reading.overview }}</p>
+            </section>
 
-        <div class="horoscope__reading-grid">
-          <section v-for="section in sections" :key="section.key" class="horoscope__reading-card">
-            <div>
-              <span aria-hidden="true">{{ section.symbol }}</span>
-              <h3>{{ ui(section.title) }}</h3>
+            <div class="horoscope__reading-grid">
+              <section v-for="section in sections" :key="section.key" class="horoscope__reading-card">
+                <div>
+                  <span aria-hidden="true">{{ section.symbol }}</span>
+                  <h3>{{ ui(section.title) }}</h3>
+                </div>
+                <p>{{ section.text }}</p>
+              </section>
             </div>
-            <p>{{ section.text }}</p>
-          </section>
-        </div>
 
-        <section class="horoscope__guidance">
-          <span aria-hidden="true">✦</span>
-          <div>
-            <h3>{{ ui("Your compass") }}</h3>
-            <p>{{ reading.guidance }}</p>
+            <section class="horoscope__guidance">
+              <span aria-hidden="true">✦</span>
+              <div>
+                <h3>{{ ui("Your compass") }}</h3>
+                <p>{{ reading.guidance }}</p>
+              </div>
+            </section>
+
+            <p class="horoscope__disclaimer">{{ ui("A reflective reading for entertainment, not medical, legal, or financial advice.") }}</p>
           </div>
-        </section>
-
-        <p class="horoscope__disclaimer">{{ ui("A reflective reading for entertainment, not medical, legal, or financial advice.") }}</p>
+        </Transition>
       </template>
     </div>
   </main>
@@ -155,6 +169,36 @@ async function chooseSign(sign: ZodiacSign) {
   font: 600 10px/1 var(--font-sans);
   cursor: pointer;
 }
+.horoscope__period-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.horoscope__period-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.horoscope__period-symbol {
+  display: inline-grid;
+  width: 25px;
+  height: 25px;
+  place-items: center;
+  border: 1px solid rgba(230, 199, 107, 0.36);
+  border-radius: 50%;
+  color: var(--color-gold);
+  font: 15px/1 Georgia, serif;
+  box-shadow: 0 0 13px rgba(230, 199, 107, 0.14);
+}
+.horoscope__period-content--day .horoscope__period-symbol {
+  animation: horoscope-sun 3.8s linear infinite;
+}
+.horoscope__period-content--week .horoscope__period-symbol {
+  animation: horoscope-moon 2.8s ease-in-out infinite;
+}
+.horoscope__period-content--year .horoscope__period-symbol {
+  animation: horoscope-year 4.5s ease-in-out infinite;
+}
 .horoscope__overview,
 .horoscope__reading-card {
   display: flex;
@@ -194,6 +238,35 @@ async function chooseSign(sign: ZodiacSign) {
 .horoscope__guidance h3 { margin-bottom: var(--space-1); color: var(--color-gold); font-size: 13px; }
 .horoscope__disclaimer { padding: 0 var(--space-2); color: var(--color-text-muted); font-size: 9px; line-height: 1.5; text-align: center; }
 .horoscope button:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; }
+
+.horoscope-reading-enter-active,
+.horoscope-reading-leave-active {
+  transition: opacity 220ms ease, transform 300ms cubic-bezier(0.22, 1, 0.36, 1), filter 220ms ease;
+}
+.horoscope-reading-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+  filter: blur(2px);
+}
+.horoscope-reading-leave-to {
+  opacity: 0;
+  transform: translateY(-7px);
+  filter: blur(2px);
+}
+
+@keyframes horoscope-sun {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes horoscope-moon {
+  0%, 100% { transform: translateX(-1px) rotate(-7deg); opacity: 0.75; }
+  50% { transform: translateX(2px) rotate(7deg); opacity: 1; }
+}
+
+@keyframes horoscope-year {
+  0%, 100% { transform: scale(0.82) rotate(0); }
+  50% { transform: scale(1.15) rotate(45deg); }
+}
 
 @media (min-width: 700px) {
   .horoscope {
@@ -302,5 +375,11 @@ async function chooseSign(sign: ZodiacSign) {
 
 @media (max-width: 360px) {
   .horoscope__reading-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .horoscope__period-symbol { animation: none !important; }
+  .horoscope-reading-enter-active,
+  .horoscope-reading-leave-active { transition: none; }
 }
 </style>

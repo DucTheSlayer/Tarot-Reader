@@ -1,0 +1,470 @@
+{
+  "fool": {
+    "name": "The Fool",
+    "meaning": "Sebuah halaman kosong dan lompatan iman — sebuah perjalanan baru dimulai dengan hati yang terbuka.",
+    "advice": "Percayalah pada jalur di depan Anda dan ambil langkah pertama itu, bahkan tanpa semua jawaban.",
+    "yesNoMeaning": "Sebuah awal baru jarang membawa jawaban yang pasti — hasilnya tergantung pada langkah yang kamu ambil."
+  },
+  "magician": {
+    "name": "Sang Penyihir",
+    "meaning": "Anda memegang semua alat yang Anda butuhkan. Fokuskan kehendak Anda dan ubah niat menjadi tindakan.",
+    "advice": "Gunakan keterampilan dan sumber daya Anda dengan sengaja — sekaranglah waktunya untuk mewujudkannya.",
+    "yesNoMeaning": "Anda sudah memegang semua yang dibutuhkan — energi mendukung bergerak maju dengan fokus."
+  },
+  "high-priestess": {
+    "name": "Pendeta Agung Perempuan",
+    "meaning": "Kebijaksanaan yang tenang tersembunyi di bawah permukaan. Dengarkan intuisi dan suara batinmu.",
+    "advice": "Berhenti sejenak, masuk ke dalam diri, dan biarkan nalurimu membimbingmu sebelum bertindak.",
+    "yesNoMeaning": "Jawabannya tersembunyi di bawah permukaan untuk saat ini — percayai intuisi Anda daripada memaksakan jawaban ya atau tidak yang jelas."
+  },
+  "empress": {
+    "name": "The Empress",
+    "meaning": "Pertumbuhan, kelimpahan, dan energi yang mendampingi Anda. Biarkan keindahan dan perawatan berkembang.",
+    "advice": "Bersabarlah dan murah hati — ciptakan dengan cinta dan biarkan segala sesuatu matang secara alami.",
+    "yesNoMeaning": "Pertumbuhan, kelimpahan, dan energi yang mendukung kembali keinginan Anda — jawabannya adalah ya yang tenang."
+  },
+  "emperor": {
+    "name": "The Emperor",
+    "meaning": "Struktur, otoritas, dan kepemimpinan yang stabil. Bangun di atas dasar yang kokoh dengan disiplin.",
+    "advice": "Ambil kendali dengan rencana yang jelas; batasan yang tegas membawa kestabilan yang langgeng.",
+    "yesNoMeaning": "Struktur, otoritas, dan disiplin yang konsisten mendukung jawaban 'ya' dengan percaya diri."
+  },
+  "hierophant": {
+    "name": "Hierofant",
+    "meaning": "Tradisi dan panduan yang dipercaya menawarkan jalur yang dapat diandalkan. Belajar dari apa yang telah terjadi sebelumnya.",
+    "advice": "Ikuti kebijaksanaan yang sudah ada dan carilah nasihat dari mereka yang Anda percayai.",
+    "yesNoMeaning": "Tradisi dan panduan yang dipercaya menunjukkan jawaban yang dapat diandalkan — bersandar pada apa yang telah terbukti."
+  },
+  "lovers": {
+    "name": "Para Kekasih",
+    "meaning": "Ikatan yang berarti atau pilihan penting. Ikuti apa yang benar-benar dihargai oleh hati Anda.",
+    "advice": "Pilih dengan kejujuran dan keselarasan — koneksi akan lebih dalam saat Anda tulus.",
+    "yesNoMeaning": "Hati dan nilai-nilai Anda selaras di sini — jawabannya adalah ya, terutama ketika Anda memilih dengan kejujuran."
+  },
+  "chariot": {
+    "name": "The Chariot",
+    "meaning": "Kemauan dan momentum membawa Anda maju. Tetap fokus dan Anda akan berhasil.",
+    "advice": "Tetap fokus pada tujuan dan kendalikan dengan percaya diri melalui setiap rintangan.",
+    "yesNoMeaning": "Kemauan dan momentum ada di pihak Anda — sebuah ya yang terfokus, selama Anda tetap berkomitmen."
+  },
+  "strength": {
+    "name": "Kekuatan",
+    "meaning": "Kekuatan sejati adalah lembut — kesabaran, keberanian, dan kasih sayang menaklukkan setiap tantangan.",
+    "advice": "Pimpin dengan kekuatan yang tenang; tangan yang lembut sering kali adalah yang terkuat.",
+    "yesNoMeaning": "Keberanian lembut dan ketekunan yang sabar membuat ini menjadi ya — pimpin dengan tenang, bukan dengan paksa."
+  },
+  "hermit": {
+    "name": "Pertapa",
+    "meaning": "Saatnya mundur sejenak dan mencari kejernihan batin. Kesendirian sekarang membawa jawaban yang lebih mendalam.",
+    "advice": "Berbalik ke dalam, renungkan, dan biarkan keheningan mengungkap apa yang benar-benar Anda butuhkan.",
+    "yesNoMeaning": "Belum — kartu meminta kamu untuk mundur sejenak dan menemukan kejelasan batin sebelum bertindak."
+  },
+  "wheel-of-fortune": {
+    "name": "Roda Keberuntungan",
+    "meaning": "Peruntungan berubah dan siklus bergeser. Apa yang berubah sekarang adalah bagian dari ritme yang lebih besar.",
+    "advice": "Naik gelombang dengan fleksibilitas — sambut perubahan, baik atau buruk.",
+    "yesNoMeaning": "Peruntungan sedang berbalik — hasilnya tergantung bagaimana Anda menghadapi perubahan tersebut daripada jawaban ya atau tidak yang tetap."
+  },
+  "justice": {
+    "name": "Keadilan",
+    "meaning": "Kebenaran dan keadilan akan menang. Sebab dan akibat sekarang menjadi seimbang.",
+    "advice": "Bertindaklah dengan jujur dan timbang kedua sisi; timbangan akan menyeimbangkan dengan adil.",
+    "yesNoMeaning": "Timbangan masih menimbang — jawaban yang adil tergantung pada fakta dan kejujuran Anda."
+  },
+  "hanged-man": {
+    "name": "Orang yang Digantung",
+    "meaning": "Jeda yang diperlukan. Lepaskan kontrol dan lihat situasi dari sudut pandang baru.",
+    "advice": "Berhenti mendorong — menyerahlah pada momen dan biarkan perspektif baru muncul.",
+    "yesNoMeaning": "Berhenti sejenak diperlukan terlebih dahulu — memaksakan ini sekarang hanya akan menahan jawaban yang lebih jelas."
+  },
+  "death": {
+    "name": "Kematian",
+    "meaning": "Sebuah akhir membuka jalan untuk pembaruan. Lepaskan apa yang telah habis masa gunanya.",
+    "advice": "Lepaskan tanpa penyesalan; transformasi yang mendalam membuka pintu baru.",
+    "yesNoMeaning": "Sebuah akhir sedang membuka jalan — jalur saat ini menutup sehingga yang baru dapat dimulai."
+  },
+  "temperance": {
+    "name": "Kesederhanaan",
+    "meaning": "Keseimbangan dan kesabaran membawa harmoni. Gabungkan hal-hal yang berlawanan dengan anggun.",
+    "advice": "Bergeraklah dengan moderasi dan tetap tenang — langkah yang mantap mencapai tujuan.",
+    "yesNoMeaning": "Keseimbangan dan kesabaran membawa harmoni — sebuah 'ya' yang terukur, diambil satu langkah mantap dalam satu waktu."
+  },
+  "devil": {
+    "name": "The Devil",
+    "meaning": "Waspadalah terhadap keterikatan, godaan, atau pola yang membelenggu. Kenali rantainya.",
+    "advice": "Sebutkan apa yang menahanmu dan pulihkan kebebasanmu — rantai hanya mengikat jika kamu membiarkannya.",
+    "yesNoMeaning": "Keterikatan atau pola yang mengikat menghalangi — belum, sampai rantai itu dinamai dan diputus."
+  },
+  "tower": {
+    "name": "Menara",
+    "meaning": "Perubahan tiba-tiba menghancurkan yang palsu dan mengungkapkan kebenaran. Apa yang jatuh tidak pernah dimaksudkan untuk berdiri.",
+    "advice": "Sambut gejolak; dari reruntuhan, fondasi yang lebih jelas bisa dibangun.",
+    "yesNoMeaning": "Perubahan tiba-tiba menghancurkan yang lama — tanah harus menetap sebelum kata ya yang mantap bisa terjadi."
+  },
+  "star": {
+    "name": "Bintang",
+    "meaning": "Harapan, penyembuhan, dan inspirasi yang tenang memperbarui semangat Anda setelah badai.",
+    "advice": "Percayalah pada cahaya di depan dan teruslah percaya — keinginan Anda ada dalam jangkauan.",
+    "yesNoMeaning": "Harapan dan pembaruan yang tenang menunjukkan ya — percayalah pada cahaya di depan dan pertahankan harapan Anda tetap hidup."
+  },
+  "moon": {
+    "name": "Bulan",
+    "meaning": "Ilusi dan ketidakpastian mengaburkan jalan. Percayalah pada intuisi Anda, bukan penampilan.",
+    "advice": "Perlambat dan pandang lebih dalam; kejelasan akan datang saat kabut menghilang.",
+    "yesNoMeaning": "Ilusi dan ketidakpastian mengaburkan jalan — jawabannya tidak jelas sampai Anda melihat di balik penampilan."
+  },
+  "sun": {
+    "name": "Matahari",
+    "meaning": "Kegembiraan, kesuksesan, dan kejernihan yang bersinar. Segalanya cerah dan penuh kehidupan.",
+    "advice": "Rayakan dan bersinarlah — energi positif menarik hasil yang kamu inginkan.",
+    "yesNoMeaning": "Kegembiraan dan kejernihan yang bersinar menegaskan jawaban ya yang cerah — semuanya bekerja sesuai keinginanmu."
+  },
+  "judgement": {
+    "name": "Pengadilan",
+    "meaning": "Seruan untuk bangkit, memperbarui, dan jujur pada diri sendiri. Sebuah putusan tentang kesadaran.",
+    "advice": "Jawablah panggilan dengan keberanian; maafkan masa lalu dan melangkahlah ke bab berikutnya dalam hidupmu.",
+    "yesNoMeaning": "Seruan untuk bangkit dan memperbarui — ya, terutama setelah Anda memaafkan masa lalu dan menjawab dengan jujur."
+  },
+  "world": {
+    "name": "Dunia",
+    "meaning": "Penyelesaian dan pemenuhan — sebuah siklus berakhir dalam kesempurnaan utuh.",
+    "advice": "Rayakan apa yang telah Anda capai; pintu terbuka ke dunia yang lebih luas.",
+    "yesNoMeaning": "Penyelesaian dan kesempurnaan menandai ini sebagai ya yang terpenuhi — siklus berakhir menguntungkan Anda."
+  },
+  "ace-of-wands": {
+    "name": "As Tongkat",
+    "meaning": "Sebuah percikan inspirasi membuka jalur kreatif yang berani.",
+    "advice": "Mulailah saat energi masih segar dan berikan ide itu langkah pertama yang nyata.",
+    "yesNoMeaning": "The Ace of Wands condong ke ya: mulai ketika energinya masih segar dan berikan ide itu langkah pertama yang nyata."
+  },
+  "two-of-wands": {
+    "name": "Dua Tongkat",
+    "meaning": "Masa depan terbentuk melalui perencanaan dan pilihan arah.",
+    "advice": "Lihat melampaui apa yang sudah dikenal, kemudian berkomitmen pada jalan dengan ruang untuk tumbuh.",
+    "yesNoMeaning": "Dua Tongkat tetap bersifat kondisional: lihat melampaui apa yang sudah dikenal, lalu berkomitmen pada jalan dengan ruang untuk berkembang."
+  },
+  "three-of-wands": {
+    "name": "Tiga Tongkat",
+    "meaning": "Upaya awal berkembang seiring peluang dan cakrawala yang lebih luas muncul.",
+    "advice": "Terus membangun dan bersiaplah menerima respons yang ditarik oleh pekerjaanmu.",
+    "yesNoMeaning": "Tiga Tongkat condong ya: teruslah membangun dan bersiaplah untuk menghadapi respons yang ditarik oleh pekerjaanmu."
+  },
+  "four-of-wands": {
+    "name": "Empat Tongkat",
+    "meaning": "Stabilitas, sambutan, dan perayaan bersama menciptakan fondasi yang kuat.",
+    "advice": "Tandai tonggak sejarah dan biarkan orang-orang yang mendukung berbagi dalam hal itu.",
+    "yesNoMeaning": "Empat Tong condong ke ya: tandai pencapaian dan biarkan orang-orang yang mendukung ikut merayakannya."
+  },
+  "five-of-wands": {
+    "name": "Lima Tongkat",
+    "meaning": "Tujuan yang bersaing menciptakan gesekan, kebisingan, atau ujian kepercayaan.",
+    "advice": "Ubah persaingan menjadi praktik yang berguna dan tolak konflik yang tidak memiliki tujuan.",
+    "yesNoMeaning": "Lima Tongkat tetap bersyarat: ubah persaingan menjadi latihan yang berguna dan tolak konflik yang tidak memiliki tujuan."
+  },
+  "six-of-wands": {
+    "name": "Enam Tongkat",
+    "meaning": "Pengakuan mengikuti usaha yang tekun dan kemajuan yang terlihat.",
+    "advice": "Terimalah dorongan itu, tetapi pertahankan kepercayaan diri Anda terkait dengan kerja jujur.",
+    "yesNoMeaning": "Enam Tongkat condong ya: terima dorongan, tetapi tetap pertahankan kepercayaan diri yang terikat pada kerja jujur."
+  },
+  "seven-of-wands": {
+    "name": "Tujuh Tongkat",
+    "meaning": "Anda mempertahankan posisi berharga saat tekanan menguji keteguhan Anda.",
+    "advice": "Pertahankan apa yang penting dengan batasan yang jelas daripada menghadapi setiap tantangan.",
+    "yesNoMeaning": "Tujuh Tongkat condong ke ya: pertahankan apa yang penting dengan batasan yang jelas daripada menghadapi setiap tantangan."
+  },
+  "eight-of-wands": {
+    "name": "Delapan Tongkat",
+    "meaning": "Peristiwa meningkat, pesan tiba, dan momentum membersihkan keterlambatan.",
+    "advice": "Bertindaklah segera dan jaga komunikasi tetap langsung selama jalannya terbuka.",
+    "yesNoMeaning": "The Eight of Wands condong ke ya: bertindaklah dengan cepat dan jaga komunikasi tetap langsung selagi jalan terbuka."
+  },
+  "nine-of-wands": {
+    "name": "Sembilan Tongkat",
+    "meaning": "Ketahanan kuat, meskipun ketegangan masa lalu membuat Anda waspada.",
+    "advice": "Lindungi energimu dan ambil langkah berikutnya tanpa mengharapkan setiap luka terulang.",
+    "yesNoMeaning": "Sembilan Tongkat tetap bersyarat: lindungi energimu dan ambil langkah berikutnya tanpa mengharapkan setiap luka terulang."
+  },
+  "ten-of-wands": {
+    "name": "Sepuluh Tongkat",
+    "meaning": "Tanggung jawab telah menjadi berat dan kesuksesan sekarang membawa beban.",
+    "advice": "Mendelegasikan, menyederhanakan, dan meletakkan pekerjaan yang tidak lagi benar-benar milikmu.",
+    "yesNoMeaning": "Sepuluh Tongkat condong tidak: delegasikan, sederhanakan, dan letakkan pekerjaan yang tidak benar-benar menjadi milikmu lagi."
+  },
+  "page-of-wands": {
+    "name": "Halaman Tongkat",
+    "meaning": "Rasa ingin tahu membawa pesan yang hidup, eksperimen, atau minat kreatif baru.",
+    "advice": "Jelajahi dengan keberanian dan biarkan energi pemula mengajarimu melalui tindakan.",
+    "yesNoMeaning": "Page of Wands condong ke ya: jelajahi dengan keberanian dan biarkan energi pemula mengajarkanmu melalui tindakan."
+  },
+  "knight-of-wands": {
+    "name": "Kesatria Tongkat",
+    "meaning": "Gairah bergerak cepat, membawa petualangan dan kemungkinan ketidaksabaran.",
+    "advice": "Manfaatkan momentum, tetapi pilih arah sebelum kecepatan menyebar upaya Anda.",
+    "yesNoMeaning": "Ksatria Tongkat tetap bersyarat: gunakan momentum, tetapi pilih arah sebelum kecepatan menyebarkan usahamu."
+  },
+  "queen-of-wands": {
+    "name": "Ratu Tongkat",
+    "meaning": "Kepercayaan diri yang hangat dan kemandirian kreatif menarik orang lain menuju visi Anda.",
+    "advice": "Percayalah pada kehadiran Anda, dorong orang lain, dan jangan kurangi ambisi Anda.",
+    "yesNoMeaning": "Ratu Tongkat condong ya: percayai kehadiranmu, dorong orang lain, dan jangan kecilkan ambisimu."
+  },
+  "king-of-wands": {
+    "name": "Raja Tongkat",
+    "meaning": "Visi matang mengubah inspirasi menjadi kepemimpinan yang tegas dan etis.",
+    "advice": "Pimpin dari tujuan yang lebih besar dan beri ruang bagi orang lain untuk berkontribusi.",
+    "yesNoMeaning": "Raja Tong condong ke ya: pimpin dengan tujuan yang lebih besar dan beri ruang bagi orang lain untuk berkontribusi."
+  },
+  "ace-of-cups": {
+    "name": "As Piala",
+    "meaning": "Hati terbuka untuk kasih sayang baru, belas kasih, dan pembaruan emosional.",
+    "advice": "Terima perasaan itu dengan jujur dan biarkan perhatian mengalir tanpa memaksakan hasil.",
+    "yesNoMeaning": "Ace of Cups condong ya: terima perasaan dengan jujur dan biarkan kepedulian mengalir tanpa memaksakan hasil."
+  },
+  "two-of-cups": {
+    "name": "Dua Piala",
+    "meaning": "Pengakuan bersama menciptakan kemitraan, ketertarikan, atau kesepakatan yang tulus.",
+    "advice": "Temui orang lain sebagai setara dan berbicaralah dari hati.",
+    "yesNoMeaning": "Dua Cawan condong ke ya: temui orang lain sebagai setara dan berbicaralah dari hati."
+  },
+  "three-of-cups": {
+    "name": "Tiga Piala",
+    "meaning": "Persahabatan, komunitas, dan kegembiraan yang dibagikan membawa dukungan emosional.",
+    "advice": "Rayakan bersama dan ingat siapa yang benar-benar hadir untuk Anda.",
+    "yesNoMeaning": "Tiga Piala condong ya: rayakan bersama dan ingat siapa yang benar-benar hadir untukmu."
+  },
+  "four-of-cups": {
+    "name": "Empat Gelas",
+    "meaning": "Penarikan emosional membuat hadiah yang tersedia sulit diperhatikan.",
+    "advice": "Jeda perbandingan dan lihat lagi apa yang sedang ditawarkan dengan tenang.",
+    "yesNoMeaning": "Empat Cawan condong tidak: berhentilah membandingkan dan lihat lagi apa yang dengan tenang ditawarkan."
+  },
+  "five-of-cups": {
+    "name": "Lima Piala",
+    "meaning": "Kehilangan menarik perhatian pada apa yang tumpah sementara sesuatu yang bermakna tetap ada.",
+    "advice": "Hormati kekecewaan, lalu beralih ke dukungan yang masih ada.",
+    "yesNoMeaning": "Lima Cawan condong tidak: hargai kekecewaan, lalu beralihlah pada dukungan yang masih ada."
+  },
+  "six-of-cups": {
+    "name": "Enam Cangkir",
+    "meaning": "Memori, kepolosan, atau ikatan yang akrab kembali dengan hangat yang lembut.",
+    "advice": "Sambut kebaikan masa lalu tanpa berpura-pura bahwa Anda harus hidup di sana lagi.",
+    "yesNoMeaning": "Enam Cawan condong ke ya: sambutlah kebaikan masa lalu tanpa berpura-pura bahwa kamu harus hidup di sana lagi."
+  },
+  "seven-of-cups": {
+    "name": "Tujuh Cawan",
+    "meaning": "Banyak kemungkinan menarik yang membingungkan perbedaan antara visi dan ilusi.",
+    "advice": "Persempit pilihan dan uji satu impian terhadap kenyataan sebelum berkomitmen.",
+    "yesNoMeaning": "Tujuh Cawan belum jelas: persempit pilihan dan uji satu mimpi terhadap kenyataan sebelum berkomitmen."
+  },
+  "eight-of-cups": {
+    "name": "Delapan Piala",
+    "meaning": "Sebuah situasi yang dulunya berarti tidak lagi memberi nutrisi bagi hati.",
+    "advice": "Pergi dengan jujur dan bergerak menuju pemenuhan yang lebih dalam yang kini Anda butuhkan.",
+    "yesNoMeaning": "The Eight of Cups condong ke tidak: pergi dengan kejujuran dan bergerak menuju pemenuhan yang lebih dalam yang sekarang Anda butuhkan."
+  },
+  "nine-of-cups": {
+    "name": "Sembilan Piala",
+    "meaning": "Kepuasan dan rasa syukur membuat keinginan dari hati terasa dekat.",
+    "advice": "Nikmati apa yang ada di sini dan tanyakan apakah keinginan itu juga melayani nilai-nilai terdalam Anda.",
+    "yesNoMeaning": "Sembilan Piala condong ya: nikmati apa yang ada dan tanyakan apakah keinginan itu juga sesuai dengan nilai-nilai terdalammu."
+  },
+  "ten-of-cups": {
+    "name": "Sepuluh Piala",
+    "meaning": "Harmoni emosional, rasa memiliki, dan ikatan yang langgeng melingkupi rumah.",
+    "advice": "Rawat ikatan yang membuat kebahagiaan berkelanjutan dan bisa dibagikan.",
+    "yesNoMeaning": "Sepuluh Piala condong ya: rawat ikatan yang membuat kebahagiaan berkelanjutan dan dapat dibagikan."
+  },
+  "page-of-cups": {
+    "name": "Halaman Cangkir",
+    "meaning": "Pesan lembut atau penemuan intuitif mengundang keterbukaan emosional.",
+    "advice": "Tetap penasaran terhadap perasaan dan tanggapi dengan tulus daripada berasumsi.",
+    "yesNoMeaning": "Page of Cups tetap bersyarat: tetaplah ingin tahu tentang perasaan dan tanggapi dengan ketulusan daripada asumsi."
+  },
+  "knight-of-cups": {
+    "name": "Kesatria Cawan",
+    "meaning": "Romansa, imajinasi, atau suatu ideal menarik hati ke depan.",
+    "advice": "Ikuti undangan, tetapi tetap berpijak pada kenyataan seiring janji-janji terungkap.",
+    "yesNoMeaning": "Ksatria Piala condong ke ya: ikuti undangan, tetapi tetap berpijak pada kenyataan saat janji-janji terwujud."
+  },
+  "queen-of-cups": {
+    "name": "Ratu Cawan",
+    "meaning": "Empati dan intuisi yang mendalam menciptakan ruang tenang untuk kebenaran.",
+    "advice": "Dengarkan dengan penuh kasih sambil menjaga batas yang membuat perhatian tetap sehat.",
+    "yesNoMeaning": "Queen of Cups condong ke ya: dengarkan dengan penuh kasih sambil menjaga batasan yang membuat perhatian tetap sehat."
+  },
+  "king-of-cups": {
+    "name": "Raja Cawan",
+    "meaning": "Kematangan emosional menstabilkan perasaan kuat tanpa menekannya.",
+    "advice": "Responlah dengan kasih sayang dan pengendalian diri, terutama ketika orang lain bereaksi.",
+    "yesNoMeaning": "Raja Piala condong ke ya: tanggapi dengan kasih sayang dan pengendalian diri, terutama ketika orang lain bereaksi."
+  },
+  "ace-of-swords": {
+    "name": "As Pedang",
+    "meaning": "Wawasan yang bersih menembus kebingungan dan mengungkap kebenaran baru.",
+    "advice": "Sebutkan masalah dengan jelas dan gunakan kejelasan untuk mendukung keputusan yang adil.",
+    "yesNoMeaning": "The Ace of Swords condong ke ya: sebutkan masalah dengan jelas dan gunakan kejelasan untuk melayani keputusan yang adil."
+  },
+  "two-of-swords": {
+    "name": "Dua Pedang",
+    "meaning": "Kebuntuan yang dijaga menunda sebuah pilihan yang tidak dapat tetap tergantung selamanya.",
+    "advice": "Lepaskan penutup mata dengan lembut, kumpulkan fakta yang hilang, dan putuskan dari keseimbangan.",
+    "yesNoMeaning": "Dua Pedang belum jelas: lepaskan penutup mata dengan lembut, kumpulkan fakta yang hilang, dan putuskan dari keseimbangan."
+  },
+  "three-of-swords": {
+    "name": "Tiga Pedang",
+    "meaning": "Kebenaran yang menyakitkan, perpisahan, atau kekecewaan meminta untuk diakui.",
+    "advice": "Biarkan perasaan itu mengalir melalui dirimu dan hindari mengubah rasa sakit menjadi cerita yang permanen.",
+    "yesNoMeaning": "Tiga Pedang tidak condong: biarkan perasaan itu mengalir melalui kamu dan hindari mengubah rasa sakit menjadi cerita yang permanen."
+  },
+  "four-of-swords": {
+    "name": "Empat Pedang",
+    "meaning": "Istirahat dan ketenangan pikiran dibutuhkan setelah tekanan atau konflik.",
+    "advice": "Berhenti sejenak sebelum menjawab; pemulihan produktif ketika mengembalikan pikiran yang jernih.",
+    "yesNoMeaning": "Empat Pedang condong tidak: berhenti sejenak sebelum menjawab; pemulihan menjadi produktif ketika mengembalikan pikiran yang jernih."
+  },
+  "five-of-swords": {
+    "name": "Lima Pedang",
+    "meaning": "Konflik mungkin menghasilkan kemenangan kosong atau meninggalkan kepercayaan yang rusak.",
+    "advice": "Pilih martabat daripada menang dan jauhi taktik yang terlalu mahal.",
+    "yesNoMeaning": "Lima Pedang condong tidak: pilih martabat daripada kemenangan dan hindari taktik yang terlalu mahal harganya."
+  },
+  "six-of-swords": {
+    "name": "Enam Pedang",
+    "meaning": "Sebuah jalan sulit bergerak perlahan menuju kondisi yang lebih tenang.",
+    "advice": "Ambil apa yang telah kamu pelajari, terima dukungan, dan terus bergerak menjauh dari kekacauan.",
+    "yesNoMeaning": "Enam Pedang condong ya: ambil apa yang telah Anda pelajari, terima dukungan, dan terus menjauh dari kekacauan."
+  },
+  "seven-of-swords": {
+    "name": "Tujuh Pedang",
+    "meaning": "Strategi, kerahasiaan, atau penghindaran memperumit jalan.",
+    "advice": "Bertindaklah dengan cerdik tetapi transparan; jalan pintas yang mengkhianati kepercayaan akan kembali sebagai masalah.",
+    "yesNoMeaning": "Seven of Swords condong ke tidak: bertindaklah cerdik tetapi transparan; jalan pintas yang mengkhianati kepercayaan akan kembali sebagai masalah."
+  },
+  "eight-of-swords": {
+    "name": "Delapan Pedang",
+    "meaning": "Ketakutan dan keyakinan yang membatasi membuat opsi yang tersedia sulit dilihat.",
+    "advice": "Pertanyakan pikiran yang mengatakan kamu terjebak dan ambil satu tindakan kecil untuk membebaskan diri.",
+    "yesNoMeaning": "The Eight of Swords condong ke tidak: pertanyakan pikiran yang mengatakan Anda terjebak dan ambil satu tindakan kecil untuk membebaskan diri."
+  },
+  "nine-of-swords": {
+    "name": "Sembilan Pedang",
+    "meaning": "Kecemasan memperbesar bahaya dalam kegelapan dan melelahkan pikiran.",
+    "advice": "Bawa rasa takut ke cahaya hari, cari dukungan, dan pisahkan fakta dari hasil yang dibayangkan.",
+    "yesNoMeaning": "Sembilan Pedang condong tidak: bawa ketakutan ke cahaya, cari dukungan, dan pisahkan fakta dari hasil yang dibayangkan."
+  },
+  "ten-of-swords": {
+    "name": "Sepuluh Pedang",
+    "meaning": "Siklus yang menyakitkan mencapai batas akhirnya dan tidak dapat terus berlanjut tanpa perubahan.",
+    "advice": "Terimalah akhir itu, lindungi pemulihan Anda, dan biarkan awal yang berbeda muncul.",
+    "yesNoMeaning": "Sepuluh Pedang condong tidak: terima akhir, lindungi pemulihanmu, dan biarkan awal yang berbeda muncul."
+  },
+  "page-of-swords": {
+    "name": "Halaman Pedang",
+    "meaning": "Rasa ingin tahu waspada mencari fakta, mengajukan pertanyaan, dan memperhatikan perubahan.",
+    "advice": "Riset dengan cermat dan berbicaralah dengan presisi daripada bereaksi terhadap setiap sinyal.",
+    "yesNoMeaning": "Halaman Pedang tetap bersifat kondisional: teliti dengan cermat dan berbicaralah dengan tepat daripada bereaksi terhadap setiap sinyal."
+  },
+  "knight-of-swords": {
+    "name": "Kesatria Pedang",
+    "meaning": "Intelek yang fokus bergerak cepat dan menghadapi rintangan secara langsung.",
+    "advice": "Maju dengan keberanian, tetapi cukup lambat untuk mendengar apa yang mungkin terlewatkan oleh kepastian Anda.",
+    "yesNoMeaning": "Ksatria Pedang tetap bersyarat: maju dengan keberanian, tetapi cukup lambat untuk mendengar apa yang mungkin terlewat oleh keyakinanmu."
+  },
+  "queen-of-swords": {
+    "name": "Ratu Pedang",
+    "meaning": "Persepsi yang jelas dan batasan yang jujur menghilangkan kebingungan.",
+    "advice": "Katakan yang benar dengan penuh kasih dan biarkan pengalaman mengasah, bukan mengeraskan, dirimu.",
+    "yesNoMeaning": "Queen of Swords condong ke ya: katakan apa yang benar dengan kasih dan biarkan pengalaman menajamkan, bukan mengeraskan, dirimu."
+  },
+  "king-of-swords": {
+    "name": "Raja Pedang",
+    "meaning": "Alasan, keadilan, dan penilaian yang disiplin membimbing keputusan yang berakibat.",
+    "advice": "Gunakan bukti, tentukan standar, dan jangan biarkan bias pribadi mempengaruhi putusan.",
+    "yesNoMeaning": "Raja Pedang condong ke ya: gunakan bukti, tetapkan standar, dan jangan biarkan bias pribadi mempengaruhi putusan."
+  },
+  "ace-of-pentacles": {
+    "name": "As Koin",
+    "meaning": "Kesempatan nyata menawarkan benih kemakmuran, pekerjaan, atau kesejahteraan.",
+    "advice": "Dasarkan peluang pada rencana praktis dan rawat secara konsisten.",
+    "yesNoMeaning": "Ace of Pentacles condong ya: tanamkan kesempatan dalam rencana yang praktis dan rawat secara konsisten."
+  },
+  "two-of-pentacles": {
+    "name": "Dua Pentakel",
+    "meaning": "Beberapa prioritas bergerak sekaligus dan memerlukan keseimbangan yang fleksibel.",
+    "advice": "Sesuaikan ritme, lindungi hal-hal penting, dan hindari berjanji lebih dari yang bisa Anda tanggung.",
+    "yesNoMeaning": "Dua Pentakel tetap bersifat kondisional: sesuaikan ritme, lindungi hal-hal penting, dan hindari berjanji lebih dari yang dapat Anda tanggung."
+  },
+  "three-of-pentacles": {
+    "name": "Tiga Koin",
+    "meaning": "Keterampilan berkembang melalui kolaborasi, umpan balik, dan pengerjaan yang cermat.",
+    "advice": "Kontribusikan kekuatan Anda, hormati keahlian, dan bangun hingga standar bersama.",
+    "yesNoMeaning": "Tiga Pentakel condong ke ya: kontribusikan kekuatanmu, hormati keahlian, dan bangun sesuai standar bersama."
+  },
+  "four-of-pentacles": {
+    "name": "Empat Pentakel",
+    "meaning": "Memegang erat keamanan dapat mempertahankan sumber daya tetapi membatasi aliran yang sehat.",
+    "advice": "Lindungi apa yang penting tanpa membiarkan rasa takut menentukan setiap keputusanmu.",
+    "yesNoMeaning": "Empat Pentakel tetap bersyarat: lindungi apa yang penting tanpa membiarkan ketakutan mengontrol setiap keputusanmu."
+  },
+  "five-of-pentacles": {
+    "name": "Lima Pentakel",
+    "meaning": "Ketegangan atau pengecualian material menimbulkan kekhawatiran dan rasa kekurangan.",
+    "advice": "Minta bantuan praktis dan perhatikan pintu yang telah dibuat mudah untuk diabaikan oleh kesulitan.",
+    "yesNoMeaning": "Lima Pentakel condong tidak: mintalah bantuan praktis dan perhatikan pintu yang sulit yang mungkin terlewatkan karena kesulitan."
+  },
+  "six-of-pentacles": {
+    "name": "Enam Pentakel",
+    "meaning": "Sumber daya dipertukarkan, menimbulkan pertanyaan tentang kemurahan hati, kekuasaan, dan keadilan.",
+    "advice": "Berikan atau terima dengan ketentuan yang jelas sehingga dukungan menjaga martabat di kedua sisi.",
+    "yesNoMeaning": "Enam Pentakel condong ke ya: memberi atau menerima dengan ketentuan yang jelas sehingga dukungan menjaga martabat di kedua sisi."
+  },
+  "seven-of-pentacles": {
+    "name": "Tujuh Pentakel",
+    "meaning": "Investasi yang sabar mencapai titik penilaian sebelum upaya berikutnya.",
+    "advice": "Tinjau apa yang sedang berkembang, perbaiki metode, dan beri waktu untuk hasil yang berharga.",
+    "yesNoMeaning": "Tujuh Pentakel tetap bersyarat: tinjau apa yang sedang tumbuh, perbaiki metode, dan beri waktu untuk hasil yang berharga."
+  },
+  "eight-of-pentacles": {
+    "name": "Delapan Koin",
+    "meaning": "Pengulangan yang fokus mengembangkan penguasaan dan hasil yang dapat diandalkan.",
+    "advice": "Latih keterampilan penting, sambut koreksi, dan biarkan kualitas terkumpul.",
+    "yesNoMeaning": "The Eight of Pentacles condong ke ya: latih keterampilan yang esensial, sambut koreksi, dan biarkan kualitas menumpuk."
+  },
+  "nine-of-pentacles": {
+    "name": "Sembilan Pentakel",
+    "meaning": "Kemandirian dan kenyamanan yang dibudidayakan mencerminkan kemajuan yang disiplin.",
+    "advice": "Nikmati apa yang telah Anda bangun dan pertahankan kemandirian yang terhubung dengan rasa syukur.",
+    "yesNoMeaning": "Sembilan Koin condong ya: nikmati apa yang telah kamu bangun dan pertahankan kemandirian dengan mengaitkannya pada rasa syukur."
+  },
+  "ten-of-pentacles": {
+    "name": "Sepuluh Koin",
+    "meaning": "Keamanan jangka panjang tumbuh melalui warisan, keluarga, dan fondasi yang dibagikan.",
+    "advice": "Rencanakan lebih dari sekadar kemenangan sesaat dan lindungi apa yang dapat mendukung orang lain seiring waktu.",
+    "yesNoMeaning": "Sepuluh Koin condong ya: rencanakan melampaui kemenangan langsung dan lindungi apa yang dapat mendukung orang lain seiring waktu."
+  },
+  "page-of-pentacles": {
+    "name": "Halaman Koin",
+    "meaning": "Sebuah pesan praktis mengundang studi, perencanaan, atau usaha baru yang terencana.",
+    "advice": "Pelajari dasar-dasarnya, tentukan tugas selanjutnya, dan buktikan ide melalui kerja yang konsisten.",
+    "yesNoMeaning": "Halaman Pentakel condong ke ya: pelajari dasar-dasarnya, tentukan tugas berikutnya, dan buktikan ide melalui kerja yang konsisten."
+  },
+  "knight-of-pentacles": {
+    "name": "Kesatria Koin",
+    "meaning": "Usaha yang dapat diandalkan maju perlahan tetapi jarang meninggalkan tugas.",
+    "advice": "Pertahankan rutinitas jujur dan konsisten; kemajuan lebih penting daripada kegembiraan.",
+    "yesNoMeaning": "Ksatria Koin condong ke ya: jaga rutinitas tetap jujur dan konsisten; kemajuan lebih penting daripada kegembiraan."
+  },
+  "queen-of-pentacles": {
+    "name": "Ratu Pentakel",
+    "meaning": "Perhatian yang cekatan menciptakan kenyamanan, kesehatan, dan kelimpahan praktis.",
+    "advice": "Rawat orang dan rencana dengan cara yang tetap berkelanjutan untukmu.",
+    "yesNoMeaning": "Queen of Pentacles condong ke ya: rawat orang dan rencana dengan cara yang tetap berkelanjutan untukmu."
+  },
+  "king-of-pentacles": {
+    "name": "Raja Koin",
+    "meaning": "Kepemimpinan material mengubah pengalaman menjadi pengelolaan yang stabil dan murah hati.",
+    "advice": "Buat pilihan jangka panjang yang bijaksana dan gunakan kesuksesan dengan bertanggung jawab.",
+    "yesNoMeaning": "Raja Koin condong ke ya: buat pilihan jangka panjang yang bijaksana dan gunakan keberhasilan secara bertanggung jawab."
+  }
+}

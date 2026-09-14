@@ -173,6 +173,8 @@ function clearQuestion() {
 }
 
 .verdict {
+  position: relative;
+  isolation: isolate;
   align-self: center;
   display: inline-flex;
   align-items: center;
@@ -183,10 +185,26 @@ function clearQuestion() {
   font-size: 20px;
   letter-spacing: 1.5px;
   border: 1px solid currentColor;
+  animation: verdict-arrive 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+
+.verdict::before,
+.verdict::after {
+  content: '';
+  position: absolute;
+  inset: -7px;
+  z-index: -1;
+  border: 1px solid currentColor;
+  border-radius: inherit;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.verdict::after { inset: -13px; }
 
 .verdict__icon {
   flex-shrink: 0;
+  animation: verdict-icon-arrive 620ms 120ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .verdict__meaning {
@@ -215,5 +233,55 @@ function clearQuestion() {
 .verdict--uncertain {
   color: #b9aef0;
   background: rgba(185, 174, 240, 0.14);
+}
+
+.verdict--yes::before,
+.verdict--yes::after {
+  animation: verdict-expand 1.15s ease-out both;
+}
+
+.verdict--yes::after { animation-delay: 150ms; }
+.verdict--no::before { animation: verdict-contract 700ms ease-out both; }
+.verdict--maybe::before { animation: verdict-shimmer 1.4s ease-in-out 2; }
+.verdict--uncertain::before { animation: verdict-drift 2.2s ease-in-out 2; }
+
+@keyframes verdict-arrive {
+  from { opacity: 0; transform: translateY(12px) scale(0.82); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes verdict-icon-arrive {
+  from { opacity: 0; transform: rotate(-35deg) scale(0.55); }
+  to { opacity: 1; transform: rotate(0) scale(1); }
+}
+
+@keyframes verdict-expand {
+  0% { opacity: 0.7; transform: scale(0.75); }
+  100% { opacity: 0; transform: scale(1.22); }
+}
+
+@keyframes verdict-contract {
+  0% { opacity: 0; transform: scale(1.25); }
+  60% { opacity: 0.65; }
+  100% { opacity: 0; transform: scale(0.88); }
+}
+
+@keyframes verdict-shimmer {
+  0%, 100% { opacity: 0; transform: translateX(-4px); }
+  50% { opacity: 0.55; transform: translateX(4px); }
+}
+
+@keyframes verdict-drift {
+  0%, 100% { opacity: 0.12; transform: translateX(-5px) rotate(-1deg); }
+  50% { opacity: 0.5; transform: translateX(5px) rotate(1deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .verdict,
+  .verdict__icon,
+  .verdict::before,
+  .verdict::after {
+    animation: none;
+  }
 }
 </style>

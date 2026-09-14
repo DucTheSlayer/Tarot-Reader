@@ -1,0 +1,109 @@
+{
+  "onboarding": {
+    "title": "자신을 위한 조용한 순간",
+    "guideTitle": "앱 사용 방법",
+    "intro": "타로와 별자리를 통해 자신을 탐험하세요. 계정이 없어도 — 오프라인에서도 시작할 수 있습니다.",
+    "stepsTitle": "세 가지 간단한 단계로 시작하세요",
+    "chooseTitle": "탐험할 것을 선택하세요",
+    "chooseBody": "타로 스프레드를 선택하거나 조디악을 방문하여 당신의 별자리에 대해 알아보세요.",
+    "drawTitle": "카드 뽑고 공개하기",
+    "drawBody": "잠시 마음속에 있는 생각을 되새기고 나서 그림을 그리세요. 3장 카드 스프레드에서는 각 카드를 탭하여 공개하거나 모두 공개를 선택하세요.",
+    "readTitle": "읽고 반성하기",
+    "readBody": "공개된 카드를 눌러 그 의미를 탐험하세요. 연간 타로에서는 옆으로 스와이프하여 5가지 측면 모두를 확인할 수 있습니다.",
+    "tip": "어디서 시작할지 모르겠나요? 오늘의 카드(Card of the Day)를 시도해 보세요 — 하루 동안 함께할 한 장의 카드입니다.",
+    "note": "이 리딩은 반성과 참고용입니다.",
+    "start": "탐험 시작"
+  },
+  "nav": {
+    "label": "주요 내비게이션",
+    "tarot": "타로",
+    "zodiac": "별자리",
+    "settings": "설정"
+  },
+  "common": {
+    "back": "뒤로",
+    "explore": "탐험",
+    "drawAgain": "다시 뽑기",
+    "changeQuestion": "질문 바꾸기"
+  },
+  "tarotHome": {
+    "library": "78장 카드 라이브러리를 탐험하세요",
+    "daily": "오늘의 카드",
+    "yesNo": "예 또는 아니오",
+    "love": "연애 타로",
+    "money": "머니 타로",
+    "yearly": "연간 타로",
+    "spread": "3장 카드 펼치기"
+  },
+  "zodiacHome": {
+    "eyebrow": "천상의 안내",
+    "subtitle": "당신의 우주적 길을 선택하세요",
+    "origin": "별자리 기원",
+    "originDescription": "12별자리 뒤에 숨은 이야기를 발견하세요",
+    "originKicker": "열두 별자리",
+    "horoscope": "별자리",
+    "horoscopeDescription": "오늘 / 이번 주 / 올해의 예보",
+    "horoscopeKicker": "하루 · 주 · 해"
+  },
+  "period": {
+    "label": "별자리 기간",
+    "day": "날",
+    "week": "주",
+    "year": "년"
+  },
+  "settings": {
+    "subtitle": "이 공간을 당신의 것으로 만들어라",
+    "language": "언어",
+    "languageDescription": "인터페이스 언어를 선택하세요. 변경 사항은 즉시 적용되며 이 장치에 저장됩니다.",
+    "selected": "선택됨",
+    "saved": "언어가 업데이트되었습니다",
+    "translationTitle": "독서를 포함한 언어들",
+    "translationDescription": "메뉴, 78장의 타로 카드, 12별자리 프로필 및 일간/주간/연간 리딩이 이 목록에 표시된 모든 언어로 번역됩니다. 작품에 삽입된 텍스트는 영어로 유지됩니다. 이 리딩은 성찰과 오락을 위한 것입니다.",
+    "offline": "당신의 언어 설정은 오프라인에서도 작동합니다. 계정이 필요하지 않습니다."
+  },
+  "adsQa": {
+    "title": "광고 QA",
+    "settingsLabel": "테스트 광고",
+    "description": "앱에서 광고 배치를 테스트하기 전에 각 광고 형식을 독립적으로 로드하십시오.",
+    "platform": "플랫폼",
+    "ready": "준비됨",
+    "unavailable": "이용 불가",
+    "devOnly": "이 화면은 개발 모드가 활성화될 때만 사용할 수 있습니다.",
+    "androidNote": "브라우저에서는 레이아웃 미리보기만 표시됩니다. 네이티브 테스트 광고를 불러오려면 디버그 APK를 설치하세요.",
+    "testNotice": "안전한 구글 데모 광고 단위가 활성화되어 있습니다. 테스트 광고로 표시된 광고와만 상호작용하세요.",
+    "controls": "광고 테스트 제어",
+    "banner": "배너",
+    "bannerDescription": "지속적인 하단 배너와 예약된 레이아웃 공간을 테스트합니다.",
+    "interstitial": "간질성",
+    "interstitialDescription": "탐색 없이 전체 화면 테스트 광고를 로드하고 엽니다.",
+    "rewarded": "보상받음",
+    "rewardedDescription": "데모 비디오를 사용하여 보상된 테스트와 건너뛴 콜백을 테스트합니다.",
+    "appOpen": "앱 열기",
+    "appOpenDescription": "재방문 사용자의 콜드 스타트 후에 사용되는 전체 화면 광고를 테스트합니다.",
+    "native": "원주민 카드",
+    "nativeDescription": "앱 내 카드에 네이티브 테스트 자산을 로드합니다.",
+    "show": "보이다",
+    "hide": "숨기기",
+    "load": "테스트 카드 로드",
+    "loadAndShow": "로드 및 표시",
+    "open": "열기",
+    "adLabel": "테스트 광고",
+    "webBanner": "배너 레이아웃 미리보기",
+    "status": {
+      "idle": "테스트되지 않음",
+      "loading": "로딩 중…",
+      "shown": "보였다",
+      "hidden": "숨겨진",
+      "failed": "이용 불가",
+      "rewarded": "보상이 지급되었습니다",
+      "skipped": "건너뜀",
+      "preview": "웹 미리보기"
+    }
+  },
+  "database": {
+    "errorTitle": "신비한 도서관을 열 수 없음",
+    "retry": "다시 시도하세요",
+    "loadingTitle": "신비로운 도서관 열기",
+    "loadingDescription": "78장 타로 카드와 12별자리를 준비하는 중…"
+  }
+}

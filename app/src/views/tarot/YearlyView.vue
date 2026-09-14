@@ -9,6 +9,7 @@ import {
 } from '../../data/spreadReadings'
 import { useDrawCards } from '../../composables/useDrawCards'
 import ScreenHeader from '../../components/common/ScreenHeader.vue'
+import ChevronIcon from '../../components/common/ChevronIcon.vue'
 import ScreenContent from '../../components/common/ScreenContent.vue'
 import CardDrawAnimation from '../../components/common/CardDrawAnimation.vue'
 import CardSlotLabel from '../../components/common/CardSlotLabel.vue'
@@ -183,7 +184,7 @@ function resetResult() {
               :disabled="activeIndex === 0"
               @click="goPrev"
             >
-              ←
+              <ChevronIcon />
             </button>
             <div
               ref="carouselEl"
@@ -215,7 +216,7 @@ function resetResult() {
               :disabled="activeIndex === cards.length - 1"
               @click="goNext"
             >
-              →
+              <ChevronIcon direction="right" />
             </button>
           </div>
 
@@ -489,7 +490,7 @@ function resetResult() {
   border-radius: var(--radius-full);
   background: color-mix(in srgb, var(--color-surface) 82%, transparent);
   color: var(--color-gold);
-  font-size: 16px;
+  font-size: 21px;
   cursor: pointer;
   box-shadow: var(--shadow-sm);
   -webkit-tap-highlight-color: transparent;

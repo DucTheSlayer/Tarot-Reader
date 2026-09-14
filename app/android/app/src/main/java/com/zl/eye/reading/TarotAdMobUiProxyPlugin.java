@@ -1,4 +1,4 @@
-package com.apptarot.app;
+package com.zl.eye.reading;
 
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;

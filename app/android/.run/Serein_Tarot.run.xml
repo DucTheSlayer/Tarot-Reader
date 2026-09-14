@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Serein Tarot" type="AndroidRunConfigurationType" factoryName="Android App">
+    <module name="android.app" />
+    <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+    <option name="DEPLOY" value="true" />
+    <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+    <option name="MODE" value="specific_activity" />
+    <option name="ACTIVITY" value="com.zl.eye.reading.MainActivity" />
+    <option name="ACTIVITY_CLASS" value="com.zl.eye.reading.MainActivity" />
+    <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+    <method v="2">
+      <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

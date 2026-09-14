@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ui } from '../../i18n/reading'
 import MysticalBackground from './MysticalBackground.vue'
+import BackButton from './BackButton.vue'
 
 withDefaults(
   defineProps<{
@@ -16,7 +17,7 @@ withDefaults(
   <main class="screen" :class="{ 'theme-zodiac': theme === 'zodiac' }">
     <MysticalBackground v-if="theme === 'tarot'" />
     <header v-if="backTo" class="screen__bar">
-      <router-link :to="backTo" class="screen__back">{{ ui("← Back") }}</router-link>
+      <BackButton :to="backTo" />
     </header>
     <div class="screen__body">
       <h1>{{ title }}</h1>
@@ -37,11 +38,6 @@ withDefaults(
 .screen__bar {
   display: flex;
   padding: var(--space-2) 0 var(--space-4);
-}
-
-.screen__back {
-  color: var(--color-text-muted);
-  font-size: 15px;
 }
 
 .screen__body {

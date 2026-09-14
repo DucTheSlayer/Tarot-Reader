@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.apptarot.app',
-  appName: 'App Tarot',
+  appId: 'com.zl.eye.reading',
+  appName: 'Serein Tarot',
   webDir: 'dist',
   plugins: {
     CapacitorSQLite: {

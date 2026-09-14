@@ -75,10 +75,11 @@ function cardCategory(card: TarotCard): string {
     <div class="library__scroll">
       <div v-if="visibleCards.length" class="library__grid">
         <router-link
-          v-for="card in visibleCards"
+          v-for="(card, index) in visibleCards"
           :key="card.id"
           :to="`/tarot/library/${card.id}`"
           class="library-card"
+          :style="{ '--card-index': Math.min(index, 11) }"
         >
           <div class="library-card__image-wrap">
             <img :src="card.image" :alt="card.name" class="library-card__image" loading="lazy" />
@@ -191,13 +192,37 @@ function cardCategory(card: TarotCard): string {
   background: rgba(20, 10, 40, 0.82);
   color: var(--color-text);
   box-shadow: var(--shadow-sm);
+  animation: library-card-arrive 420ms
+    calc(var(--card-index, 0) * 45ms) cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  transition: border-color 180ms ease, box-shadow 220ms ease, transform 180ms ease;
 }
 .library-card__image-wrap {
   aspect-ratio: 5 / 7;
   overflow: hidden;
   background: var(--color-surface-raised);
 }
-.library-card__image { display: block; width: 100%; height: 100%; object-fit: cover; }
+.library-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1), filter 220ms ease;
+}
+
+.library-card:active { transform: scale(0.975); }
+
+@media (hover: hover) {
+  .library-card:hover {
+    border-color: rgba(230, 199, 107, 0.7);
+    box-shadow: var(--shadow-md), 0 0 16px rgba(230, 199, 107, 0.1);
+    transform: translateY(-3px);
+  }
+
+  .library-card:hover .library-card__image {
+    transform: scale(1.045);
+    filter: saturate(1.08);
+  }
+}
 .library-card__info { display: flex; flex-direction: column; gap: 3px; padding: var(--space-2); }
 .library-card__info span {
   color: var(--color-text-muted);
@@ -240,5 +265,19 @@ function cardCategory(card: TarotCard): string {
 
 @media (min-width: 620px) {
   .library__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@keyframes library-card-arrive {
+  from { opacity: 0; transform: translateY(14px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .library-card {
+    animation: none;
+    transition: none;
+  }
+
+  .library-card__image { transition: none; }
 }
 </style>

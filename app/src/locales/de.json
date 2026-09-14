@@ -1,0 +1,109 @@
+{
+  "onboarding": {
+    "title": "Ein stiller Moment für sich selbst",
+    "guideTitle": "Wie man die App benutzt",
+    "intro": "Erkunde dich selbst durch Tarot und Tierkreiszeichen. Kein Konto nötig — du kannst beginnen, selbst wenn du offline bist.",
+    "stepsTitle": "Beginne in drei einfachen Schritten",
+    "chooseTitle": "Wähle, was du erkunden möchtest",
+    "chooseBody": "Wählen Sie ein Tarot-Layout oder besuchen Sie den Tierkreis, um mehr über Ihr Zeichen zu erfahren.",
+    "drawTitle": "Ziehe und enthülle",
+    "drawBody": "Nimm dir einen Moment, um über das nachzudenken, was dir im Kopf herumgeht, und ziehe dann eine Karte. Im 3-Karten-Spread tippe auf jede Karte, um sie zu enthüllen, oder wähle Alle Enthüllen.",
+    "readTitle": "Lesen und reflektieren",
+    "readBody": "Tippe auf eine enthüllte Karte, um ihre Bedeutung zu erkunden. Im Jahres-Tarot wische seitlich, um alle 5 Aspekte zu entdecken.",
+    "tip": "Nicht sicher, wo Sie anfangen sollen? Versuchen Sie Karte des Tages — eine Karte, die Sie den ganzen Tag begleiten kann.",
+    "note": "Diese Lesungen dienen zur Reflexion und als Referenz.",
+    "start": "Beginne zu erkunden"
+  },
+  "nav": {
+    "label": "Hauptnavigation",
+    "tarot": "Tarot",
+    "zodiac": "Tierkreiszeichen",
+    "settings": "Einstellungen"
+  },
+  "common": {
+    "back": "Zurück",
+    "explore": "Erkunden",
+    "drawAgain": "Noch einmal ziehen",
+    "changeQuestion": "Frage zur Veränderung"
+  },
+  "tarotHome": {
+    "library": "Erkunde die 78-Karten-Bibliothek",
+    "daily": "Karte des Tages",
+    "yesNo": "Ja oder Nein",
+    "love": "Liebes-Tarot",
+    "money": "Geld-Tarot",
+    "yearly": "Jährliches Tarot",
+    "spread": "3-Karten-Auslage"
+  },
+  "zodiacHome": {
+    "eyebrow": "Himmlische Führung",
+    "subtitle": "Wähle deinen kosmischen Weg",
+    "origin": "Ursprung des Tierkreiszeichens",
+    "originDescription": "Entdecke die Geschichten hinter den 12 Sternzeichen",
+    "originKicker": "Die zwölf Zeichen",
+    "horoscope": "Horoskop",
+    "horoscopeDescription": "Dein Tages- / Wochen- / Jahresausblick",
+    "horoscopeKicker": "Tag · Woche · Jahr"
+  },
+  "period": {
+    "label": "Horoskopzeitraum",
+    "day": "Tag",
+    "week": "Woche",
+    "year": "Jahr"
+  },
+  "settings": {
+    "subtitle": "Mache diesen Raum zu deinem eigenen",
+    "language": "Sprache",
+    "languageDescription": "Wähle deine Schnittstellensprache. Änderungen werden sofort übernommen und auf diesem Gerät gespeichert.",
+    "selected": "Ausgewählt",
+    "saved": "Sprache aktualisiert",
+    "translationTitle": "Sprachen, einschließlich Lesungen",
+    "translationDescription": "Menüs, 78 Tarotkarten, 12 Tierkreisprofile und Tag-/Wochen-/Jahreslegungen werden in jede auf dieser Liste aufgeführte Sprache übersetzt. Text, der in Kunstwerken eingebettet ist, bleibt auf Englisch. Diese Legungen dienen der Reflexion und Unterhaltung.",
+    "offline": "Ihre Sprachpräferenz funktioniert offline. Kein Konto erforderlich."
+  },
+  "adsQa": {
+    "title": "Werbe-QA",
+    "settingsLabel": "Testwerbung",
+    "description": "Laden Sie jedes Anzeigenformat unabhängig, bevor Sie seine Platzierung in der App testen.",
+    "platform": "Plattform",
+    "ready": "Bereit",
+    "unavailable": "Nicht verfügbar",
+    "devOnly": "Dieser Bildschirm ist nur verfügbar, wenn der Entwicklermodus aktiviert ist.",
+    "androidNote": "Der Browser zeigt nur Layoutvorschauen an. Installiere die Debug-APK, um native Testanzeigen zu laden.",
+    "testNotice": "Sichere Google-Demowerbeeinheiten sind aktiv. Interagiere nur mit Anzeigen, die als Testanzeige gekennzeichnet sind.",
+    "controls": "Werbungstestkontrollen",
+    "banner": "Banner",
+    "bannerDescription": "Testet das persistente Banner am unteren Rand und den reservierten Layout-Space.",
+    "interstitial": "Zwischenständig",
+    "interstitialDescription": "Lädt und öffnet eine Vollbild-Testanzeige ohne Navigation.",
+    "rewarded": "Belohnt",
+    "rewardedDescription": "Testet Belohnungen und überspringt Rückrufe mithilfe eines Demo-Videos.",
+    "appOpen": "App öffnen",
+    "appOpenDescription": "Testet die Vollbildanzeige, die nach einem Neustart für einen wiederkehrenden Benutzer angezeigt wird.",
+    "native": "Einheimische Karte",
+    "nativeDescription": "Lädt native Testressourcen in eine In-App-Karte.",
+    "show": "Zeigen",
+    "hide": "Verbergen",
+    "load": "Testkarte laden",
+    "loadAndShow": "Laden und anzeigen",
+    "open": "Offen",
+    "adLabel": "Testanzeige",
+    "webBanner": "Vorschau des Bannerlayouts",
+    "status": {
+      "idle": "Nicht getestet",
+      "loading": "Wird geladen…",
+      "shown": "Gezeigt",
+      "hidden": "Versteckt",
+      "failed": "Nicht verfügbar",
+      "rewarded": "Belohnung gewährt",
+      "skipped": "Übersprungen",
+      "preview": "Web-Vorschau"
+    }
+  },
+  "database": {
+    "errorTitle": "Nicht in der Lage, die mystische Bibliothek zu öffnen",
+    "retry": "Versuche es erneut",
+    "loadingTitle": "Die mystische Bibliothek öffnen",
+    "loadingDescription": "Vorbereitung von 78 Tarotkarten und 12 Tierkreiszeichen…"
+  }
+}

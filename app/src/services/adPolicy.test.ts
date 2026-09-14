@@ -1,11 +1,16 @@
 import { describe, expect, it } from 'vitest'
 import {
+  APP_OPEN_AT_STARTUP_ENABLED,
   INTERSTITIAL_COOLDOWN_MS,
   isInterstitialCooldownComplete,
   shouldShowBannerForPath
 } from './adPolicy'
 
 describe('ad placement policy', () => {
+  it('never interrupts startup with an App Open ad', () => {
+    expect(APP_OPEN_AT_STARTUP_ENABLED).toBe(false)
+  })
+
   it.each(['/tarot', '/tarot/library', '/zodiac', '/settings'])(
     'shows the banner on the top-level route %s',
     (path) => {

@@ -1,10 +1,16 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import HomeModeTabs from '../../components/common/HomeModeTabs.vue'
 import MysticalBackground from '../../components/common/MysticalBackground.vue'
+import AdIcon from '../../components/ads/AdIcon.vue'
+import { LOCALE_OPTIONS, type AppLocale } from '../../i18n/locales'
 import { config } from '../../../config'
 const { t, locale } = useI18n()
 const showAdQa = config.settings?.dev === true
+const localeLabel = computed(() =>
+  LOCALE_OPTIONS.find((option) => option.value === locale.value as AppLocale)?.label ?? 'English'
+)
 </script>
 
 <template>
@@ -15,7 +21,7 @@ const showAdQa = config.settings?.dev === true
       <RouterLink to="/settings/language" class="settings-row">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12M9 3v2M5 5c1 5 4 8 8 10M13 5c-1 5-4 8-9 11M14 21l4-10 4 10M15.5 17h5" /></svg>
         <span class="settings-row__label">{{ t('settings.language') }}</span>
-        <span class="settings-row__value" :lang="locale">{{ locale === 'vi' ? 'Tiếng Việt' : 'English' }}</span>
+        <span class="settings-row__value" :lang="locale">{{ localeLabel }}</span>
         <span class="settings-row__arrow" aria-hidden="true">›</span>
       </RouterLink>
       <RouterLink to="/settings/guide" class="settings-row">
@@ -24,10 +30,7 @@ const showAdQa = config.settings?.dev === true
         <span class="settings-row__arrow" aria-hidden="true">›</span>
       </RouterLink>
       <RouterLink v-if="showAdQa" to="/settings/ad-test" class="settings-row">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect x="3" y="5" width="18" height="14" rx="3" />
-          <path d="M7 15V9h2.5a2 2 0 0 1 0 4H7M15 9h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2V9Z" />
-        </svg>
+        <AdIcon />
         <span class="settings-row__label">{{ t('adsQa.settingsLabel') }}</span>
         <span class="settings-row__value">DEV</span>
         <span class="settings-row__arrow" aria-hidden="true">›</span>

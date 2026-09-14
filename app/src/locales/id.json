@@ -1,0 +1,109 @@
+{
+  "onboarding": {
+    "title": "Saat tenang untuk dirimu sendiri",
+    "guideTitle": "Cara menggunakan aplikasi",
+    "intro": "Jelajahi dirimu melalui Tarot dan Zodiak. Tidak perlu akun — kamu bisa mulai bahkan saat offline.",
+    "stepsTitle": "Mulailah dengan tiga langkah sederhana",
+    "chooseTitle": "Pilih apa yang ingin dieksplorasi",
+    "chooseBody": "Pilih sebaran Tarot, atau kunjungi Zodiak untuk mempelajari tentang tanda Anda.",
+    "drawTitle": "Tarik dan ungkapkan",
+    "drawBody": "Luangkan waktu sejenak untuk merenungkan apa yang ada di pikiranmu, lalu tarik kartu. Dalam 3 Card Spread, ketuk setiap kartu untuk menampilkannya atau pilih Tampilkan Semua.",
+    "readTitle": "Baca dan renungkan",
+    "readBody": "Ketuk kartu yang sudah dibuka untuk menjelajahi maknanya. Dalam Tarot Tahunan, geser ke samping untuk menemukan semua 5 aspek.",
+    "tip": "Tidak yakin harus mulai dari mana? Coba Kartu Hari Ini — satu kartu yang menemani sepanjang hari.",
+    "note": "Pembacaan ini untuk refleksi dan referensi.",
+    "start": "Mulai menjelajah"
+  },
+  "nav": {
+    "label": "Navigasi utama",
+    "tarot": "Tarot",
+    "zodiac": "Zodiak",
+    "settings": "Pengaturan"
+  },
+  "common": {
+    "back": "Kembali",
+    "explore": "Jelajahi",
+    "drawAgain": "Tarik lagi",
+    "changeQuestion": "Ubah pertanyaan"
+  },
+  "tarotHome": {
+    "library": "Jelajahi perpustakaan 78 kartu",
+    "daily": "Kartu Hari Ini",
+    "yesNo": "Ya atau Tidak",
+    "love": "Tarot Cinta",
+    "money": "Tarot Uang",
+    "yearly": "Tarot Tahunan",
+    "spread": "3 Kartu Penyebaran"
+  },
+  "zodiacHome": {
+    "eyebrow": "Bimbingan surgawi",
+    "subtitle": "Pilih jalur kosmik Anda",
+    "origin": "Asal Zodiak",
+    "originDescription": "Temukan kisah di balik 12 zodiak",
+    "originKicker": "Dua belas tanda",
+    "horoscope": "Ramalan bintang",
+    "horoscopeDescription": "Ramalan Hari / Minggu / Tahun Anda",
+    "horoscopeKicker": "Hari · Minggu · Tahun"
+  },
+  "period": {
+    "label": "Periode ramalan bintang",
+    "day": "Hari",
+    "week": "Minggu",
+    "year": "Tahun"
+  },
+  "settings": {
+    "subtitle": "Jadikan ruang ini milik Anda sendiri",
+    "language": "Bahasa",
+    "languageDescription": "Pilih bahasa antarmuka Anda. Perubahan berlaku segera dan disimpan di perangkat ini.",
+    "selected": "Terpilih",
+    "saved": "Bahasa diperbarui",
+    "translationTitle": "Bahasa-bahasa, termasuk bacaan",
+    "translationDescription": "Menu, 78 kartu Tarot, 12 profil zodiak, dan bacaan Hari / Minggu / Tahun diterjemahkan ke setiap bahasa yang ditampilkan dalam daftar ini. Teks yang tertanam dalam karya seni tetap dalam bahasa Inggris. Bacaan ini untuk refleksi dan hiburan.",
+    "offline": "Preferensi bahasa Anda bekerja secara offline. Tidak memerlukan akun."
+  },
+  "adsQa": {
+    "title": "QA Periklanan",
+    "settingsLabel": "Uji periklanan",
+    "description": "Muat setiap format iklan secara mandiri sebelum menguji penempatannya di aplikasi.",
+    "platform": "Platform",
+    "ready": "Siap",
+    "unavailable": "Tidak tersedia",
+    "devOnly": "Layar ini hanya tersedia ketika mode pengembangan diaktifkan.",
+    "androidNote": "Peramban hanya menampilkan pratinjau tata letak. Instal APK debug untuk memuat iklan uji asli.",
+    "testNotice": "Unit iklan demo Google yang aman aktif. Hanya berinteraksi dengan iklan yang diberi tanda Iklan Uji.",
+    "controls": "Kontrol uji iklan",
+    "banner": "Spanduk",
+    "bannerDescription": "Menguji banner bawah yang persisten dan ruang tata letak yang disediakan.",
+    "interstitial": "Interstitial",
+    "interstitialDescription": "Memuat dan membuka iklan uji layar penuh tanpa navigasi.",
+    "rewarded": "Diberi penghargaan",
+    "rewardedDescription": "Menguji callback yang diberi hadiah dan dilewati menggunakan video demo.",
+    "appOpen": "Buka Aplikasi",
+    "appOpenDescription": "Menguji iklan layar penuh yang digunakan setelah start dingin pengguna yang kembali.",
+    "native": "Kartu asli",
+    "nativeDescription": "Memuat aset uji asli ke dalam kartu di aplikasi.",
+    "show": "Tampilkan",
+    "hide": "Sembunyikan",
+    "load": "Muat kartu uji",
+    "loadAndShow": "Muat dan tampilkan",
+    "open": "Terbuka",
+    "adLabel": "Uji Iklan",
+    "webBanner": "Pratinjau tata letak spanduk",
+    "status": {
+      "idle": "Belum diuji",
+      "loading": "Memuat…",
+      "shown": "Ditampilkan",
+      "hidden": "Tersembunyi",
+      "failed": "Tidak tersedia",
+      "rewarded": "Penghargaan diberikan",
+      "skipped": "Dilewati",
+      "preview": "Pratinjau web"
+    }
+  },
+  "database": {
+    "errorTitle": "Tidak dapat membuka perpustakaan mistik",
+    "retry": "Coba lagi",
+    "loadingTitle": "Membuka perpustakaan mistik",
+    "loadingDescription": "Mempersiapkan 78 kartu Tarot dan 12 tanda zodiak…"
+  }
+}
