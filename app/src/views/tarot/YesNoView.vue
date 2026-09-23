@@ -5,11 +5,13 @@ import type { TarotCard } from '../../types/tarotCard'
 import { useDrawCards } from '../../composables/useDrawCards'
 import { buildYesNoGuidance } from '../../data/yesNo'
 import QuestionInput from '../../components/common/QuestionInput.vue'
+import QuestionSuggestions from '../../components/common/QuestionSuggestions.vue'
 import CardDrawAnimation from '../../components/common/CardDrawAnimation.vue'
 import DrawAgainBar from '../../components/common/DrawAgainBar.vue'
 import ScreenHeader from '../../components/common/ScreenHeader.vue'
 import ScreenContent from '../../components/common/ScreenContent.vue'
 import PrimaryButton from '../../components/common/PrimaryButton.vue'
+import { showInterstitialAtNaturalBreak } from '../../services/advertising'
 
 type Phase = 'initial' | 'drawing' | 'result'
 
@@ -20,6 +22,11 @@ const card = ref<TarotCard | null>(null)
 
 const trimmedQuestion = computed(() => question.value.trim())
 const guidance = computed(() => (card.value ? buildYesNoGuidance(card.value) : null))
+const suggestedQuestions = computed(() => [
+  ui('Is now a good time to make this change?'),
+  ui('Should I give this situation more time?'),
+  ui('Will this choice support my next step?')
+])
 
 function startDraw() {
   if (phase.value !== 'initial') return
@@ -29,6 +36,7 @@ function startDraw() {
 
 function onRevealed() {
   phase.value = 'result'
+  void showInterstitialAtNaturalBreak()
 }
 
 function drawAgain() {
@@ -118,6 +126,11 @@ function clearQuestion() {
               :label='ui("Your question (optional)")'
               :placeholder='ui("e.g. Should I change my job?")'
               :maxlength="140"
+            />
+            <QuestionSuggestions
+              v-model="question"
+              :questions="suggestedQuestions"
+              :label='ui("Suggested questions")'
             />
             <p class="yesno__helper">{{ ui("Try a clear question that could be answered Yes or No.") }}</p>
             <p v-if="!trimmedQuestion" class="yesno__hold">{{ ui("Hold your question in mind.") }}</p>

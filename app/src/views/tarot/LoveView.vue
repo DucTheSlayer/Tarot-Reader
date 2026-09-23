@@ -18,8 +18,9 @@ import ContextChipGroup from '../../components/common/ContextChipGroup.vue'
 import SpreadSummary from '../../components/common/SpreadSummary.vue'
 import DrawAgainBar from '../../components/common/DrawAgainBar.vue'
 import PrimaryButton from '../../components/common/PrimaryButton.vue'
+import { showInterstitialAtNaturalBreak } from '../../services/advertising'
 
-type Phase = 'initial' | 'drawing' | 'result'
+type Phase = 'initial' | 'drawing' | 'preview' | 'result'
 
 const LOVE_CONTEXT_SLOTS: Record<LoveContext, readonly [string, string, string]> = {
   single: ['You right now', 'What to open to', 'A new direction'],
@@ -31,21 +32,18 @@ const { draw } = useDrawCards()
 const phase = ref<Phase>('initial')
 const cards = ref<TarotCard[]>([])
 const context = ref<LoveContext | ''>('')
-const detailIndex = ref<number | null>(null)
 const currentSlots = computed(() =>
   context.value ? LOVE_CONTEXT_SLOTS[context.value] : LOVE_SLOTS
 )
 
-const detailReading = computed(() => {
-  if (detailIndex.value === null || !context.value) return null
-  const card = cards.value[detailIndex.value]
-  if (!card) return null
-
-  return {
+const cardDetails = computed(() => {
+  const ctx = context.value
+  if (!ctx) return []
+  return cards.value.map((card, index) => ({
     card,
-    label: currentSlots.value[detailIndex.value],
-    ...getLoveCardReading(card, detailIndex.value, context.value)
-  }
+    label: currentSlots.value[index],
+    ...getLoveCardReading(card, index, ctx)
+  }))
 })
 
 function selectContext(value: string) {
@@ -61,12 +59,17 @@ function startDraw() {
 }
 
 function onRevealed() {
+  phase.value = 'preview'
+}
+
+function reveal() {
+  if (phase.value !== 'preview') return
   phase.value = 'result'
+  void showInterstitialAtNaturalBreak()
 }
 
 function drawAgain() {
   cards.value = []
-  detailIndex.value = null
   phase.value = 'initial'
 }
 </script>
@@ -79,11 +82,13 @@ function drawAgain() {
       { 'love-screen--result': phase === 'result' }
     ]"
   >
-    <ScreenHeader :title='ui("Love Tarot")' back-to="/tarot" />
+    <ScreenHeader class="love__header" :title='ui("Love Tarot")' back-to="/tarot" />
     <ScreenContent :spread="phase === 'initial'">
       <CardDrawAnimation
         :cards="cards"
         :active="phase === 'drawing'"
+        :tappable="false"
+        :show-captions="phase === 'result'"
         :captions="cards.map((card, index) => ({ label: currentSlots[index], name: card.name }))"
         :preview-captions="[...currentSlots]"
         :preview-context="context"
@@ -93,19 +98,38 @@ function drawAgain() {
         :hold-duration="180"
         :flip-duration="520"
         @revealed="onRevealed"
-        @card-tap="(index) => (detailIndex = index)"
       >
         <template v-if="cards.length && context">
-          <SpreadSummary
-            class="reveal-item reveal-item--1"
-            variant="love"
-            :cards="cards"
-            :context="context"
-          />
-          <p class="love__hint reveal-item reveal-item--2">{{ ui("Tap a card to explore its role") }}</p>
-          <div class="reveal-item reveal-item--3 reveal-actions">
-            <DrawAgainBar back-to="/tarot" @draw-again="drawAgain" />
+          <div v-if="phase === 'preview'" class="love__reveal reveal-item reveal-item--1">
+            <PrimaryButton @click="reveal">{{ ui("Reveal Card") }}</PrimaryButton>
           </div>
+
+          <template v-else-if="phase === 'result'">
+            <article
+              v-for="(detail, index) in cardDetails"
+              :key="detail.card.id"
+              class="love__card"
+              :class="`reveal-item reveal-item--${index + 1}`"
+            >
+              <CardSlotLabel :label="detail.label" />
+              <CardResultItem
+                :card="detail.card"
+                :meaning="detail.meaning"
+                :advice="detail.advice"
+                :show-image="false"
+                variant="love"
+              />
+            </article>
+            <SpreadSummary
+              class="reveal-item reveal-item--4"
+              variant="love"
+              :cards="cards"
+              :context="context"
+            />
+            <div class="reveal-item reveal-item--5 reveal-actions">
+              <DrawAgainBar back-to="/tarot" @draw-again="drawAgain" />
+            </div>
+          </template>
         </template>
       </CardDrawAnimation>
 
@@ -127,28 +151,6 @@ function drawAgain() {
         </div>
       </Transition>
     </ScreenContent>
-
-    <Transition name="sheet">
-      <div v-if="detailReading" class="love-sheet" @click.self="detailIndex = null">
-        <div class="love-sheet__panel" role="dialog" aria-modal="true" :aria-label='ui("Card detail")'>
-          <button
-            type="button"
-            class="love-sheet__close"
-            :aria-label='ui("Close")'
-            @click="detailIndex = null"
-          >
-            ✕
-          </button>
-          <CardSlotLabel :label="detailReading.label" />
-          <CardResultItem
-            :card="detailReading.card"
-            :meaning="detailReading.meaning"
-            :advice="detailReading.advice"
-            variant="love"
-          />
-        </div>
-      </div>
-    </Transition>
   </main>
 </template>
 
@@ -168,6 +170,14 @@ function drawAgain() {
 }
 
 .love-screen--result::before { opacity: 1; }
+.love-screen--result .love__header {
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(35, 20, 61, 0.98), rgba(57, 27, 73, 0.98));
+  box-shadow:
+    0 -60px 0 28px rgba(35, 20, 61, 0.98),
+    0 10px 28px rgba(11, 7, 28, 0.34);
+  backdrop-filter: blur(12px);
+}
 .love-screen--single::before {
   background: radial-gradient(circle at 50% 32%, rgba(227, 191, 137, 0.25), transparent 28%), linear-gradient(145deg, #24102d, #563043 58%, #2a173a);
 }
@@ -210,85 +220,28 @@ function drawAgain() {
   text-transform: uppercase;
 }
 
-.love__hint {
-  color: var(--color-text-muted);
-  font-size: 12.5px;
-  text-align: center;
+.love__reveal {
+  width: 100%;
+  max-width: 460px;
 }
 
-.love-sheet {
-  position: fixed;
-  inset: 0;
-  z-index: 60;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: var(--space-4);
-  background: rgba(10, 5, 25, 0.68);
-}
-
-.love-sheet__panel {
-  position: relative;
+.love__card {
   display: flex;
   width: 100%;
   max-width: 460px;
-  max-height: 82vh;
   flex-direction: column;
   align-items: center;
   gap: var(--space-3);
-  overflow-y: auto;
-  padding: var(--space-5) var(--space-4) var(--space-6);
-  border: 1px solid rgba(230, 199, 107, 0.3);
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-  background: var(--color-surface-raised);
-  box-shadow: var(--shadow-lg);
-  -webkit-overflow-scrolling: touch;
 }
 
-.love-sheet__close {
-  position: absolute;
-  top: var(--space-3);
-  right: var(--space-3);
-  width: 30px;
-  height: 30px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-full);
-  background: var(--color-surface);
-  color: var(--color-text-muted);
-  cursor: pointer;
-  font-size: 14px;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.sheet-enter-active,
-.sheet-leave-active {
-  transition: opacity 250ms ease;
-}
-
-.sheet-enter-active .love-sheet__panel,
-.sheet-leave-active .love-sheet__panel {
-  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.sheet-enter-from,
-.sheet-leave-to {
-  opacity: 0;
-}
-
-.sheet-enter-from .love-sheet__panel,
-.sheet-leave-to .love-sheet__panel {
-  transform: translateY(40px);
+.love__card + .love__card {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .love-screen::before {
     transition-duration: 120ms;
-  }
-  .sheet-enter-active,
-  .sheet-leave-active,
-  .sheet-enter-active .love-sheet__panel,
-  .sheet-leave-active .love-sheet__panel {
-    transition: none;
   }
 }
 </style>

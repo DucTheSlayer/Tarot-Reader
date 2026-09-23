@@ -20,6 +20,9 @@ const props = withDefaults(
     previewContext?: 'single' | 'exploring' | 'relationship' | ''
     layout?: 'row' | 'triangle'
     variant?: 'default' | 'daily' | 'yes-no' | 'love' | 'money' | 'open-question' | 'yearly'
+    autoReveal?: boolean
+    tappable?: boolean
+    showCaptions?: boolean
   }>(),
   {
     active: false,
@@ -29,7 +32,10 @@ const props = withDefaults(
     holdDuration: 450,
     flipDuration: 750,
     layout: 'row',
-    variant: 'default'
+    variant: 'default',
+    autoReveal: false,
+    tappable: true,
+    showCaptions: true
   }
 )
 
@@ -283,6 +289,7 @@ async function start() {
   stage.value = 'fly'
   await nextTick()
 
+  const autoFlip = props.variant !== 'open-question' || props.autoReveal
   const step = props.flyDuration + props.holdDuration
   list.forEach((card, i) => {
     const delay = i * step
@@ -291,8 +298,8 @@ async function start() {
     } else {
       timers.push(setTimeout(() => flyCardIn(card, targets[i], i), delay))
     }
-    // open-question: lá hạ cánh vẫn úp, user tự lật bằng tap
-    if (props.variant !== 'open-question') {
+    // open-question: lá hạ cánh vẫn úp, user tự lật bằng tap (trừ khi autoReveal)
+    if (autoFlip) {
       timers.push(setTimeout(() => {
         flyCards.value[i].flipped = true
         emit('cardRevealed', i)
@@ -300,8 +307,7 @@ async function start() {
     }
   })
 
-  const extra =
-    props.variant === 'open-question' ? 0 : props.flipDuration
+  const extra = autoFlip ? props.flipDuration : 0
   timers.push(
     setTimeout(() => {
       stage.value = 'revealed'
@@ -337,6 +343,7 @@ const resultCardOpacity = computed(() =>
 const revealedCardsTappable = computed(() =>
   stage.value === 'revealed' &&
   resultScrollOffset.value < 88 &&
+  props.tappable &&
   (!!props.captions || props.variant === 'open-question')
 )
 
@@ -499,7 +506,7 @@ onUnmounted(clearTimers)
     <polyline :points="moneyPath" />
   </svg>
 
-  <p v-if="stage === 'fly' && variant === 'love' && captions?.length" class="draw-progress">
+  <p v-if="stage === 'fly' && showCaptions && variant === 'love' && captions?.length" class="draw-progress">
     {{ ui('Card {current} of {total} · {label}', {
       current: Math.min(flippedCount + 1, deck.length),
       total: deck.length,
@@ -540,7 +547,7 @@ onUnmounted(clearTimers)
         <img :src="fc.card.image" :alt="fc.card.name" />
       </div>
     </div>
-    <div v-if="captions && fc.flipped" class="fly__caption">
+    <div v-if="captions && showCaptions && fc.flipped" class="fly__caption">
       <span class="fly__caption-label">{{ ui(captions[i].label) }}</span>
     </div>
   </div>

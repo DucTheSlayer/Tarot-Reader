@@ -65,6 +65,7 @@ App (màn hình dọc, Web View + Capacitor, Vue + TypeScript)
 ## 6. Tài liệu liên quan
 
 - `db-plan.md` — kế hoạch chuyển dữ liệu lá Tarot từ TypeScript sang SQLite, workflow DB Browser, schema, repository, migration và kiểm thử Android/Web.
+- `text-card-plan.md` — kế hoạch chuẩn hóa Text Card, bổ sung ý nghĩa theo ngữ cảnh, gợi ý và câu hỏi suy ngẫm cho từng lá sau khi lật.
 - `system-flow.md` — giải thích kiến trúc runtime, luồng dữ liệu/state, điều hướng, build Android và trạng thái triển khai thực tế của toàn hệ thống.
 - `user-flow.md` — mô tả chi tiết luồng thao tác từng bước của user cho tất cả chức năng.
 - `screen.md` — spec chi tiết từng màn hình (route, state, elements, edge case) và danh sách component dùng chung.

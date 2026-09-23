@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import dayWeekBg from '../../assets/cards/dayweek.webp'
-import originBg from '../../assets/cards/origin.webp'
 import HomeModeTabs from '../../components/common/HomeModeTabs.vue'
 import MysticalBackground from '../../components/common/MysticalBackground.vue'
 
@@ -21,7 +19,7 @@ const items: ZodiacHomeItem[] = [
     to: '/zodiac/origin',
     label: 'zodiacHome.origin',
     desc: 'zodiacHome.originDescription',
-    image: originBg,
+    image: '/assets/cards/origin.webp',
     kicker: 'zodiacHome.originKicker',
     accent: 'solar'
   },
@@ -29,7 +27,7 @@ const items: ZodiacHomeItem[] = [
     to: '/zodiac/horoscope',
     label: 'zodiacHome.horoscope',
     desc: 'zodiacHome.horoscopeDescription',
-    image: dayWeekBg,
+    image: '/assets/cards/dayweek.webp',
     kicker: 'zodiacHome.horoscopeKicker',
     accent: 'lunar'
   }

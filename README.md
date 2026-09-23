@@ -18,7 +18,8 @@ MVP web và Android đã chạy được trên thiết bị thật. Cấu hình 
 - Zodiac Origin cho 12 cung và Horoscope theo Day/Week/Year.
 - SQLite offline dùng chung cho web và Android.
 - 11 ngôn ngữ cho giao diện, 78 lá Tarot, 12 cung và 36 bài đọc; tự lưu lựa chọn ngôn ngữ.
-- Quảng cáo Banner tại các màn tổng, Interstitial tại điểm chuyển tự nhiên với cooldown 90 giây và Rewarded để mở khóa lá bài làm rõ trong Card of the Day.
+- Trọn bộ 78 lá dùng minh họa Celestial Nouveau mới, đồng nhất theo bốn chất Wands, Cups, Swords và Pentacles; các URL ảnh cũ được giữ nguyên để không ảnh hưởng dữ liệu bài đọc.
+- Quảng cáo Banner xuyên suốt các màn nội dung, Interstitial tại điểm chuyển tự nhiên với cooldown 60 giây và Rewarded được tải trước để mở khóa lá bài làm rõ trong Card of the Day.
 - Trang Cài đặt → Advertising QA chỉ xuất hiện trong build QA để demo riêng từng định dạng bằng quảng cáo test; lỗi tải quảng cáo không chặn luồng sử dụng app.
 - Launcher icon tím–vàng tạm thời và icon video/play đánh dấu rõ hành động xem quảng cáo.
 - `@alf/app-sdk` của công ty được dùng nguyên trạng. Phần tương thích UI thread của Android nằm trong plugin proxy do app sở hữu, không sửa source SDK trong `node_modules`.
@@ -132,10 +133,10 @@ Nếu Android Studio còn báo `Activity class {com.apptarot.app/com.zl.eye.read
 - `npm run build` tạo bundle production, ẩn Advertising QA và dùng các ad unit trong `app/config.ts`.
 - Android dùng package `com.zl.eye.reading` cùng `google-services.json`/Firebase từ Eye Telling theo chỉ dẫn mentor. Package này xung đột với Eye Telling nếu hai APK được ký bằng chứng thư khác nhau; cần gỡ bản đang cài trước khi thử bản còn lại.
 - Không nhấn quảng cáo thật trong quá trình QA nội bộ; dùng `build:qa` để kiểm thử thao tác quảng cáo an toàn.
-- Banner chỉ xuất hiện tại Tarot Home, Tarot Library, Zodiac Home và Settings; các màn tập trung đọc/rút bài không bị banner che nội dung.
+- Banner xuất hiện tại toàn bộ màn Tarot, Zodiac và Settings (trừ màn Advertising QA); app chừa đúng chiều cao banner ở đáy để quảng cáo không che nội dung.
 - App Open không tự hiện khi khởi động để tránh chồng quảng cáo và làm gián đoạn lúc người dùng vừa mở app; định dạng này chỉ còn trong màn QA để kiểm tra riêng.
-- Interstitial được preload, chỉ thử hiển thị khi người dùng chọn Rút lại hoặc Trở về sau một lượt đọc và có cooldown toàn cục 90 giây.
-- Rewarded nằm trong Card of the Day và hoàn toàn tùy chọn. Chỉ callback `rewarded` mới cấp lá bài làm rõ; đóng quảng cáo sớm không nhận thưởng. Độ dài video và thời điểm nút đóng xuất hiện do creative/mạng quảng cáo quyết định, không do app tự ép thời lượng.
+- Interstitial được preload, thử hiển thị sau khi hoàn tất một lượt đọc hoặc khi người dùng chọn Rút lại/Trở về, với cooldown toàn cục 60 giây.
+- Rewarded nằm trong Card of the Day và hoàn toàn tùy chọn. Mỗi ngày có tối đa 3 lượt rewarded; mỗi callback `rewarded` mở khóa một trải bài làm rõ 3 lá mới, các lượt cũ vẫn xem lại được. Quảng cáo được preload khi app khởi động, tải bù khi vào màn và nạp lại sau mỗi lượt xem; đóng quảng cáo sớm không nhận thưởng. Độ dài video và thời điểm nút đóng xuất hiện do creative/mạng quảng cáo quyết định, không do app tự ép thời lượng.
 - Nếu inventory AdMob cho phép quảng cáo 60 giây, nhờ chủ tài khoản vào **AdMob → Apps → App settings → High-engagement ads** và tắt tùy chọn này. Với standard ad units, Google công bố mức skip tối đa giảm từ 60 xuống 30 giây cho Rewarded và từ 12 xuống 5 giây cho Interstitial; cấu hình này không điều khiển partner bidding inventory.
 - Nếu provider chưa sẵn sàng, hết inventory hoặc mất mạng, app bỏ qua quảng cáo/hiện trạng thái thử lại thay vì khóa chức năng chính.
 - Không tự nhấp quảng cáo thật. Chỉ chuyển sang `dev: false` cùng quy trình consent/signing riêng khi bắt đầu giai đoạn release.

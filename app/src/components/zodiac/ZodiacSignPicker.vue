@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ui } from '../../i18n/reading'
 import type { ZodiacSign } from '../../types/zodiac'
+import ZodiacHologram from './ZodiacHologram.vue'
 
 withDefaults(
   defineProps<{
@@ -30,7 +31,7 @@ defineEmits<{
         :aria-label="`${sign.name}, ${sign.dateRange}`"
         :style="{ '--sign-index': index }"
       >
-        <span class="sign-picker__symbol" aria-hidden="true">{{ sign.symbol }}</span>
+        <ZodiacHologram class="sign-picker__hologram" :sign-id="sign.id" :symbol="sign.symbol" :element="sign.element" size="small" />
         <strong>{{ sign.name }}</strong>
         <small>{{ sign.dateRange }}</small>
       </router-link>
@@ -47,7 +48,7 @@ defineEmits<{
         :style="{ '--sign-index': index }"
         @click="$emit('select', sign)"
       >
-        <span class="sign-picker__symbol" aria-hidden="true">{{ sign.symbol }}</span>
+        <ZodiacHologram class="sign-picker__hologram" :sign-id="sign.id" :symbol="sign.symbol" :element="sign.element" size="small" />
         <strong>{{ sign.name }}</strong>
         <small>{{ sign.dateRange }}</small>
       </button>
@@ -68,7 +69,7 @@ defineEmits<{
   appearance: none;
   display: flex;
   min-width: 0;
-  min-height: 104px;
+  min-height: 116px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -97,12 +98,7 @@ defineEmits<{
   box-shadow: inset 0 0 18px color-mix(in srgb, var(--sign-accent) 13%, transparent);
 }
 
-.sign-picker__symbol {
-  color: var(--sign-accent);
-  font-family: Georgia, serif;
-  font-size: 30px;
-  line-height: 1;
-  text-shadow: 0 0 12px color-mix(in srgb, var(--sign-accent) 50%, transparent);
+.sign-picker__hologram {
   animation: zodiac-glyph-arrive 620ms
     calc(110ms + var(--sign-index, 0) * 42ms) cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
@@ -158,8 +154,8 @@ defineEmits<{
     border-radius: 16px;
   }
 
-  .sign-picker__symbol {
-    font-size: clamp(40px, 4.6vw, 52px);
+  .sign-picker__hologram {
+    --hologram-size: clamp(62px, 7vw, 78px);
   }
 
   .sign-picker strong {
@@ -173,7 +169,7 @@ defineEmits<{
 
 @media (prefers-reduced-motion: reduce) {
   .sign-picker__item,
-  .sign-picker__symbol {
+  .sign-picker__hologram {
     animation: none;
     transition: none;
   }

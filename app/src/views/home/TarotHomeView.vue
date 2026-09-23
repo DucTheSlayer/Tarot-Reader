@@ -1,11 +1,5 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import dailyCardBg from '../../assets/cards/daily-tarot.webp'
-import yesNoBg from '../../assets/cards/yes-no.webp'
-import loveBg from '../../assets/cards/love.webp'
-import moneyBg from '../../assets/cards/money.webp'
-import yearBg from '../../assets/cards/yearly.webp'
-import spreadBg from '../../assets/cards/3-card.webp'
 import HomeModeTabs from '../../components/common/HomeModeTabs.vue'
 import MysticalBackground from '../../components/common/MysticalBackground.vue'
 
@@ -19,12 +13,12 @@ interface HomeItem {
 const { t } = useI18n()
 
 const items: HomeItem[] = [
-  { to: '/tarot/daily', label: 'tarotHome.daily', image: dailyCardBg, theme: 'moon' },
-  { to: '/tarot/yes-no', label: 'tarotHome.yesNo', image: yesNoBg, theme: 'scale' },
-  { to: '/tarot/love', label: 'tarotHome.love', image: loveBg, theme: 'love' },
-  { to: '/tarot/money', label: 'tarotHome.money', image: moneyBg, theme: 'treasure' },
-  { to: '/tarot/yearly', label: 'tarotHome.yearly', image: yearBg, theme: 'yearly' },
-  { to: '/tarot/3-card-spread', label: 'tarotHome.spread', image: spreadBg, theme: 'spread' }
+  { to: '/tarot/daily', label: 'tarotHome.daily', image: '/assets/cards/daily-tarot.webp', theme: 'moon' },
+  { to: '/tarot/yes-no', label: 'tarotHome.yesNo', image: '/assets/cards/yes-no.webp', theme: 'scale' },
+  { to: '/tarot/love', label: 'tarotHome.love', image: '/assets/cards/love.webp', theme: 'love' },
+  { to: '/tarot/money', label: 'tarotHome.money', image: '/assets/cards/money.webp', theme: 'treasure' },
+  { to: '/tarot/yearly', label: 'tarotHome.yearly', image: '/assets/cards/yearly.webp', theme: 'yearly' },
+  { to: '/tarot/3-card-spread', label: 'tarotHome.spread', image: '/assets/cards/3-card.webp', theme: 'spread' }
 ]
 
 </script>

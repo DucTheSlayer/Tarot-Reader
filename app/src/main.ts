@@ -12,13 +12,15 @@ import { loadCardStore } from './stores/cardStore'
 import { loadZodiacStore } from './stores/zodiacStore'
 import {
   initializeAdvertising,
-  warmInterstitialAd
+  warmInterstitialAd,
+  warmRewardedAd
 } from './services/advertising'
 
 async function bootstrap() {
   const advertisingReady = initializeAdvertising()
   void advertisingReady.then(() => {
     warmInterstitialAd()
+    warmRewardedAd()
   })
 
   try {

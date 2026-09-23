@@ -11,8 +11,24 @@ describe('ad placement policy', () => {
     expect(APP_OPEN_AT_STARTUP_ENABLED).toBe(false)
   })
 
-  it.each(['/tarot', '/tarot/library', '/zodiac', '/settings'])(
-    'shows the banner on the top-level route %s',
+  it.each([
+    '/tarot',
+    '/tarot/daily',
+    '/tarot/yes-no',
+    '/tarot/love',
+    '/tarot/money',
+    '/tarot/yearly',
+    '/tarot/3-card-spread',
+    '/tarot/library',
+    '/tarot/library/fool',
+    '/zodiac',
+    '/zodiac/origin',
+    '/zodiac/origin/aries',
+    '/zodiac/horoscope',
+    '/settings',
+    '/settings/language'
+  ])(
+    'shows the banner throughout the content route %s',
     (path) => {
       expect(shouldShowBannerForPath(path)).toBe(true)
     }
@@ -21,16 +37,15 @@ describe('ad placement policy', () => {
   it.each([
     '/welcome',
     '/settings/ad-test',
-    '/tarot/daily',
-    '/tarot/yes-no',
-    '/tarot/library/fool',
-    '/zodiac/horoscope'
-  ])('keeps the banner away from focused flow %s', (path) => {
+    '/unrecognised'
+  ])('keeps the banner away from excluded route %s', (path) => {
     expect(shouldShowBannerForPath(path)).toBe(false)
   })
 
   it('enforces the interstitial cooldown', () => {
     const lastShownAt = 10_000
+
+    expect(INTERSTITIAL_COOLDOWN_MS).toBe(60_000)
 
     expect(
       isInterstitialCooldownComplete(

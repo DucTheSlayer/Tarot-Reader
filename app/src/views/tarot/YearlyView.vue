@@ -15,6 +15,7 @@ import CardDrawAnimation from '../../components/common/CardDrawAnimation.vue'
 import CardSlotLabel from '../../components/common/CardSlotLabel.vue'
 import DrawAgainBar from '../../components/common/DrawAgainBar.vue'
 import PrimaryButton from '../../components/common/PrimaryButton.vue'
+import { showInterstitialAtNaturalBreak } from '../../services/advertising'
 
 type Phase = 'initial' | 'drawing' | 'result'
 
@@ -139,6 +140,7 @@ function startDraw() {
 function onRevealed() {
   resetResult()
   phase.value = 'result'
+  void showInterstitialAtNaturalBreak()
 }
 
 function drawAgain() {

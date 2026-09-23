@@ -15,6 +15,7 @@ const ADMOB_ANDROID_TEST_IDS = {
 
 const READY_TIMEOUT_MS = 10_000
 const READY_POLL_MS = 250
+const REWARDED_ON_DEMAND_TIMEOUT_MS = 2_000
 
 export interface AdProviderStatus {
   appLovin: boolean
@@ -39,6 +40,8 @@ let bannerCreated = false
 let bannerWanted = false
 let interstitialWarm = false
 let interstitialLoadPromise: Promise<void> | null = null
+let rewardedWarm = false
+let rewardedLoadPromise: Promise<void> | null = null
 let lastFullscreenAdAt = 0
 let removeRewardListeners: (() => void) | null = null
 
@@ -260,6 +263,52 @@ export async function showInterstitialAtNaturalBreak(): Promise<boolean> {
   }
 }
 
+async function loadRewardedAd(): Promise<void> {
+  if (isWeb()) return
+  const status = await initializeAdvertising()
+
+  if (adsQaEnabled) {
+    if (!status.adMob) return
+    await TarotAdMobUiProxy.loadRewardedAd({ adUnitId: ADMOB_ANDROID_TEST_IDS.rewarded })
+  } else {
+    if (!status.appLovin) return
+    await ALF.Instance.Ads.LoadRewardedVideo()
+  }
+  rewardedWarm = true
+}
+
+export function warmRewardedAd(): void {
+  if (rewardedWarm || rewardedLoadPromise || isWeb()) return
+
+  rewardedLoadPromise = loadRewardedAd()
+    .catch((error) => console.warn('Rewarded preload failed.', error))
+    .finally(() => {
+      rewardedLoadPromise = null
+    })
+}
+
+async function isRewardedReady(): Promise<boolean> {
+  if (adsQaEnabled) {
+    const result = await TarotAdMobUiProxy.isRewardedAdReady({
+      adUnitId: ADMOB_ANDROID_TEST_IDS.rewarded
+    })
+    return result.ready
+  }
+
+  const platform = Capacitor.getPlatform() === 'ios' ? 'ios' : 'android'
+  const adUnitId = ALF.Instance.Config.get(
+    `keys.applovin.${platform}.rewarded`
+  ) as string | undefined
+  if (!adUnitId) return false
+  const result = await ALFAppLovinMAX.isRewardedAdReady({ adUnitId })
+  return result.ready
+}
+
+function warmNextRewardedAd(): void {
+  rewardedWarm = false
+  setTimeout(warmRewardedAd, 3_000)
+}
+
 export async function preloadAppOpenAd(): Promise<void> {
   if (isWeb()) return
   const status = await initializeAdvertising()
@@ -332,9 +381,18 @@ export async function showRewardedAd(
   if (isWeb()) return false
   const status = await initializeAdvertising()
 
-  if (adsQaEnabled) {
-    if (!status.adMob) return false
+  if (adsQaEnabled ? !status.adMob : !status.appLovin) return false
 
+  if (!rewardedWarm) warmRewardedAd()
+
+  const ready = await waitForReady(isRewardedReady, REWARDED_ON_DEMAND_TIMEOUT_MS)
+  if (!ready) {
+    rewardedWarm = false
+    warmRewardedAd()
+    return false
+  }
+
+  if (adsQaEnabled) {
     removeRewardListeners?.()
     let completed = false
     const complete = (result: RewardedQaResult) => {
@@ -342,6 +400,7 @@ export async function showRewardedAd(
       completed = true
       onResult(result)
       removeRewardListeners?.()
+      warmNextRewardedAd()
     }
     const rewardListener = await ALFAdMob.addListener(
       'OnRewardedAdReceivedRewardEvent',
@@ -357,17 +416,7 @@ export async function showRewardedAd(
       removeRewardListeners = null
     }
 
-    await TarotAdMobUiProxy.loadRewardedAd({ adUnitId: ADMOB_ANDROID_TEST_IDS.rewarded })
-    const ready = await waitForReady(async () => {
-      const result = await TarotAdMobUiProxy.isRewardedAdReady({
-        adUnitId: ADMOB_ANDROID_TEST_IDS.rewarded
-      })
-      return result.ready
-    })
-    if (!ready) {
-      removeRewardListeners()
-      return false
-    }
+    rewardedWarm = false
     await TarotAdMobUiProxy.showRewardedAd({ adUnitId: ADMOB_ANDROID_TEST_IDS.rewarded })
     lastFullscreenAdAt = Date.now()
     return true
@@ -380,14 +429,11 @@ export async function showRewardedAd(
   ) as string | undefined
   if (!adUnitId) return false
 
-  await ALF.Instance.Ads.LoadRewardedVideo()
-  const ready = await waitForReady(async () => {
-    const result = await ALFAppLovinMAX.isRewardedAdReady({ adUnitId })
-    return result.ready
+  rewardedWarm = false
+  await ALF.Instance.Ads.ShowRewardedVideo((result) => {
+    onResult(result)
+    warmRewardedAd()
   })
-  if (!ready) return false
-
-  await ALF.Instance.Ads.ShowRewardedVideo(onResult)
   lastFullscreenAdAt = Date.now()
   return true
 }

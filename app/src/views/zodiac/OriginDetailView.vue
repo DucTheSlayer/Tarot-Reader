@@ -4,6 +4,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import MysticalBackground from '../../components/common/MysticalBackground.vue'
 import ScreenHeader from '../../components/common/ScreenHeader.vue'
+import ZodiacHologram from '../../components/zodiac/ZodiacHologram.vue'
 import { useZodiacStore } from '../../stores/zodiacStore'
 
 const route = useRoute()
@@ -12,13 +13,32 @@ const sign = computed(() => zodiacStore.getSign(String(route.params.signId)))
 </script>
 
 <template>
-  <main class="screen origin-detail">
+  <main
+    class="screen origin-detail"
+    :class="sign ? `origin-detail--${sign.element}` : ''"
+  >
     <MysticalBackground />
+
+    <div v-if="sign" class="origin-detail__atmosphere" aria-hidden="true">
+      <img :src="`/zodiac/${sign.id}.webp`" alt="" decoding="async" />
+      <span class="origin-detail__orbit origin-detail__orbit--outer"></span>
+      <span class="origin-detail__orbit origin-detail__orbit--inner"></span>
+      <i v-for="particle in 9" :key="particle"></i>
+    </div>
+
     <ScreenHeader :title="ui(sign ? 'Zodiac Origin' : 'Sign not found')" back-to="/zodiac/origin" />
 
     <div v-if="sign" class="origin-detail__scroll">
       <section class="origin-detail__hero" :class="`origin-detail__hero--${sign.element}`">
-        <span class="origin-detail__symbol" aria-hidden="true">{{ sign.symbol }}</span>
+        <ZodiacHologram
+          :key="sign.id"
+          class="origin-detail__symbol"
+          :sign-id="sign.id"
+          :symbol="sign.symbol"
+          :element="sign.element"
+          size="large"
+          reveal
+        />
         <div>
           <p class="origin-detail__dates">{{ sign.dateRange }}</p>
           <h2>{{ sign.name }}</h2>
@@ -85,7 +105,150 @@ const sign = computed(() => zodiacStore.getSign(String(route.params.signId)))
 </template>
 
 <style scoped>
-.origin-detail { isolation: isolate; }
+.origin-detail {
+  --origin-accent: var(--color-gold);
+  --origin-accent-rgb: 230, 199, 107;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(var(--origin-accent-rgb), 0.12), transparent 34%),
+    linear-gradient(150deg, #211139 0%, #180d31 50%, #120a28 100%);
+}
+
+.origin-detail--fire {
+  --origin-accent: #f6a85f;
+  --origin-accent-rgb: 246, 168, 95;
+  background:
+    radial-gradient(circle at 78% 16%, rgba(255, 125, 61, 0.22), transparent 30%),
+    radial-gradient(circle at 28% 84%, rgba(125, 36, 42, 0.22), transparent 34%),
+    linear-gradient(145deg, #28102e 0%, #1e102f 50%, #140a27 100%);
+}
+
+.origin-detail--earth {
+  --origin-accent: #9fc58d;
+  --origin-accent-rgb: 159, 197, 141;
+  background:
+    radial-gradient(circle at 78% 16%, rgba(125, 177, 112, 0.2), transparent 31%),
+    radial-gradient(circle at 20% 80%, rgba(91, 113, 67, 0.2), transparent 34%),
+    linear-gradient(145deg, #15262c 0%, #171b2c 52%, #120e26 100%);
+}
+
+.origin-detail--air {
+  --origin-accent: #9ec8e8;
+  --origin-accent-rgb: 158, 200, 232;
+  background:
+    radial-gradient(circle at 78% 16%, rgba(111, 194, 236, 0.22), transparent 31%),
+    radial-gradient(circle at 22% 82%, rgba(128, 119, 218, 0.18), transparent 36%),
+    linear-gradient(145deg, #101d39 0%, #171431 54%, #110b28 100%);
+}
+
+.origin-detail--water {
+  --origin-accent: #938ee8;
+  --origin-accent-rgb: 147, 142, 232;
+  background:
+    radial-gradient(circle at 78% 16%, rgba(112, 101, 224, 0.24), transparent 31%),
+    radial-gradient(circle at 18% 84%, rgba(44, 117, 162, 0.2), transparent 36%),
+    linear-gradient(145deg, #101533 0%, #191137 52%, #110a29 100%);
+}
+
+.origin-detail__atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.origin-detail__atmosphere::before {
+  position: absolute;
+  inset: -18%;
+  background: conic-gradient(
+    from 20deg at 72% 28%,
+    transparent 0 22%,
+    rgba(var(--origin-accent-rgb), 0.07) 30%,
+    transparent 39% 67%,
+    rgba(var(--origin-accent-rgb), 0.05) 75%,
+    transparent 84%
+  );
+  content: '';
+  animation: origin-aurora-turn 28s linear infinite;
+}
+
+.origin-detail__atmosphere::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(12, 6, 28, 0.08), rgba(12, 6, 28, 0.5)),
+    radial-gradient(circle at center, transparent 25%, rgba(7, 4, 20, 0.34) 100%);
+  content: '';
+}
+
+.origin-detail__atmosphere img {
+  position: absolute;
+  top: 10%;
+  right: -3%;
+  width: min(46vw, 520px);
+  min-width: 300px;
+  aspect-ratio: 1;
+  border-radius: 24%;
+  object-fit: cover;
+  opacity: 0.11;
+  filter: saturate(1.15) contrast(1.08) drop-shadow(0 0 42px rgba(var(--origin-accent-rgb), 0.36));
+  -webkit-mask-image: radial-gradient(circle, #000 30%, rgba(0, 0, 0, 0.78) 54%, transparent 73%);
+  mask-image: radial-gradient(circle, #000 30%, rgba(0, 0, 0, 0.78) 54%, transparent 73%);
+  animation: origin-art-breathe 8s ease-in-out infinite;
+}
+
+.origin-detail__orbit {
+  position: absolute;
+  top: 48%;
+  left: 68%;
+  border: 1px solid rgba(var(--origin-accent-rgb), 0.16);
+  border-right-color: transparent;
+  border-bottom-color: rgba(var(--origin-accent-rgb), 0.05);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(-14deg);
+}
+
+.origin-detail__orbit--outer {
+  width: min(72vw, 760px);
+  aspect-ratio: 1;
+  animation: origin-orbit 32s linear infinite;
+}
+
+.origin-detail__orbit--inner {
+  width: min(49vw, 510px);
+  aspect-ratio: 1;
+  animation: origin-orbit-reverse 23s linear infinite;
+}
+
+.origin-detail__atmosphere i {
+  position: absolute;
+  z-index: 1;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(var(--origin-accent-rgb), 0.9);
+  box-shadow: 0 0 9px rgba(var(--origin-accent-rgb), 0.85);
+  animation: origin-star-drift 5.6s ease-in-out infinite;
+}
+
+.origin-detail__atmosphere i:nth-of-type(1) { left: 8%; top: 23%; animation-delay: -0.5s; }
+.origin-detail__atmosphere i:nth-of-type(2) { left: 19%; top: 67%; animation-delay: -2.3s; }
+.origin-detail__atmosphere i:nth-of-type(3) { left: 31%; top: 39%; animation-delay: -4.1s; }
+.origin-detail__atmosphere i:nth-of-type(4) { left: 45%; top: 82%; animation-delay: -1.4s; }
+.origin-detail__atmosphere i:nth-of-type(5) { left: 57%; top: 18%; animation-delay: -3.7s; }
+.origin-detail__atmosphere i:nth-of-type(6) { left: 69%; top: 61%; animation-delay: -0.9s; }
+.origin-detail__atmosphere i:nth-of-type(7) { left: 79%; top: 35%; animation-delay: -2.8s; }
+.origin-detail__atmosphere i:nth-of-type(8) { left: 88%; top: 76%; animation-delay: -4.6s; }
+.origin-detail__atmosphere i:nth-of-type(9) { left: 94%; top: 13%; animation-delay: -1.9s; }
+
+.origin-detail :deep(.screen-header) {
+  position: relative;
+  z-index: 2;
+}
+
 .origin-detail__scroll {
   z-index: 1;
   flex: 1;
@@ -109,19 +272,19 @@ const sign = computed(() => zodiacStore.getSign(String(route.params.signId)))
   border: 1px solid color-mix(in srgb, var(--sign-accent) 48%, var(--color-border));
   border-radius: var(--radius-lg);
   background:
-    radial-gradient(circle at 13% 22%, color-mix(in srgb, var(--sign-accent) 17%, transparent), transparent 38%),
-    rgba(20, 10, 40, 0.86);
+    radial-gradient(circle at 13% 22%, color-mix(in srgb, var(--sign-accent) 21%, transparent), transparent 38%),
+    linear-gradient(120deg, rgba(24, 12, 43, 0.94), rgba(17, 9, 37, 0.8));
+  box-shadow:
+    0 18px 48px rgba(4, 2, 16, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(12px);
 }
 .origin-detail__hero--fire { --sign-accent: #f6a85f; }
 .origin-detail__hero--earth { --sign-accent: #9fc58d; }
 .origin-detail__hero--air { --sign-accent: #9ec8e8; }
 .origin-detail__hero--water { --sign-accent: #938ee8; }
 .origin-detail__symbol {
-  min-width: 76px;
-  color: var(--sign-accent);
-  font: 64px/1 Georgia, serif;
-  text-align: center;
-  text-shadow: 0 0 20px color-mix(in srgb, var(--sign-accent) 42%, transparent);
+  --hologram-size: 82px;
 }
 .origin-detail__dates { color: var(--color-text-muted); font-size: 11px; }
 .origin-detail__hero h2 { margin: 3px 0 var(--space-2); color: var(--color-gold); font-size: clamp(22px, 7vw, 34px); }
@@ -137,7 +300,9 @@ const sign = computed(() => zodiacStore.getSign(String(route.params.signId)))
   padding: var(--space-3);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  background: rgba(26, 21, 48, 0.78);
+  background: rgba(22, 16, 45, 0.76);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.018);
+  backdrop-filter: blur(10px);
 }
 .origin-detail__facts dt,
 .origin-detail__eyebrow {
@@ -173,6 +338,30 @@ const sign = computed(() => zodiacStore.getSign(String(route.params.signId)))
   font-size: 13px;
   line-height: 1.65;
 }
+
+@keyframes origin-aurora-turn {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes origin-art-breathe {
+  0%, 100% { opacity: 0.08; transform: scale(0.97) rotate(-2deg); }
+  50% { opacity: 0.14; transform: scale(1.025) rotate(1deg); }
+}
+
+@keyframes origin-orbit {
+  from { transform: translate(-50%, -50%) rotate(-14deg); }
+  to { transform: translate(-50%, -50%) rotate(346deg); }
+}
+
+@keyframes origin-orbit-reverse {
+  from { transform: translate(-50%, -50%) rotate(18deg); }
+  to { transform: translate(-50%, -50%) rotate(-342deg); }
+}
+
+@keyframes origin-star-drift {
+  0%, 100% { opacity: 0.22; transform: translateY(5px) scale(0.65); }
+  50% { opacity: 0.9; transform: translateY(-7px) scale(1.15); }
+}
 .origin-detail__missing {
   z-index: 1;
   display: grid;
@@ -204,8 +393,7 @@ const sign = computed(() => zodiacStore.getSign(String(route.params.signId)))
   }
 
   .origin-detail__symbol {
-    min-width: 108px;
-    font-size: clamp(78px, 9vw, 102px);
+    --hologram-size: clamp(98px, 11vw, 124px);
   }
 
   .origin-detail__dates {
@@ -280,7 +468,33 @@ const sign = computed(() => zodiacStore.getSign(String(route.params.signId)))
 }
 
 @media (max-width: 360px) {
-  .origin-detail__symbol { min-width: 54px; font-size: 48px; }
+  .origin-detail__symbol { --hologram-size: 64px; }
   .origin-detail__columns { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 699px) {
+  .origin-detail__atmosphere img {
+    top: 5%;
+    right: -38%;
+    width: 118vw;
+    min-width: 0;
+    opacity: 0.08;
+  }
+
+  .origin-detail__orbit {
+    left: 72%;
+  }
+
+  .origin-detail__orbit--outer { width: 138vw; }
+  .origin-detail__orbit--inner { width: 92vw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .origin-detail__atmosphere::before,
+  .origin-detail__atmosphere img,
+  .origin-detail__orbit,
+  .origin-detail__atmosphere i {
+    animation: none !important;
+  }
 }
 </style>

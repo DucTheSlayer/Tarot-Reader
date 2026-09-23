@@ -5,6 +5,7 @@ import MysticalBackground from '../../components/common/MysticalBackground.vue'
 import ScreenHeader from '../../components/common/ScreenHeader.vue'
 import PeriodTabs from '../../components/zodiac/PeriodTabs.vue'
 import ZodiacSignPicker from '../../components/zodiac/ZodiacSignPicker.vue'
+import ZodiacHologram from '../../components/zodiac/ZodiacHologram.vue'
 import { useZodiacStore } from '../../stores/zodiacStore'
 import type { HoroscopePeriod, ZodiacSign } from '../../types/zodiac'
 
@@ -60,7 +61,15 @@ async function chooseSign(sign: ZodiacSign) {
 
       <template v-else-if="reading">
         <section class="horoscope__sign" :class="`horoscope__sign--${selectedSign.element}`">
-          <span class="horoscope__symbol" aria-hidden="true">{{ selectedSign.symbol }}</span>
+          <ZodiacHologram
+            :key="selectedSign.id"
+            class="horoscope__symbol"
+            :sign-id="selectedSign.id"
+            :symbol="selectedSign.symbol"
+            :element="selectedSign.element"
+            size="medium"
+            reveal
+          />
           <div>
             <span>{{ selectedSign.dateRange }}</span>
             <h2 ref="resultHeading" tabindex="-1">{{ selectedSign.name }}</h2>
@@ -155,7 +164,7 @@ async function chooseSign(sign: ZodiacSign) {
 .horoscope__sign--earth { --sign-accent: #9fc58d; }
 .horoscope__sign--air { --sign-accent: #9ec8e8; }
 .horoscope__sign--water { --sign-accent: #938ee8; }
-.horoscope__symbol { color: var(--sign-accent); font: 40px/1 Georgia, serif; text-shadow: 0 0 14px color-mix(in srgb, var(--sign-accent) 46%, transparent); }
+.horoscope__symbol { --hologram-size: 62px; }
 .horoscope__sign div > span,
 .horoscope__sign p { color: var(--color-text-muted); font-size: 10px; text-transform: capitalize; }
 .horoscope__sign h2 { margin: 2px 0; color: var(--color-gold); font-size: 19px; outline: 0; }
@@ -306,7 +315,7 @@ async function chooseSign(sign: ZodiacSign) {
   }
 
   .horoscope__symbol {
-    font-size: clamp(48px, 5vw, 58px);
+    --hologram-size: clamp(72px, 8vw, 92px);
   }
 
   .horoscope__sign div > span,
