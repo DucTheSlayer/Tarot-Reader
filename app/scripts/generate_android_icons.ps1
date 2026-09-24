@@ -1,6 +1,12 @@
 param(
     [Parameter(Mandatory = $true)]
-    [string] $Source
+    [string] $Source,
+
+    [ValidateRange(0.4, 1.1)]
+    [double] $AdaptiveScale = 1.0,
+
+    [ValidateRange(0.5, 1.1)]
+    [double] $LegacyScale = 1.0
 )
 
 $ErrorActionPreference = 'Stop'
@@ -14,14 +20,21 @@ function Export-Icon {
     param(
         [string] $Path,
         [int] $Size,
-        [bool] $Round
+        [bool] $Round,
+        [double] $ArtworkScale,
+        [bool] $TransparentBackground
     )
 
     $bitmap = New-Object System.Drawing.Bitmap($Size, $Size, [System.Drawing.Imaging.PixelFormat]::Format32bppArgb)
     $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
     $clip = $null
     try {
-        $graphics.Clear([System.Drawing.Color]::Transparent)
+        if ($TransparentBackground) {
+            $graphics.Clear([System.Drawing.Color]::Transparent)
+        }
+        else {
+            $graphics.Clear([System.Drawing.ColorTranslator]::FromHtml('#18082F'))
+        }
         $graphics.CompositingQuality = [System.Drawing.Drawing2D.CompositingQuality]::HighQuality
         $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
         $graphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::HighQuality
@@ -33,7 +46,14 @@ function Export-Icon {
             $graphics.SetClip($clip)
         }
 
-        $destination = New-Object System.Drawing.Rectangle(0, 0, $Size, $Size)
+        $artworkSize = [int][Math]::Round($Size * $ArtworkScale)
+        $artworkOffset = [int][Math]::Round(($Size - $artworkSize) / 2)
+        $destination = New-Object System.Drawing.Rectangle(
+            $artworkOffset,
+            $artworkOffset,
+            $artworkSize,
+            $artworkSize
+        )
         $graphics.DrawImage(
             $sourceImage,
             $destination,
@@ -64,9 +84,9 @@ try {
     foreach ($density in $densities.Keys) {
         $directory = Join-Path $resourceRoot "mipmap-$density"
         $sizes = $densities[$density]
-        Export-Icon (Join-Path $directory 'ic_launcher.png') $sizes.launcher $false
-        Export-Icon (Join-Path $directory 'ic_launcher_round.png') $sizes.launcher $true
-        Export-Icon (Join-Path $directory 'ic_launcher_foreground.png') $sizes.foreground $false
+        Export-Icon (Join-Path $directory 'ic_launcher.png') $sizes.launcher $false $LegacyScale $false
+        Export-Icon (Join-Path $directory 'ic_launcher_round.png') $sizes.launcher $true $LegacyScale $false
+        Export-Icon (Join-Path $directory 'ic_launcher_foreground.png') $sizes.foreground $false $AdaptiveScale $true
     }
 }
 finally {
