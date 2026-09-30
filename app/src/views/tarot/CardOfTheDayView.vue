@@ -292,6 +292,14 @@ function fortuneMessage(aspect: DailyFortuneAspect): string {
                 <span>{{ ui("Energy") }}</span>
                 <p>{{ card.yesNoMeaning }}</p>
               </div>
+              <router-link
+                class="daily__detail-link"
+                :to="{ path: `/tarot/library/${card.id}`, query: { from: '/tarot/daily' } }"
+              >
+                <span aria-hidden="true">✦</span>
+                {{ ui("Card detail") }}
+                <span aria-hidden="true">→</span>
+              </router-link>
             </section>
 
             <section class="daily__fortune" :aria-label='ui("Today’s fortune")'>
@@ -642,6 +650,21 @@ function fortuneMessage(aspect: DailyFortuneAspect): string {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+.daily__detail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--space-3);
+  padding: 8px 12px;
+  border: 1px solid rgba(230, 199, 107, 0.4);
+  border-radius: var(--radius-full);
+  color: var(--color-gold);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.daily__detail-link:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; }
 
 .daily__fortune {
   width: 100%;

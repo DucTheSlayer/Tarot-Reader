@@ -8,7 +8,7 @@ import { defineCustomElements } from 'jeep-sqlite/loader'
 import { CARD_DATABASE_UPGRADES } from './upgrades'
 
 export const DB_NAME = 'tarot_cards'
-export const DB_VERSION = 6
+export const DB_VERSION = 8
 
 const sqlite = new SQLiteConnection(CapacitorSQLite)
 

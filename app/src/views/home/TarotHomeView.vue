@@ -25,7 +25,7 @@ const items: HomeItem[] = [
 
 <template>
   <main class="screen">
-    <MysticalBackground />
+    <MysticalBackground :animate="false" />
     <h1 class="screen__title">{{ t('nav.tarot') }}</h1>
     <router-link to="/tarot/library" class="screen__library-link">
       <span aria-hidden="true">✦</span>
@@ -34,15 +34,12 @@ const items: HomeItem[] = [
     </router-link>
     <nav class="screen__nav">
       <router-link
-        v-for="(item, index) in items"
+        v-for="item in items"
         :key="item.to"
         :to="item.to"
-        :style="[
-          item.image
-            ? { backgroundImage: `url(${item.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }
-            : undefined,
-          { '--portal-index': index }
-        ]"
+        :style="item.image
+          ? { backgroundImage: `url(${item.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }
+          : undefined"
         class="screen__item"
         :class="{
           'screen__item--treasure': item.theme === 'treasure',
@@ -125,8 +122,6 @@ const items: HomeItem[] = [
   background: var(--color-surface);
   color: var(--color-text);
   overflow: hidden;
-  animation: tarot-portal-arrive 520ms
-    calc(var(--portal-index, 0) * 70ms) cubic-bezier(0.22, 1, 0.36, 1) backwards;
   transition: border-color 180ms ease, box-shadow 220ms ease, transform 180ms ease;
 }
 
@@ -138,21 +133,6 @@ const items: HomeItem[] = [
   border-radius: calc(var(--radius-md) - 4px);
   pointer-events: none;
   z-index: 1;
-}
-
-.screen__item::after {
-  content: '';
-  position: absolute;
-  top: -30%;
-  left: -65%;
-  z-index: 1;
-  width: 35%;
-  height: 160%;
-  background: linear-gradient(90deg, transparent, rgba(255, 243, 194, 0.2), transparent);
-  transform: rotate(16deg);
-  pointer-events: none;
-  animation: tarot-portal-glint 760ms
-    calc(280ms + var(--portal-index, 0) * 70ms) ease-out backwards;
 }
 
 .screen__item:active { transform: scale(0.975); }
@@ -209,28 +189,8 @@ const items: HomeItem[] = [
   }
 }
 
-@keyframes tarot-portal-arrive {
-  from {
-    opacity: 0;
-    transform: translateY(18px) scale(0.94);
-    filter: saturate(0.7) blur(2px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: saturate(1) blur(0);
-  }
-}
-
-@keyframes tarot-portal-glint {
-  from { left: -65%; }
-  to { left: 135%; }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .screen__item,
-  .screen__item::after {
-    animation: none;
+  .screen__item {
     transition: none;
   }
 }

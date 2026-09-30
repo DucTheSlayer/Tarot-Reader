@@ -21,6 +21,7 @@ interface BannerSizeResult {
 
 interface TarotAdMobUiProxyPlugin {
   createBanner(options: BannerOptions): Promise<BannerSizeResult>
+  getBannerHeight(): Promise<{ height: number }>
   showBanner(options: AdUnitOptions): Promise<void>
   hideBanner(options: AdUnitOptions): Promise<void>
   destroyBanner(options: AdUnitOptions): Promise<void>

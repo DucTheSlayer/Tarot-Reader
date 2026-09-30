@@ -7,6 +7,8 @@ import translationSeedSql from '../../../database/seeds/004_translations.sql?raw
 import expandedLocaleSchemaSql from '../../../database/migrations/004_expand_locales.sql?raw'
 import refreshedTranslationsSql from '../../../database/migrations/005_refresh_translations.sql?raw'
 import refreshedTranslationsV6Sql from '../../../database/migrations/006_refresh_translations.sql?raw'
+import refreshedVietnameseCopyV7Sql from '../../../database/migrations/007_refresh_vietnamese_copy.sql?raw'
+import expandedVietnameseCardMeaningsV8Sql from '../../../database/migrations/008_expand_card_meanings_vi.sql?raw'
 import { migrationStatements } from './sqlStatements'
 
 // The SQL files are shared with the DB Browser/build workflow, so fresh
@@ -31,5 +33,13 @@ export const CARD_DATABASE_UPGRADES: capSQLiteVersionUpgrade[] = [
   {
     toVersion: 6,
     statements: migrationStatements(refreshedTranslationsV6Sql, translationSeedSql)
+  },
+  {
+    toVersion: 7,
+    statements: migrationStatements(refreshedVietnameseCopyV7Sql, translationSeedSql)
+  },
+  {
+    toVersion: 8,
+    statements: migrationStatements(expandedVietnameseCardMeaningsV8Sql)
   }
 ]

@@ -1,4 +1,5 @@
 export const INTERSTITIAL_COOLDOWN_MS = 60_000
+export const MIN_BANNER_HEIGHT_PX = 50
 
 // Full-screen ads must not interrupt startup. App Open remains available only
 // from the dedicated QA screen so each format can still be tested in isolation.
@@ -13,6 +14,11 @@ export function shouldShowBannerForPath(path: string): boolean {
   return BANNER_ROUTE_PREFIXES.some(
     (prefix) => path === prefix || path.startsWith(`${prefix}/`)
   )
+}
+
+export function normalizeBannerHeight(height: number): number {
+  if (!Number.isFinite(height) || height <= 0) return MIN_BANNER_HEIGHT_PX
+  return Math.max(MIN_BANNER_HEIGHT_PX, Math.ceil(height))
 }
 
 export function isInterstitialCooldownComplete(

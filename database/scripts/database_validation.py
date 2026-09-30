@@ -15,8 +15,8 @@ class ValidationSummary(TypedDict):
 
 
 def validate_database(connection: sqlite3.Connection, root: Path) -> ValidationSummary:
-    if connection.execute("PRAGMA user_version").fetchone()[0] != 6:
-        raise RuntimeError("Expected database version 6")
+    if connection.execute("PRAGMA user_version").fetchone()[0] != 8:
+        raise RuntimeError("Expected database version 8")
     translation_fields = {
         "card_translations": (78, ["name", "meaning", "advice", "yesNoMeaning"]),
         "zodiac_translations": (12, ["name", "dateRange", "rulingPlanet", "summary", "originStory", "traits", "strengths", "challenges", "compatibleSigns", "reflectionPrompt"]),

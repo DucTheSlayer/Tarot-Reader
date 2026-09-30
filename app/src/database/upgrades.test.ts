@@ -26,7 +26,7 @@ describe('SQLite upgrades', () => {
     expect(() => migrationStatements("SELECT 'unfinished")).toThrow('Unterminated')
   })
 
-  it('upgrades v1 through v6, preserves every original field and matches bundled translations', () => {
+  it('upgrades v1 through v8, preserves original cards and refreshes only Vietnamese meanings', () => {
     const database = new SQL.Database()
     const bundled = new SQL.Database(readFileSync(new URL('../../public/assets/databases/tarot_cardsSQLite.db', import.meta.url)))
     try {
@@ -54,9 +54,21 @@ describe('SQLite upgrades', () => {
       for (const statement of CARD_DATABASE_UPGRADES[4].statements) database.run(statement)
       database.run('PRAGMA user_version = 6')
       database.run('COMMIT')
+      database.run("UPDATE card_translations SET payload = ? WHERE card_id = 'fool' AND locale = 'vi'", ['{"name":"Bản cũ"}'])
+      database.run('BEGIN')
+      for (const statement of CARD_DATABASE_UPGRADES[5].statements) database.run(statement)
+      database.run('PRAGMA user_version = 7')
+      database.run('COMMIT')
+      const otherLocalesBefore = database.exec("SELECT * FROM card_translations WHERE locale <> 'vi' ORDER BY card_id, locale")
+      database.run("UPDATE card_translations SET payload = ? WHERE locale = 'vi'", ['{"name":"Bản cũ","meaning":"Quá ngắn","advice":"Cũ","yesNoMeaning":"Cũ"}'])
+      database.run('BEGIN')
+      for (const statement of CARD_DATABASE_UPGRADES[6].statements) database.run(statement)
+      database.run('PRAGMA user_version = 8')
+      database.run('COMMIT')
       expect(originalTables.map(table => database.exec(`SELECT * FROM ${table} ORDER BY 1, 2`))).toEqual(before)
+      expect(database.exec("SELECT * FROM card_translations WHERE locale <> 'vi' ORDER BY card_id, locale")).toEqual(otherLocalesBefore)
       expect(database.exec('PRAGMA foreign_key_check')).toEqual([])
-      expect(database.exec('PRAGMA user_version')[0].values[0][0]).toBe(6)
+      expect(database.exec('PRAGMA user_version')[0].values[0][0]).toBe(8)
       for (const [index, table] of translationTables.entries()) {
         const rows = database.exec(`SELECT * FROM ${table} ORDER BY 1, 2`)
         expect(rows[0].values).toHaveLength([780, 120, 360][index])

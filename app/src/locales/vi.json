@@ -1,40 +1,40 @@
 {
   "onboarding": {
-    "title": "Một cách nhẹ nhàng để đọc bài",
+    "title": "Khám phá Tarot theo cách của bạn",
     "guideTitle": "Hướng dẫn nhanh",
-    "intro": "Khám phá Tarot và Hoàng đạo theo nhịp riêng — không cần tài khoản hay kết nối mạng.",
+    "intro": "Khám phá Tarot và cung hoàng đạo theo nhịp của riêng bạn. Không cần tạo tài khoản hay kết nối mạng.",
     "stepsTitle": "Ba bước để bắt đầu",
-    "chooseTitle": "Chọn hành trình",
-    "chooseBody": "Mở một kiểu trải bài Tarot hoặc khám phá cung Hoàng đạo của bạn.",
+    "chooseTitle": "Chọn nơi bắt đầu",
+    "chooseBody": "Chọn một cách trải bài Tarot hoặc tìm hiểu về cung hoàng đạo của bạn.",
     "drawTitle": "Tập trung và rút bài",
-    "drawBody": "Giữ câu hỏi trong tâm trí, sau đó lật từng lá hoặc mở toàn bộ trải bài.",
+    "drawBody": "Nghĩ về điều bạn muốn hỏi, rồi lật từng lá hoặc lật cả trải bài.",
     "readTitle": "Đọc và chiêm nghiệm",
-    "readBody": "Chạm lá đã mở để xem ý nghĩa. Vuốt ngang Tarot năm để xem đủ năm chủ đề.",
-    "tip": "Mới bắt đầu? Hãy thử Lá bài hôm nay cho một thông điệp ngắn gọn mỗi ngày.",
-    "note": "Nội dung dành cho chiêm nghiệm. Quảng cáo nhận thưởng luôn là tùy chọn.",
+    "readBody": "Chạm vào lá bài đã lật để xem ý nghĩa. Với bài Tarot năm, vuốt ngang để xem cả năm chủ đề.",
+    "tip": "Mới bắt đầu? Thử Lá bài hôm nay để nhận một thông điệp ngắn mỗi ngày.",
+    "note": "Nội dung chỉ mang tính chiêm nghiệm. Bạn có thể chọn xem quảng cáo để nhận thêm lượt rút bài.",
     "start": "Bắt đầu khám phá"
   },
   "nav": { "label": "Điều hướng chính", "tarot": "Tarot", "zodiac": "Hoàng đạo", "settings": "Cài đặt" },
   "common": { "back": "Trở về", "explore": "Khám phá", "drawAgain": "Rút lại", "changeQuestion": "Đổi câu hỏi" },
   "tarotHome": {
-    "library": "Khám phá thư viện 78 lá bài",
+    "library": "Khám phá 78 lá Tarot",
     "daily": "Lá bài hôm nay", "yesNo": "Có hay không", "love": "Tarot tình yêu",
     "money": "Tarot tài chính", "yearly": "Tarot năm", "spread": "Trải bài 3 lá"
   },
   "zodiacHome": {
-    "eyebrow": "Thông điệp từ các vì sao", "subtitle": "Khám phá hành trình của bạn",
-    "origin": "Nguồn gốc cung", "originDescription": "Tìm hiểu câu chuyện của 12 cung hoàng đạo",
+    "eyebrow": "Thông điệp từ các vì sao", "subtitle": "Tìm hiểu về cung hoàng đạo của bạn",
+    "origin": "Nguồn gốc 12 cung", "originDescription": "Khám phá câu chuyện của từng cung hoàng đạo",
     "originKicker": "Mười hai cung hoàng đạo", "horoscope": "Vận trình",
-    "horoscopeDescription": "Khám phá vận trình theo ngày, tuần và năm", "horoscopeKicker": "Ngày · Tuần · Năm"
+    "horoscopeDescription": "Xem thông điệp cho hôm nay, tuần này và năm nay", "horoscopeKicker": "Ngày · Tuần · Năm"
   },
   "period": { "label": "Khoảng thời gian vận trình", "day": "Ngày", "week": "Tuần", "year": "Năm" },
   "settings": {
     "subtitle": "Không gian dành riêng cho bạn",
-    "language": "Ngôn ngữ", "languageDescription": "Chọn ngôn ngữ giao diện. Thay đổi được áp dụng ngay và lưu trên thiết bị này.",
+    "language": "Ngôn ngữ", "languageDescription": "Chọn ngôn ngữ bạn muốn dùng. Ứng dụng sẽ đổi ngay và ghi nhớ trên thiết bị này.",
     "selected": "Đang chọn", "saved": "Đã đổi ngôn ngữ",
-    "translationTitle": "Đa ngôn ngữ, gồm cả phần xem bài",
-    "translationDescription": "Menu, 78 lá Tarot, 12 cung và bài đọc Ngày / Tuần / Năm được dịch đầy đủ cho mọi ngôn ngữ hiển thị trong danh sách này. Chữ nằm trong hình minh họa vẫn là tiếng Anh. Nội dung mang tính chiêm nghiệm và giải trí.",
-    "offline": "Lựa chọn ngôn ngữ hoạt động ngoại tuyến, không cần tài khoản."
+    "translationTitle": "Ngôn ngữ của ứng dụng",
+    "translationDescription": "Giao diện, ý nghĩa 78 lá Tarot, thông tin 12 cung và thông điệp theo ngày, tuần, năm đều có bản dịch cho các ngôn ngữ trong danh sách. Chữ trên hình minh họa vẫn là tiếng Anh. Nội dung chỉ để chiêm nghiệm và giải trí.",
+    "offline": "Bạn có thể đổi ngôn ngữ khi không có mạng và không cần tài khoản."
   },
   "adsQa": {
     "title": "Kiểm thử quảng cáo",

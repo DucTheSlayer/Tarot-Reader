@@ -13,6 +13,7 @@
     "test:watch": "vitest",
     "preview": "vite preview",
     "art:cards": "node scripts/generate-tarot-card-wrappers.mjs",
+    "art:library-thumbnails": "python scripts/generate-library-thumbnails.py",
     "art:validate": "node scripts/validate-tarot-art.mjs",
     "db:build": "python ../database/scripts/build_database.py",
     "i18n:check": "python ../database/scripts/build_translations.py --check",

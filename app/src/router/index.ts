@@ -39,41 +39,49 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/tarot/daily',
     name: 'card-of-the-day',
+    meta: { requiresCards: true },
     component: () => import('../views/tarot/CardOfTheDayView.vue')
   },
   {
     path: '/tarot/yes-no',
     name: 'yes-no',
+    meta: { requiresCards: true },
     component: () => import('../views/tarot/YesNoView.vue')
   },
   {
     path: '/tarot/love',
     name: 'love-tarot',
+    meta: { requiresCards: true },
     component: () => import('../views/tarot/LoveView.vue')
   },
   {
     path: '/tarot/money',
     name: 'money-tarot',
+    meta: { requiresCards: true },
     component: () => import('../views/tarot/MoneyView.vue')
   },
   {
     path: '/tarot/yearly',
     name: 'yearly-tarot',
+    meta: { requiresCards: true },
     component: () => import('../views/tarot/YearlyView.vue')
   },
   {
     path: '/tarot/3-card-spread',
     name: 'three-card-spread',
+    meta: { requiresCards: true },
     component: () => import('../views/tarot/ThreeCardSpreadView.vue')
   },
   {
     path: '/tarot/library',
     name: 'tarot-library',
+    meta: { requiresCards: true },
     component: () => import('../views/tarot/TarotLibraryView.vue')
   },
   {
     path: '/tarot/library/:cardId',
     name: 'tarot-card-detail',
+    meta: { requiresCards: true },
     component: () => import('../views/tarot/TarotCardDetailView.vue')
   },
 
@@ -86,16 +94,19 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/zodiac/origin',
     name: 'zodiac-origin-list',
+    meta: { requiresZodiac: true },
     component: () => import('../views/zodiac/OriginListView.vue')
   },
   {
     path: '/zodiac/origin/:signId',
     name: 'zodiac-origin-detail',
+    meta: { requiresZodiac: true },
     component: () => import('../views/zodiac/OriginDetailView.vue')
   },
   {
     path: '/zodiac/horoscope',
     name: 'horoscope',
+    meta: { requiresZodiac: true },
     component: () => import('../views/zodiac/HoroscopeView.vue')
   },
 

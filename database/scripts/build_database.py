@@ -16,6 +16,8 @@ MIGRATION_FILES = (
     ROOT / "database" / "migrations" / "004_expand_locales.sql",
     ROOT / "database" / "migrations" / "005_refresh_translations.sql",
     ROOT / "database" / "migrations" / "006_refresh_translations.sql",
+    ROOT / "database" / "migrations" / "007_refresh_vietnamese_copy.sql",
+    ROOT / "database" / "migrations" / "008_expand_card_meanings_vi.sql",
 )
 SEED_FILES = (
     ROOT / "database" / "seeds" / "001_major_arcana.sql",

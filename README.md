@@ -1,8 +1,8 @@
-# Serein Tarot
+# Tarot Zodiac Pocket
 
 [![CI](https://github.com/DucTheSlayer/TarotApp/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/DucTheSlayer/TarotApp/actions/workflows/ci.yml)
 
-Serein Tarot là ứng dụng Tarot và Zodiac chạy offline, ưu tiên trải nghiệm mobile portrait. Một bundle Vue được dùng cho trình duyệt và Android thông qua Capacitor. App tích hợp Banner, Interstitial và Rewarded qua SDK nội bộ của công ty, với chế độ QA và production tách biệt.
+Tarot Zodiac Pocket là ứng dụng Tarot và Zodiac chạy offline, ưu tiên trải nghiệm mobile portrait. Một bundle Vue được dùng cho trình duyệt và Android thông qua Capacitor. App tích hợp Banner, Interstitial và Rewarded qua SDK nội bộ của công ty, với chế độ QA và production tách biệt.
 
 ## Trạng thái
 
@@ -125,7 +125,7 @@ $env:JAVA_HOME = 'C:\Users\<username>\.jdks\jbr-21.0.11'
 
 APK cuối nằm tại `D:\TarotReader\app\android\app\build\outputs\apk\debug\app-debug.apk`. APK vẫn được ký debug và chưa phải bản release để đăng Google Play, nhưng bundle web mặc định dùng cấu hình quảng cáo production. Khi chạy trực tiếp trong Android Studio, chọn đúng JDK 21, thiết bị đã bật USB debugging và nhấn **Run app**; không bắt buộc cài APK thủ công.
 
-Nếu Android Studio còn báo `Activity class {com.apptarot.app/com.zl.eye.reading.MainActivity} does not exist`, đó là Run/Gradle model cũ của IDE. Chọn **File → Sync Project with Gradle Files**, chọn Run Configuration **Serein Tarot** rồi Run lại. Nếu cấu hình này chưa hiện, mở **Run → Edit Configurations**, xóa cấu hình `app` cũ và tạo **Android App** mới với module `android.app`, Launch **Specified Activity** là `com.zl.eye.reading.MainActivity`. Gradle JDK phải là JDK 21.
+Nếu Android Studio còn báo `Activity class {com.apptarot.app/com.zl.eye.reading.MainActivity} does not exist`, đó là Run/Gradle model cũ của IDE. Chọn **File → Sync Project with Gradle Files**, chọn Run Configuration **Tarot Zodiac Pocket** rồi Run lại. Nếu cấu hình này chưa hiện, mở **Run → Edit Configurations**, xóa cấu hình `app` cũ và tạo **Android App** mới với module `android.app`, Launch **Specified Activity** là `com.zl.eye.reading.MainActivity`. Gradle JDK phải là JDK 21.
 
 ## Chế độ quảng cáo
 

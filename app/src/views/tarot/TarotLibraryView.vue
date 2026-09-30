@@ -41,11 +41,15 @@ function cardCategory(card: TarotCard): string {
   if (card.arcanaType === 'major') return `${ui('Major Arcana')} · ${card.majorNumber}`
   return `${ui(card.suit ?? '')} · ${card.rankNumber}`
 }
+
+function thumbnailPath(image: string): string {
+  return image.replace(/^\/cards\//, '/card-thumbnails/')
+}
 </script>
 
 <template>
   <main class="screen library">
-    <MysticalBackground />
+    <MysticalBackground :animate="false" />
     <ScreenHeader :title='ui("Card Library")' back-to="/tarot" />
 
     <section class="library__controls" :aria-label='ui("Filter Tarot cards")'>
@@ -79,10 +83,18 @@ function cardCategory(card: TarotCard): string {
           :key="card.id"
           :to="`/tarot/library/${card.id}`"
           class="library-card"
-          :style="{ '--card-index': Math.min(index, 11) }"
         >
           <div class="library-card__image-wrap">
-            <img :src="card.image" :alt="card.name" class="library-card__image" loading="lazy" />
+            <img
+              :src="thumbnailPath(card.image)"
+              :alt="card.name"
+              class="library-card__image"
+              :loading="index < 4 ? 'eager' : 'lazy'"
+              :fetchpriority="index < 4 ? 'high' : 'low'"
+              decoding="async"
+              width="300"
+              height="420"
+            />
           </div>
           <div class="library-card__info">
             <span>{{ cardCategory(card) }}</span>
@@ -192,8 +204,6 @@ function cardCategory(card: TarotCard): string {
   background: rgba(20, 10, 40, 0.82);
   color: var(--color-text);
   box-shadow: var(--shadow-sm);
-  animation: library-card-arrive 420ms
-    calc(var(--card-index, 0) * 45ms) cubic-bezier(0.22, 1, 0.36, 1) backwards;
   transition: border-color 180ms ease, box-shadow 220ms ease, transform 180ms ease;
 }
 .library-card__image-wrap {
@@ -267,14 +277,8 @@ function cardCategory(card: TarotCard): string {
   .library__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
-@keyframes library-card-arrive {
-  from { opacity: 0; transform: translateY(14px) scale(0.96); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .library-card {
-    animation: none;
     transition: none;
   }
 

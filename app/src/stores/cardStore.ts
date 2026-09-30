@@ -1,5 +1,4 @@
 import { readonly, ref } from 'vue'
-import { cardRepository } from '../database/cardRepository'
 import type { TarotCard } from '../types/tarotCard'
 
 export type CardStoreStatus = 'idle' | 'loading' | 'ready' | 'error'
@@ -17,8 +16,8 @@ export function loadCardStore(): Promise<void> {
   status.value = 'loading'
   errorMessage.value = ''
 
-  loading = cardRepository
-    .getAll()
+  loading = import('../database/cardRepository')
+    .then(({ cardRepository }) => cardRepository.getAll())
     .then((loadedCards) => {
       if (loadedCards.length !== 78) {
         throw new Error(`Expected 78 active tarot cards, received ${loadedCards.length}`)

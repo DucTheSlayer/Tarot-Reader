@@ -20,7 +20,7 @@ import DrawAgainBar from '../../components/common/DrawAgainBar.vue'
 import PrimaryButton from '../../components/common/PrimaryButton.vue'
 import { showInterstitialAtNaturalBreak } from '../../services/advertising'
 
-type Phase = 'initial' | 'drawing' | 'preview' | 'result'
+type Phase = 'initial' | 'drawing' | 'result'
 
 const LOVE_CONTEXT_SLOTS: Record<LoveContext, readonly [string, string, string]> = {
   single: ['You right now', 'What to open to', 'A new direction'],
@@ -59,11 +59,7 @@ function startDraw() {
 }
 
 function onRevealed() {
-  phase.value = 'preview'
-}
-
-function reveal() {
-  if (phase.value !== 'preview') return
+  if (phase.value !== 'drawing') return
   phase.value = 'result'
   void showInterstitialAtNaturalBreak()
 }
@@ -100,11 +96,7 @@ function drawAgain() {
         @revealed="onRevealed"
       >
         <template v-if="cards.length && context">
-          <div v-if="phase === 'preview'" class="love__reveal reveal-item reveal-item--1">
-            <PrimaryButton @click="reveal">{{ ui("Reveal Card") }}</PrimaryButton>
-          </div>
-
-          <template v-else-if="phase === 'result'">
+          <template v-if="phase === 'result'">
             <article
               v-for="(detail, index) in cardDetails"
               :key="detail.card.id"
@@ -218,11 +210,6 @@ function drawAgain() {
   letter-spacing: 1.2px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.love__reveal {
-  width: 100%;
-  max-width: 460px;
 }
 
 .love__card {

@@ -1,5 +1,4 @@
 import { readonly, ref } from 'vue'
-import { zodiacRepository } from '../database/zodiacRepository'
 import type { HoroscopePeriod, HoroscopeReading, ZodiacSign } from '../types/zodiac'
 
 export type ZodiacStoreStatus = 'idle' | 'loading' | 'ready' | 'error'
@@ -18,10 +17,11 @@ export function loadZodiacStore(): Promise<void> {
   status.value = 'loading'
   errorMessage.value = ''
 
-  loading = Promise.all([
-    zodiacRepository.getAllSigns(),
-    zodiacRepository.getAllReadings()
-  ])
+  loading = import('../database/zodiacRepository')
+    .then(({ zodiacRepository }) => Promise.all([
+      zodiacRepository.getAllSigns(),
+      zodiacRepository.getAllReadings()
+    ]))
     .then(([loadedSigns, loadedReadings]) => {
       if (loadedSigns.length !== 12) {
         throw new Error(`Expected 12 zodiac signs, received ${loadedSigns.length}`)

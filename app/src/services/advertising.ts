@@ -2,7 +2,11 @@ import { readonly, ref } from 'vue'
 import { Capacitor } from '@capacitor/core'
 import { ALF, ALFAdMob, ALFAppLovinMAX, type NativeAdData } from '@alf/app-sdk'
 import { config } from '../../config'
-import { isInterstitialCooldownComplete } from './adPolicy'
+import {
+  MIN_BANNER_HEIGHT_PX,
+  isInterstitialCooldownComplete,
+  normalizeBannerHeight
+} from './adPolicy'
 import { TarotAdMobUiProxy } from './tarotAdMobUiProxy'
 
 const ADMOB_ANDROID_TEST_IDS = {
@@ -29,7 +33,7 @@ export const adPlatform = Capacitor.getPlatform()
 
 const providerStatusState = ref<AdProviderStatus>({ appLovin: false, adMob: false })
 const bannerVisibleState = ref(false)
-const bannerHeightState = ref(50)
+const bannerHeightState = ref(MIN_BANNER_HEIGHT_PX)
 
 export const adProviderStatus = readonly(providerStatusState)
 export const bannerVisible = readonly(bannerVisibleState)
@@ -123,7 +127,7 @@ export async function showBannerAd(): Promise<boolean> {
           position: 'BOTTOM_CENTER',
           size: 'ADAPTIVE'
         })
-        bannerHeightState.value = size.height || 50
+        bannerHeightState.value = normalizeBannerHeight(size.height)
         bannerCreated = true
       }
       if (!bannerWanted) {
@@ -135,7 +139,9 @@ export async function showBannerAd(): Promise<boolean> {
       if (!status.adMob && !status.appLovin) return false
       if (!bannerCreated) {
         await ALF.Instance.Ads.LoadBannerAd({ position: 'BOTTOM_CENTER', size: 'ADAPTIVE' })
-        bannerHeightState.value = await ALF.Instance.Ads.GetAdHeight('banner')
+        bannerHeightState.value = normalizeBannerHeight(
+          await ALF.Instance.Ads.GetAdHeight('banner')
+        )
         bannerCreated = true
       }
       if (!bannerWanted) {
@@ -143,6 +149,18 @@ export async function showBannerAd(): Promise<boolean> {
         return false
       }
       await ALF.Instance.Ads.ShowBannerAd()
+    }
+
+    // The SDK's reported adaptive height can be smaller than the mounted view.
+    // Measure the native ad for both QA and production banners before exposing it.
+    bannerHeightState.value = normalizeBannerHeight(Math.max(bannerHeightState.value, 64))
+    try {
+      const measured = await TarotAdMobUiProxy.getBannerHeight()
+      if (measured.height > 0) {
+        bannerHeightState.value = normalizeBannerHeight(measured.height)
+      }
+    } catch {
+      // The 64px fallback still keeps a standard phone banner clear of controls.
     }
 
     bannerVisibleState.value = true

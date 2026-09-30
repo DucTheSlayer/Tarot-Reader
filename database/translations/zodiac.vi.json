@@ -1,98 +1,98 @@
 {
   "aries": {
     "name": "Bạch Dương", "dateRange": "21/3 – 19/4", "rulingPlanet": "Sao Hỏa",
-    "summary": "Khởi đầu táo bạo và hành động thẳng thắn định hình Bạch Dương, biến ý định thành động lực tiến lên.",
+    "summary": "Bạch Dương thích bắt đầu và không ngại hành động. Sự thẳng thắn giúp cung này biến ý tưởng thành bước đi cụ thể.",
     "originStory": "Bạch Dương gắn với con cừu vàng đã cứu Phrixus trong thần thoại Hy Lạp. Bộ lông của nó sau này trở thành báu vật mà Jason và đoàn Argonaut tìm kiếm, lưu giữ hình ảnh cung này như biểu tượng của lòng can đảm, sự cứu giúp và bước đi dũng cảm đầu tiên.",
     "traits": ["Can đảm", "Năng động", "Độc lập", "Thẳng thắn"], "strengths": ["Chủ động", "Tự tin", "Bền bỉ"],
     "challenges": ["Thiếu kiên nhẫn", "Bốc đồng", "Khởi đầu nhanh hơn khả năng duy trì"], "compatibleSigns": ["Sư Tử", "Nhân Mã", "Song Tử"],
-    "reflectionPrompt": "Chọn một khởi đầu can đảm và dành đủ kiên nhẫn để nó phát triển."
+    "reflectionPrompt": "Hãy bắt đầu điều bạn muốn làm, rồi kiên nhẫn theo đuổi đến cùng."
   },
   "taurus": {
     "name": "Kim Ngưu", "dateRange": "20/4 – 20/5", "rulingPlanet": "Sao Kim",
-    "summary": "Vững vàng, giàu cảm nhận và thực tế, Kim Ngưu xây dựng giá trị lâu bền bằng sự kiên nhẫn và quan tâm.",
+    "summary": "Kim Ngưu coi trọng sự ổn định và những điều có thể cảm nhận được. Sự kiên nhẫn giúp cung này xây dựng giá trị lâu dài.",
     "originStory": "Kim Ngưu gợi nhắc Zeus hóa thành con bò trắng tuyệt đẹp để đưa Europa vượt biển. Hình ảnh này gắn với vẻ đẹp, sự sinh sôi, đủ đầy nơi trần thế và sức mạnh được thể hiện qua sự kiên trì điềm tĩnh.",
     "traits": ["Thực tế", "Trung thành", "Kiên nhẫn", "Giàu cảm nhận"], "strengths": ["Đáng tin", "Khôn ngoan thực tế", "Tận tâm"],
     "challenges": ["Cứng đầu", "Ngại thay đổi", "Níu giữ quá lâu"], "compatibleSigns": ["Xử Nữ", "Ma Kết", "Cự Giải"],
-    "reflectionPrompt": "Bảo vệ điều quan trọng mà không nhầm sự thoải mái với tính vĩnh viễn."
+    "reflectionPrompt": "Giữ lấy điều quan trọng với bạn, nhưng đừng ngại thay đổi khi cần."
   },
   "gemini": {
     "name": "Song Tử", "dateRange": "21/5 – 20/6", "rulingPlanet": "Sao Thủy",
-    "summary": "Sự tò mò và kết nối dẫn dắt Song Tử thu thập ý tưởng và nhận ra nhiều mặt của một câu chuyện.",
+    "summary": "Song Tử tò mò, thích trò chuyện và luôn muốn nhìn một câu chuyện từ nhiều phía.",
     "originStory": "Song Tử đại diện cho Castor và Pollux, cặp song sinh gắn bó chọn chia sẻ sự bất tử thay vì xa nhau. Chòm sao của họ mang chủ đề đồng hành, góc nhìn hai chiều, giao tiếp và sự chuyển động giữa các thế giới.",
     "traits": ["Tò mò", "Linh hoạt", "Giàu biểu đạt", "Nhanh trí"], "strengths": ["Giao tiếp", "Đa năng", "Học hỏi nhanh"],
     "challenges": ["Bồn chồn", "Phân tán chú ý", "Suy nghĩ quá nhiều"], "compatibleSigns": ["Thiên Bình", "Bảo Bình", "Bạch Dương"],
-    "reflectionPrompt": "Để sự tò mò mở cửa, rồi ở lại đủ lâu để hiểu điều bạn tìm thấy."
+    "reflectionPrompt": "Cứ khám phá điều khiến bạn tò mò, rồi dành thời gian hiểu sâu hơn."
   },
   "cancer": {
     "name": "Cự Giải", "dateRange": "21/6 – 22/7", "rulingPlanet": "Mặt Trăng",
-    "summary": "Giàu trực giác và tinh thần che chở, Cự Giải tạo cảm giác thuộc về bằng cách trân trọng ký ức, cảm xúc và mái ấm.",
+    "summary": "Cự Giải nhạy cảm, biết quan tâm và luôn trân trọng gia đình, ký ức cùng cảm giác được thuộc về.",
     "originStory": "Cự Giải gắn với cua Karkinos, được đưa lên bầu trời sau khi thể hiện lòng trung thành trong trận chiến giữa Heracles và Hydra. Mai cua cùng sự chủ quản của Mặt Trăng tượng trưng cho che chở, những đợt thủy triều cảm xúc và sự tận tâm với người thân cận.",
     "traits": ["Trực giác tốt", "Chu đáo", "Biết che chở", "Giàu tưởng tượng"], "strengths": ["Đồng cảm", "Trung thành", "Thấu hiểu cảm xúc"],
     "challenges": ["Tâm trạng thất thường", "Thu mình sau lớp phòng vệ", "Dễ chạnh lòng"], "compatibleSigns": ["Bọ Cạp", "Song Ngư", "Kim Ngưu"],
-    "reflectionPrompt": "Chăm sóc thế giới bên trong, đồng thời mở cửa cho sự kết nối chân thành."
+    "reflectionPrompt": "Chăm sóc cảm xúc của mình và cho người khác cơ hội đến gần bạn."
   },
   "leo": {
     "name": "Sư Tử", "dateRange": "23/7 – 22/8", "rulingPlanet": "Mặt Trời",
-    "summary": "Sự ấm áp, sáng tạo và biểu đạt hào phóng khiến Sư Tử trở thành nguồn ánh sáng tự nhiên.",
+    "summary": "Sư Tử ấm áp, sáng tạo và thích thể hiện bản thân. Sự hào phóng của cung này thường truyền cảm hứng cho người khác.",
     "originStory": "Sư Tử gắn với sư tử Nemea, sinh vật gần như bất khả xâm phạm bị đánh bại trong chiến công đầu tiên của Heracles. Được đưa lên bầu trời, nó trở thành biểu tượng của can đảm, phong thái uy nghi và sức sáng tạo của Mặt Trời.",
     "traits": ["Ấm áp", "Sáng tạo", "Rộng lượng", "Tự tin"], "strengths": ["Lãnh đạo", "Trung thành", "Biểu đạt chân thành"],
     "challenges": ["Kiêu hãnh", "Cần được ghi nhận", "Phóng đại trở ngại"], "compatibleSigns": ["Bạch Dương", "Nhân Mã", "Thiên Bình"],
-    "reflectionPrompt": "Rộng lượng chia sẻ ánh sáng và để người khác tỏa sáng bên bạn."
+    "reflectionPrompt": "Hãy tự tin tỏa sáng và cũng dành chỗ để người khác được ghi nhận."
   },
   "virgo": {
     "name": "Xử Nữ", "dateRange": "23/8 – 22/9", "rulingPlanet": "Sao Thủy",
-    "summary": "Khả năng phân định và tinh thần phụng sự dẫn dắt Xử Nữ biến quan sát cẩn thận thành cải thiện thiết thực.",
+    "summary": "Xử Nữ quan sát kỹ và muốn mọi việc tốt hơn. Cung này thường biến sự tỉ mỉ thành những thay đổi thiết thực.",
     "originStory": "Xử Nữ thường gắn với Astraea, thiếu nữ công lý ở lại với loài người sau khi các vị thần khác rời đi. Bông lúa nàng mang liên hệ cung này với mùa gặt, kỹ năng, ý định trong sáng và việc chăm nom những gì duy trì sự sống.",
     "traits": ["Tinh ý", "Thực tế", "Chu đáo", "Chính xác"], "strengths": ["Phân tích", "Tay nghề", "Hỗ trợ hữu ích"],
     "challenges": ["Cầu toàn", "Tự phê bình", "Lo lắng về tiểu tiết"], "compatibleSigns": ["Kim Ngưu", "Ma Kết", "Cự Giải"],
-    "reflectionPrompt": "Cải thiện điều có thể và cho phép công việc tốt được hoàn thành trước khi hoàn hảo."
+    "reflectionPrompt": "Làm tốt điều trong tầm tay, rồi cho phép mình dừng lại trước khi mọi thứ hoàn hảo."
   },
   "libra": {
     "name": "Thiên Bình", "dateRange": "23/9 – 22/10", "rulingPlanet": "Sao Kim",
-    "summary": "Cân bằng, vẻ đẹp và sự có đi có lại dẫn Thiên Bình tới lựa chọn tôn trọng mọi tiếng nói.",
+    "summary": "Thiên Bình coi trọng sự hài hòa và công bằng, luôn cố gắng lắng nghe nhiều phía trước khi lựa chọn.",
     "originStory": "Cán cân của Thiên Bình được nữ thần công lý Astraea cầm trên tay, là biểu tượng vô tri duy nhất trong vòng Hoàng đạo. Nó đại diện cho phán đoán có cân nhắc, hòa hợp xã hội và nỗ lực liên tục khôi phục cân bằng thay vì mặc định cân bằng đã có sẵn.",
     "traits": ["Ngoại giao", "Công tâm", "Duyên dáng", "Hợp tác"], "strengths": ["Hòa giải", "Đa chiều", "Tạo hòa hợp"],
     "challenges": ["Do dự", "Chiều lòng người khác", "Né tránh xung đột cần thiết"], "compatibleSigns": ["Song Tử", "Bảo Bình", "Sư Tử"],
-    "reflectionPrompt": "Tìm kiếm công bằng mà không bỏ quên nhu cầu thật sự của mình."
+    "reflectionPrompt": "Lắng nghe người khác, nhưng cũng đừng quên nói ra điều mình cần."
   },
   "scorpio": {
     "name": "Bọ Cạp", "dateRange": "23/10 – 21/11", "rulingPlanet": "Sao Diêm Vương",
-    "summary": "Chiều sâu và sự chuyển hóa định hình Bọ Cạp, với khả năng tìm sự thật bên dưới bề mặt.",
+    "summary": "Bọ Cạp nhìn sâu vào cảm xúc và không ngại đối diện sự thật, kể cả khi điều đó dẫn đến thay đổi.",
     "originStory": "Bọ Cạp gợi nhắc con bọ cạp được gửi đến đối đầu thợ săn Orion sau khi lòng kiêu hãnh của chàng làm đảo lộn trật tự tự nhiên. Vị trí đối nhau trên bầu trời gợi về ranh giới, hệ quả, điều bí ẩn và sức tái sinh sau một kết thúc.",
     "traits": ["Mãnh liệt", "Sâu sắc", "Trung thành", "Tháo vát"], "strengths": ["Can đảm với cảm xúc", "Tập trung", "Chuyển hóa"],
     "challenges": ["Giữ kín", "Nghi ngờ", "Giữ lòng oán giận"], "compatibleSigns": ["Cự Giải", "Song Ngư", "Xử Nữ"],
-    "reflectionPrompt": "Dùng chiều sâu để chuyển hóa sự thật, không phải để che giấu nó."
+    "reflectionPrompt": "Hãy dùng sự thấu hiểu để thay đổi điều cần thay đổi, thay vì giữ mọi chuyện trong lòng."
   },
   "sagittarius": {
     "name": "Nhân Mã", "dateRange": "22/11 – 21/12", "rulingPlanet": "Sao Mộc",
-    "summary": "Nhân Mã tìm chân trời rộng hơn qua sự thật, hành trình, học hỏi và tinh thần lạc quan có mục đích.",
+    "summary": "Nhân Mã ham học hỏi, thích khám phá và luôn tìm kiếm một góc nhìn rộng hơn về cuộc sống.",
     "originStory": "Nhân Mã thường được liên hệ với Chiron, nhân mã thông thái và người thầy có mũi tên hướng vượt khỏi điều quen thuộc. Chòm sao tượng trưng cho sự kết hợp giữa bản năng và hiểu biết cao hơn, luôn hướng tới chân trời có ý nghĩa hơn.",
     "traits": ["Ưa khám phá", "Lạc quan", "Thẳng thắn", "Thích triết lý"], "strengths": ["Tầm nhìn", "Nhiệt huyết", "Cởi mở"],
     "challenges": ["Thẳng quá mức", "Hứa quá khả năng", "Trốn tránh nề nếp"], "compatibleSigns": ["Bạch Dương", "Sư Tử", "Bảo Bình"],
-    "reflectionPrompt": "Nhắm xa, nhưng chọn hướng mà hành động hằng ngày có thể hỗ trợ."
+    "reflectionPrompt": "Cứ đặt mục tiêu xa, nhưng hãy bắt đầu bằng những việc bạn có thể làm hôm nay."
   },
   "capricorn": {
     "name": "Ma Kết", "dateRange": "22/12 – 19/1", "rulingPlanet": "Sao Thổ",
-    "summary": "Kỷ luật và tầm nhìn dài hạn giúp Ma Kết vươn cao mà vẫn hiểu những chiều sâu bên dưới.",
+    "summary": "Ma Kết kiên trì và biết tính đường dài. Cung này sẵn sàng đi từng bước để đạt mục tiêu mình coi trọng.",
     "originStory": "Dê biển Ma Kết gắn với Pan, người hóa một phần cơ thể thành cá khi trốn Typhon. Bản chất núi và biển kết hợp hoài bão với khả năng sinh tồn cảm xúc, trân trọng sự thành thạo được tích lũy qua thời gian và trách nhiệm.",
     "traits": ["Tham vọng", "Kỷ luật", "Kiên nhẫn", "Trách nhiệm"], "strengths": ["Sức bền", "Chiến lược", "Đáng tin cậy"],
     "challenges": ["Cứng nhắc", "Bi quan", "Đo giá trị bản thân bằng thành tích"], "compatibleSigns": ["Kim Ngưu", "Xử Nữ", "Bọ Cạp"],
-    "reflectionPrompt": "Xây dựng cho dài hạn và nhớ rằng nghỉ ngơi cũng là một phần của nền tảng."
+    "reflectionPrompt": "Tiếp tục xây dựng điều lâu dài, và nhớ dành thời gian nghỉ ngơi."
   },
   "aquarius": {
     "name": "Bảo Bình", "dateRange": "20/1 – 18/2", "rulingPlanet": "Sao Thiên Vương",
-    "summary": "Tư duy độc lập và tầm nhìn cộng đồng dẫn Bảo Bình rót những ý tưởng mới vào thế giới.",
+    "summary": "Bảo Bình suy nghĩ độc lập và quan tâm đến cộng đồng. Những ý tưởng khác biệt của cung này có thể mở ra cách làm mới.",
     "originStory": "Bảo Bình gắn với Ganymede, người dâng chén mang nước đến cho các vị thần và, theo nghĩa biểu tượng, tri thức đến nhân loại. Dù hình ảnh mang nước, cung này thuộc nguyên tố Khí: ý tưởng, hệ thống và sự đổi mới được sẻ chia vì lợi ích chung.",
     "traits": ["Độc đáo", "Độc lập", "Nhân văn", "Sáng kiến"], "strengths": ["Đổi mới", "Khách quan", "Tầm nhìn cộng đồng"],
     "challenges": ["Xa cách", "Thói quen phản đối", "Quan điểm cố định"], "compatibleSigns": ["Song Tử", "Thiên Bình", "Nhân Mã"],
-    "reflectionPrompt": "Để sự khác biệt phục vụ kết nối thay vì tạo khoảng cách."
+    "reflectionPrompt": "Hãy chia sẻ góc nhìn riêng theo cách giúp bạn gần mọi người hơn."
   },
   "pisces": {
     "name": "Song Ngư", "dateRange": "19/2 – 20/3", "rulingPlanet": "Sao Hải Vương",
-    "summary": "Lòng trắc ẩn và trí tưởng tượng dẫn Song Ngư qua trực giác, giấc mơ và cảm xúc sẻ chia.",
+    "summary": "Song Ngư giàu trí tưởng tượng và dễ đồng cảm. Trực giác giúp cung này nhận ra những điều người khác có thể bỏ lỡ.",
     "originStory": "Song Ngư gợi nhắc Aphrodite và Eros hóa thành cá, buộc mình với nhau để trốn Typhon. Sợi dây giữa hai con cá tượng trưng cho tận tụy, bản sắc linh hoạt, sự nhạy cảm tinh thần và khả năng tìm thấy thống nhất giữa những dòng chảy đổi thay.",
     "traits": ["Trắc ẩn", "Giàu tưởng tượng", "Trực giác tốt", "Dịu dàng"], "strengths": ["Đồng cảm", "Sáng tạo", "Thấu hiểu tinh thần"],
     "challenges": ["Trốn tránh thực tại", "Ranh giới mờ nhạt", "Hấp thụ cảm xúc người khác"], "compatibleSigns": ["Cự Giải", "Bọ Cạp", "Ma Kết"],
-    "reflectionPrompt": "Trân trọng sự nhạy cảm bằng những ranh giới đủ vững để bảo vệ nó."
+    "reflectionPrompt": "Trân trọng sự nhạy cảm của mình và đặt ra giới hạn để không bị quá tải."
   }
 }

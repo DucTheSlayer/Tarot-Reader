@@ -1,4 +1,6 @@
 <script setup lang="ts">
+withDefaults(defineProps<{ animate?: boolean }>(), { animate: true })
+
 interface Star {
   left: number
   top: number
@@ -38,7 +40,7 @@ const stars: Star[] = Array.from({ length: 18 }, () => ({
 </script>
 
 <template>
-  <div class="mystical-bg" aria-hidden="true">
+  <div class="mystical-bg" :class="{ 'mystical-bg--static': !animate }" aria-hidden="true">
     <div class="mystical-bg__glow"></div>
 
     <div class="mystical-bg__wheel">
@@ -133,6 +135,11 @@ const stars: Star[] = Array.from({ length: 18 }, () => ({
   50% {
     opacity: var(--twinkle-max);
   }
+}
+
+.mystical-bg--static .mystical-bg__star {
+  animation: none;
+  opacity: var(--twinkle-max);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -54,6 +54,7 @@ interface FlyingCard {
 }
 
 const flyCards = ref<FlyingCard[]>([])
+const revealBoundary = ref(0)
 
 // Các lá đang trong lúc flip — khóa tap để tránh double event (open-question variant)
 const flipping = new Set<number>()
@@ -96,6 +97,7 @@ function reset() {
   stage.value = 'idle'
   resultScrollOffset.value = 0
   flyCards.value = []
+  revealBoundary.value = 0
 }
 
 watch(
@@ -146,6 +148,7 @@ function triangleGeometry() {
   const screen = sourceCardEl.value?.closest('.screen')
   const header = screen?.querySelector<HTMLElement>('.screen-header')
   const headerBottom = header?.getBoundingClientRect().bottom ?? 56
+  if (props.variant === 'open-question') revealBoundary.value = headerBottom
   return getThreeCardTriangleLayout(window.innerWidth, window.innerHeight, headerBottom)
 }
 
@@ -321,6 +324,7 @@ const revealTop = computed(() => {
   const bottom = Math.max(...flyCards.value.map((fc) => fc.target.y + fc.target.h))
   return bottom + (props.captions ? 44 : 20)
 })
+const revealPaddingTop = computed(() => Math.max(0, revealTop.value - revealBoundary.value))
 
 const cardCenters = computed(() =>
   flyCards.value.map(({ target }) => ({
@@ -555,7 +559,10 @@ onUnmounted(clearTimers)
   <div
     v-if="stage === 'revealed'"
     class="reveal"
-    :style="{ '--reveal-top': `${revealTop}px` }"
+    :style="{
+      '--reveal-top': `${revealPaddingTop}px`,
+      '--reveal-boundary': `${revealBoundary}px`
+    }"
     @scroll.passive="onRevealScroll"
   >
     <slot></slot>
@@ -903,7 +910,7 @@ onUnmounted(clearTimers)
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  top: var(--reveal-boundary, 0px);
   bottom: 0;
   z-index: 40;
   overflow-y: auto;

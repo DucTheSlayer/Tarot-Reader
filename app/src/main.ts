@@ -17,20 +17,30 @@ import {
 } from './services/advertising'
 
 async function bootstrap() {
-  const advertisingReady = initializeAdvertising()
-  void advertisingReady.then(() => {
-    warmInterstitialAd()
-    warmRewardedAd()
-  })
-
-  try {
-    await Promise.all([loadCardStore(), loadZodiacStore()])
-  } catch (error) {
-    console.error('Failed to initialize the local content database.', error)
-  }
-
   createApp(App).use(i18n).use(router).mount('#app')
   await router.isReady()
+
+  const startBackgroundServices = async () => {
+    try {
+      await Promise.all([loadCardStore(), loadZodiacStore()])
+    } catch (error) {
+      console.error('Failed to initialize the local content database.', error)
+    }
+
+    const advertisingReady = initializeAdvertising()
+    void advertisingReady.then(() => {
+      warmInterstitialAd()
+      warmRewardedAd()
+    })
+  }
+
+  // Give the WebView one frame to paint Home or the loading state before
+  // opening SQLite and initializing advertising SDKs.
+  if (typeof requestAnimationFrame === 'function') {
+    requestAnimationFrame(() => void startBackgroundServices())
+  } else {
+    void startBackgroundServices()
+  }
 }
 
 void bootstrap()

@@ -42,6 +42,9 @@ onUnmounted(() => {
 .ad-banner-host {
   width: 100%;
   flex: 0 0 auto;
+  min-height: 50px;
+  position: relative;
+  z-index: 50;
   background: var(--color-surface-raised);
 }
 </style>

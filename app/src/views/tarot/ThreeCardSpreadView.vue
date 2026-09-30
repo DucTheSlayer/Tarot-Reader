@@ -14,7 +14,7 @@ import ScreenContent from '../../components/common/ScreenContent.vue'
 import PrimaryButton from '../../components/common/PrimaryButton.vue'
 import { showInterstitialAtNaturalBreak } from '../../services/advertising'
 
-type Phase = 'initial' | 'drawing' | 'preview' | 'result'
+type Phase = 'initial' | 'drawing' | 'result'
 
 const { draw } = useDrawCards()
 const phase = ref<Phase>('initial')
@@ -37,11 +37,7 @@ function startDraw() {
 }
 
 function onRevealed() {
-  phase.value = 'preview'
-}
-
-function reveal() {
-  if (phase.value !== 'preview') return
+  if (phase.value !== 'drawing') return
   phase.value = 'result'
   void showInterstitialAtNaturalBreak()
 }
@@ -78,11 +74,7 @@ function changeQuestion() {
             “{{ trimmedQuestion }}”
           </p>
 
-          <div v-if="phase === 'preview'" class="spread__reveal reveal-item reveal-item--2">
-            <PrimaryButton @click="reveal">{{ ui("Reveal Card") }}</PrimaryButton>
-          </div>
-
-          <template v-else-if="phase === 'result'">
+          <template v-if="phase === 'result'">
             <div class="spread__cards reveal-item reveal-item--2">
               <CardResultItem
                 v-for="card in cards"
@@ -133,16 +125,51 @@ function changeQuestion() {
   padding-bottom: var(--space-2);
 }
 
-.spread__reveal {
-  width: 100%;
-  max-width: 460px;
-}
-
 .spread__cards {
   display: grid;
+  width: min(100%, 520px);
+  gap: 14px;
+}
+
+.spread__cards :deep(.result) {
   width: 100%;
-  max-width: 460px;
-  gap: var(--space-4);
+  gap: 10px;
+  padding: 18px 16px;
+  border: 1px solid rgba(230, 199, 107, 0.22);
+  border-radius: var(--radius-lg);
+  background: rgba(26, 21, 48, 0.72);
+}
+
+.spread__cards :deep(.result__name) {
+  max-width: 100%;
+  font-size: clamp(19px, 5vw, 22px);
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+.spread__cards :deep(.result__meaning) {
+  max-width: 44ch;
+  font-size: 14px;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.spread__cards :deep(.result__advice) {
+  width: 100%;
+  margin-top: 2px;
+  padding: 12px 4px 0;
+  border: 0;
+  border-top: 1px solid rgba(230, 199, 107, 0.23);
+  border-radius: 0;
+  background: none;
+  color: var(--color-text);
+  font-size: 13px;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.spread__cards :deep(.result__advice-title) {
+  margin-bottom: 6px;
 }
 
 .spread__message {
@@ -165,8 +192,11 @@ function changeQuestion() {
 }
 
 .spread__message-body {
-  color: var(--color-text-muted);
-  font-size: 13px;
+  color: var(--color-text);
+  font-size: 14px;
   line-height: 1.65;
+  text-wrap: pretty;
 }
+
+.reveal-actions { max-width: 520px; }
 </style>

@@ -7,7 +7,7 @@ export const config: Config = {
     dev: adsQaMode,
     isGame: false,
     isApp: true,
-    appName: 'Serein Tarot',
+    appName: 'Tarot Zodiac Pocket',
     appVersion: '1.0',
     environment: adsQaMode ? 'dev' : 'production',
     hasChooseLanguageScreen: false,

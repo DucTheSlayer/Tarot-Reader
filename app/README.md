@@ -1,6 +1,6 @@
-# Serein Tarot client
+# Tarot Zodiac Pocket client
 
-Thư mục này chứa Vue/TypeScript SPA, SQLite web runtime và Android Capacitor host của Serein Tarot.
+Thư mục này chứa Vue/TypeScript SPA, SQLite web runtime và Android Capacitor host của Tarot Zodiac Pocket.
 
 ```powershell
 npm install

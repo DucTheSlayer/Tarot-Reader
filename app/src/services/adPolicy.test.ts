@@ -3,6 +3,7 @@ import {
   APP_OPEN_AT_STARTUP_ENABLED,
   INTERSTITIAL_COOLDOWN_MS,
   isInterstitialCooldownComplete,
+  normalizeBannerHeight,
   shouldShowBannerForPath
 } from './adPolicy'
 
@@ -59,5 +60,17 @@ describe('ad placement policy', () => {
         lastShownAt + INTERSTITIAL_COOLDOWN_MS
       )
     ).toBe(true)
+  })
+
+  it.each([
+    [0, 50],
+    [-1, 50],
+    [Number.NaN, 50],
+    [49.2, 50],
+    [50, 50],
+    [50.2, 51],
+    [90, 90]
+  ])('normalizes banner height %s to %s CSS pixels', (height, expected) => {
+    expect(normalizeBannerHeight(height)).toBe(expected)
   })
 })

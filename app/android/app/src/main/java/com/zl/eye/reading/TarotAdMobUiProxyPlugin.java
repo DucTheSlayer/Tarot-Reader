@@ -1,5 +1,9 @@
 package com.zl.eye.reading;
 
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginHandle;
@@ -44,6 +48,25 @@ public class TarotAdMobUiProxyPlugin extends Plugin {
     @PluginMethod
     public void showBanner(PluginCall call) {
         onUiThread(call, plugin -> plugin.showBanner(call));
+    }
+
+    @PluginMethod
+    public void getBannerHeight(PluginCall call) {
+        getActivity().runOnUiThread(() -> {
+            ViewGroup content = getActivity().findViewById(android.R.id.content);
+            int heightPx = 0;
+            for (int i = 0; i < content.getChildCount(); i++) {
+                View child = content.getChildAt(i);
+                if ("com.google.android.gms.ads.AdView".equals(child.getClass().getName())) {
+                    heightPx = Math.max(child.getHeight(), child.getLayoutParams().height);
+                    break;
+                }
+            }
+            float density = getContext().getResources().getDisplayMetrics().density;
+            JSObject result = new JSObject();
+            result.put("height", density > 0 ? Math.ceil(heightPx / density) : 0);
+            call.resolve(result);
+        });
     }
 
     @PluginMethod

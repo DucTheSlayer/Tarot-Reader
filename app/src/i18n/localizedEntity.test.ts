@@ -92,7 +92,7 @@ describe('reactive translated content', () => {
     expect(reading.value.money[0].title).toBe('Cơ hội')
     expect(reading.value.open).toContain('Mặt Trời')
     expect(reading.value.year.highlights).toHaveLength(4)
-    expect(reading.value.detail.energy).toContain('mười hai tháng')
+    expect(reading.value.detail.energy).toContain('12 tháng tới')
     expect(reading.value.yesNo.verdict.label).toBe('CÓ')
     expect(cards.map(card => card.id)).toEqual(['0', '1', '2', '3', '4'])
     setAppLocale('en')
