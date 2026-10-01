@@ -15,8 +15,8 @@ class ValidationSummary(TypedDict):
 
 
 def validate_database(connection: sqlite3.Connection, root: Path) -> ValidationSummary:
-    if connection.execute("PRAGMA user_version").fetchone()[0] != 8:
-        raise RuntimeError("Expected database version 8")
+    if connection.execute("PRAGMA user_version").fetchone()[0] != 9:
+        raise RuntimeError("Expected database version 9")
     translation_fields = {
         "card_translations": (78, ["name", "meaning", "advice", "yesNoMeaning"]),
         "zodiac_translations": (12, ["name", "dateRange", "rulingPlanet", "summary", "originStory", "traits", "strengths", "challenges", "compatibleSigns", "reflectionPrompt"]),
@@ -84,6 +84,31 @@ def validate_database(connection: sqlite3.Connection, root: Path) -> ValidationS
         raise RuntimeError(f"Unexpected suit counts: {suit_counts}")
     if orders != list(range(78)):
         raise RuntimeError("deck_order must contain every integer from 0 through 77")
+    english_meanings = json.loads(
+        (root / "database" / "translations" / "cards.en.json").read_text(encoding="utf-8")
+    )
+    database_meanings = dict(connection.execute("SELECT id, meaning FROM tarot_cards"))
+    if database_meanings != english_meanings:
+        raise RuntimeError("English Tarot meanings differ from cards.en.json")
+    if any(len(meaning) < 180 for meaning in database_meanings.values()):
+        raise RuntimeError("An English Tarot meaning is unexpectedly short")
+    for locale in sorted(locale_sets["card_translations"]):
+        source = json.loads(
+            (root / "database" / "translations" / f"cards.{locale}.json").read_text(encoding="utf-8")
+        )
+        compiled = dict(connection.execute(
+            "SELECT card_id, payload FROM card_translations WHERE locale = ?", (locale,)
+        ))
+        if set(source) != set(compiled):
+            raise RuntimeError(f"Tarot meaning IDs differ for {locale}")
+        min_length = 60 if locale in {"ja", "ko"} else 140
+        if locale == "vi":
+            min_length = 180
+        for card_id, raw_payload in compiled.items():
+            meaning = json.loads(raw_payload)["meaning"]
+            expected = source[card_id][1] if locale == "vi" else source[card_id]["meaning"]
+            if meaning != expected or len(meaning) < min_length:
+                raise RuntimeError(f"Tarot meaning mismatch or truncation: {locale}.{card_id}")
 
     missing_images = []
     for (image_path,) in connection.execute(

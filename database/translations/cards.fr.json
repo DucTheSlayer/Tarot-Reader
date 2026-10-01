@@ -1,469 +1,469 @@
 {
   "fool": {
     "name": "Le Mat",
-    "meaning": "Une page blanche et un saut de foi — un nouveau voyage commence avec un cœur ouvert.",
+    "meaning": "Une page blanche et un acte de foi : un nouveau voyage commence avec un cœur ouvert. Vous n’avez pas besoin d’une carte complète avant de faire le premier pas. La curiosité vous aide à apprendre de chaque tentative, tandis qu'un peu de préparation empêche la liberté de se transformer en insouciance.",
     "advice": "Faites confiance au chemin devant vous et faites ce premier pas, même sans toutes les réponses.",
     "yesNoMeaning": "Un nouveau départ ne porte rarement une réponse fixe — le résultat dépend de la mesure que vous prenez."
   },
   "magician": {
     "name": "Le Magicien",
-    "meaning": "Vous possédez tous les outils dont vous avez besoin. Concentrez votre volonté et transformez l'intention en action.",
+    "meaning": "Vous détenez tous les outils dont vous avez besoin. Concentrez votre volonté et transformez votre intention en action. Une idée devient réelle lorsque votre attention, votre temps et les ressources disponibles sont orientés vers la même tâche. Regardez les outils déjà à portée de main avant d’attendre un autre signe.",
     "advice": "Utilisez vos compétences et ressources délibérément — le moment est venu de passer à l'action.",
     "yesNoMeaning": "Vous détenez déjà tout ce qui est nécessaire — l'énergie soutient l'avancement avec concentration."
   },
   "high-priestess": {
     "name": "La Grande Prêtresse",
-    "meaning": "Une sagesse tranquille se cache sous la surface. Écoutez votre intuition et votre voix intérieure.",
+    "meaning": "La sagesse tranquille se cache sous la surface. Écoutez votre intuition et votre voix intérieure. Le silence peut révéler une tendance, un sentiment que vous ne pouvez pas encore nommer ou une information qui manque encore. Observez encore un peu avant de tout mettre au grand jour.",
     "advice": "Faites une pause, tournez-vous vers l'intérieur et laissez vos instincts vous guider avant d'agir.",
     "yesNoMeaning": "La réponse est cachée sous la surface pour l'instant — faites confiance à votre intuition plutôt que de forcer un oui ou un non clair."
   },
   "empress": {
     "name": "L'Impératrice",
-    "meaning": "La croissance, l'abondance et une énergie nourricière vous entourent. Laissez la beauté et le soin s'épanouir.",
+    "meaning": "La croissance, l’abondance et l’énergie nourricière vous entourent. Laissez la beauté et les soins s'épanouir. Une relation, un projet ou une partie de vous-même peut se développer grâce à des soins constants. L’abondance signifie ici avoir de la place pour se développer, ne pas donner jusqu’à ce qu’il ne reste plus rien.",
     "advice": "Soyez patient et généreux — créez avec amour et laissez les choses mûrir naturellement.",
     "yesNoMeaning": "Croissance, abondance et énergie nourricière soutiennent votre souhait — la réponse est un oui silencieux."
   },
   "emperor": {
     "name": "L'Empereur",
-    "meaning": "Structure, autorité et leadership stable. Construisez sur des bases solides avec discipline.",
+    "meaning": "Structure, autorité et leadership stable. Construisez sur des bases solides avec discipline. Une structure utile donne aux gens la sécurité de grandir. Remarquez la différence entre assumer la responsabilité et essayer de contrôler chaque détail ; ils peuvent se ressembler au début.",
     "advice": "Prenez les commandes avec un plan clair ; des limites fermes apportent une stabilité durable.",
     "yesNoMeaning": "Structure, autorité et discipline constante soutiennent un oui confiant."
   },
   "hierophant": {
     "name": "Le Hiérophante",
-    "meaning": "La tradition et les conseils de confiance offrent un chemin fiable. Apprenez de ce qui a précédé.",
+    "meaning": "La tradition et des conseils fiables offrent un chemin fiable. Apprenez de ce qui a précédé. Un enseignant, une communauté ou une méthode établie peuvent constituer un bon point de départ. Découvrez pourquoi une tradition fonctionne afin de pouvoir l'appliquer de manière réfléchie à votre propre situation.",
     "advice": "Suivez la sagesse établie et demandez conseil à ceux en qui vous avez confiance.",
     "yesNoMeaning": "La tradition et les conseils de confiance indiquent un oui fiable — appuyez-vous sur ce qui a déjà fait ses preuves."
   },
   "lovers": {
     "name": "Les Amoureux",
-    "meaning": "Un lien significatif ou un choix important. Suivez ce que votre cœur valorise vraiment.",
+    "meaning": "Un lien significatif ou un choix important. Suivez ce que votre cœur valorise vraiment. Une harmonie durable demande aux deux parties de parler honnêtement de leurs besoins et de leurs limites. S'il s'agit d'une décision plutôt que d'une romance, demandez quel chemin reflète vos valeurs les plus profondes.",
     "advice": "Choisissez avec honnêteté et alignement — la connexion s'approfondit lorsque vous êtes sincère.",
     "yesNoMeaning": "Votre cœur et vos valeurs sont alignés ici — la réponse est oui, surtout lorsque vous choisissez avec honnêteté."
   },
   "chariot": {
     "name": "Le Chariot",
-    "meaning": "La volonté et l'élan vous portent en avant. Restez concentré et vous réussirez.",
+    "meaning": "La volonté et l’élan vous font avancer. Restez concentré et vous gagnerez. Des impulsions opposées peuvent toujours vous faire avancer lorsque vous leur donnez une direction commune. Le progrès dépend de la gestion de vos sentiments et de vos actions, et pas simplement de vos efforts.",
     "advice": "Gardez les yeux sur le but et dirigez avec confiance à travers chaque obstacle.",
     "yesNoMeaning": "La volonté et l'élan sont de votre côté — un oui concentré, à condition de rester engagé."
   },
   "strength": {
     "name": "Force",
-    "meaning": "Le vrai pouvoir est doux — la patience, le courage et la compassion domptent n'importe quel défi.",
+    "meaning": "Le vrai pouvoir est doux : la patience, le courage et la compassion maîtrisent tous les défis. La douceur est une forme active de courage : vous pouvez rester avec l'inconfort sans le laisser décider de votre réponse. Reconnaissez la peur et bougez avec précaution plutôt que d’attendre que la peur disparaisse.",
     "advice": "Dirigez avec une force calme; une main douce est souvent la plus forte.",
     "yesNoMeaning": "Un courage doux et une résolution patiente font de cela un oui — avancez avec calme, et non par la force."
   },
   "hermit": {
     "name": "L'Hermite",
-    "meaning": "Il est temps de prendre du recul et de chercher la clarté intérieure. La solitude apporte maintenant des réponses plus profondes.",
+    "meaning": "Il est temps de prendre du recul et de rechercher la clarté intérieure. La solitude apporte désormais des réponses plus profondes. Prendre du recul peut rendre votre propre voix plus facile à entendre parmi les opinions des autres. La solitude aide lorsqu’elle mène à la compréhension, mais elle peut aussi devenir un moyen d’éviter la connexion.",
     "advice": "Tournez-vous vers l'intérieur, réfléchissez, et laissez le calme révéler ce dont vous avez vraiment besoin.",
     "yesNoMeaning": "Pas encore — la carte vous demande de prendre du recul et de trouver la clarté intérieure avant d'agir."
   },
   "wheel-of-fortune": {
     "name": "Roue de la Fortune",
-    "meaning": "La fortune tourne et les cycles changent. Ce qui change maintenant fait partie d'un rythme plus large.",
+    "meaning": "La fortune tourne et les cycles changent. Ce qui change maintenant s’inscrit dans un rythme plus large. Un ancien cycle est peut-être en train de se retourner, apportant des inconvénients aux côtés des possibilités. Vous ne pouvez pas choisir chaque événement, mais vous pouvez choisir ce que vous souhaitez reporter et comment vous préparer pour le prochain tour.",
     "advice": "Surfez sur la vague avec flexibilité — acceptez le tournant, qu'il soit bon ou non.",
     "yesNoMeaning": "La fortune tourne — le résultat dépend de la façon dont vous traversez le changement plutôt que d'un oui ou non fixe."
   },
   "justice": {
     "name": "Justice",
-    "meaning": "La vérité et l'équité triomphent. La cause et l'effet entrent maintenant en équilibre.",
+    "meaning": "La vérité et l’équité l’emportent. La cause et l’effet s’équilibrent désormais. Ce qui se passe reflète peut-être une chaîne de choix antérieurs plutôt qu’un moment isolé. Vérifiez les faits, entendez les personnes impliquées et possédez la pièce qui vous appartient.",
     "advice": "Agis avec honnêteté et pèse les deux côtés ; les balances se régleront équitablement.",
     "yesNoMeaning": "Les balances sont encore en train de se peser — la réponse juste dépend des faits et de votre honnêteté."
   },
   "hanged-man": {
     "name": "L'Homme Pendu",
-    "meaning": "Une pause nécessaire. Relâchez le contrôle et voyez la situation sous un nouvel angle.",
+    "meaning": "Une pause nécessaire. Relâchez le contrôle et voyez la situation sous un nouvel angle. Attendre peut être inconfortable lorsque l’action est votre réponse habituelle. Un changement de perspective, ou quelque chose que vous choisissez de libérer, peut révéler ce que davantage de pression ne pourrait pas faire.",
     "advice": "Arrêtez de pousser — abandonnez-vous au moment et laissez arriver une nouvelle perspective.",
     "yesNoMeaning": "Une pause est nécessaire d’abord — forcer cela maintenant ne ferait que retarder une réponse plus claire."
   },
   "death": {
     "name": "Mort",
-    "meaning": "Une fin ouvre la voie au renouveau. Libérez ce qui a eu son temps.",
+    "meaning": "Une fin ouvre la voie au renouveau. Libérez ce qui a fait son temps. Cette carte parle de transition plutôt que d’une prédiction littérale de perte. Vous avez peut-être dépassé un ancien rôle, une habitude ou une attente ; le laisser derrière vous peut encore prendre du temps.",
     "advice": "Lâche prise sans regret ; une transformation profonde ouvre une nouvelle porte.",
     "yesNoMeaning": "Une fin est en train de dégager le chemin — le chemin actuel se ferme pour qu'un nouveau puisse commencer."
   },
   "temperance": {
     "name": "Tempérance",
-    "meaning": "L'équilibre et la patience apportent l'harmonie. Mélangez les opposés avec grâce.",
+    "meaning": "L'équilibre et la patience apportent l'harmonie. Mélangez les contraires avec grâce. Recherchez ce qui peut être combiné à partir de deux approches différentes. Les progrès tranquilles peuvent prendre la forme d’une habitude durable, d’une conversation plus calme ou d’un rythme que vous pouvez réellement maintenir.",
     "advice": "Avancez avec modération et gardez votre calme — des pas réguliers atteignent la destination.",
     "yesNoMeaning": "L'équilibre et la patience apportent l'harmonie — un oui mesuré, pris un pas stable à la fois."
   },
   "devil": {
     "name": "Le Diable",
-    "meaning": "Méfiez-vous de l'attachement, de la tentation ou d'un schéma contraignant. Reconnaissez les chaînes.",
+    "meaning": "Méfiez-vous de l’attachement, de la tentation ou d’un modèle contraignant. Reconnaissez les chaînes. Un avantage à court terme peut rendre difficile l’abandon d’un modèle coûteux. Nommer ce que vous en tirez, ainsi que ce que cela coûte, peut vous redonner un peu de liberté de choix.",
     "advice": "Nomme ce qui te retient et reprends ta liberté — la chaîne ne te lie que si tu le permets.",
     "yesNoMeaning": "L'attachement ou un schéma contraignant fait obstacle — pas encore, jusqu'à ce que la chaîne soit nommée et brisée."
   },
   "tower": {
     "name": "La Tour",
-    "meaning": "Un changement soudain brise le faux et révèle la vérité. Ce qui tombe n'était jamais destiné à tenir.",
+    "meaning": "Un changement soudain brise le faux et révèle la vérité. Ce qui tombe n’a jamais été censé durer. La perturbation est difficile lorsqu’elle ébranle un projet auquel vous faisiez confiance. Vous n’êtes pas obligé de trouver immédiatement le bon côté des choses ; remarquez d’abord ce qui a vraiment changé et ce qui reste debout.",
     "advice": "Accueillez le bouleversement ; des décombres, une fondation plus claire peut être construite.",
     "yesNoMeaning": "Un changement soudain brise l'ancien — le sol doit se stabiliser avant qu'un oui ferme soit possible."
   },
   "star": {
     "name": "L'Étoile",
-    "meaning": "L'espoir, la guérison et l'inspiration tranquille renouvellent votre esprit après la tempête.",
+    "meaning": "L'espoir, la guérison et une inspiration tranquille renouvellent votre esprit après la tempête. L’espoir n’est pas une promesse que tout se résoudra tout seul. Il est possible de respirer après une difficulté et de continuer à s’occuper de ce qui compte avant que le résultat ne soit visible.",
     "advice": "Faites confiance à la lumière qui vous attend et continuez à croire — vos souhaits sont à portée de main.",
     "yesNoMeaning": "L'espoir et le renouveau tranquille indiquent oui — faites confiance à la lumière à venir et gardez votre souhait vivant."
   },
   "moon": {
     "name": "La Lune",
-    "meaning": "L'illusion et l'incertitude brouillent le chemin. Faites confiance à votre intuition, pas aux apparences.",
+    "meaning": "L’illusion et l’incertitude brouillent les pistes. Faites confiance à votre intuition, pas aux apparences. Lorsque les faits sont incomplets, la mémoire et la peur peuvent combler les lacunes avec une histoire convaincante. Ralentissez, remarquez votre réaction et séparez ce que vous ressentez de ce que vous avez vérifié.",
     "advice": "Ralentissez et regardez plus profondément ; la clarté viendra lorsque le brouillard se dissipe.",
     "yesNoMeaning": "L'illusion et l'incertitude brouillent le chemin — la réponse n'est pas claire tant que vous ne regardez pas au-delà des apparences."
   },
   "sun": {
     "name": "Le Soleil",
-    "meaning": "Joie, succès et clarté éclatante. Tout est lumineux et plein de vie.",
+    "meaning": "Joie, réussite et clarté rayonnante. Tout est lumineux et plein de vie. La clarté peut vous aider à reconnaître vos progrès et à partager votre joie sans la minimiser. S’il reste du travail, cette énergie renouvelée peut vous aider à l’affronter plus ouvertement.",
     "advice": "Célébrez et brillez — l'énergie positive attire les résultats que vous désirez.",
     "yesNoMeaning": "La joie et une clarté radieuse confirment un oui éclatant — tout fonctionne en votre faveur."
   },
   "judgement": {
     "name": "Jugement",
-    "meaning": "Un appel à se lever, à se renouveler et à être honnête avec soi-même. Un verdict d'éveil.",
+    "meaning": "Un appel à s’élever, à se renouveler et à être honnête avec soi-même. Un verdict de réveil. Revoir le passé ne signifie pas nécessairement se blâmer pour toujours. Tirez la leçon, pardonnez ce que vous pouvez et répondez dès maintenant à l’appel au changement par un choix conscient.",
     "advice": "Répondez à l'appel avec courage ; pardonnez le passé et entrez dans votre prochain chapitre.",
     "yesNoMeaning": "Un appel à se lever et à se renouveler — oui, surtout une fois que vous avez pardonné le passé et répondu honnêtement."
   },
   "world": {
     "name": "Le Monde",
-    "meaning": "Accomplissement et plénitude — un cycle se termine dans une complétude parfaite.",
+    "meaning": "Achèvement et épanouissement – un cycle se termine dans une parfaite intégralité. La réussite inclut les compétences, les relations et la perspective que vous avez acquises en cours de route. Honorez l’achèvement de ce cycle alors même qu’un voyage plus large se poursuit.",
     "advice": "Célébrez ce que vous avez accompli ; la porte est ouverte vers un monde plus vaste.",
     "yesNoMeaning": "Accomplissement et plénitude marquent cela comme un oui accompli — le cycle se termine en votre faveur."
   },
   "ace-of-wands": {
     "name": "As de Bâtons",
-    "meaning": "Une étincelle d'inspiration ouvre un chemin créatif audacieux.",
+    "meaning": "Une étincelle d’inspiration ouvre un chemin créatif audacieux. Une invitation, un projet ou une nouvelle envie peuvent vous faire sentir plus vivant. Il s’agit là d’un résultat potentiel plutôt que d’un résultat garanti ; il a besoin d’espace pour expérimenter et d’engagement une fois que la première excitation s’est estompée.",
     "advice": "Commencez pendant que l'énergie est fraîche et donnez à l'idée un véritable premier pas.",
     "yesNoMeaning": "L'As de Bâtons penche pour oui : commencez tant que l'énergie est fraîche et donnez à l'idée un vrai premier pas."
   },
   "two-of-wands": {
     "name": "Deux de Bâtons",
-    "meaning": "Un avenir se dessine à travers la planification et un choix de direction.",
+    "meaning": "Un avenir se dessine grâce à la planification et à un choix d’orientation. Vous pouvez voir plus d’un itinéraire et commencez à vous demander jusqu’où vous voulez aller. Une vue d’ensemble est utile, mais une planification sans fin peut vous maintenir sur le seuil.",
     "advice": "Regarde au-delà de ce qui est familier, puis engage-toi sur le chemin avec de la place pour grandir.",
     "yesNoMeaning": "Le Deux de Bâtons reste conditionnel : regardez au-delà de ce qui est familier, puis engagez-vous sur le chemin offrant de la place pour grandir."
   },
   "three-of-wands": {
     "name": "Trois de Bâtons",
-    "meaning": "Un effort précoce s'élargit à mesure que des opportunités et des horizons plus larges apparaissent.",
+    "meaning": "Les premiers efforts s’étendent à mesure que des opportunités et des horizons plus larges apparaissent. Ce que vous avez commencé commence à susciter une réponse au-delà du territoire familier. Restez ouvert aux contacts et aux commentaires tout en laissant le temps à vos travaux antérieurs de porter leurs fruits.",
     "advice": "Continuez à construire et soyez prêt à faire face à la réaction que votre travail suscite.",
     "yesNoMeaning": "Le Trois de Bâtons penche vers oui : continuez à construire et soyez prêt à rencontrer la réponse que votre travail attire."
   },
   "four-of-wands": {
     "name": "Quatre de Bâtons",
-    "meaning": "Stabilité, accueil et célébration partagée créent une base solide.",
+    "meaning": "La stabilité, l’accueil et la célébration partagée créent une base solide. Une étape importante mérite d’être célébrée même si le voyage n’est pas terminé. L’appartenance et les personnes qui ont contribué à construire ce moment peuvent renforcer votre prochaine étape.",
     "advice": "Marquez l'étape et laissez les personnes de soutien en profiter.",
     "yesNoMeaning": "Le Quatre de Bâtons penche vers oui : marquez l'étape et laissez les personnes de soutien en profiter."
   },
   "five-of-wands": {
     "name": "Cinq de Bâtons",
-    "meaning": "Des objectifs concurrents créent friction, bruit ou mise à l'épreuve de la confiance.",
+    "meaning": "Des objectifs concurrents créent des frictions, du bruit ou un test de confiance. De nombreuses voix concurrentes peuvent cacher l’objectif commun. Le conflit peut affiner une idée lorsque tout le monde sait de quoi il débat réellement et peut écouter au-delà des différences.",
     "advice": "Transformez la rivalité en pratique utile et refusez les conflits qui n'ont aucun but.",
     "yesNoMeaning": "Le Cinq de Bâtons reste conditionnel : transformez la rivalité en pratique utile et refusez le conflit qui n'a aucun but."
   },
   "six-of-wands": {
     "name": "Six de Bâtons",
-    "meaning": "La reconnaissance suit un effort déterminé et des progrès visibles.",
+    "meaning": "La reconnaissance suit un effort déterminé et des progrès visibles. Vos efforts pourraient enfin être vus par les autres. La reconnaissance peut vous encourager, mais la valeur de votre travail demeure même lorsqu'aucun public ne vous regarde.",
     "advice": "Acceptez l'encouragement, mais gardez votre confiance liée à un travail honnête.",
     "yesNoMeaning": "Le Six de Bâtons penche vers oui : acceptez les encouragements, mais gardez votre confiance liée à un travail honnête."
   },
   "seven-of-wands": {
     "name": "Sept de Bâtons",
-    "meaning": "Vous maintenez une position précieuse tandis que la pression teste votre détermination.",
+    "meaning": "Vous détenez un terrain précieux pendant que la pression met votre détermination à l’épreuve. Pour protéger ce qui compte, il faut savoir pourquoi cela compte pour vous. La pression peut provenir de plusieurs directions, mais tous les défis ne méritent pas un combat.",
     "advice": "Défendez ce qui compte avec des limites claires au lieu de combattre chaque défi.",
     "yesNoMeaning": "Le Sept de Bâtons penche vers oui : défendez ce qui compte avec des limites claires plutôt que de combattre chaque défi."
   },
   "eight-of-wands": {
     "name": "Huit de Baguettes",
-    "meaning": "Les événements s'accélèrent, les messages arrivent et l'élan supprime les retards.",
+    "meaning": "Les événements s’accélèrent, les messages arrivent et l’élan élimine les retards. Les nouvelles ou les décisions peuvent arriver plus rapidement que prévu. La vitesse est utile lorsque tout le monde comprend la direction ; des informations peu claires peuvent transformer l’élan en confusion.",
     "advice": "Agissez rapidement et maintenez une communication directe tant que la voie est ouverte.",
     "yesNoMeaning": "Le Huit de Bâtons penche pour oui : agissez rapidement et gardez la communication directe tant que le chemin est ouvert."
   },
   "nine-of-wands": {
     "name": "Neuf de Bâtons",
-    "meaning": "La résilience est forte, bien que les tensions passées vous rendent vigilant.",
+    "meaning": "La résilience est forte, même si les tensions passées vous obligent à être vigilant. Les tensions passées vous ont appris à vous protéger, mais une vigilance constante est épuisante. Jugez du risque qui se présente à vous à l'aune des preuves d'aujourd'hui ainsi qu'aux blessures d'hier.",
     "advice": "Protégez votre énergie et faites le prochain pas sans vous attendre à ce que chaque blessure se répète.",
     "yesNoMeaning": "Le Neuf de Bâtons reste conditionnel : protégez votre énergie et faites le prochain pas sans vous attendre à ce que chaque blessure se répète."
   },
   "ten-of-wands": {
     "name": "Dix de Bâtons",
-    "meaning": "La responsabilité est devenue lourde et le succès porte désormais un fardeau.",
+    "meaning": "La responsabilité est devenue lourde et le succès porte désormais un fardeau. Quelque chose dont vous étiez autrefois fier peut maintenant comporter trop d'obligations. Votre capacité est réelle, mais elle ne vous oblige pas à accomplir chaque tâche seul.",
     "advice": "Déléguez, simplifiez et abandonnez le travail qui n'est plus vraiment le vôtre.",
     "yesNoMeaning": "Le Dix de Bâtons penche vers non : déléguez, simplifiez et laissez tomber le travail qui n'est plus vraiment le vôtre."
   },
   "page-of-wands": {
     "name": "Valet de Bâtons",
-    "meaning": "La curiosité apporte un message vivant, une expérience ou un nouvel intérêt créatif.",
+    "meaning": "La curiosité apporte un message vivant, une expérience ou un nouvel intérêt créatif. Une nouvelle idée peut raviver l'enthousiasme d'un débutant. Vous n’avez pas besoin de tout maîtriser avant d’explorer ; donnez-vous la permission d’essayer, de vous ajuster et d’apprendre dans la pratique.",
     "advice": "Explorez avec courage et laissez l'énergie du débutant vous enseigner par l'action.",
     "yesNoMeaning": "Le Valet de Bâtons penche vers le oui : explorez avec courage et laissez l'énergie de débutant vous enseigner par l'action."
   },
   "knight-of-wands": {
     "name": "Chevalier de Bâtons",
-    "meaning": "La passion avance rapidement, apportant aventure et possible impatience.",
+    "meaning": "La passion avance rapidement, apportant l’aventure et éventuellement l’impatience. L’attraction de quelque chose de nouveau peut vous donner envie de partir immédiatement. Cette énergie vous sert mieux lorsqu’un objectif clair vous empêche de changer de cap à chaque impulsion qui passe.",
     "advice": "Utilisez l'élan, mais choisissez une direction avant que la vitesse ne disperse vos efforts.",
     "yesNoMeaning": "Le Chevalier de Bâtons reste conditionnel : utilisez l'élan, mais choisissez une direction avant que la vitesse ne disperse votre effort."
   },
   "queen-of-wands": {
     "name": "Reine de Bâtons",
-    "meaning": "Une confiance chaleureuse et une indépendance créative attirent les autres vers votre vision.",
+    "meaning": "Une confiance chaleureuse et une indépendance créative attirent les autres vers votre vision. Votre présence ouverte peut encourager les autres à croire en une vision partagée. Ici, la confiance n’exige pas de surpasser qui que ce soit ; cela permet aux autres de briller aussi.",
     "advice": "Faites confiance à votre présence, encouragez les autres et ne réduisez pas votre ambition.",
     "yesNoMeaning": "La Reine de Bâtons penche oui : faites confiance à votre présence, encouragez les autres et ne réduisez pas votre ambition."
   },
   "king-of-wands": {
     "name": "Roi de Bâtons",
-    "meaning": "Une vision mature transforme l'inspiration en leadership décisif et éthique.",
+    "meaning": "Une vision mature transforme l’inspiration en un leadership décisif et éthique. Une vision large nécessite des décisions, des responsabilités et la capacité de maintenir l'énergie d'une équipe. Dirigez vers un objectif clair plutôt que par la pression ou l’ego seul.",
     "advice": "Dirigez à partir d'un objectif plus grand et donnez aux autres l'espace pour contribuer.",
     "yesNoMeaning": "Le Roi de Bâtons penche vers oui : dirigez-vous à partir d'un objectif plus large et donnez aux autres l'espace pour contribuer."
   },
   "ace-of-cups": {
     "name": "As de Coupes",
-    "meaning": "Le cœur s'ouvre à de nouveaux sentiments, à la compassion et au renouveau émotionnel.",
+    "meaning": "Le cœur s’ouvre à une nouvelle affection, compassion et renouveau émotionnel. Une rencontre, un sentiment nouveau ou un adoucissement intérieur peuvent vous inviter à donner et recevoir plus librement. Laissez l’émotion être reconnue avant de la forcer vers un résultat particulier.",
     "advice": "Recevez le sentiment honnêtement et laissez le soin couler sans forcer un résultat.",
     "yesNoMeaning": "L'As de Coupes penche vers le oui : Recevez le sentiment honnêtement et laissez l'attention circuler sans forcer un résultat."
   },
   "two-of-cups": {
     "name": "Deux de Coupes",
-    "meaning": "La reconnaissance mutuelle crée un partenariat, une attraction ou un accord sincère.",
+    "meaning": "La reconnaissance mutuelle crée un partenariat, une attirance ou un accord sincère. La promesse la plus profonde réside dans le fait que deux personnes se voient clairement, au-delà de l’attraction initiale. Une conversation sincère, des excuses ou un accord équitable peuvent renforcer le lien.",
     "advice": "Rencontrez l'autre personne en tant qu'égal et parlez avec le cœur.",
     "yesNoMeaning": "Le Deux de Coupes penche vers oui : rencontrez l'autre personne en tant qu'égal et parlez avec le cœur."
   },
   "three-of-cups": {
     "name": "Trois de Coupes",
-    "meaning": "L'amitié, la communauté et la joie partagée apportent un soutien émotionnel.",
+    "meaning": "L'amitié, la communauté et la joie partagée apportent un soutien émotionnel. Un petit rassemblement ou un soutien opportun peut vous rappeler que la joie ne doit pas nécessairement être portée seule. Souvenez-vous de ceux qui se tenaient à vos côtés avant que les choses ne deviennent plus faciles.",
     "advice": "Célébrez ensemble et souvenez-vous de ceux qui se présentent vraiment pour vous.",
     "yesNoMeaning": "Le Trois de Coupes penche vers oui : célébrez ensemble et souvenez-vous de ceux qui se présentent réellement pour vous."
   },
   "four-of-cups": {
     "name": "Quatre de Coupes",
-    "meaning": "Le retrait émotionnel rend difficile de remarquer un cadeau disponible.",
+    "meaning": "Le retrait émotionnel rend un cadeau disponible difficile à remarquer. Lorsque vous êtes fatigué ou découragé, même une bonne offre peut paraître ennuyeuse. Soyez honnête à propos de vos sentiments actuels avant de décider que rien autour de vous n'a d'importance.",
     "advice": "Mettez la comparaison en pause et regardez à nouveau ce qui est tranquillement offert.",
     "yesNoMeaning": "Le Quatre de Coupes penche vers non : pausez la comparaison et regardez à nouveau ce qui est offert silencieusement."
   },
   "five-of-cups": {
     "name": "Cinq de Coupes",
-    "meaning": "La perte attire l'attention sur ce qui s'est répandu tandis que quelque chose de significatif reste.",
+    "meaning": "La perte attire l’attention sur ce qui s’est répandu alors qu’il reste quelque chose de significatif. Le deuil mérite d’être nommé plutôt que couvert d’un optimisme rapide. Même ainsi, une seule perte peut ne pas raconter toute l’histoire ; un soutien ou une possibilité peuvent encore rester à proximité.",
     "advice": "Honorez la déception, puis tournez-vous vers le soutien toujours présent.",
     "yesNoMeaning": "Le Cinq de Coupes penche vers non : honorez la déception, puis tournez-vous vers le soutien encore présent."
   },
   "six-of-cups": {
     "name": "Six de Coupes",
-    "meaning": "La mémoire, l'innocence ou un lien familier revient avec une chaleur douce.",
+    "meaning": "Le souvenir, l’innocence ou un lien familier reviennent avec une douce chaleur. Un vieil ami ou un souvenir peut vous reconnecter avec un sentiment de sécurité. Accueillez cette chaleur tout en reconnaissant que le présent a changé et que vous avez changé avec lui.",
     "advice": "Accueillez la gentillesse du passé sans prétendre que vous devez y vivre à nouveau.",
     "yesNoMeaning": "Le Six de Coupes penche vers oui : accueillez la gentillesse du passé sans prétendre que vous devez y vivre à nouveau."
   },
   "seven-of-cups": {
     "name": "Sept de Coupes",
-    "meaning": "De nombreuses possibilités attrayantes brouillent la différence entre vision et illusion.",
+    "meaning": "De nombreuses possibilités attrayantes brouillent la différence entre vision et illusion. Chaque option peut sembler porteuse d’une belle promesse, mais toutes les promesses ne reposent pas sur le même fondement. Séparez ce que vous voulez vraiment de ce que vous avez imaginé autour.",
     "advice": "Réduisez les choix et testez un rêve contre la réalité avant de vous engager.",
     "yesNoMeaning": "Le Sept de Coupes n'est pas encore clair : restreignez les choix et testez un rêve contre la réalité avant de vous engager."
   },
   "eight-of-cups": {
     "name": "Huit de Coupes",
-    "meaning": "Une situation autrefois significative ne nourrit plus le cœur.",
+    "meaning": "Une situation autrefois significative ne nourrit plus le cœur. Abandonner quelque chose qui avait autrefois du sens peut être à la fois triste et bon pour vous maintenant. Sa valeur était réelle, même si votre besoin de sens plus profond a changé.",
     "advice": "Partez avec honnêteté et allez vers l'épanouissement plus profond dont vous avez maintenant besoin.",
     "yesNoMeaning": "Le Huit de Coupes penche pour non : partez avec honnêteté et avancez vers la satisfaction plus profonde dont vous avez maintenant besoin."
   },
   "nine-of-cups": {
     "name": "Neuf de Coupes",
-    "meaning": "Le contentement et la gratitude rendent un souhait sincère proche de se réaliser.",
+    "meaning": "Le contentement et la gratitude font qu'un souhait sincère se sent proche. Vous avez peut-être atteint quelque chose que vous souhaitiez autrefois et méritez d’en profiter. La satisfaction dure plus longtemps lorsque l’on sait d’où elle vient au lieu de se précipiter vers le désir suivant.",
     "advice": "Appréciez ce qui est ici et demandez-vous si le souhait sert également vos valeurs profondes.",
     "yesNoMeaning": "Le Neuf de Coupes penche oui : profitez de ce qui est là et demandez si le souhait sert également vos valeurs profondes."
   },
   "ten-of-cups": {
     "name": "Dix de Coupes",
-    "meaning": "Harmonie émotionnelle, sentiment d'appartenance et connexion durable entourent le foyer.",
+    "meaning": "L'harmonie émotionnelle, l'appartenance et la connexion durable entourent la maison. L'harmonie se développe grâce à des soins et une écoute répétés, et non à travers un foyer sans désaccord. Cette carte évoque la liberté d’être soi parmi des personnes désireuses de continuer à construire ensemble.",
     "advice": "Entretenez les liens qui rendent la joie durable et partagée.",
     "yesNoMeaning": "Le Dix de Coupes penche vers oui : entretenez les liens qui rendent la joie durable et partagée."
   },
   "page-of-cups": {
     "name": "Valet de Coupes",
-    "meaning": "Un message tendre ou une découverte intuitive invite à l'ouverture émotionnelle.",
+    "meaning": "Un message tendre ou une découverte intuitive invite à l’ouverture émotionnelle. Un message tendre, un sentiment inattendu ou une idée imaginative peuvent attirer votre attention. Laissez place à la surprise sans considérer chaque signe comme une promesse ferme.",
     "advice": "Restez curieux du ressenti et répondez avec sincérité plutôt qu'avec des suppositions.",
     "yesNoMeaning": "Le Valet de Coupes reste conditionnel : restez curieux du sentiment et répondez avec sincérité plutôt qu'avec des suppositions."
   },
   "knight-of-cups": {
     "name": "Chevalier de Coupes",
-    "meaning": "Le romantisme, l'imagination ou un idéal attire le cœur vers l'avant.",
+    "meaning": "La romance, l’imagination ou un idéal attirent le cœur. Vous voudrez peut-être suivre une invitation ou un idéal sincère. La sincérité donne un sens au voyage, tandis que le côté pratique vous aide à voir quelles personnes et quels projets peuvent voyager avec vous au fil du temps.",
     "advice": "Suivez l'invitation, mais gardez un pied sur terre à mesure que les promesses se réalisent.",
     "yesNoMeaning": "Le Cavalier de Coupes penche vers oui : suivez l'invitation, mais gardez un pied sur terre pendant que les promesses se réalisent."
   },
   "queen-of-cups": {
     "name": "Reine de Coupes",
-    "meaning": "Une profonde empathie et intuition créent un espace calme pour la vérité.",
+    "meaning": "Une empathie profonde et une intuition créent un espace calme pour la vérité. Écouter attentivement peut aider quelqu'un à se sentir suffisamment en sécurité pour parler. Une profonde empathie signifie également savoir quels sont vos besoins et quelle tristesse vous ne pouvez pas porter pour une autre personne.",
     "advice": "Écoutez avec compassion tout en préservant les limites qui maintiennent les soins en bonne santé.",
     "yesNoMeaning": "La Reine de Coupes penche vers le oui : écoutez avec compassion tout en préservant les limites qui maintiennent le soin en bonne santé."
   },
   "king-of-cups": {
     "name": "Roi de Coupes",
-    "meaning": "Maturité émotionnelle stabilise les sentiments forts sans les réprimer.",
+    "meaning": "La maturité émotionnelle stabilise les sentiments forts sans les réprimer. Des sentiments forts peuvent rester présents pendant que vous choisissez une réponse calme et responsable. Cette stabilité peut rendre une conversation difficile plus sûre pour toutes les personnes impliquées.",
     "advice": "Répondez avec compassion et maîtrise de soi, surtout lorsque les autres sont réactifs.",
     "yesNoMeaning": "Le Roi de Coupes penche vers oui : répondez avec compassion et maîtrise de soi, surtout lorsque les autres réagissent."
   },
   "ace-of-swords": {
     "name": "As d'Épées",
-    "meaning": "Une vision claire perce la confusion et révèle une nouvelle vérité.",
+    "meaning": "Une vision claire dissipe la confusion et révèle une nouvelle vérité. Un fait nouveau ou une conversation honnête peut dissiper la confusion. La vérité peut être tranchante, alors utilisez-la pour comprendre et décider plus clairement plutôt que pour blesser.",
     "advice": "Nommez le problème clairement et utilisez la clarté au service d'une décision juste.",
     "yesNoMeaning": "L'As d'Épées penche pour oui : nommez le problème clairement et utilisez la clarté au service d'une décision juste."
   },
   "two-of-swords": {
     "name": "Deux d'Épées",
-    "meaning": "Un impasse prudente retarde un choix qui ne peut rester en suspens éternellement.",
+    "meaning": "Une impasse prudente retarde un choix qui ne peut pas rester éternellement suspendu. Vous maintenez peut-être l’équilibre en refusant de choisir, même si la pression n’a pas disparu. Le calme est utile ; éviter les informations inconfortables ne fera pas disparaître la décision.",
     "advice": "Retirez le bandeau doucement, rassemblez le fait manquant et décidez à partir de l'équilibre.",
     "yesNoMeaning": "Les Deux d'Épées ne sont pas encore clairs : retirez le bandeau doucement, rassemblez le fait manquant, et décidez à partir de l'équilibre."
   },
   "three-of-swords": {
     "name": "Trois d'Épées",
-    "meaning": "Une vérité douloureuse, une séparation ou une déception demande à être reconnue.",
+    "meaning": "Une vérité douloureuse, une séparation ou une déception demande à être reconnue. Les mots, la séparation ou une attente brisée peuvent laisser une réelle souffrance. Nommez la blessure et cherchez de l’aide au lieu de vous précipiter pour prouver que vous allez déjà bien.",
     "advice": "Laissez le sentiment vous traverser et évitez de transformer la douleur en une histoire permanente.",
     "yesNoMeaning": "Le Trois d'Épées penche non : laissez le sentiment vous traverser et évitez de transformer la douleur en une histoire permanente."
   },
   "four-of-swords": {
     "name": "Quatre d'Épées",
-    "meaning": "Le repos et le calme mental sont nécessaires après une pression ou un conflit.",
+    "meaning": "Le repos et la tranquillité mentale sont nécessaires après une pression ou un conflit. Après une longue période de réaction à la pression, votre esprit a besoin d’espace pour s’installer. Le repos fait partie de la récupération et de la préparation, ce n'est pas la preuve que vous avez abandonné.",
     "advice": "Faites une pause avant de répondre ; la récupération est productive quand elle restaure la clarté de la pensée.",
     "yesNoMeaning": "Le Quatre d'Épées penche vers non : pausez avant de répondre ; le rétablissement est productif lorsqu'il restaure la clarté de la pensée."
   },
   "five-of-swords": {
     "name": "Cinq d'Épées",
-    "meaning": "Le conflit peut produire une victoire creuse ou laisser la confiance endommagée.",
+    "meaning": "Un conflit peut produire une victoire vide de sens ou ébranler la confiance. Gagner une dispute peut quand même nuire à la confiance ou vous épuiser. Demandez-vous combien coûte la victoire et quelles limites protégeraient votre estime de soi.",
     "advice": "Choisissez la dignité plutôt que la victoire et éloignez-vous de tactiques trop coûteuses.",
     "yesNoMeaning": "Le Cinq d'Épées penche vers non : choisissez la dignité plutôt que la victoire et éloignez-vous des tactiques qui coûtent trop."
   },
   "six-of-swords": {
     "name": "Six d'Épées",
-    "meaning": "Un passage difficile évolue progressivement vers des conditions plus calmes.",
+    "meaning": "Un passage difficile évolue progressivement vers des conditions plus calmes. La transition peut être tranquille : sortir d’une conversation dans l’impasse, d’un environnement ancien ou d’une façon de penser fatigante. Vous n’avez pas besoin de voir une destination parfaite pour savoir que vous avancez vers une plus grande paix.",
     "advice": "Prenez ce que vous avez appris, acceptez le soutien et continuez à vous éloigner du tumulte.",
     "yesNoMeaning": "Le Six d'Épées penche vers oui : prenez ce que vous avez appris, acceptez le soutien et continuez à vous éloigner des tourments."
   },
   "seven-of-swords": {
     "name": "Sept d'Épées",
-    "meaning": "Stratégie, secret ou évitement compliquent le chemin.",
+    "meaning": "La stratégie, le secret ou l’évitement compliquent le chemin. Garder un régime privé peut parfois vous protéger ; se soustraire à ses responsabilités crée un autre type de distance. Examinez le motif derrière une stratégie avant de décider de l’utiliser.",
     "advice": "Agis avec intelligence mais en toute transparence ; les raccourcis qui trahissent la confiance reviendront sous forme de problèmes.",
     "yesNoMeaning": "Le Sept d'Épées penche vers le non : agissez intelligemment mais de manière transparente ; les raccourcis qui trahissent la confiance reviendront sous forme de problèmes."
   },
   "eight-of-swords": {
     "name": "Huit d'Épées",
-    "meaning": "La peur et les croyances restrictives rendent difficiles à voir les options disponibles.",
+    "meaning": "La peur et les croyances restrictives rendent les options disponibles difficiles à voir. Le sentiment d’être piégé peut être plus grand que les limites qui vous entourent réellement. À mesure que la peur s’atténue, une petite option, une personne serviable ou un chemin négligé peut devenir visible.",
     "advice": "Remettez en question la pensée qui dit que vous êtes piégé et prenez une petite action libératrice.",
     "yesNoMeaning": "Le Huit d'Épées penche pour non : remettez en question la pensée qui dit que vous êtes piégé et faites une petite action libératrice."
   },
   "nine-of-swords": {
     "name": "Neuf d'Épées",
-    "meaning": "L'anxiété amplifie le danger dans l'obscurité et épuise l'esprit.",
+    "meaning": "L’anxiété amplifie le danger dans l’obscurité et épuise l’esprit. Les pensées répétitives peuvent sembler plus féroces lorsque vous y faites face seul. Séparez ce qui s’est passé de ce que vous imaginez pouvoir arriver et permettez-vous de demander de l’aide.",
     "advice": "Amenez la peur à la lumière du jour, cherchez du soutien et séparez les faits des résultats imaginés.",
     "yesNoMeaning": "Le Neuf d'Épées penche non : mettez la peur au grand jour, cherchez du soutien et séparez les faits des résultats imaginés."
   },
   "ten-of-swords": {
     "name": "Dix d'Épées",
-    "meaning": "Un cycle douloureux atteint sa limite finale et ne peut pas continuer inchangé.",
+    "meaning": "Un cycle douloureux atteint sa limite finale et ne peut continuer sans changement. La fin peut vous épuiser après qu’une situation ait duré trop longtemps. L’ancien schéma ne peut pas perdurer, mais des limites plus claires peuvent ouvrir la voie à une reprise progressive.",
     "advice": "Acceptez la fin, protégez votre rétablissement et permettez à un nouveau début d'émerger.",
     "yesNoMeaning": "Le Dix d'Épées penche vers non : acceptez la fin, protégez votre rétablissement et permettez à un autre commencement d'émerger."
   },
   "page-of-swords": {
     "name": "Valet d’Épées",
-    "meaning": "La curiosité alerte recherche des faits, pose des questions et observe les changements.",
+    "meaning": "La curiosité alerte recherche des faits, pose des questions et surveille le changement. La curiosité vous pousse à poser des questions et à vérifier les détails avant d'accepter une conclusion. Cette vigilance favorise l’apprentissage lorsqu’elle ne se transforme pas en suspicion envers tout le monde.",
     "advice": "Recherchez soigneusement et parlez avec précision plutôt que de réagir à chaque signal.",
     "yesNoMeaning": "Le Valet d'Épées reste conditionnel : faites des recherches avec soin et parlez avec précision plutôt que de réagir à chaque signal."
   },
   "knight-of-swords": {
     "name": "Chevalier d'Épées",
-    "meaning": "Un intellect concentré agit rapidement et affronte directement les obstacles.",
+    "meaning": "L’intellect concentré évolue rapidement et affronte directement les obstacles. Une idée claire peut vous faire avancer et vous faire parler directement. La détermination fonctionne mieux lorsque vous entendez encore de nouvelles preuves et remarquez comment vos paroles affectent les autres.",
     "advice": "Avancez avec courage, mais assez lentement pour entendre ce que votre certitude pourrait manquer.",
     "yesNoMeaning": "Le Chevalier d'Épées reste conditionnel : avancez avec courage, mais assez lentement pour entendre ce que votre certitude pourrait manquer."
   },
   "queen-of-swords": {
     "name": "Reine d'Épées",
-    "meaning": "La perception claire et des limites honnêtes éliminent la confusion.",
+    "meaning": "Une perception claire et des limites honnêtes éliminent la confusion. L’expérience peut vous aider à voir ce qui compte parmi des sentiments et des promesses concurrents. Soyez direct et gardez des limites saines sans perdre votre compassion.",
     "advice": "Dis ce qui est vrai avec compassion et laisse l'expérience t'affûter, pas te durcir.",
     "yesNoMeaning": "La Reine d'Épées penche vers le oui : dites ce qui est vrai avec compassion et laissez l'expérience vous affûter, non vous durcir."
   },
   "king-of-swords": {
     "name": "Roi d'Épées",
-    "meaning": "La raison, l'équité et un jugement discipliné guident une décision importante.",
+    "meaning": "La raison, l’équité et un jugement discipliné guident une décision conséquente. Une décision difficile nécessite des normes cohérentes et un raisonnement clair. L'autorité de cette carte vient de l'équité, et pas seulement du fait d'avoir le dernier mot.",
     "advice": "Utilisez des preuves, définissez la norme et écartez les préjugés personnels du verdict.",
     "yesNoMeaning": "Le Roi d'Épées penche vers oui : utilisez des preuves, définissez la norme et gardez les préjugés personnels hors du verdict."
   },
   "ace-of-pentacles": {
     "name": "As de Pentacles",
-    "meaning": "Une opportunité tangible offre la graine de prospérité, de travail ou de bien-être.",
+    "meaning": "Une opportunité tangible offre le germe de la prospérité, du travail ou du bien-être. Une ouverture pratique peut apparaître sous la forme d’un travail, d’un soutien, d’une compétence ou de conditions plus saines. Sa valeur dépend de la manière dont on l’entretient au fil du temps, et pas seulement de son premier attrait.",
     "advice": "Ancrez l'opportunité dans un plan pratique et prenez-en soin de manière constante.",
     "yesNoMeaning": "L'As de Pentacles penche vers le oui : Ancrez l'opportunité dans un plan pratique et prenez-en soin régulièrement."
   },
   "two-of-pentacles": {
     "name": "Deux de Pentacles",
-    "meaning": "Plusieurs priorités avancent en même temps et nécessitent un équilibre flexible.",
+    "meaning": "Plusieurs priorités évoluent en même temps et nécessitent un équilibre flexible. Vous êtes peut-être en train de concilier travail, argent, temps et besoins personnels à la fois. La flexibilité fait avancer les choses, mais une longue période de jonglerie nécessite des priorités plus claires.",
     "advice": "Ajustez le rythme, protégez l'essentiel et évitez de promettre plus que ce que vous pouvez porter.",
     "yesNoMeaning": "Le Deux de Pentacles reste conditionnel : ajustez le rythme, protégez l'essentiel et évitez de promettre plus que ce que vous pouvez porter."
   },
   "three-of-pentacles": {
     "name": "Trois de Pentacles",
-    "meaning": "La compétence croît grâce à la collaboration, aux retours et au travail minutieux.",
+    "meaning": "Les compétences se développent grâce à la collaboration, aux commentaires et à un savoir-faire minutieux. Le bon travail se développe lorsque chaque personne comprend son rôle et ses points forts. Les commentaires spécifiques, l’apprentissage d’un métier et le respect de l’effort silencieux sont tous importants ici.",
     "advice": "Apportez votre force, respectez l'expertise et construisez selon une norme partagée.",
     "yesNoMeaning": "Les Trois de Pentacles penchent pour oui : apportez votre force, respectez l'expertise et construisez selon une norme partagée."
   },
   "four-of-pentacles": {
     "name": "Quatre de Pentacles",
-    "meaning": "S'accrocher fermement à la sécurité peut préserver les ressources mais restreindre le flux sain.",
+    "meaning": "S’en tenir strictement à la sécurité peut préserver les ressources mais restreindre les flux sains. Conserver des ressources durement gagnées peut sembler judicieux en période d’incertitude. Lorsque la peur de la perte régit chaque choix, l’argent et la tranquillité d’esprit peuvent sembler limités.",
     "advice": "Protégez ce qui compte sans laisser la peur prendre toutes vos décisions.",
     "yesNoMeaning": "Le Quatre de Pentacles reste conditionnel : protégez ce qui compte sans laisser la peur dicter chaque décision."
   },
   "five-of-pentacles": {
     "name": "Cinq de Pentacles",
-    "meaning": "La tension ou l'exclusion matérielle crée de l'inquiétude et un sentiment de rareté.",
+    "meaning": "La tension matérielle ou l’exclusion crée de l’inquiétude et un sentiment de pénurie. Les difficultés peuvent vous faire sentir seul ou ne pas mériter d’aide. Un soutien pratique peut encore être proche, même lorsque la détresse rend difficile d’en voir le chemin.",
     "advice": "Demandez une aide pratique et remarquez la porte que les difficultés ont rendue facile à négliger.",
     "yesNoMeaning": "Le Cinq de Pentacles penche vers non : demandez de l'aide pratique et remarquez la porte que les difficultés ont rendu facile à négliger."
   },
   "six-of-pentacles": {
     "name": "Six de Pentacles",
-    "meaning": "Les ressources sont échangées, soulevant des questions de générosité, de pouvoir et d'équité.",
+    "meaning": "Les ressources sont échangées, soulevant des questions de générosité, de pouvoir et d’équité. L’aide fonctionne mieux lorsque celui qui donne et celui qui reçoit conservent leur dignité et leur voix. Regardez si l'échange est équilibré et quelles conditions accompagnent la générosité.",
     "advice": "Donner ou recevoir avec des termes clairs afin que le soutien préserve la dignité des deux côtés.",
     "yesNoMeaning": "Le Six de Pentacles penche pour oui : donner ou recevoir avec des conditions claires afin que le soutien préserve la dignité des deux côtés."
   },
   "seven-of-pentacles": {
     "name": "Sept de Pentacles",
-    "meaning": "L’investissement patient atteint un point d’évaluation avant le prochain effort.",
+    "meaning": "L’investissement du patient atteint un point d’évaluation avant le prochain effort. Vous avez investi des efforts, mais les résultats risquent de ne pas arriver selon le calendrier souhaité. Passez en revue les progrès et distinguez ce qui nécessite plus de patience de ce qui nécessite une nouvelle approche.",
     "advice": "Examine ce qui pousse, améliorez la méthode et donnez du temps aux résultats valables.",
     "yesNoMeaning": "Le Sept de Pentacles reste conditionnel : examinez ce qui pousse, améliorez la méthode et laissez le temps aux résultats valables."
   },
   "eight-of-pentacles": {
     "name": "Huit de Deniers",
-    "meaning": "La répétition concentrée développe la maîtrise et des résultats fiables.",
+    "meaning": "La répétition ciblée développe la maîtrise et des résultats fiables. La compétence se développe grâce à la répétition, à la correction et à l’attention portée aux petits détails. La carte valorise une pratique régulière que d’autres ne verront peut-être jamais, plutôt qu’un saut soudain.",
     "advice": "Pratiquez la compétence essentielle, accueillez la correction et laissez la qualité s'accumuler.",
     "yesNoMeaning": "Le Huit de Pentacles penche pour oui : pratiquez la compétence essentielle, accueillez les corrections et laissez la qualité s'accumuler."
   },
   "nine-of-pentacles": {
     "name": "Neuf de Pentacles",
-    "meaning": "L'indépendance et le confort cultivé reflètent un progrès discipliné.",
+    "meaning": "L’autonomie et le confort cultivé reflètent un progrès discipliné. Votre confort actuel peut refléter de nombreux choix disciplinés faits plus tôt. Profitez de ce que vous avez construit à votre rythme et reconnaissez le travail qui se cache derrière.",
     "advice": "Profitez de ce que vous avez construit et maintenez l'indépendance liée à la gratitude.",
     "yesNoMeaning": "Le Neuf de Pentacles penche oui : profitez de ce que vous avez construit et gardez l'indépendance reliée à la gratitude."
   },
   "ten-of-pentacles": {
     "name": "Dix de Pentacles",
-    "meaning": "La sécurité à long terme se développe grâce à l'héritage, la famille et les fondations partagées.",
+    "meaning": "La sécurité à long terme se développe grâce à des fondations héritées, familiales et partagées. L'histoire s'étend au-delà du succès d'une personne et s'étend à la famille, à la communauté ou à ceux qui la suivent. Une fondation durable naît d’une attention réfléchie aux ressources partagées.",
     "advice": "Planifiez au-delà du gain immédiat et protégez ce qui peut soutenir les autres au fil du temps.",
     "yesNoMeaning": "Le Dix de Pentacles penche vers oui : planifiez au-delà du gain immédiat et protégez ce qui peut soutenir les autres sur le long terme."
   },
   "page-of-pentacles": {
     "name": "Valet de Pentacles",
-    "meaning": "Un message pratique invite à l'étude, à la planification ou à une nouvelle entreprise concrète.",
+    "meaning": "Un message pratique invite à l’étude, à la planification ou à une nouvelle entreprise fondée. Une opportunité pratique devient plus claire lorsque vous en apprenez les bases. Explorez patiemment, testez-le à petite échelle et remarquez ce qui a une valeur durable.",
     "advice": "Apprenez les bases, définissez la prochaine tâche et prouvez l'idée par un travail constant.",
     "yesNoMeaning": "Le Valet de Pentacles penche vers le oui : apprenez les bases, définissez la tâche suivante et démontrez l'idée par un travail régulier."
   },
   "knight-of-pentacles": {
     "name": "Chevalier de Deniers",
-    "meaning": "Un effort fiable progresse lentement mais abandonne rarement la tâche.",
+    "meaning": "Un effort fiable avance lentement mais abandonne rarement la tâche. Les progrès peuvent sembler si lents que vous vous demandez si vous avancez, mais la cohérence constitue une base. La fiabilité a également besoin d’espace pour se reposer.",
     "advice": "Gardez la routine honnête et cohérente ; le progrès compte plus que l'excitation.",
     "yesNoMeaning": "Le Cavalier de Pentacles penche vers oui : maintenez la routine honnête et cohérente ; le progrès compte plus que l'excitation."
   },
   "queen-of-pentacles": {
     "name": "Reine de Pentacles",
-    "meaning": "Des soins ingénieux créent le confort, la santé et l'abondance pratique.",
+    "meaning": "Des soins ingénieux créent du confort, de la santé et une abondance pratique. La sécurité peut être créée grâce à des actes concrets de prudence et à une utilisation judicieuse des ressources. La générosité durable commence également par le fait de se souvenir de ses propres besoins.",
     "advice": "Nourrissez les personnes et les projets d’une manière qui reste durable pour vous.",
     "yesNoMeaning": "La Reine de Pentacles penche vers le oui : nourrissez les personnes et les plans de manière à rester durable pour vous."
   },
   "king-of-pentacles": {
     "name": "Roi de Pentacles",
-    "meaning": "Le leadership matériel transforme l'expérience en gérance stable et généreuse.",
+    "meaning": "Le leadership matériel transforme l’expérience en une gestion stable et généreuse. L'expérience peut soutenir un avenir stable pour le travail, la famille ou la communauté. Le succès signifie davantage lorsque les personnes qui ont contribué à sa construction peuvent partager cette stabilité.",
     "advice": "Faites le choix sonore à long terme et utilisez le succès de manière responsable.",
     "yesNoMeaning": "Le Roi de Pentacles penche vers oui : faites le choix solide à long terme et utilisez le succès de manière responsable."
   }

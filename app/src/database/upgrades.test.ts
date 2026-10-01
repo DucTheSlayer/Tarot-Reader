@@ -26,7 +26,7 @@ describe('SQLite upgrades', () => {
     expect(() => migrationStatements("SELECT 'unfinished")).toThrow('Unterminated')
   })
 
-  it('upgrades v1 through v8, preserves original cards and refreshes only Vietnamese meanings', () => {
+  it('upgrades v1 through v9, refreshes published meanings and preserves Vietnamese', () => {
     const database = new SQL.Database()
     const bundled = new SQL.Database(readFileSync(new URL('../../public/assets/databases/tarot_cardsSQLite.db', import.meta.url)))
     try {
@@ -67,8 +67,20 @@ describe('SQLite upgrades', () => {
       database.run('COMMIT')
       expect(originalTables.map(table => database.exec(`SELECT * FROM ${table} ORDER BY 1, 2`))).toEqual(before)
       expect(database.exec("SELECT * FROM card_translations WHERE locale <> 'vi' ORDER BY card_id, locale")).toEqual(otherLocalesBefore)
+      database.run("UPDATE card_translations SET payload = ? WHERE card_id = 'fool' AND locale = 'es-419'", ['{"name":"El Loco","meaning":"Versión anterior","advice":"Anterior","yesNoMeaning":"Anterior"}'])
+      const staleOtherLocales = database.exec("SELECT * FROM card_translations WHERE locale <> 'vi' ORDER BY card_id, locale")
+      const vietnameseBefore = database.exec("SELECT * FROM card_translations WHERE locale = 'vi' ORDER BY card_id")
+      database.run('BEGIN')
+      for (const statement of CARD_DATABASE_UPGRADES[7].statements) database.run(statement)
+      database.run('PRAGMA user_version = 9')
+      database.run('COMMIT')
+      expect(database.exec("SELECT * FROM card_translations WHERE locale = 'vi' ORDER BY card_id")).toEqual(vietnameseBefore)
+      expect(database.exec("SELECT * FROM card_translations WHERE locale <> 'vi' ORDER BY card_id, locale"))
+        .not.toEqual(staleOtherLocales)
+      expect(originalTables.map(table => database.exec(`SELECT * FROM ${table} ORDER BY 1, 2`)))
+        .toEqual(originalTables.map(table => bundled.exec(`SELECT * FROM ${table} ORDER BY 1, 2`)))
       expect(database.exec('PRAGMA foreign_key_check')).toEqual([])
-      expect(database.exec('PRAGMA user_version')[0].values[0][0]).toBe(8)
+      expect(database.exec('PRAGMA user_version')[0].values[0][0]).toBe(9)
       for (const [index, table] of translationTables.entries()) {
         const rows = database.exec(`SELECT * FROM ${table} ORDER BY 1, 2`)
         expect(rows[0].values).toHaveLength([780, 120, 360][index])

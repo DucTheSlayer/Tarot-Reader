@@ -1,469 +1,469 @@
 {
   "fool": {
     "name": "El Loco",
-    "meaning": "Una página en blanco y un acto de fe: un nuevo viaje comienza con un corazón abierto.",
+    "meaning": "Una página en blanco y un acto de fe: un nuevo viaje comienza con un corazón abierto. No necesitas un mapa completo antes de dar el primer paso. La curiosidad te ayuda a aprender de cada intento, mientras que un poco de preparación evita que la libertad se convierta en descuido.",
     "advice": "Confía en el camino que tienes delante y da ese primer paso, incluso sin todas las respuestas.",
     "yesNoMeaning": "Un nuevo comienzo rara vez conlleva una respuesta fija: el resultado depende del paso que se dé."
   },
   "magician": {
     "name": "El Mago",
-    "meaning": "Posees todas las herramientas que necesitas. Enfoca tu voluntad y convierte la intención en acción.",
+    "meaning": "Tienes todas las herramientas que necesitas. Enfoca tu voluntad y convierte la intención en acción. Una idea se vuelve realidad cuando tu atención, tiempo y recursos disponibles apuntan hacia la misma tarea. Mira las herramientas que ya tienes a tu alcance antes de esperar otra señal.",
     "advice": "Usa tus habilidades y recursos deliberadamente — ahora es el momento de hacerlo realidad.",
     "yesNoMeaning": "Ya posees todo lo necesario: la energía apoya avanzar con enfoque."
   },
   "high-priestess": {
     "name": "La Sacerdotisa",
-    "meaning": "La sabiduría silenciosa se esconde debajo de la superficie. Escuche su intuición y su voz interior.",
+    "meaning": "La sabiduría silenciosa se esconde debajo de la superficie. Escucha tu intuición y tu voz interior. El silencio puede revelar un patrón, un sentimiento que aún no puedes nombrar o información que aún falta. Observa un poco más antes de sacar todo a la luz.",
     "advice": "Haz una pausa, ve hacia adentro y deja que tus instintos te guíen antes de actuar.",
     "yesNoMeaning": "La respuesta está oculta bajo la superficie por ahora — confía en tu intuición en lugar de forzar un sí o no claro."
   },
   "empress": {
     "name": "La Emperatriz",
-    "meaning": "El crecimiento, la abundancia y la energía nutritiva te rodean. Deja que florezcan la belleza y el cuidado.",
+    "meaning": "El crecimiento, la abundancia y la energía enriquecedora te rodean. Deja que florezcan la belleza y el cuidado. Una relación, un proyecto o una parte de ti puede crecer gracias a un cuidado constante. Abundancia aquí significa tener espacio para desarrollarse, no dar hasta que no te quede nada.",
     "advice": "Sea paciente y generoso: cree con amor y deje que las cosas maduren naturalmente.",
     "yesNoMeaning": "El crecimiento, la abundancia y la energía enriquecedora respaldan tu deseo: la respuesta es un tranquilo sí."
   },
   "emperor": {
     "name": "El Emperador",
-    "meaning": "Estructura, autoridad y liderazgo constante. Construye sobre bases sólidas con disciplina.",
+    "meaning": "Estructura, autoridad y liderazgo constante. Construya sobre terreno sólido con disciplina. Una estructura útil brinda a las personas la seguridad para crecer. Note la diferencia entre asumir responsabilidades y tratar de controlar cada detalle; pueden parecerse al principio.",
     "advice": "Toma el control con un plan claro; los límites firmes traen estabilidad duradera.",
     "yesNoMeaning": "La estructura, la autoridad y la disciplina constante respaldan un sí confiado."
   },
   "hierophant": {
     "name": "El Sumo Sacerdote",
-    "meaning": "La tradición y la orientación confiable ofrecen un camino seguro. Aprende de lo que ha venido antes.",
+    "meaning": "La tradición y los buenos consejos pueden orientarte. Aprende de la experiencia de quienes vinieron antes. Un maestro, una comunidad o un método establecido pueden ofrecer un buen punto de partida. Comprende por qué funciona una tradición antes de adaptarla a tu situación.",
     "advice": "Siga la sabiduría establecida y busque el consejo de aquellos en quienes confía.",
     "yesNoMeaning": "La tradición y la guía confiable apuntan a un sí confiable: apóyate en lo que ya ha demostrado su valía."
   },
   "lovers": {
     "name": "Los Enamorados",
-    "meaning": "Un vínculo significativo o una elección importante. Sigue lo que tu corazón realmente valora.",
+    "meaning": "Un vínculo significativo o una elección importante. Sigue lo que tu corazón realmente valora. La armonía duradera exige que ambas partes hablen honestamente sobre las necesidades y los límites. Si se trata de una decisión más que de un romance, pregunta qué camino refleja tus valores más profundos.",
     "advice": "Elige con honestidad y alineación: la conexión se profundiza cuando eres sincero.",
     "yesNoMeaning": "Tu corazón y tus valores están alineados aquí: la respuesta es sí, especialmente cuando eliges con honestidad."
   },
   "chariot": {
     "name": "El Carro",
-    "meaning": "La fuerza de voluntad y el impulso te llevan hacia adelante. Mantente enfocado y prevalecerás.",
+    "meaning": "La fuerza de voluntad y el impulso te hacen avanzar. Mantente enfocado y prevalecerás. Los impulsos opuestos aún pueden hacerte avanzar cuando les das una dirección compartida. El progreso depende de guiar tus emociones y acciones, no simplemente de esforzarse más.",
     "advice": "Mantén la vista en la meta y conduce con confianza a través de cada obstáculo.",
     "yesNoMeaning": "La fuerza de voluntad y el impulso están de tu lado: un sí enfocado, siempre que te mantengas comprometido."
   },
   "strength": {
     "name": "Fuerza",
-    "meaning": "El verdadero poder es gentil: la paciencia, el valor y la compasión doman cualquier desafío.",
+    "meaning": "El verdadero poder es gentil: la paciencia, el coraje y la compasión dominan cualquier desafío. La gentileza es una forma activa de coraje: puedes permanecer con el malestar sin dejar que éste decida tu respuesta. Reconozca el miedo y actúe con cuidado en lugar de esperar a que desaparezca.",
     "advice": "Lidera con calma y fuerza; una mano suave suele ser la más fuerte.",
     "yesNoMeaning": "El coraje gentil y la resolución paciente hacen que esto sea un sí: lidere con calma, no con fuerza."
   },
   "hermit": {
     "name": "El Ermitaño",
-    "meaning": "Es momento de dar un paso atrás y buscar claridad interior. La soledad ahora trae respuestas más profundas.",
+    "meaning": "Es hora de dar un paso atrás y buscar la claridad interior. La soledad ahora trae respuestas más profundas. Tomar distancia puede ayudarte a escuchar tu propia voz en medio de las opiniones de otras personas. La soledad ayuda cuando conduce a la comprensión, pero también puede convertirse en una forma de evitar la conexión.",
     "advice": "Vuelve hacia tu interior, reflexiona y deja que la tranquilidad revele lo que realmente necesitas.",
     "yesNoMeaning": "Todavía no: la carta te pide que des un paso atrás y encuentres claridad interior antes de actuar."
   },
   "wheel-of-fortune": {
     "name": "Rueda de la Fortuna",
-    "meaning": "La fortuna cambia y los ciclos cambian. Lo que cambia ahora es parte de un ritmo más amplio.",
+    "meaning": "La fortuna cambia y los ciclos cambian. Lo que cambia ahora es parte de un ritmo más amplio. Es posible que esté cambiando un viejo ciclo, que trae consigo inconvenientes y posibilidades. No puedes elegir todos los eventos, pero puedes elegir qué llevar adelante y cómo prepararte para el siguiente turno.",
     "advice": "Sigue la corriente con flexibilidad — abraza el giro, bueno o no.",
     "yesNoMeaning": "La fortuna está cambiando: el resultado depende de cómo aproveche el cambio en lugar de un sí o un no fijo."
   },
   "justice": {
     "name": "Justicia",
-    "meaning": "La verdad y la justicia prevalecen. La causa y el efecto ahora entran en equilibrio.",
+    "meaning": "La verdad y la justicia prevalecen. La causa y el efecto ahora se equilibran. Lo que está sucediendo puede reflejar una cadena de decisiones anteriores más que un momento aislado. Verifique los hechos, escuche a las personas involucradas y sea dueño de la parte que le pertenece.",
     "advice": "Actuar con honestidad y sopesar ambas partes; la balanza se estabilizará de manera justa.",
     "yesNoMeaning": "Las balanzas aún están equilibrando: la respuesta justa depende de los hechos y de tu honestidad."
   },
   "hanged-man": {
     "name": "El Colgado",
-    "meaning": "Una pausa necesaria. Libera el control y mira la situación desde un nuevo ángulo.",
+    "meaning": "Una pausa necesaria. Libera el control y mira la situación desde un nuevo ángulo. Esperar puede resultar incómodo cuando la acción es la respuesta habitual. Un cambio de perspectiva, o algo que decidas soltar, puede revelar lo que más presión no podría revelar.",
     "advice": "Deja de empujar — entrégate al momento y permite que llegue una nueva perspectiva.",
     "yesNoMeaning": "Primero es necesaria una pausa; forzar esto ahora sólo impediría una respuesta más clara."
   },
   "death": {
     "name": "Muerte",
-    "meaning": "Un final allana el camino para la renovación. Liberen lo que ha cumplido su tiempo.",
+    "meaning": "Un final allana el camino para la renovación. Suelta lo que ya cumplió su ciclo. Esta carta habla de transición más que de una predicción literal de pérdida. Tal vez hayas dejado atrás un antiguo papel, hábito o expectativa; dejarlo atrás todavía puede llevar tiempo.",
     "advice": "Déjalo ir sin arrepentimiento; una profunda transformación está abriendo una nueva puerta.",
     "yesNoMeaning": "Un final está despejando el camino: el camino actual se está cerrando para que pueda comenzar uno nuevo."
   },
   "temperance": {
     "name": "Templanza",
-    "meaning": "El equilibrio y la paciencia traen armonía. Combina los opuestos con gracia.",
+    "meaning": "El equilibrio y la paciencia traen armonía. Combina los opuestos con gracia. Busque lo que se puede combinar desde dos enfoques diferentes. El progreso silencioso puede tomar la forma de un hábito sostenible, una conversación más tranquila o un ritmo que realmente puedas mantener.",
     "advice": "Muévete con moderación y mantén la calma: con pasos firmes llegas al destino.",
     "yesNoMeaning": "El equilibrio y la paciencia traen armonía: un sí medido, dado paso firme a la vez."
   },
   "devil": {
     "name": "El Diablo",
-    "meaning": "Tenga cuidado con el apego, la tentación o un patrón vinculante. Reconocer las cadenas.",
+    "meaning": "Ten cuidado con el apego, la tentación o los hábitos que te atan. Reconoce las cadenas. Un beneficio a corto plazo puede hacer que sea difícil abandonar un patrón costoso. Reconocer lo que obtienes de ese hábito y lo que te cuesta puede devolverte parte de tu libertad para elegir.",
     "advice": "Nombra lo que te retiene y reclama tu libertad: la cadena solo te ata si tú lo permites.",
     "yesNoMeaning": "El apego o un patrón vinculante se interpone en el camino; todavía no, hasta que la cadena sea nombrada y rota."
   },
   "tower": {
     "name": "La Torre",
-    "meaning": "El cambio repentino rompe lo falso y revela la verdad. Lo que cae nunca estuvo destinado a mantenerse en pie.",
+    "meaning": "El cambio repentino destruye lo falso y revela la verdad. Lo que cae nunca estuvo destinado a permanecer en pie. La sacudida puede ser difícil cuando sacude un plan en el que confiabas. No necesitas buscarle el lado positivo de inmediato; primero observa lo que realmente ha cambiado y lo que permanece en pie.",
     "advice": "Da la bienvenida al cambio; de entre los escombros se puede construir una base más clara.",
     "yesNoMeaning": "El cambio súbito está destrozando lo antiguo; el terreno debe asentarse antes de que un sí firme sea posible."
   },
   "star": {
     "name": "La Estrella",
-    "meaning": "La esperanza, la curación y la tranquila inspiración renuevan tu espíritu después de la tormenta.",
+    "meaning": "La esperanza, la curación y la tranquila inspiración renuevan tu espíritu después de la tormenta. La esperanza no es una promesa de que todo se resolverá por sí solo. Es espacio para respirar después de las dificultades y seguir cuidando lo que importa antes de que el resultado sea visible.",
     "advice": "Confía en la luz que tienes delante y sigue creyendo: tus deseos están al alcance.",
     "yesNoMeaning": "La esperanza y la tranquila renovación indican que sí: confía en la luz que te espera y mantén vivo tu deseo."
   },
   "moon": {
     "name": "La Luna",
-    "meaning": "La ilusión y la incertidumbre empañan el camino. Confía en tu intuición, no en las apariencias.",
+    "meaning": "La ilusión y la incertidumbre empañan el camino. Confía en tu intuición, no en las apariencias. Cuando los hechos están incompletos, la memoria y el miedo pueden llenar los vacíos con una historia convincente. Baja el ritmo, observa tu reacción y separa lo que sientes de lo que has verificado.",
     "advice": "Reduce la velocidad y mira más profundo; la claridad vendrá cuando la niebla se disipe.",
     "yesNoMeaning": "La ilusión y la incertidumbre desdibujan el camino: la respuesta no está clara hasta que se mira más allá de las apariencias."
   },
   "sun": {
     "name": "El Sol",
-    "meaning": "Alegría, éxito y claridad radiante. Todo es luminoso y lleno de vida.",
+    "meaning": "Alegría, éxito y claridad radiante. Todo es luminoso y lleno de vida. La claridad puede ayudarte a reconocer tu progreso y compartir la alegría sin minimizarla. Si queda trabajo, esta energía renovada puede ayudarte a afrontarlo más abiertamente.",
     "advice": "Celebre y brille: la energía positiva atrae los resultados que desea.",
     "yesNoMeaning": "La alegría y la claridad radiante confirman un sí brillante: todo está funcionando a tu favor."
   },
   "judgement": {
     "name": "Juicio",
-    "meaning": "Un llamado a levantarte, renovarte y ser honesto contigo mismo. Un veredicto de despertar.",
+    "meaning": "Un llamado a levantarte, renovarte y ser honesto contigo mismo. Un veredicto de despertar. Revisar el pasado no tiene por qué significar culparse a uno mismo para siempre. Aprende la lección, perdona lo que puedas y responde al llamado a cambiar con una elección consciente ahora.",
     "advice": "Responde al llamado con valentía; perdona el pasado y entra en tu próximo capítulo.",
     "yesNoMeaning": "Un llamado a levantarse y renovarse, sí, especialmente una vez que perdonas el pasado y respondes con honestidad."
   },
   "world": {
     "name": "El Mundo",
-    "meaning": "Finalización y cumplimiento: un ciclo se cierra en perfecta totalidad.",
+    "meaning": "Finalización y cumplimiento: un ciclo se cierra en perfecta totalidad. El logro incluye las habilidades, las relaciones y la perspectiva que adquirió a lo largo del camino. Honren la finalización de este ciclo incluso mientras continúa un viaje más amplio.",
     "advice": "Celebra lo que has logrado; la puerta está abierta a un mundo más amplio.",
     "yesNoMeaning": "La plenitud y la plenitud marcan esto como un sí cumplido: el ciclo se cierra a tu favor."
   },
   "ace-of-wands": {
     "name": "As de bastos",
-    "meaning": "Una chispa de inspiración abre un camino creativo audaz.",
+    "meaning": "Una chispa de inspiración abre un camino creativo audaz. Una invitación, un proyecto o un nuevo deseo pueden hacerte sentir más vivo. Este es un resultado potencial más que garantizado; necesita espacio para experimentar y compromiso una vez que se desvanece el primer entusiasmo.",
     "advice": "Comienza mientras la energía está fresca y dale a la idea un primer paso real.",
     "yesNoMeaning": "El As de Bastos se inclina hacia sí: comienza mientras la energía es fresca y da a la idea un primer paso real."
   },
   "two-of-wands": {
     "name": "Dos de Bastos",
-    "meaning": "Un futuro está tomando forma a través de la planificación y la elección de dirección.",
+    "meaning": "Un futuro está tomando forma a través de la planificación y la elección de dirección. Puedes ver más de una ruta y empiezas a preguntar hasta dónde quieres llegar. Una visión amplia ayuda, pero una planificación interminable puede mantenerte en el umbral.",
     "advice": "Mire más allá de lo que le resulta familiar y luego comprométase con el camino que tiene espacio para crecer.",
     "yesNoMeaning": "El Dos de Bastos sigue siendo condicional: mira más allá de lo que es familiar, luego comprométete con el camino con espacio para crecer."
   },
   "three-of-wands": {
     "name": "Tres de Bastos",
-    "meaning": "El esfuerzo inicial se expande a medida que aparecen oportunidades y horizontes más amplios.",
+    "meaning": "El esfuerzo inicial se expande a medida que aparecen oportunidades y horizontes más amplios. Lo que empezaste está empezando a generar una respuesta más allá del territorio familiar. Mantente abierto a nuevos contactos y comentarios mientras das tiempo a que tu trabajo dé frutos.",
     "advice": "Continúe construyendo y prepárese para encontrar la respuesta que atrae su trabajo.",
     "yesNoMeaning": "El Tres de Bastos se inclina hacia sí: sigue construyendo y estate preparado para recibir la respuesta que atrae tu trabajo."
   },
   "four-of-wands": {
     "name": "cuatro de bastos",
-    "meaning": "La estabilidad, la bienvenida y la celebración compartida crean una base fuerte.",
+    "meaning": "La estabilidad, la bienvenida y la celebración compartida crean una base sólida. Un hito merece celebración incluso cuando el viaje no ha terminado. La pertenencia y las personas que ayudaron a construir este momento pueden fortalecer tu siguiente paso.",
     "advice": "Marque el hito y deje que las personas que lo apoyen lo compartan.",
     "yesNoMeaning": "El Cuatro de Bastos se inclina hacia sí: marca el hito y deja que las personas que apoyan lo compartan."
   },
   "five-of-wands": {
     "name": "cinco de bastos",
-    "meaning": "Los objetivos en competencia crean fricción, ruido o una prueba de confianza.",
+    "meaning": "Los objetivos en competencia crean fricción, ruido o una prueba de confianza. Muchas voces en competencia pueden ocultar el objetivo compartido. El conflicto puede agudizar una idea cuando todos saben lo que realmente están debatiendo y pueden escuchar a pesar de las diferencias.",
     "advice": "Convierte la rivalidad en práctica útil y rechaza el conflicto que no tiene propósito.",
     "yesNoMeaning": "El Cinco de Bastos sigue siendo condicional: convierte la rivalidad en práctica útil y rechaza el conflicto que no tiene propósito."
   },
   "six-of-wands": {
     "name": "Seis de Bastos",
-    "meaning": "El reconocimiento sigue a un esfuerzo decidido y un progreso visible.",
+    "meaning": "El reconocimiento sigue a un esfuerzo decidido y un progreso visible. Quizá los demás por fin estén viendo tu esfuerzo. El reconocimiento puede animarte, pero el valor de tu trabajo permanece incluso cuando no hay audiencia mirando.",
     "advice": "Acepte el estímulo, pero mantenga su confianza ligada al trabajo honesto.",
     "yesNoMeaning": "El Seis de Bastos se inclina hacia el sí: acepta el estímulo, pero mantiene tu confianza ligada al trabajo honesto."
   },
   "seven-of-wands": {
     "name": "Siete de Bastos",
-    "meaning": "Mantienes terreno valioso mientras la presión prueba tu determinación.",
+    "meaning": "Mantienes un terreno valioso mientras la presión pone a prueba tu determinación. Proteger lo que importa requiere saber por qué es importante para ti. La presión puede provenir de varias direcciones, pero no todos los desafíos merecen una pelea.",
     "advice": "Defiende lo que importa con límites claros en lugar de luchar contra todos los desafíos.",
     "yesNoMeaning": "El Siete de Bastos se inclina hacia el sí: defiende lo que importa con límites claros en lugar de luchar contra cada desafío."
   },
   "eight-of-wands": {
     "name": "Ocho de Bastos",
-    "meaning": "Los acontecimientos se aceleran, llegan mensajes y el impulso elimina los retrasos.",
+    "meaning": "Los acontecimientos se aceleran, llegan mensajes y el impulso elimina los retrasos. Las noticias o decisiones pueden llegar más rápido de lo esperado. La velocidad ayuda cuando todos entienden la dirección; La información poco clara puede convertir el impulso en confusión.",
     "advice": "Actúe con prontitud y mantenga la comunicación directa mientras el camino esté abierto.",
     "yesNoMeaning": "El Ocho de Bastos se inclina hacia sí: actúa con prontitud y mantén la comunicación directa mientras el camino esté abierto."
   },
   "nine-of-wands": {
     "name": "Nueve de Bastos",
-    "meaning": "La resiliencia es fuerte, aunque las tensiones pasadas te hacen estar alerta.",
+    "meaning": "La resiliencia es fuerte, aunque las tensiones pasadas te hacen estar alerta. Las tensiones del pasado te han enseñado cómo protegerte, pero la vigilancia constante es agotadora. Evalúa el riesgo que tienes delante con los hechos de hoy, no solo con las heridas de ayer.",
     "advice": "Protege tu energía y da el siguiente paso sin esperar que cada herida se repita.",
     "yesNoMeaning": "El Nueve de Bastos permanece condicional: protege tu energía y da el siguiente paso sin esperar que cada herida se repita."
   },
   "ten-of-wands": {
     "name": "Diez de Bastos",
-    "meaning": "La responsabilidad se ha vuelto pesada y el éxito ahora conlleva una carga.",
+    "meaning": "La responsabilidad se ha vuelto pesada y el éxito ahora conlleva una carga. Algo de lo que antes se enorgullecía ahora puede conllevar demasiadas obligaciones. Tu habilidad es real, pero no requiere que realices todas las tareas solo.",
     "advice": "Delega, simplifica y deja de lado el trabajo que ya no es tuyo.",
     "yesNoMeaning": "El Diez de Bastos dice que no: delega, simplifica y deja de lado el trabajo que ya no es realmente tuyo."
   },
   "page-of-wands": {
     "name": "Sota de Bastos",
-    "meaning": "La curiosidad trae un mensaje animado, un experimento o un nuevo interés creativo.",
+    "meaning": "La curiosidad trae un mensaje animado, un experimento o un nuevo interés creativo. Una nueva idea puede devolverle el entusiasmo a un principiante. No es necesario dominarlo todo antes de explorar; Date permiso para intentar, adaptarte y aprender en la práctica.",
     "advice": "Explora con valentía y deja que la energía del principiante te enseñe a través de la acción.",
     "yesNoMeaning": "El Paje de Bastos se inclina hacia sí: explora con coraje y deja que la energía de principiante te enseñe a través de la acción."
   },
   "knight-of-wands": {
     "name": "Caballero de Bastos",
-    "meaning": "La pasión avanza rápidamente, trayendo aventura y posible impaciencia.",
+    "meaning": "La pasión avanza rápidamente, trayendo aventura y posible impaciencia. La atracción por algo nuevo puede hacer que quieras irte inmediatamente. Esta energía te resulta más útil cuando un objetivo claro te impide cambiar de rumbo con cada impulso que pasa.",
     "advice": "Usa el impulso, pero elige una dirección antes de que la velocidad disperse tu esfuerzo.",
     "yesNoMeaning": "El Caballero de Bastos sigue siendo condicional: usa el impulso, pero elige una dirección antes de que la velocidad disperse tu esfuerzo."
   },
   "queen-of-wands": {
     "name": "reina de bastos",
-    "meaning": "La cálida confianza y la independencia creativa atraen a otros hacia tu visión.",
+    "meaning": "La cálida confianza y la independencia creativa atraen a otros hacia tu visión. Tu actitud abierta puede animar a otros a creer en una visión compartida. La confianza aquí no requiere eclipsar a nadie; deja espacio para que otros también brillen.",
     "advice": "Confía en tu presencia, anima a los demás y no reduzcas tu ambición.",
     "yesNoMeaning": "La Reina de Bastos se inclina hacia el sí: confía en tu presencia, anima a los demás y no reduzcas tu ambición."
   },
   "king-of-wands": {
     "name": "rey de bastos",
-    "meaning": "La visión madura convierte la inspiración en un liderazgo decisivo y ético.",
+    "meaning": "La visión madura convierte la inspiración en un liderazgo decisivo y ético. Una visión amplia necesita decisiones, responsabilidad y la capacidad de sostener la energía de un equipo. Lidera a través de un propósito claro en lugar de presión o ego únicamente.",
     "advice": "Lidera desde un propósito más amplio y da a otros espacio para contribuir.",
     "yesNoMeaning": "El Rey de Bastos se inclina al sí: lidera desde un propósito más grande y da espacio a los demás para contribuir."
   },
   "ace-of-cups": {
     "name": "As de copas",
-    "meaning": "El corazón se abre a un nuevo afecto, compasión y renovación emocional.",
+    "meaning": "El corazón se abre a nuevos afectos, compasión y renovación emocional. Un encuentro, un nuevo sentimiento o un ablandamiento interior pueden invitarte a dar y recibir más libremente. Dejemos que se reconozca la emoción antes de forzarla hacia un resultado particular.",
     "advice": "Reciba el sentimiento con honestidad y deje que la atención fluya sin forzar un resultado.",
     "yesNoMeaning": "El As de Copas se inclina por el sí: recibe el sentimiento honestamente y deja que el cuidado fluya sin forzar un resultado."
   },
   "two-of-cups": {
     "name": "Dos de Copas",
-    "meaning": "El reconocimiento mutuo crea asociación, atracción o acuerdo sincero.",
+    "meaning": "El reconocimiento mutuo crea asociación, atracción o acuerdo sincero. La promesa más profunda reside en que dos personas se vean claramente, más allá de la atracción inicial. Una conversación sincera, una disculpa o un acuerdo justo pueden fortalecer el vínculo.",
     "advice": "Conoce a la otra persona como a un igual y habla desde el corazón.",
     "yesNoMeaning": "El Dos de Copas se inclina hacia el sí: encuentra a la otra persona como un igual y habla desde el corazón."
   },
   "three-of-cups": {
     "name": "Tres de Copas",
-    "meaning": "La amistad, la comunidad y la alegría compartida brindan apoyo emocional.",
+    "meaning": "La amistad, la comunidad y la alegría compartida brindan apoyo emocional. Una pequeña reunión o un apoyo oportuno pueden recordarte que la alegría no debe llevarse sola. Recuerda a quienes estuvieron a tu lado antes de que las cosas se volvieran más fáciles.",
     "advice": "Celebren juntos y recuerden quién realmente aparece por ustedes.",
     "yesNoMeaning": "El Tres de Copas inclina hacia el sí: celebren juntos y recuerden quién realmente se presenta por ustedes."
   },
   "four-of-cups": {
     "name": "Cuatro de Copas",
-    "meaning": "El retraimiento emocional hace que sea difícil notar un regalo disponible.",
+    "meaning": "El retraimiento emocional hace que sea difícil notar un regalo disponible. Cuando estás cansado o desanimado, incluso una buena oferta puede parecer aburrida. Sé sincero con lo que sientes ahora antes de decidir que nada a tu alrededor importa.",
     "advice": "Haga una pausa en la comparación y observe nuevamente lo que se ofrece silenciosamente.",
     "yesNoMeaning": "El Cuatro de Copas se inclina hacia no: pausa la comparación y observa de nuevo lo que se ofrece silenciosamente."
   },
   "five-of-cups": {
     "name": "Cinco de Copas",
-    "meaning": "La pérdida llama la atención sobre lo que se derramó mientras queda algo significativo.",
+    "meaning": "La pérdida llama la atención sobre lo que se derramó mientras queda algo significativo. El dolor merece ser nombrado en lugar de cubrirlo con un rápido optimismo. Aun así, es posible que una pérdida no cuente toda la historia; El apoyo o la posibilidad aún pueden permanecer cerca.",
     "advice": "Honre la decepción y luego recurra al apoyo que todavía está presente.",
     "yesNoMeaning": "El Cinco de Copas se inclina hacia no: honra la decepción y luego vuelve tu atención hacia el apoyo que aún está presente."
   },
   "six-of-cups": {
     "name": "Seis de Copas",
-    "meaning": "El recuerdo, la inocencia o un vínculo familiar regresan con suave calidez.",
+    "meaning": "El recuerdo, la inocencia o un vínculo familiar regresan con suave calidez. Un viejo amigo o un recuerdo pueden reconectarte con una sensación de seguridad. Dale la bienvenida a esa calidez reconociendo al mismo tiempo que el presente ha cambiado y tú has cambiado con él.",
     "advice": "Da la bienvenida a la bondad del pasado sin pretender que debes vivir allí de nuevo.",
     "yesNoMeaning": "El Seis de Copas se inclina hacia el sí: da la bienvenida a la bondad del pasado sin pretender que debes vivir allí nuevamente."
   },
   "seven-of-cups": {
     "name": "Siete de Copas",
-    "meaning": "Muchas posibilidades atractivas desdibujan la diferencia entre visión e ilusión.",
+    "meaning": "Muchas posibilidades atractivas desdibujan la diferencia entre visión e ilusión. Puede parecer que cada opción conlleva una hermosa promesa, pero no todas las promesas tienen el mismo fundamento. Separa lo que realmente quieres de lo que has imaginado a su alrededor.",
     "advice": "Limite las opciones y compare un sueño con la realidad antes de comprometerse.",
     "yesNoMeaning": "El Siete de Copas todavía no está claro: reduce las opciones y prueba un sueño contra la realidad antes de comprometerte."
   },
   "eight-of-cups": {
     "name": "Ocho de Copas",
-    "meaning": "Una situación que alguna vez fue significativa ya no nutre el corazón.",
+    "meaning": "Una situación que alguna vez fue significativa ya no nutre el corazón. Dejar algo que alguna vez fue significativo puede doler y, aun así, ser lo adecuado para ti ahora. Aquello tuvo valor, incluso si tu necesidad de un significado más profundo había cambiado.",
     "advice": "Vete con honestidad y avanza hacia la satisfacción más profunda que ahora necesitas.",
     "yesNoMeaning": "El Ocho de Copas se inclina hacia no: vete con honestidad y avanza hacia la realización más profunda que ahora necesitas."
   },
   "nine-of-cups": {
     "name": "Nueve de Copas",
-    "meaning": "La alegría y la gratitud hacen que un deseo sincero se sienta cercano.",
+    "meaning": "La alegría y la gratitud hacen que un deseo sincero se sienta cercano. Es posible que hayas alcanzado algo que alguna vez deseaste y mereces disfrutarlo. La satisfacción dura más cuando sabes de dónde viene en lugar de apresurarte hacia el siguiente deseo.",
     "advice": "Disfruta lo que hay aquí y pregúntate si el deseo también sirve a tus valores más profundos.",
     "yesNoMeaning": "El Nueve de Copas se inclina al sí: disfruta lo que está aquí y pregunta si el deseo también sirve a tus valores más profundos."
   },
   "ten-of-cups": {
     "name": "Diez de Copas",
-    "meaning": "La armonía emocional, la pertenencia y la conexión duradera rodean el hogar.",
+    "meaning": "La armonía emocional, la pertenencia y la conexión duradera rodean el hogar. La armonía crece a través del cuidado y la escucha repetidos, no a través de un hogar sin desacuerdos. Esta carta evoca la libertad de ser uno mismo entre personas dispuestas a seguir construyendo juntas.",
     "advice": "Fomentar los vínculos que hacen que la alegría sea sostenible y compartida.",
     "yesNoMeaning": "El Diez de Copas se inclina hacia el sí: cultiva los lazos que hacen que la alegría sea sostenible y compartida."
   },
   "page-of-cups": {
     "name": "Sota de Copas",
-    "meaning": "Un mensaje tierno o un descubrimiento intuitivo invita a la apertura emocional.",
+    "meaning": "Un mensaje tierno o un descubrimiento intuitivo invita a la apertura emocional. Un mensaje tierno, un sentimiento inesperado o una idea imaginativa pueden llamar tu atención. Deje espacio para la sorpresa sin tratar cada señal como una promesa firme.",
     "advice": "Mantente curioso sobre la sensación y responde con sinceridad en lugar de suponer.",
     "yesNoMeaning": "El Paje de Copas permanece condicional: mantente curioso sobre el sentimiento y responde con sinceridad en lugar de suposiciones."
   },
   "knight-of-cups": {
     "name": "Caballero de Copas",
-    "meaning": "El romance, la imaginación o un ideal atrae el corazón hacia adelante.",
+    "meaning": "El romance, la imaginación o un ideal atraen el corazón. Quizás quieras seguir una invitación o un ideal sincero. La sinceridad le da sentido al viaje, mientras que la practicidad te ayuda a ver qué personas y planes pueden viajar contigo a lo largo del tiempo.",
     "advice": "Siga la invitación, pero mantenga un pie en la tierra a medida que se desarrollen las promesas.",
     "yesNoMeaning": "El Caballero de Copas se inclina al sí: sigue la invitación, pero mantén un pie en la tierra mientras se desarrollan las promesas."
   },
   "queen-of-cups": {
     "name": "reina de copas",
-    "meaning": "La empatía y la intuición profundas crean un espacio tranquilo para la verdad.",
+    "meaning": "La empatía y la intuición profundas crean un espacio tranquilo para la verdad. Escuchar atentamente puede ayudar a que alguien se sienta lo suficientemente seguro como para hablar. La empatía profunda también significa saber qué necesidades son las tuyas y qué tristeza no puedes cargar con otra persona.",
     "advice": "Escuche con compasión mientras preserva los límites que mantienen la atención saludable.",
     "yesNoMeaning": "La Reina de Copas se inclina hacia el sí: escucha con compasión mientras preservas los límites que mantienen el cuidado saludable."
   },
   "king-of-cups": {
     "name": "rey de copas",
-    "meaning": "La madurez emocional estabiliza los sentimientos fuertes sin reprimirlos.",
+    "meaning": "La madurez emocional estabiliza los sentimientos fuertes sin reprimirlos. Los sentimientos fuertes pueden permanecer presentes mientras eliges una respuesta tranquila y responsable. Esa firmeza puede hacer que una conversación difícil sea más segura para todos los involucrados.",
     "advice": "Responda con compasión y dominio propio, especialmente cuando los demás sean reactivos.",
     "yesNoMeaning": "El Rey de Copas se inclina hacia sí: responde con compasión y autodominio, especialmente cuando otros son reactivos."
   },
   "ace-of-swords": {
     "name": "As de espadas",
-    "meaning": "Una visión clara rompe la confusión y revela una nueva verdad.",
+    "meaning": "Una visión clara rompe la confusión y revela una nueva verdad. Un hecho nuevo o una conversación honesta pueden eliminar la confusión. La verdad puede ser aguda, así que úsala para comprender y decidir con mayor claridad en lugar de herir.",
     "advice": "Nombra el problema claramente y utiliza la claridad al servicio de una decisión justa.",
     "yesNoMeaning": "El As de Espadas se inclina hacia sí: nombra el problema claramente y usa la claridad al servicio de una decisión justa."
   },
   "two-of-swords": {
     "name": "Dos de Espadas",
-    "meaning": "Un estancamiento cauteloso retrasa una elección que no puede permanecer suspendida para siempre.",
+    "meaning": "Un cauteloso estancamiento retrasa una elección que no puede permanecer suspendida para siempre. Es posible que esté manteniendo el equilibrio al negarse a elegir, aunque la presión no ha desaparecido. La calma es útil; evitar información incómoda no hará que la decisión desaparezca.",
     "advice": "Quítese la venda de los ojos con cuidado, recopile el dato que falta y decida desde el equilibrio.",
     "yesNoMeaning": "El Dos de Espadas aún no está claro: quita la venda suavemente, reúne el hecho que falta y decide desde el equilibrio."
   },
   "three-of-swords": {
     "name": "Tres de Espadas",
-    "meaning": "Una verdad dolorosa, una separación o una decepción piden ser reconocidas.",
+    "meaning": "Una verdad dolorosa, una separación o una decepción piden ser reconocidas. Las palabras, la separación o una expectativa rota pueden dejar un verdadero dolor. Nombra el dolor y busca apoyo en lugar de apresurarte a demostrar que ya estás bien.",
     "advice": "Deja que el sentimiento te atraviese y evita convertir el dolor en una historia permanente.",
     "yesNoMeaning": "El Tres de Espadas dice no: deja que el sentimiento pase por ti y evita convertir el dolor en una historia permanente."
   },
   "four-of-swords": {
     "name": "cuatro de espadas",
-    "meaning": "Se necesita descanso y tranquilidad mental después de una presión o un conflicto.",
+    "meaning": "Se necesita descanso y tranquilidad mental después de una presión o un conflicto. Después de un largo período de reacción a la presión, tu mente necesita espacio para calmarse. El descanso es parte de la recuperación y la preparación, no una prueba de que te has rendido.",
     "advice": "Haga una pausa antes de responder; la recuperación es productiva cuando restablece el pensamiento claro.",
     "yesNoMeaning": "El Cuatro de Espadas se inclina hacia no: pausa antes de responder; la recuperación es productiva cuando restaura un pensamiento claro."
   },
   "five-of-swords": {
     "name": "Cinco de Espadas",
-    "meaning": "El conflicto puede producir una victoria vacía o dañar la confianza.",
+    "meaning": "El conflicto puede producir una victoria vacía o dañar la confianza. Ganar una discusión aún puede dañar la confianza o agotarte. Pregúntate cuánto cuesta esa victoria y qué límites protegerían tu autoestima.",
     "advice": "Elija la dignidad antes que ganar y aléjese de tácticas que cuestan demasiado.",
     "yesNoMeaning": "El Cinco de Espadas se inclina hacia no: elige la dignidad sobre la victoria y aléjate de tácticas que cuestan demasiado."
   },
   "six-of-swords": {
     "name": "Seis de Espadas",
-    "meaning": "Un pasaje difícil avanza gradualmente hacia condiciones más tranquilas.",
+    "meaning": "Un pasaje difícil avanza gradualmente hacia condiciones más tranquilas. La transición puede ser silenciosa: salir de una conversación estancada, de un entorno antiguo o de una forma de pensar agotadora. No es necesario que veas un destino perfecto para saber que estás avanzando hacia una mayor paz.",
     "advice": "Toma lo que has aprendido, acepta apoyo y sigue alejándote del caos.",
     "yesNoMeaning": "El Seis de Espadas se inclina hacia el sí: toma lo que has aprendido, acepta apoyo y sigue alejándote de la agitación."
   },
   "seven-of-swords": {
     "name": "Siete de Espadas",
-    "meaning": "La estrategia, el secreto o la evasión complican el camino.",
+    "meaning": "La estrategia, el secreto o la evasión complican el camino. Mantener un plan privado a veces puede protegerlo; evadir la responsabilidad crea un tipo diferente de distancia. Examine el motivo detrás de una estrategia antes de decidir utilizarla.",
     "advice": "Actuar con inteligencia pero con transparencia; Los atajos que traicionan la confianza volverán en forma de problemas.",
     "yesNoMeaning": "El Siete de Espadas se inclina hacia el no: actúa con astucia pero de manera transparente; los atajos que traicionan la confianza regresarán como problemas."
   },
   "eight-of-swords": {
     "name": "Ocho de espadas",
-    "meaning": "El miedo y las creencias restrictivas hacen que sea difícil ver las opciones disponibles.",
+    "meaning": "El miedo y las creencias restrictivas hacen que sea difícil ver las opciones disponibles. La sensación de estar atrapado puede ser mayor que los límites que realmente te rodean. A medida que el miedo disminuye, una pequeña opción, una persona útil o un camino pasado por alto pueden hacerse visibles.",
     "advice": "Cuestiona el pensamiento que dice que estás atrapado y realiza una pequeña acción liberadora.",
     "yesNoMeaning": "El Ocho de Espadas se inclina hacia no: cuestiona el pensamiento que dice que estás atrapado y da una pequeña acción liberadora."
   },
   "nine-of-swords": {
     "name": "Nueve de espadas",
-    "meaning": "La ansiedad magnifica el peligro en la oscuridad y agota la mente.",
+    "meaning": "La ansiedad magnifica el peligro en la oscuridad y agota la mente. Los pensamientos repetidos pueden resultar más feroces cuando los enfrentas solo. Separa lo que ha sucedido de lo que imaginas que podría suceder y permítete pedir ayuda.",
     "advice": "Saque el miedo a la luz del día, busque apoyo y separe los hechos de los resultados imaginados.",
     "yesNoMeaning": "El Nueve de Espadas se inclina hacia no: trae el miedo a la luz del día, busca apoyo y separa los hechos de los resultados imaginados."
   },
   "ten-of-swords": {
     "name": "Diez de Espadas",
-    "meaning": "Un ciclo doloroso llega a su límite final y no puede continuar sin cambios.",
+    "meaning": "Un ciclo doloroso llega a su límite final y no puede continuar sin cambios. El final puede dejarte agotado después de que una situación haya durado demasiado. El patrón anterior ya no puede seguir igual, pero unos límites más claros pueden dejar espacio para una recuperación gradual.",
     "advice": "Acepta el final, protege tu recuperación y permite que surja un comienzo diferente.",
     "yesNoMeaning": "El Diez de Espadas advierte: acepta el final, protege tu recuperación y permite que emerja un nuevo comienzo."
   },
   "page-of-swords": {
     "name": "Sota de espadas",
-    "meaning": "La curiosidad alerta busca hechos, hace preguntas y observa cambios.",
+    "meaning": "La curiosidad alerta busca hechos, hace preguntas y observa cambios. La curiosidad te empuja a hacer preguntas y comprobar detalles antes de aceptar una conclusión. Ese estado de alerta apoya el aprendizaje cuando no se convierte en sospecha de todos.",
     "advice": "Investigue detenidamente y hable con precisión en lugar de reaccionar a cada señal.",
     "yesNoMeaning": "El Paje de Espadas permanece condicional: investiga cuidadosamente y habla con precisión en lugar de reaccionar a cada señal."
   },
   "knight-of-swords": {
     "name": "Caballero de espadas",
-    "meaning": "El intelecto enfocado se mueve rápido y enfrenta los obstáculos directamente.",
+    "meaning": "El intelecto enfocado se mueve rápido y enfrenta los obstáculos directamente. Una idea clara puede hacerte avanzar y hacerte hablar directamente. La determinación funciona mejor cuando aún escuchas nueva evidencia y notas cómo tus palabras afectan a los demás.",
     "advice": "Avanza con valentía, pero lo suficientemente lento como para escuchar lo que tu certeza podría pasar por alto.",
     "yesNoMeaning": "El Caballero de Espadas sigue siendo condicional: avanza con coraje, pero lo suficientemente despacio como para escuchar lo que tu certeza podría pasar por alto."
   },
   "queen-of-swords": {
     "name": "reina de espadas",
-    "meaning": "La percepción clara y los límites honestos eliminan la confusión.",
+    "meaning": "La percepción clara y los límites honestos eliminan la confusión. La experiencia puede ayudarle a ver lo que importa entre los sentimientos y las promesas en competencia. Sea directo y mantenga límites sólidos sin perder la compasión.",
     "advice": "Di lo que es verdadero con compasión y deja que la experiencia te afile, no te endurezca.",
     "yesNoMeaning": "La Reina de Espadas se inclina hacia el sí: di lo que es verdad con compasión y deja que la experiencia te agudice, no te endurezca."
   },
   "king-of-swords": {
     "name": "rey de espadas",
-    "meaning": "La razón, la justicia y el juicio disciplinado guían una decisión importante.",
+    "meaning": "La razón, la justicia y el juicio disciplinado guían una decisión importante. Una decisión difícil requiere estándares consistentes y un razonamiento claro. La autoridad de esta carta proviene de la justicia, no simplemente de tener la última palabra.",
     "advice": "Usa evidencia, define el estándar y mantén el sesgo personal fuera del veredicto.",
     "yesNoMeaning": "El Rey de Espadas se inclina al sí: usa evidencia, define el estándar y mantén el sesgo personal fuera del veredicto."
   },
   "ace-of-pentacles": {
     "name": "As de Oros",
-    "meaning": "Una oportunidad tangible ofrece la semilla de la prosperidad, el trabajo o el bienestar.",
+    "meaning": "Una oportunidad tangible ofrece la semilla de la prosperidad, el trabajo o el bienestar. Una apertura práctica puede aparecer como trabajo, apoyo, una habilidad o condiciones más saludables. Su valor depende de cómo lo cultives con el tiempo, no solo de lo atractivo que parezca al principio.",
     "advice": "Fundamente la oportunidad en un plan práctico y cuídela constantemente.",
     "yesNoMeaning": "El As de Oros se inclina hacia sí: cimenta la oportunidad en un plan práctico y cuídala de manera constante."
   },
   "two-of-pentacles": {
     "name": "Dos de Pentáculos",
-    "meaning": "Varias prioridades avanzan al mismo tiempo y requieren un equilibrio flexible.",
+    "meaning": "Varias prioridades cambian a la vez y requieren un equilibrio flexible. Es posible que esté equilibrando trabajo, dinero, tiempo y necesidades personales al mismo tiempo. La flexibilidad mantiene las cosas en movimiento, pero un largo período de malabarismo exige prioridades más claras.",
     "advice": "Ajusta el ritmo, protege lo esencial y evita prometer más de lo que puedes cumplir.",
     "yesNoMeaning": "El Dos de Pentáculos sigue siendo condicional: ajusta el ritmo, protege lo esencial y evita prometer más de lo que puedes cargar."
   },
   "three-of-pentacles": {
     "name": "Tres de Pentáculos",
-    "meaning": "La habilidad crece a través de la colaboración, la retroalimentación y la cuidadosa elaboración.",
+    "meaning": "La habilidad crece a través de la colaboración, la retroalimentación y el trabajo cuidadoso. El buen trabajo crece cuando cada persona comprende su parte y sus fortalezas. Aquí son importantes los comentarios específicos, el aprendizaje de un oficio y el respeto por el esfuerzo silencioso.",
     "advice": "Contribuya con su fuerza, respete su experiencia y construya un estándar compartido.",
     "yesNoMeaning": "El Tres de Pentáculos se inclina a sí: contribuye con tu fuerza, respeta la experiencia y construye según un estándar compartido."
   },
   "four-of-pentacles": {
     "name": "Cuatro de Oros",
-    "meaning": "Mantener estrictamente la seguridad puede preservar los recursos pero restringir el flujo saludable.",
+    "meaning": "Mantener estrictamente la seguridad puede preservar los recursos pero restringir el flujo saludable. Aferrarse a los recursos ganados con tanto esfuerzo puede resultar sensato durante la incertidumbre. Cuando el miedo a perder gobierna todas las decisiones, tanto el dinero como la tranquilidad pueden sentirse limitados.",
     "advice": "Protege lo que importa sin dejar que el miedo tome todas las decisiones por ti.",
     "yesNoMeaning": "El Cuatro de Oros sigue siendo condicional: protege lo que importa sin dejar que el miedo tome todas tus decisiones."
   },
   "five-of-pentacles": {
     "name": "Cinco de Oros",
-    "meaning": "La tensión material o la exclusión crean preocupación y una sensación de escasez.",
+    "meaning": "La tensión material o la exclusión crean preocupación y una sensación de escasez. Las dificultades pueden hacerte sentir solo o que no mereces ayuda. El apoyo práctico todavía puede estar cerca, incluso cuando la angustia hace que sea difícil ver el camino hacia él.",
     "advice": "Pida ayuda práctica y observe la puerta que las dificultades han hecho fácil pasar por alto.",
     "yesNoMeaning": "El Cinco de Oros se inclina hacia no: pide ayuda práctica y nota la puerta que la adversidad ha hecho fácil de pasar por alto."
   },
   "six-of-pentacles": {
     "name": "Seis de Pentáculos",
-    "meaning": "Se intercambian recursos, lo que plantea cuestiones de generosidad, poder y justicia.",
+    "meaning": "Se intercambian recursos, lo que plantea cuestiones de generosidad, poder y justicia. La ayuda funciona mejor cuando tanto el donante como el receptor conservan la dignidad y la voz. Observa si el intercambio es equilibrado y qué condiciones conlleva la generosidad.",
     "advice": "Dar o recibir con términos claros para que el apoyo preserve la dignidad de ambas partes.",
     "yesNoMeaning": "El Seis de Oros se inclina hacia el sí: da o recibe con condiciones claras para que el apoyo preserve la dignidad de ambos lados."
   },
   "seven-of-pentacles": {
     "name": "Siete de Pentáculos",
-    "meaning": "La inversión paciente llega a un punto de evaluación antes del siguiente esfuerzo.",
+    "meaning": "La inversión paciente llega a un punto de evaluación antes del siguiente esfuerzo. Ha invertido esfuerzo, pero es posible que los resultados no lleguen en el cronograma preferido. Revisar el progreso y distinguir lo que necesita más paciencia de lo que necesita un nuevo enfoque.",
     "advice": "Revisa lo que está creciendo, mejora el método y permite tiempo a los resultados valiosos.",
     "yesNoMeaning": "El Siete de Oros sigue siendo condicional: revisa lo que está creciendo, mejora el método y permite tiempo para resultados valiosos."
   },
   "eight-of-pentacles": {
     "name": "Ocho de Oros",
-    "meaning": "La repetición enfocada desarrolla dominio y resultados confiables.",
+    "meaning": "La repetición enfocada desarrolla dominio y resultados confiables. La habilidad se desarrolla mediante la repetición, la corrección y la atención a los pequeños detalles. La carta valora la práctica constante que otros tal vez nunca vean, en lugar de un salto repentino.",
     "advice": "Practique la habilidad esencial, agradezca las correcciones y deje que la calidad se acumule.",
     "yesNoMeaning": "El Ocho de Oros se inclina hacia sí: practica la habilidad esencial, acepta la corrección y deja que la calidad se acumule."
   },
   "nine-of-pentacles": {
     "name": "Nueve de Oros",
-    "meaning": "La autosuficiencia y el confort cultivado reflejan un progreso disciplinado.",
+    "meaning": "La autosuficiencia y el confort cultivado reflejan un progreso disciplinado. Su comodidad actual puede reflejar muchas decisiones disciplinadas tomadas anteriormente. Disfruta de lo que has construido a tu propio ritmo y reconoce el trabajo que hay detrás.",
     "advice": "Disfruta de lo que has construido y mantén la independencia conectada con la gratitud.",
     "yesNoMeaning": "El Nueve de Oros se inclina hacia sí: disfruta lo que has construido y mantén la independencia conectada con la gratitud."
   },
   "ten-of-pentacles": {
     "name": "Diez de Oros",
-    "meaning": "La seguridad a largo plazo crece a través del legado, la familia y las fundaciones compartidas.",
+    "meaning": "La seguridad a largo plazo crece a través del legado, la familia y las fundaciones compartidas. La historia se extiende más allá del éxito de una persona y llega a la familia, la comunidad o quienes le siguen. Una base duradera surge del cuidado cuidadoso de los recursos compartidos.",
     "advice": "Planifique más allá de la victoria inmediata y proteja lo que pueda ayudar a otros con el tiempo.",
     "yesNoMeaning": "El Diez de Oros se inclina hacia el sí: planifica más allá de la victoria inmediata y protege lo que puede apoyar a otros con el tiempo."
   },
   "page-of-pentacles": {
     "name": "Sota de Oros",
-    "meaning": "Un mensaje práctico invita al estudio, la planificación o un nuevo emprendimiento fundamentado.",
+    "meaning": "Un mensaje práctico invita al estudio, la planificación o un nuevo emprendimiento fundamentado. Una oportunidad práctica se vuelve más clara cuando aprendes sus conceptos básicos. Explora con paciencia, prueba a pequeña escala y observa qué tiene valor duradero.",
     "advice": "Aprenda los conceptos básicos, defina la siguiente tarea y demuestre la idea mediante un trabajo constante.",
     "yesNoMeaning": "El Paje de Oros se inclina hacia sí: aprende lo básico, define la siguiente tarea y prueba la idea mediante trabajo constante."
   },
   "knight-of-pentacles": {
     "name": "Caballero de Oros",
-    "meaning": "El esfuerzo confiable avanza lentamente pero rara vez abandona la tarea.",
+    "meaning": "El esfuerzo confiable avanza lentamente pero rara vez abandona la tarea. El progreso puede parecer tan lento que te preguntas si de verdad estás avanzando, pero la constancia está construyendo una base. La fiabilidad también necesita espacio para descansar.",
     "advice": "Mantenga la rutina honesta y consistente; El progreso importa más que la emoción.",
     "yesNoMeaning": "El Caballero de Oros se inclina al sí: mantén la rutina honesta y consistente; el progreso importa más que la emoción."
   },
   "queen-of-pentacles": {
     "name": "Reina de Oros",
-    "meaning": "El cuidado ingenioso crea comodidad, salud y abundancia práctica.",
+    "meaning": "El cuidado ingenioso crea comodidad, salud y abundancia práctica. La seguridad se puede crear mediante actos concretos de cuidado y uso racional de los recursos. La generosidad sostenible comienza con recordar también tus propias necesidades.",
     "advice": "Cuide a las personas y los planes de manera que sigan siendo sostenibles para usted.",
     "yesNoMeaning": "La Reina de Oros se inclina hacia el sí: nutre a las personas y los planes de maneras que sigan siendo sostenibles para ti."
   },
   "king-of-pentacles": {
     "name": "Rey de Oros",
-    "meaning": "El liderazgo material convierte la experiencia en una mayordomía estable y generosa.",
+    "meaning": "El liderazgo material convierte la experiencia en una mayordomía estable y generosa. La experiencia puede respaldar un futuro estable para el trabajo, la familia o la comunidad. El éxito significa más cuando las personas que ayudaron a construirlo pueden compartir esa estabilidad.",
     "advice": "Tome la decisión acertada a largo plazo y utilice el éxito de manera responsable.",
     "yesNoMeaning": "El Rey de Oros se inclina hacia sí: toma la decisión sólida a largo plazo y usa el éxito responsablemente."
   }

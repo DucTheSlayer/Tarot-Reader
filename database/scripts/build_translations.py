@@ -47,7 +47,9 @@ def generate(included_locales: set[str] | None = None) -> str:
         path.name[len("cards."):-len(".json")]
         for path in TRANSLATIONS.glob("cards.*.json")
     }
-    unknown = discovered.difference(SUPPORTED_LOCALES)
+    # cards.en.json is the v9 English meaning source for the base table, not a
+    # card_translations locale pack.
+    unknown = discovered.difference((*SUPPORTED_LOCALES, "en"))
     assert not unknown, f"Unregistered database locales: {sorted(unknown)}"
     assert "vi" in discovered, "Vietnamese translation source is required"
 

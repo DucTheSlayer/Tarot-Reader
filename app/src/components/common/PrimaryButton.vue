@@ -1,11 +1,11 @@
 <script setup lang="ts">
-withDefaults(defineProps<{ disabled?: boolean }>(), { disabled: false })
+withDefaults(defineProps<{ disabled?: boolean; type?: 'button' | 'submit' }>(), { disabled: false, type: 'button' })
 
 const emit = defineEmits<{ click: [] }>()
 </script>
 
 <template>
-  <button type="button" class="btn" :disabled="disabled" @click="emit('click')">
+  <button :type="type" class="btn" :disabled="disabled" @click="emit('click')">
     <slot></slot>
   </button>
 </template>

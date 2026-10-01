@@ -5,8 +5,9 @@ withDefaults(
     placeholder?: string
     label?: string
     maxlength?: number
+    required?: boolean
   }>(),
-  { placeholder: '', label: '' }
+  { placeholder: '', label: '', required: false }
 )
 
 const emit = defineEmits<{ 'update:modelValue': [value: string] }>()
@@ -21,6 +22,7 @@ const emit = defineEmits<{ 'update:modelValue': [value: string] }>()
       class="question__input"
       :placeholder="placeholder"
       :maxlength="maxlength"
+      :required="required"
       @input="emit('update:modelValue', ($event.target as HTMLInputElement).value)"
     />
   </label>

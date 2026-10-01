@@ -1,6 +1,16 @@
 # Translation source format
 
-English content lives in the original SQLite tables. Vietnamese keeps the compact reviewed files already in this directory.
+Expanded English Tarot `meaning` text lives in `cards.en.json`. Vietnamese
+keeps the compact reviewed files already in this directory. Other English
+content lives in the original SQLite tables.
+
+After editing a card meaning, run `python database/scripts/build_meaning_migration.py`
+and `python database/scripts/build_database.py` from the repository root. The
+v9 migration updates both fresh and previously installed databases.
+
+The expanded non-English meanings were drafted with translation assistance and
+spot-edited for terminology, tone, and obvious literal errors. A native-speaker
+editorial pass is still needed for publication-quality copy in every locale.
 
 For every additional locale `<locale>`, add all three files together:
 

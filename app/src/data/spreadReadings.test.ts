@@ -48,4 +48,14 @@ describe('spread readings', () => {
     expect(northStar.highlights).toHaveLength(4)
     expect(northStar.highlights[3]).toContain(cards[4].name)
   })
+
+  it('keeps an open three-card question free of fixed positional roles', () => {
+    for (const spread of [cards.slice(0, 3), [cards[2], cards[0], cards[1]]]) {
+      const summary = buildOpenQuestionSummary(spread)
+      for (const card of spread) expect(summary).toContain(card.name)
+      expect(summary).toContain('none has a fixed role')
+      expect(summary).not.toMatch(/sets the tone|turning point|way forward|past|future/i)
+      for (const card of spread) expect(summary).not.toContain(card.advice)
+    }
+  })
 })

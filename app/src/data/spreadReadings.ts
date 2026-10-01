@@ -93,10 +93,9 @@ export function buildMoneySummary(cards: TarotCard[], context: MoneyContext) {
 export function buildOpenQuestionSummary(cards: TarotCard[]): string {
   if (cards.length < 3) return ''
   return [
-    ui('{name} sets the tone for how this situation is unfolding.', { name: cards[0].name }),
-    ui('{name} marks the turning point or tension at its core.', { name: cards[1].name }),
-    ui('{name} points the way forward — {advice}', { name: cards[2].name, advice: cards[2].advice })
-  ].join(' ')
+    cards.slice(0, 3).map((card) => card.name).join(' · '),
+    ui('Read the three cards together in the context of your question; none has a fixed role.')
+  ].join('. ')
 }
 
 export const YEARLY_SLOTS = ['Overview', 'Love', 'Career', 'Finance', 'Health'] as const

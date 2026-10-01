@@ -20,6 +20,10 @@ public class MainActivity extends BridgeActivity {
             WebView.setWebContentsDebuggingEnabled(true);
         }
         registerPlugin(TarotAdMobUiProxyPlugin.class);
+        // Initial plugins are appended after auto-loaded SDK classes in load().
+        // Register the safe ALFAdMob replacement last so production SDK calls
+        // cannot overwrite or bypass it when Capacitor builds the bridge.
+        initialPlugins.add(TarotMainThreadAdMobPlugin.class);
         super.onCreate(savedInstanceState);
 
         // Android 15+ enforces edge-to-edge for apps targeting recent SDKs.

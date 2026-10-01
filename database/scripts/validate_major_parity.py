@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+import json
 import sqlite3
 from pathlib import Path
 
@@ -45,12 +46,28 @@ def main() -> None:
     finally:
         connection.close()
 
-    if legacy_cards != database_cards:
+    # cards.ts is a legacy, unused Major Arcana snapshot. The live English
+    # meanings are expanded in SQLite v9; all other legacy fields must match.
+    if {
+        card_id: values[:3] + values[4:]
+        for card_id, values in legacy_cards.items()
+    } != {
+        card_id: values[:3] + values[4:]
+        for card_id, values in database_cards.items()
+    }:
         mismatches = sorted(set(legacy_cards) | set(database_cards))
-        mismatches = [card_id for card_id in mismatches if legacy_cards.get(card_id) != database_cards.get(card_id)]
+        mismatches = [
+            card_id for card_id in mismatches
+            if legacy_cards.get(card_id, ())[:3] + legacy_cards.get(card_id, ())[4:]
+            != database_cards.get(card_id, ())[:3] + database_cards.get(card_id, ())[4:]
+        ]
         raise RuntimeError(f"Major Arcana parity mismatch: {', '.join(mismatches)}")
 
-    print("PASS: all 22 Major Arcana fields match the legacy TypeScript data.")
+    expanded = json.loads((ROOT / "database" / "translations" / "cards.en.json").read_text(encoding="utf-8"))
+    if any(values[3] != expanded[card_id] for card_id, values in database_cards.items()):
+        raise RuntimeError("Live Major Arcana meanings differ from cards.en.json")
+
+    print("PASS: Major Arcana metadata matches legacy data and expanded meanings match English source.")
 
 
 if __name__ == "__main__":

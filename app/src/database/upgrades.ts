@@ -9,6 +9,7 @@ import refreshedTranslationsSql from '../../../database/migrations/005_refresh_t
 import refreshedTranslationsV6Sql from '../../../database/migrations/006_refresh_translations.sql?raw'
 import refreshedVietnameseCopyV7Sql from '../../../database/migrations/007_refresh_vietnamese_copy.sql?raw'
 import expandedVietnameseCardMeaningsV8Sql from '../../../database/migrations/008_expand_card_meanings_vi.sql?raw'
+import refreshedCardMeaningsV9Sql from '../../../database/migrations/009_refresh_card_meanings.sql?raw'
 import { migrationStatements } from './sqlStatements'
 
 // The SQL files are shared with the DB Browser/build workflow, so fresh
@@ -41,5 +42,9 @@ export const CARD_DATABASE_UPGRADES: capSQLiteVersionUpgrade[] = [
   {
     toVersion: 8,
     statements: migrationStatements(expandedVietnameseCardMeaningsV8Sql)
+  },
+  {
+    toVersion: 9,
+    statements: migrationStatements(refreshedCardMeaningsV9Sql)
   }
 ]

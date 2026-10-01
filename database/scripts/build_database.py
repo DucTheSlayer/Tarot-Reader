@@ -25,6 +25,10 @@ SEED_FILES = (
     ROOT / "database" / "seeds" / "003_zodiac.sql",
     ROOT / "database" / "seeds" / "004_translations.sql",
 )
+POST_SEED_MIGRATION_FILES = (
+    # The English card updates need the freshly seeded tarot_cards rows.
+    ROOT / "database" / "migrations" / "009_refresh_card_meanings.sql",
+)
 SOURCE_DB = ROOT / "database" / "source" / "tarot_cardsSQLite.db"
 TEMP_DB = SOURCE_DB.with_name("tarot_cardsSQLite.tmp.db")
 DEPLOY_DB = ROOT / "app" / "public" / "assets" / "databases" / SOURCE_DB.name
@@ -44,6 +48,8 @@ def main() -> None:
             connection.executescript(migration_file.read_text(encoding="utf-8"))
         for seed_file in SEED_FILES:
             connection.executescript(seed_file.read_text(encoding="utf-8"))
+        for migration_file in POST_SEED_MIGRATION_FILES:
+            connection.executescript(migration_file.read_text(encoding="utf-8"))
         summary = validate_database(connection, ROOT)
     except Exception:
         connection.close()
