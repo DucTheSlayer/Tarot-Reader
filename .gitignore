@@ -1,2 +1,5 @@
 .verify/
 *.apk
+
+# Local asset exports
+/exports/
