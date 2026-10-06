@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ui } from '../../i18n/reading'
-import { computed, onMounted, ref } from 'vue'
+import { computed, ref } from 'vue'
 import { getCardOfTheDay, toDateKey } from '../../data/cardOfTheDay'
 import {
   buildDailyFortune,
@@ -8,16 +8,10 @@ import {
 } from '../../data/dailyReading'
 import { getCardsSnapshot } from '../../stores/cardStore'
 import { drawCardsFromDeck } from '../../composables/useDrawCards'
-import {
-  showRewardedAd,
-  warmRewardedAd,
-  type RewardedQaResult
-} from '../../services/advertising'
 import type { TarotCard } from '../../types/tarotCard'
 import ScreenHeader from '../../components/common/ScreenHeader.vue'
 import ScreenContent from '../../components/common/ScreenContent.vue'
 import PrimaryButton from '../../components/common/PrimaryButton.vue'
-import AdIcon from '../../components/ads/AdIcon.vue'
 
 const today = new Date()
 const dateKey = toDateKey(today)
@@ -48,11 +42,6 @@ const clarificationCards = computed(() => clarificationSpreads.value[activeClari
 const canUnlockAnotherReading = computed(
   () => clarificationSpreads.value.length < MAX_DAILY_CLARITY_READINGS
 )
-const rewardState = ref<'idle' | 'loading' | 'skipped' | 'unavailable'>('idle')
-
-onMounted(() => {
-  warmRewardedAd()
-})
 
 function saveClarificationSpreads(spreads: TarotCard[][]): void {
   if (typeof window === 'undefined') return
@@ -63,7 +52,7 @@ function saveClarificationSpreads(spreads: TarotCard[][]): void {
       spreads: spreads.map((spread) => spread.map(({ id }) => id))
     }))
   } catch {
-    // Keep the earned spreads available for the current session.
+    // Keep the spreads available for the current session.
   }
 }
 
@@ -143,26 +132,6 @@ function grantClarificationSpread(): void {
   clarificationSpreads.value = [...clarificationSpreads.value, drawnCards]
   activeClarificationIndex.value = clarificationSpreads.value.length - 1
   saveClarificationSpreads(clarificationSpreads.value)
-}
-
-async function unlockClarificationSpread(): Promise<void> {
-  if (rewardState.value === 'loading' || !canUnlockAnotherReading.value) return
-  rewardState.value = 'loading'
-
-  try {
-    const started = await showRewardedAd((result: RewardedQaResult) => {
-      if (result === 'rewarded') {
-        grantClarificationSpread()
-        rewardState.value = 'idle'
-      } else {
-        rewardState.value = 'skipped'
-      }
-    })
-    if (!started) rewardState.value = 'unavailable'
-  } catch (error) {
-    console.warn('Rewarded clarification ad failed.', error)
-    rewardState.value = 'unavailable'
-  }
 }
 
 function showClarificationSpread(index: number): void {
@@ -341,10 +310,9 @@ function fortuneMessage(aspect: DailyFortuneAspect): string {
               </div>
             </section>
 
-            <section class="daily__reward">
+            <section class="daily__clarification">
               <template v-if="clarificationCards.length === 3">
-                <p class="daily__reward-kicker">{{ ui("Your 4-card daily deep reading") }}</p>
-                <p class="daily__reward-intro">{{ ui("Today’s card is the anchor; the three rewarded cards deepen its message.") }}</p>
+                <p class="daily__clarification-kicker">{{ ui("Your 4-card daily deep reading") }}</p>
                 <div class="daily__anchor">
                   <img :src="card.image" :alt="card.name" />
                   <div>
@@ -394,42 +362,32 @@ function fortuneMessage(aspect: DailyFortuneAspect): string {
                   <span>{{ ui("How the cards connect") }}</span>
                   <p>{{ clarificationSummary() }}</p>
                 </div>
-                <div v-if="canUnlockAnotherReading" class="daily__reward-more">
+                <div v-if="canUnlockAnotherReading" class="daily__clarification-more">
                   <h4>{{ ui("Want another perspective?") }}</h4>
-                  <p>{{ ui("Watch another short ad to draw a fresh 3-card clarity spread.") }}</p>
+                  <p>{{ ui("Deepen today’s card with 3 supporting cards") }}</p>
                   <PrimaryButton
-                    :disabled="rewardState === 'loading'"
-                    @click="unlockClarificationSpread"
+                    @click="grantClarificationSpread"
                   >
-                    <AdIcon v-if="rewardState !== 'loading'" />
-                    {{ rewardState === 'loading' ? ui("Preparing ad...") : ui("Watch ad and draw another spread") }}
+                    {{ ui("Draw 3 Cards") }}
                   </PrimaryButton>
                 </div>
-                <p v-else class="daily__reward-complete">
+                <p v-else class="daily__clarification-complete">
                   {{ ui("You have unlocked all {limit} clarity readings for today.", { limit: MAX_DAILY_CLARITY_READINGS }) }}
                 </p>
               </template>
               <template v-else>
-                <p class="daily__reward-kicker">{{ ui("Rewarded reading") }}</p>
+                <p class="daily__clarification-kicker">{{ ui("Your 3-card clarity spread") }}</p>
                 <h3>{{ ui("Deepen today’s card with 3 supporting cards") }}</h3>
-                <p>{{ ui("Watch a short ad to uncover what lies behind today’s card, what supports or challenges it, and one action for today.") }}</p>
-                <div class="daily__reward-preview" aria-hidden="true">
+                <p>{{ ui("Three cards reveal what sits behind this energy and how to work with it today.") }}</p>
+                <div class="daily__clarification-preview" aria-hidden="true">
                   <span v-for="index in 3" :key="index">{{ index }}</span>
                 </div>
                 <PrimaryButton
-                  :disabled="rewardState === 'loading'"
-                  @click="unlockClarificationSpread"
+                  @click="grantClarificationSpread"
                 >
-                  <AdIcon v-if="rewardState !== 'loading'" />
-                  {{ rewardState === 'loading' ? ui("Preparing ad...") : ui("Watch ad and unlock 3 cards") }}
+                  {{ ui("Draw 3 Cards") }}
                 </PrimaryButton>
               </template>
-              <p v-if="rewardState === 'skipped'" class="daily__reward-status">
-                {{ ui("The video was closed before the reward was earned.") }}
-              </p>
-              <p v-else-if="rewardState === 'unavailable'" class="daily__reward-status">
-                {{ ui("No ad is available right now. Please try again.") }}
-              </p>
             </section>
 
             <p class="daily__note">{{ ui("Your card changes tomorrow.") }}</p>
@@ -784,7 +742,7 @@ function fortuneMessage(aspect: DailyFortuneAspect): string {
   font-size: 12px;
 }
 
-.daily__reward {
+.daily__clarification {
   width: 100%;
   padding: var(--space-4);
   border: 1px solid rgba(230, 199, 107, 0.32);
@@ -793,25 +751,21 @@ function fortuneMessage(aspect: DailyFortuneAspect): string {
   text-align: left;
 }
 
-.daily__reward > h3,
-.daily__reward-kicker,
+.daily__clarification > h3,
+.daily__clarification-kicker,
 .daily__clarity-card h3 {
   color: var(--color-gold);
   font-family: var(--font-sans);
   font-size: 14px;
 }
 
-.daily__reward > p:not(.daily__reward-kicker),
+.daily__clarification > p:not(.daily__clarification-kicker),
 .daily__clarity-reading p,
 .daily__clarity-summary p {
   margin-top: var(--space-2);
   color: var(--color-text-muted);
   font-size: 13px;
   line-height: 1.6;
-}
-
-.daily__reward-intro {
-  margin-top: var(--space-1) !important;
 }
 
 .daily__anchor {
@@ -905,7 +859,7 @@ function fortuneMessage(aspect: DailyFortuneAspect): string {
   outline-offset: 2px;
 }
 
-.daily__reward-preview {
+.daily__clarification-preview {
   display: grid;
   grid-template-columns: repeat(3, 42px);
   justify-content: center;
@@ -913,7 +867,7 @@ function fortuneMessage(aspect: DailyFortuneAspect): string {
   margin: var(--space-3) 0;
 }
 
-.daily__reward-preview span {
+.daily__clarification-preview span {
   display: grid;
   aspect-ratio: 300 / 420;
   place-items: center;
@@ -993,7 +947,7 @@ function fortuneMessage(aspect: DailyFortuneAspect): string {
   background: color-mix(in srgb, var(--color-gold-soft) 70%, transparent);
 }
 
-.daily__reward-more {
+.daily__clarification-more {
   display: grid;
   gap: var(--space-2);
   margin-top: var(--space-4);
@@ -1001,28 +955,24 @@ function fortuneMessage(aspect: DailyFortuneAspect): string {
   border-top: 1px solid rgba(230, 199, 107, 0.2);
 }
 
-.daily__reward-more h4 {
+.daily__clarification-more h4 {
   color: var(--color-gold);
   font-family: var(--font-sans);
   font-size: 14px;
 }
 
-.daily__reward-more p,
-.daily__reward-complete {
+.daily__clarification-more p,
+.daily__clarification-complete {
   color: var(--color-text-muted);
   font-size: 12.5px;
   line-height: 1.55;
 }
 
-.daily__reward-complete {
+.daily__clarification-complete {
   margin-top: var(--space-4);
   padding-top: var(--space-3);
   border-top: 1px solid rgba(230, 199, 107, 0.2);
   text-align: center;
-}
-
-.daily__reward-status {
-  color: var(--color-danger) !important;
 }
 
 .daily-content-enter-active,

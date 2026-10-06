@@ -11,7 +11,6 @@ import DrawAgainBar from '../../components/common/DrawAgainBar.vue'
 import ScreenHeader from '../../components/common/ScreenHeader.vue'
 import ScreenContent from '../../components/common/ScreenContent.vue'
 import PrimaryButton from '../../components/common/PrimaryButton.vue'
-import { showInterstitialAtNaturalBreak } from '../../services/advertising'
 
 type Phase = 'initial' | 'drawing' | 'result'
 
@@ -36,7 +35,6 @@ function startDraw() {
 
 function onRevealed() {
   phase.value = 'result'
-  void showInterstitialAtNaturalBreak()
 }
 
 function drawAgain() {

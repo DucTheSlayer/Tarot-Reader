@@ -2,7 +2,6 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
-import { showInterstitialAtNaturalBreak } from '../../services/advertising'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -13,11 +12,10 @@ const props = withDefaults(defineProps<{ backTo: string; changeQuestion?: boolea
 const emit = defineEmits<{ 'draw-again': []; 'change-question': [] }>()
 const isNavigating = ref(false)
 
-async function runAfterNaturalBreak(action: () => void | Promise<void>): Promise<void> {
+async function runAction(action: () => void | Promise<void>): Promise<void> {
   if (isNavigating.value) return
   isNavigating.value = true
   try {
-    await showInterstitialAtNaturalBreak()
     await action()
   } finally {
     isNavigating.value = false
@@ -25,11 +23,11 @@ async function runAfterNaturalBreak(action: () => void | Promise<void>): Promise
 }
 
 function drawAgain(): void {
-  void runAfterNaturalBreak(() => emit('draw-again'))
+  void runAction(() => emit('draw-again'))
 }
 
 function goBack(): void {
-  void runAfterNaturalBreak(async () => {
+  void runAction(async () => {
     await router.push(props.backTo)
   })
 }

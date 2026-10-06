@@ -3,11 +3,8 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import HomeModeTabs from '../../components/common/HomeModeTabs.vue'
 import MysticalBackground from '../../components/common/MysticalBackground.vue'
-import AdIcon from '../../components/ads/AdIcon.vue'
 import { LOCALE_OPTIONS, type AppLocale } from '../../i18n/locales'
-import { config } from '../../../config'
 const { t, locale } = useI18n()
-const showAdQa = config.settings?.dev === true
 const localeLabel = computed(() =>
   LOCALE_OPTIONS.find((option) => option.value === locale.value as AppLocale)?.label ?? 'English'
 )
@@ -27,12 +24,6 @@ const localeLabel = computed(() =>
       <RouterLink to="/settings/guide" class="settings-row">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1v15M5 8h4M5 12h4M15 8h4M15 12h4" /></svg>
         <span class="settings-row__label">{{ t('onboarding.guideTitle') }}</span>
-        <span class="settings-row__arrow" aria-hidden="true">›</span>
-      </RouterLink>
-      <RouterLink v-if="showAdQa" to="/settings/ad-test" class="settings-row">
-        <AdIcon />
-        <span class="settings-row__label">{{ t('adsQa.settingsLabel') }}</span>
-        <span class="settings-row__value">DEV</span>
         <span class="settings-row__arrow" aria-hidden="true">›</span>
       </RouterLink>
     </nav>

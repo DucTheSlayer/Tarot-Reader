@@ -4,7 +4,6 @@ import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { useCardStore } from './stores/cardStore'
 import { useZodiacStore } from './stores/zodiacStore'
-import AdBannerHost from './components/ads/AdBannerHost.vue'
 
 const { t } = useI18n()
 const cardStore = useCardStore()
@@ -64,7 +63,6 @@ function retryDatabase() {
     <div class="app-shell__content">
       <RouterView />
     </div>
-    <AdBannerHost />
   </div>
 
   <main v-else class="database-state">

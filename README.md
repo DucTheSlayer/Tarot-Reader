@@ -2,11 +2,11 @@
 
 [![CI](https://github.com/DucTheSlayer/TarotApp/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/DucTheSlayer/TarotApp/actions/workflows/ci.yml)
 
-Tarot Zodiac Pocket là ứng dụng Tarot và Zodiac chạy offline, ưu tiên trải nghiệm mobile portrait. Một bundle Vue được dùng cho trình duyệt và Android thông qua Capacitor. App tích hợp Banner, Interstitial và Rewarded qua SDK nội bộ của công ty, với chế độ QA và production tách biệt.
+Tarot Zodiac Pocket là ứng dụng Tarot và Zodiac chạy offline, ưu tiên trải nghiệm mobile portrait. Một bundle Vue được dùng cho trình duyệt và Android thông qua Capacitor. Nhánh `tarot-no-ads` không tích hợp quảng cáo hoặc SDK quảng cáo.
 
 ## Trạng thái
 
-MVP web và Android đã chạy được trên thiết bị thật. Cấu hình production dùng package, Firebase và ad unit do mentor chỉ định từ Eye Telling; bản QA vẫn dùng ad unit test của Google. Chuỗi kiểm tra hiện có 63 unit test, kiểm tra bản dịch/database, production web build và Android debug build.
+MVP web và Android đã chạy được trên thiết bị thật. Nhánh này gỡ SDK quảng cáo, giữ nguyên dữ liệu, artwork và package Android. Chạy `npm run verify` và build Android để kiểm tra.
 
 ### Đã có
 
@@ -19,10 +19,7 @@ MVP web và Android đã chạy được trên thiết bị thật. Cấu hình 
 - SQLite offline dùng chung cho web và Android.
 - 11 ngôn ngữ cho giao diện, 78 lá Tarot, 12 cung và 36 bài đọc; tự lưu lựa chọn ngôn ngữ.
 - Trọn bộ 78 lá dùng minh họa Celestial Nouveau mới, đồng nhất theo bốn chất Wands, Cups, Swords và Pentacles; các URL ảnh cũ được giữ nguyên để không ảnh hưởng dữ liệu bài đọc.
-- Quảng cáo Banner xuyên suốt các màn nội dung, Interstitial tại điểm chuyển tự nhiên với cooldown 60 giây và Rewarded được tải trước để mở khóa lá bài làm rõ trong Card of the Day.
-- Trang Cài đặt → Advertising QA chỉ xuất hiện trong build QA để demo riêng từng định dạng bằng quảng cáo test; lỗi tải quảng cáo không chặn luồng sử dụng app.
-- Launcher icon tím–vàng tạm thời và icon video/play đánh dấu rõ hành động xem quảng cáo.
-- `@alf/app-sdk` của công ty được dùng nguyên trạng. Phần tương thích UI thread của Android nằm trong plugin proxy do app sở hữu, không sửa source SDK trong `node_modules`.
+- Launcher icon tím–vàng tạm thời.
 - Giao diện mobile-first, hỗ trợ keyboard focus và `prefers-reduced-motion`.
 - Unit test, kiểm tra database và CI cho nhánh `master`.
 
@@ -32,7 +29,7 @@ MVP web và Android đã chạy được trên thiết bị thật. Cấu hình 
 - Lịch sử/nhật ký trải bài, chia sẻ kết quả và lá bài ngược.
 - Backend, tài khoản hoặc đồng bộ nhiều thiết bị.
 - Bản Hoa phồn thể (`zh-TW`) vẫn ở trạng thái dự kiến, chưa hiển thị cho người dùng.
-- Consent quảng cáo, chính sách quyền riêng tư, release signing và Android App Bundle cho Google Play.
+- Chính sách quyền riêng tư, release signing và Android App Bundle cho Google Play.
 - Kiểm thử hồi quy đầy đủ trên nhiều thiết bị Android và pipeline phát hành.
 
 ## Công nghệ
@@ -40,7 +37,6 @@ MVP web và Android đã chạy được trên thiết bị thật. Cấu hình 
 - Vue 3, TypeScript, Vue Router và Vite.
 - Font offline: Noto Serif cho tiêu đề, Inter cho nội dung; đóng gói Latin, Latin Extended và Vietnamese qua Fontsource. Khai báo tại `app/src/styles/fonts.css`, giấy phép OFL trong `app/public/THIRD-PARTY-FONTS.txt`. Không tải Google Fonts lúc chạy app.
 - Capacitor 8 cho Android WebView.
-- `@alf/app-sdk` cho quảng cáo AdMob/AppLovin; bản mentor demo chỉ sử dụng inventory test.
 - `@capacitor-community/sqlite`, `jeep-sqlite` và `sql.js` cho dữ liệu offline.
 - Vitest cho unit test.
 - GitHub Actions cho CI.
@@ -123,23 +119,15 @@ $env:JAVA_HOME = 'C:\Users\<username>\.jdks\jbr-21.0.11'
 .\gradlew.bat :app:assembleDebug
 ```
 
-APK cuối nằm tại `D:\TarotReader\app\android\app\build\outputs\apk\debug\app-debug.apk`. APK vẫn được ký debug và chưa phải bản release để đăng Google Play, nhưng bundle web mặc định dùng cấu hình quảng cáo production. Khi chạy trực tiếp trong Android Studio, chọn đúng JDK 21, thiết bị đã bật USB debugging và nhấn **Run app**; không bắt buộc cài APK thủ công.
+APK cuối nằm tại `D:\TarotReader\app\android\app\build\outputs\apk\debug\app-debug.apk`. APK vẫn được ký debug và chưa phải bản release để đăng Google Play. Nhánh này không đóng gói SDK quảng cáo. Khi chạy trực tiếp trong Android Studio, chọn đúng JDK 21, thiết bị đã bật USB debugging và nhấn **Run app**; không bắt buộc cài APK thủ công.
 
 Nếu Android Studio còn báo `Activity class {com.apptarot.app/com.zl.eye.reading.MainActivity} does not exist`, đó là Run/Gradle model cũ của IDE. Chọn **File → Sync Project with Gradle Files**, chọn Run Configuration **Tarot Zodiac Pocket** rồi Run lại. Nếu cấu hình này chưa hiện, mở **Run → Edit Configurations**, xóa cấu hình `app` cũ và tạo **Android App** mới với module `android.app`, Launch **Specified Activity** là `com.zl.eye.reading.MainActivity`. Gradle JDK phải là JDK 21.
 
-## Chế độ quảng cáo
+## Bản không quảng cáo
 
-- `npm run dev` và `npm run build:qa` bật trang Advertising QA và dùng ad unit test của Google. Sau `build:qa`, chạy lại `npx cap sync android` trước khi build APK QA.
-- `npm run build` tạo bundle production, ẩn Advertising QA và dùng các ad unit trong `app/config.ts`.
-- Android dùng package `com.zl.eye.reading` cùng `google-services.json`/Firebase từ Eye Telling theo chỉ dẫn mentor. Package này xung đột với Eye Telling nếu hai APK được ký bằng chứng thư khác nhau; cần gỡ bản đang cài trước khi thử bản còn lại.
-- Không nhấn quảng cáo thật trong quá trình QA nội bộ; dùng `build:qa` để kiểm thử thao tác quảng cáo an toàn.
-- Banner xuất hiện tại toàn bộ màn Tarot, Zodiac và Settings (trừ màn Advertising QA); app chừa đúng chiều cao banner ở đáy để quảng cáo không che nội dung.
-- App Open không tự hiện khi khởi động để tránh chồng quảng cáo và làm gián đoạn lúc người dùng vừa mở app; định dạng này chỉ còn trong màn QA để kiểm tra riêng.
-- Interstitial được preload, thử hiển thị sau khi hoàn tất một lượt đọc hoặc khi người dùng chọn Rút lại/Trở về, với cooldown toàn cục 60 giây.
-- Rewarded nằm trong Card of the Day và hoàn toàn tùy chọn. Mỗi ngày có tối đa 3 lượt rewarded; mỗi callback `rewarded` mở khóa một trải bài làm rõ 3 lá mới, các lượt cũ vẫn xem lại được. Quảng cáo được preload khi app khởi động, tải bù khi vào màn và nạp lại sau mỗi lượt xem; đóng quảng cáo sớm không nhận thưởng. Độ dài video và thời điểm nút đóng xuất hiện do creative/mạng quảng cáo quyết định, không do app tự ép thời lượng.
-- Nếu inventory AdMob cho phép quảng cáo 60 giây, nhờ chủ tài khoản vào **AdMob → Apps → App settings → High-engagement ads** và tắt tùy chọn này. Với standard ad units, Google công bố mức skip tối đa giảm từ 60 xuống 30 giây cho Rewarded và từ 12 xuống 5 giây cho Interstitial; cấu hình này không điều khiển partner bidding inventory.
-- Nếu provider chưa sẵn sàng, hết inventory hoặc mất mạng, app bỏ qua quảng cáo/hiện trạng thái thử lại thay vì khóa chức năng chính.
-- Không tự nhấp quảng cáo thật. Chỉ chuyển sang `dev: false` cùng quy trình consent/signing riêng khi bắt đầu giai đoạn release.
+Nhánh `tarot-no-ads` gỡ banner, interstitial, rewarded, App Open, màn Advertising QA và `@alf/app-sdk` khỏi web/Android. Không cần registry npm riêng của ALF hoặc cấu hình Firebase để build.
+
+Trong Card of the Day, nhấn **Rút 3 lá** để mở trực tiếp một trải bài bổ sung, tối đa 3 lượt/ngày. Các lượt đã rút được lưu và có thể xem lại.
 
 ## Cấu trúc chính
 
@@ -198,15 +186,13 @@ Không sửa trực tiếp `004_translations.sql` vì đây là file được si
 - Kiểm tra máy 3 nút điều hướng và máy dùng cử chỉ: thanh tab không bị che, nút Trở về dễ bấm, Yearly không mất hai lá ngoài cùng.
 - Kiểm tra chữ tiếng Việt dài trên màn hình nhỏ và cỡ chữ hệ thống lớn.
 - Kiểm tra khi cuộn kết quả: thẻ bài di chuyển/mờ cùng nội dung, không đè lên phần giải thích; trong trải bài 3 lá có thể chạm từng lá đã lật để mở chi tiết.
-- Tại Cài đặt → Advertising QA, chạy Banner, Interstitial và Rewarded bằng test inventory. Kiểm tra cả Rewarded xem hết và đóng sớm.
-- Tắt mạng rồi thử lại các điểm đặt quảng cáo: app vẫn điều hướng/rút bài được và không crash.
 
 ### Thứ tự hoàn thiện bản beta
 
 1. Chạy `npm run verify`, đồng bộ Capacitor và tạo APK debug dùng cho mentor demo.
-2. Dùng `build:qa` để demo ba định dạng quảng cáo test và hoàn tất checklist hồi quy trên thiết bị Android mục tiêu.
+2. Kiểm tra rút 3 lá bổ sung trực tiếp, giới hạn 3 lượt/ngày và khôi phục các lượt đã lưu khi mở lại app.
 3. QA bản dịch máy của 11 ngôn ngữ trên thiết bị thật, ưu tiên kiểm tra ngữ nghĩa và tràn giao diện.
-4. Chốt icon/splash chính thức, versionCode/versionName, consent và chính sách quyền riêng tư; package hiện theo cấu hình Eye Telling của mentor.
+4. Chốt icon/splash chính thức, versionCode/versionName và chính sách quyền riêng tư; package hiện theo cấu hình Eye Telling của mentor.
 5. Chuyển cấu hình release, cấu hình signing riêng, tạo AAB và kiểm tra bản cài từ kênh Internal Testing.
 
 ## CI

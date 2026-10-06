@@ -11,7 +11,6 @@ vi.mock('../../stores/cardStore', async () => {
   const { createDeck } = await import('../../test/fixtures')
   return { getCardsSnapshot: () => createDeck(78) }
 })
-vi.mock('../../services/advertising', () => ({ showInterstitialAtNaturalBreak: vi.fn() }))
 
 function memoryStorage() {
   const values = new Map<string, string>()

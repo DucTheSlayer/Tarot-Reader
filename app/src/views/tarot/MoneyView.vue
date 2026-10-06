@@ -18,7 +18,6 @@ import ContextChipGroup from '../../components/common/ContextChipGroup.vue'
 import SpreadSummary from '../../components/common/SpreadSummary.vue'
 import DrawAgainBar from '../../components/common/DrawAgainBar.vue'
 import PrimaryButton from '../../components/common/PrimaryButton.vue'
-import { showInterstitialAtNaturalBreak } from '../../services/advertising'
 
 type Phase = 'initial' | 'drawing' | 'result'
 
@@ -52,7 +51,6 @@ function startDraw() {
 function onRevealed() {
   if (phase.value !== 'drawing') return
   phase.value = 'result'
-  void showInterstitialAtNaturalBreak()
 }
 
 function drawAgain() {

@@ -19,17 +19,11 @@ public class MainActivity extends BridgeActivity {
         if ((getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0) {
             WebView.setWebContentsDebuggingEnabled(true);
         }
-        registerPlugin(TarotAdMobUiProxyPlugin.class);
-        // Initial plugins are appended after auto-loaded SDK classes in load().
-        // Register the safe ALFAdMob replacement last so production SDK calls
-        // cannot overwrite or bypass it when Capacitor builds the bridge.
-        initialPlugins.add(TarotMainThreadAdMobPlugin.class);
         super.onCreate(savedInstanceState);
 
         // Android 15+ enforces edge-to-edge for apps targeting recent SDKs.
         // Some WebView versions report CSS safe-area insets as zero. Keep its
-        // viewport inside both system bars so native bottom banners line up
-        // with the space reserved by the web layout.
+        // viewport inside both system bars so content stays clear of navigation.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
             applySystemBarInsets();
         }

@@ -10,11 +10,6 @@ import router from './router'
 import { i18n } from './i18n'
 import { loadCardStore } from './stores/cardStore'
 import { loadZodiacStore } from './stores/zodiacStore'
-import {
-  initializeAdvertising,
-  warmInterstitialAd,
-  warmRewardedAd
-} from './services/advertising'
 
 async function bootstrap() {
   createApp(App).use(i18n).use(router).mount('#app')
@@ -26,16 +21,10 @@ async function bootstrap() {
     } catch (error) {
       console.error('Failed to initialize the local content database.', error)
     }
-
-    const advertisingReady = initializeAdvertising()
-    void advertisingReady.then(() => {
-      warmInterstitialAd()
-      warmRewardedAd()
-    })
   }
 
   // Give the WebView one frame to paint Home or the loading state before
-  // opening SQLite and initializing advertising SDKs.
+  // opening SQLite.
   if (typeof requestAnimationFrame === 'function') {
     requestAnimationFrame(() => void startBackgroundServices())
   } else {

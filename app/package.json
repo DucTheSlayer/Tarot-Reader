@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "build:qa": "vue-tsc -b && vite build --mode qa",
     "android:sync": "npm run build && cap sync android",
     "verify": "npm test && npm run i18n:check && npm run db:meanings:check && npm run db:validate && npm run db:validate:web && npm run db:validate:parity && npm run build",
     "test": "vitest run",
@@ -23,7 +22,6 @@
     "db:validate:parity": "python ../database/scripts/validate_major_parity.py"
   },
   "dependencies": {
-    "@alf/app-sdk": "^1.1.31",
     "@capacitor-community/sqlite": "^8.1.1",
     "@capacitor/android": "^8.5.0",
     "@capacitor/cli": "^8.5.0",
